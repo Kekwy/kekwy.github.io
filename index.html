@@ -1796,7 +1796,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.76f046e9.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1659150042991),
+    lastupdate: new Date(1659152504083),
     sidebar: {
       for_page: ["blogger","switch","music","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -3274,51 +3274,65 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
       <script>
-  volantis.layoutHelper("comments",`<div id="giscus_container"></div>`)
+  volantis.layoutHelper("comments",`<div id="beaudar_container"></div>`)
 
-  volantis.giscus = {};
+  volantis.beaudar = {};
 
-  function check_giscus() {
+  function check_beaudar() {
     if (volantis.dark.mode === "dark") {
-      volantis.giscus.Theme = 'dark';
+      volantis.beaudar.Theme = 'github-dark';
     } else {
-      volantis.giscus.Theme = 'light';
+      volantis.beaudar.Theme = 'github-light';
     }
 
-    return document.getElementById("giscus_container");
+    return document.getElementById("beaudar_container");
   }
 
-  function pjax_giscus() {
-    const HEAD = check_giscus();
+  function pjax_beaudar() {
+    const HEAD = check_beaudar();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+
     const script = document.createElement('script');
-    script.setAttribute('src', 'https://giscus.app/client.js');
-    Object.keys(cfg).forEach(k=>{
-      if (k != "theme") {
-        script.setAttribute('data-'+k, cfg[k]);
-      }
-    })
-    script.setAttribute('data-theme', volantis.giscus.Theme);
+    let issuenumber = "";
+    if (issuenumber) {
+      script.setAttribute('issue-number', issuenumber);
+    } else {
+      script.setAttribute('issue-term', "pathname");
+    }
+    script.setAttribute('src', 'https://beaudar.lipk.org/client.js');
+    script.setAttribute('repo', 'Kekwy/kekwy.github.io');
+    script.setAttribute('input-position', 'top');
+    script.setAttribute('branch', 'issue');
+    script.setAttribute('comment-order', 'desc');
+    script.setAttribute('label', '✨💬✨');
+    script.setAttribute('theme', volantis.beaudar.Theme);
     script.setAttribute('crossorigin', "anonymous");
     HEAD.appendChild(script);
   }
 
-  function dark_giscus() {
-    const HEAD = check_giscus();
+  function dark_beaudar() {
+    const HEAD = check_beaudar();
     if (!HEAD) return;
 
     const message = {
-      setConfig: {
-        theme: volantis.giscus.Theme
-      }
+      type: 'set-theme',
+      theme: volantis.beaudar.Theme
     };
-    const giscusIframe = document.querySelector('iframe.giscus-frame');
-    giscusIframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+    const beaudarIframe = document.querySelector('iframe');
+    beaudarIframe.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
   }
-  pjax_giscus();
-  volantis.pjax.push(pjax_giscus);
-  volantis.dark.push(dark_giscus);
+
+  function check_beaudar_style() {
+    // Beaudar 会往 HEAD 的首节点追加样式元素，而这个追加没有添加判断
+    // 所以 Pjax 下会多次添加样式文件，略微麻烦。
+    const checkStyle = document.querySelector('head').firstElementChild;
+    if(checkStyle.innerText.includes('beaudar')) checkStyle.remove();
+  }
+
+  pjax_beaudar();
+  volantis.pjax.push(check_beaudar_style);
+  volantis.pjax.push(pjax_beaudar);
+  volantis.dark.push(dark_beaudar);
 </script>
 
     
