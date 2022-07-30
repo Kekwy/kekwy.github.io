@@ -825,7 +825,7 @@ button {
 }
 @font-face {
   font-family: 'UbuntuMono';
-  src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
+  src: url("/media/fonts/msyh.ttc");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;

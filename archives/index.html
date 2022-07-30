@@ -25,9 +25,10 @@
   <!-- Custom Files headBegin begin-->
   
   <!-- Custom Files headBegin end-->
+    <link rel="shortcut icon" type='image/x-icon' href="/media/images/logo.png">
   <link rel="preload" href="/css/style.9715bc73.css" as="style">
   <link rel="preload" href="/media/fonts/YouShe.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-<link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/media/fonts/msyh.ttc" as="font" type="font/ttc" crossorigin="anonymous">
 
   <!-- feed -->
   <!-- 页面元数据 -->
@@ -874,7 +875,7 @@ button {
 }
 @font-face {
   font-family: 'UbuntuMono';
-  src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
+  src: url("/media/fonts/msyh.ttc");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -1796,9 +1797,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.9715bc73.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1659165372798),
+    lastupdate: new Date(1659199322809),
     sidebar: {
-      for_page: ["blogger","about","music","webinfo","lastupdate"],
+      for_page: ["blogger","about","webinfo","music"],
       for_post: ["toc","music","lastupdate"],
       webinfo: {
         lastupd: {
@@ -2539,42 +2540,49 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-home">
-              <p>首页</p>
+              <i class='fa-solid fa-house-chimney fa-fw'></i><p>首页</p>
             </a>
           
-            <a href="/faqs/"
+            <a href="/recordings/"
               
               
-              active-action="action-faqs">
-              <p>动态</p>
+              active-action="action-recordings">
+              <i class='fa-solid fa-star fa-fw'></i><p>动态</p>
             </a>
           
-            <a href="/examples/"
+            <a href="/categories/"
               
               
-              active-action="action-examples">
-              <p>文章</p>
-            </a>
-          
-            <a href="/contributors/"
-              
-              
-              active-action="action-contributors">
-              <p>归档</p>
+              active-action="action-categories">
+              <i class='fa-solid fa-pen-nib fa-fw'></i><p>文章</p>
             </a>
           
             <a href="/archives/"
               
               
               active-action="action-archives">
-              <p>社区</p>
+              <i class='fa-solid fa-file-zipper fa-fw'></i><p>归档</p>
             </a>
           
-            <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
+            <a href="/comments/"
               
               
-              active-action="action-https:githubcomvolantis-xhexo-theme-volantis">
-              <p>友链</p>
+              active-action="action-comments">
+              <i class='fa-solid fa-comments fa-fw'></i><p>留言</p>
+            </a>
+          
+            <a href="/friends/"
+              
+              
+              active-action="action-friends">
+              <i class='fa-solid fa-link fa-fw'></i><p>友链</p>
+            </a>
+          
+            <a href="/about/"
+              
+              
+              active-action="action-about">
+              <i class='fa fa-book fa-fw'></i><p>关于</p>
             </a>
           
         
@@ -2607,7 +2615,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 								<a class="meta" href="/Java-notes/">
 									<time>07-30</time>
 									
-										Java_notes
+										从继承开始的Java应用笔记（一）
 									
 									
 									
@@ -2731,41 +2739,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-
-  <section class='widget desktop  music'>
-    
-
-    <div class='content'>
-      
-
-  
-    <meting-js
-      theme='#1BCDFC'
-      autoplay='true'
-      volume='0.7'
-      loop='all'
-      order='list'
-      fixed='false'
-      list-max-height='320px'
-      server='netease'
-      type='playlist'
-      id='7563405608'
-      list-folded='true'>
-    </meting-js>
-  
-
-
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
 <section class="widget desktop pjax">
   
   <header>
@@ -2801,7 +2774,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2022-07-30 日</div>
+          <div id="last-update-show">2022-07-31 日</div>
         </div>
       
     </div>
@@ -2816,19 +2789,32 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
 
-<section class="widget desktop mobile pjax">
+  <section class='widget desktop  music'>
+    
+
+    <div class='content'>
+      
+
   
-  <header>
-    
-      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
-    
-  </header>
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='false'
+      list-max-height='320px'
+      server='netease'
+      type='playlist'
+      id='7563405608'
+      list-folded='true'>
+    </meting-js>
+  
 
 
-  <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/Java-notes/"><div class="item"><time>2022-07-30</time></div><span>Java_notes</span></a></li><li><a class="widget-last" href="/hello-world/"><div class="item"><time>2022-07-27</time></div><span>Hello World</span></a></li></ul>
-  </div>
-</section>
+    </div>
+  </section>
+
 
     
   
@@ -2840,6 +2826,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
