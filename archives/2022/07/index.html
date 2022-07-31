@@ -1798,7 +1798,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.9715bc73.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1659267785553),
+    lastupdate: new Date(1659273792118),
     sidebar: {
       for_page: ["blogger","about","webinfo","music"],
       for_post: ["toc","music","lastupdate"],
@@ -2706,8 +2706,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
-          
-        
       
     
     
@@ -2715,7 +2713,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.kekwy.com/Java-notes/">
+  <link itemprop="mainEntityOfPage" href="http://blog.kekwy.com/javaNotes.1/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="铃的杂货铺">
   </span>
@@ -2726,15 +2724,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
   
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
+    <div class='headimg-div'>
+      <a class='headimg-a' href="/javaNotes.1/">
+        <img itemprop="image" class='headimg' alt="继承、Object类（未完）" src='/media/javaNotes.1/headimg.png'/>
+      </a>
+    </div>
   
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/Java-notes/"  itemprop="url">
-        从继承开始的Java应用笔记（一）
+      <a href="/javaNotes.1/"  itemprop="url">
+        继承、Object类（未完）
       </a>
     </h2>
   
@@ -2783,63 +2783,7 @@ protected
       </div>
       
         <div>
-          <a class='readmore' href='/Java-notes/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.kekwy.com/hello-world/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="铃的杂货铺">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="铃的杂货铺">
-    <meta itemprop="description" content="喜欢夏天的无名之辈">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/hello-world/"  itemprop="url">
-        Hello World
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-07-27T00:02:49+08:00">2022-07-27</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/hello-world/' itemprop="url">
+          <a class='readmore' href='/javaNotes.1/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2893,8 +2837,8 @@ Qu...
       <div class="social-wrapper">
         
           
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
+            <a href="mailto:keekkewy@qq.com"
+              class="social fa-solid fa-envelope flat-btn"
               target="_blank"
               rel="external nofollow noopener noreferrer">
               
@@ -2965,7 +2909,7 @@ Qu...
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>2 篇</div>
+          <div>1 篇</div>
         </div>
       
 
@@ -3488,65 +3432,51 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
       <script>
-  volantis.layoutHelper("comments",`<div id="beaudar_container"></div>`)
+  volantis.layoutHelper("comments",`<div id="giscus_container"></div>`)
 
-  volantis.beaudar = {};
+  volantis.giscus = {};
 
-  function check_beaudar() {
+  function check_giscus() {
     if (volantis.dark.mode === "dark") {
-      volantis.beaudar.Theme = 'github-dark';
+      volantis.giscus.Theme = 'dark';
     } else {
-      volantis.beaudar.Theme = 'github-light';
+      volantis.giscus.Theme = 'light';
     }
 
-    return document.getElementById("beaudar_container");
+    return document.getElementById("giscus_container");
   }
 
-  function pjax_beaudar() {
-    const HEAD = check_beaudar();
+  function pjax_giscus() {
+    const HEAD = check_giscus();
     if (!HEAD) return;
-
+    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"},"repo":"Kekwy/kekwy.github.io","repo-id":"R_kgDOHuILVw","category":"General","category-id":"DIC_kwDOHuILV84CQhGf","mapping":"pathname","strict":"0","reactions-enabled":"1","emit-metadata":"0","input-position":"top","loading":"lazy","crossorigin":"anonymous","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
-    let issuenumber = "";
-    if (issuenumber) {
-      script.setAttribute('issue-number', issuenumber);
-    } else {
-      script.setAttribute('issue-term', "pathname");
-    }
-    script.setAttribute('src', 'https://beaudar.lipk.org/client.js');
-    script.setAttribute('repo', 'Kekwy/kekwy.github.io');
-    script.setAttribute('input-position', 'top');
-    script.setAttribute('branch', 'issues');
-    script.setAttribute('comment-order', 'desc');
-    script.setAttribute('label', '✨💬✨');
-    script.setAttribute('theme', volantis.beaudar.Theme);
+    script.setAttribute('src', 'https://giscus.app/client.js');
+    Object.keys(cfg).forEach(k=>{
+      if (k != "theme") {
+        script.setAttribute('data-'+k, cfg[k]);
+      }
+    })
+    script.setAttribute('data-theme', volantis.giscus.Theme);
     script.setAttribute('crossorigin', "anonymous");
     HEAD.appendChild(script);
   }
 
-  function dark_beaudar() {
-    const HEAD = check_beaudar();
+  function dark_giscus() {
+    const HEAD = check_giscus();
     if (!HEAD) return;
 
     const message = {
-      type: 'set-theme',
-      theme: volantis.beaudar.Theme
+      setConfig: {
+        theme: volantis.giscus.Theme
+      }
     };
-    const beaudarIframe = document.querySelector('iframe');
-    beaudarIframe.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
+    const giscusIframe = document.querySelector('iframe.giscus-frame');
+    giscusIframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
   }
-
-  function check_beaudar_style() {
-    // Beaudar 会往 HEAD 的首节点追加样式元素，而这个追加没有添加判断
-    // 所以 Pjax 下会多次添加样式文件，略微麻烦。
-    const checkStyle = document.querySelector('head').firstElementChild;
-    if(checkStyle.innerText.includes('beaudar')) checkStyle.remove();
-  }
-
-  pjax_beaudar();
-  volantis.pjax.push(check_beaudar_style);
-  volantis.pjax.push(pjax_beaudar);
-  volantis.dark.push(dark_beaudar);
+  pjax_giscus();
+  volantis.pjax.push(pjax_giscus);
+  volantis.dark.push(dark_giscus);
 </script>
 
     

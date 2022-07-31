@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://blog.kekwy.com/java-notes/"/>
+  <link rel="canonical" href="http://blog.kekwy.com/javanotes.1/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,19 +33,19 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="铃的杂货铺" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>从继承开始的Java应用笔记（一） - 铃的杂货铺</title>
+  <title>继承、Object类（未完） - 铃的杂货铺</title>
   <meta name="keywords" content="Java,学习,编程,null">
   <meta desc name="description" content="喜欢夏天的无名之辈 - 可弟WZ铃号机 - 铃的杂货铺">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="从继承开始的Java应用笔记（一）">
-<meta property="og:url" content="http://blog.kekwy.com/Java-notes/index.html">
+<meta property="og:title" content="继承、Object类（未完）">
+<meta property="og:url" content="http://blog.kekwy.com/javaNotes.1/index.html">
 <meta property="og:site_name" content="铃的杂货铺">
 <meta property="og:description" content="1. 类的继承权限修饰关键字：    private 外部以及子类均不可访问    public 外部以及子类均不可访问   protected 外部不可，但子类可以访问    定义类时通过关键字extends + 父类类名定义继承； 子类方法中可以通过super关键字调用父类方法（受权限修饰关键字约束）； 子类中可以通过定义与父类某一方法名称相同的函数实现对父类中该方法的重写（覆盖）； 重写时如">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://blog.kekwy.com/media/images/logo.png">
 <meta property="article:published_time" content="2022-07-30T07:00:16.000Z">
-<meta property="article:modified_time" content="2022-07-30T15:02:32.323Z">
+<meta property="article:modified_time" content="2022-07-31T13:01:54.923Z">
 <meta property="article:author" content="可弟WZ铃号机">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="学习">
@@ -1803,7 +1803,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.9715bc73.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1659267785553),
+    lastupdate: new Date(1659273792118),
     sidebar: {
       for_page: ["blogger","about","webinfo","music"],
       for_post: ["toc","music","lastupdate"],
@@ -2704,7 +2704,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://blog.kekwy.com/Java-notes/">
+  <link itemprop="mainEntityOfPage" href="http://blog.kekwy.com/javaNotes.1/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="铃的杂货铺">
   </span>
@@ -2716,16 +2716,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
+    <div class='headimg-div'>
+      <a class='headimg-a'>
+        <img itemprop="image" class='headimg' src='/media/javaNotes.1/headimg.png'/>
+      </a>
+    </div>
   
   <div class="article-meta" id="top">
     
     
     
       <h1 class="title" itemprop="name headline">
-        从继承开始的Java应用笔记（一）
+        继承、Object类（未完）
       </h1>
       <div class='new-meta-box'>
         
@@ -2774,7 +2776,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="lc-pv" data-title="从继承开始的Java应用笔记（一）" data-path="/Java-notes/">
+      <span id="lc-pv" data-title="继承、Object类（未完）" data-path="/javaNotes.1/">
         <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       </span>
       
@@ -2796,7 +2798,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h3 id="1-类的继承"><a href="#1-类的继承" class="headerlink" title="1. 类的继承"></a>1. 类的继承</h3><p>权限修饰关键字：</p>
+    <div class="story post-story"><h2 id="1-类的继承"><a href="#1-类的继承" class="headerlink" title="1. 类的继承"></a>1. 类的继承</h2><p>权限修饰关键字：</p>
 <table>
 <thead>
 <tr>
@@ -2826,9 +2828,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-<h3 id="2-Object类"><a href="#2-Object类" class="headerlink" title="2. Object类"></a>2. Object类</h3><p>参考资料《Java从入门到精通（第5版）》</p>
+</div><div class="story post-story"><h2 id="2-Object类"><a href="#2-Object类" class="headerlink" title="2. Object类"></a>2. Object类</h2><p>参考资料《Java从入门到精通（第5版）》</p>
 
-
+</div>
   </div>
   
   
@@ -2852,10 +2854,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-07-30T23:02:32+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-07-31T21:01:54+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年7月30日</p>
+    <p>更新于：2022年7月31日</p>
   </a>
 </div>
 
@@ -2878,7 +2880,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.kekwy.com/Java-notes/&title=从继承开始的Java应用笔记（一） - 铃的杂货铺&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.kekwy.com/javaNotes.1/&title=继承、Object类（未完） - 铃的杂货铺&summary="
           
           >
           
@@ -2890,7 +2892,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.kekwy.com/Java-notes/&title=从继承开始的Java应用笔记（一） - 铃的杂货铺&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.kekwy.com/javaNotes.1/&title=继承、Object类（未完） - 铃的杂货铺&summary="
           
           >
           
@@ -2902,7 +2904,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.kekwy.com/Java-notes/&title=从继承开始的Java应用笔记（一） - 铃的杂货铺&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.kekwy.com/javaNotes.1/&title=继承、Object类（未完） - 铃的杂货铺&summary="
           
           >
           
@@ -2933,16 +2935,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
   
-    <div class="prev-next">
-      
-      
-        <a class='next' href='/hello-world/'>
-          <p class='title'>Hello World<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...</p>
-        </a>
-      
-    </div>
-  
   <!-- Custom Files postEnd begin-->
   
   <!-- Custom Files postEnd end-->
@@ -2954,7 +2946,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/Java-notes/index.html#comments">
+      <meta itemprop="discussionUrl" content="/javaNotes.1/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -3029,7 +3021,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/Java-notes/"><div class="item"><time>2022-07-30</time><span>从继承开始的Java应用笔记</span></div><span>从继承开始的Java应用笔记（一）</span></a></li><li><a class="widget-last" href="/hello-world/"><div class="item"><time>2022-07-27</time></div><span>Hello World</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/javaNotes.1/"><div class="item"><time>2022-07-31</time><span>从继承开始的Java应用笔记</span></div><span>继承、Object类（未完）</span></a></li></ul>
   </div>
 </section>
 
@@ -3053,7 +3045,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%B1%BB%E7%9A%84%E7%BB%A7%E6%89%BF"><span class="toc-text">1. 类的继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Object%E7%B1%BB"><span class="toc-text">2. Object类</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%B1%BB%E7%9A%84%E7%BB%A7%E6%89%BF"><span class="toc-text">1. 类的继承</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Object%E7%B1%BB"><span class="toc-text">2. Object类</span></a></li></ol>
     </div>
   </section>
 
@@ -3522,65 +3514,51 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
       <script>
-  volantis.layoutHelper("comments",`<div id="beaudar_container"></div>`)
+  volantis.layoutHelper("comments",`<div id="giscus_container"></div>`)
 
-  volantis.beaudar = {};
+  volantis.giscus = {};
 
-  function check_beaudar() {
+  function check_giscus() {
     if (volantis.dark.mode === "dark") {
-      volantis.beaudar.Theme = 'github-dark';
+      volantis.giscus.Theme = 'dark';
     } else {
-      volantis.beaudar.Theme = 'github-light';
+      volantis.giscus.Theme = 'light';
     }
 
-    return document.getElementById("beaudar_container");
+    return document.getElementById("giscus_container");
   }
 
-  function pjax_beaudar() {
-    const HEAD = check_beaudar();
+  function pjax_giscus() {
+    const HEAD = check_giscus();
     if (!HEAD) return;
-
+    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"},"repo":"Kekwy/kekwy.github.io","repo-id":"R_kgDOHuILVw","category":"General","category-id":"DIC_kwDOHuILV84CQhGf","mapping":"pathname","strict":"0","reactions-enabled":"1","emit-metadata":"0","input-position":"top","loading":"lazy","crossorigin":"anonymous","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
-    let issuenumber = "";
-    if (issuenumber) {
-      script.setAttribute('issue-number', issuenumber);
-    } else {
-      script.setAttribute('issue-term', "pathname");
-    }
-    script.setAttribute('src', 'https://beaudar.lipk.org/client.js');
-    script.setAttribute('repo', 'Kekwy/kekwy.github.io');
-    script.setAttribute('input-position', 'top');
-    script.setAttribute('branch', 'issues');
-    script.setAttribute('comment-order', 'desc');
-    script.setAttribute('label', '✨💬✨');
-    script.setAttribute('theme', volantis.beaudar.Theme);
+    script.setAttribute('src', 'https://giscus.app/client.js');
+    Object.keys(cfg).forEach(k=>{
+      if (k != "theme") {
+        script.setAttribute('data-'+k, cfg[k]);
+      }
+    })
+    script.setAttribute('data-theme', volantis.giscus.Theme);
     script.setAttribute('crossorigin', "anonymous");
     HEAD.appendChild(script);
   }
 
-  function dark_beaudar() {
-    const HEAD = check_beaudar();
+  function dark_giscus() {
+    const HEAD = check_giscus();
     if (!HEAD) return;
 
     const message = {
-      type: 'set-theme',
-      theme: volantis.beaudar.Theme
+      setConfig: {
+        theme: volantis.giscus.Theme
+      }
     };
-    const beaudarIframe = document.querySelector('iframe');
-    beaudarIframe.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
+    const giscusIframe = document.querySelector('iframe.giscus-frame');
+    giscusIframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
   }
-
-  function check_beaudar_style() {
-    // Beaudar 会往 HEAD 的首节点追加样式元素，而这个追加没有添加判断
-    // 所以 Pjax 下会多次添加样式文件，略微麻烦。
-    const checkStyle = document.querySelector('head').firstElementChild;
-    if(checkStyle.innerText.includes('beaudar')) checkStyle.remove();
-  }
-
-  pjax_beaudar();
-  volantis.pjax.push(check_beaudar_style);
-  volantis.pjax.push(pjax_beaudar);
-  volantis.dark.push(dark_beaudar);
+  pjax_giscus();
+  volantis.pjax.push(pjax_giscus);
+  volantis.dark.push(dark_giscus);
 </script>
 
     
@@ -4171,7 +4149,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/从继承开始的Java应用笔记/","name":"从继承开始的Java应用笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/Java-notes/","name":"从继承开始的Java应用笔记（一）"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"从继承开始的Java应用笔记（一）","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/Java-notes/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/Java-notes/","wordCount":0,"datePublished":"2022-07-30T07:00:16.000Z","dateModified":"2022-07-30T15:02:32.323Z","articleSection":"从继承开始的Java应用笔记","keywords":"Java,学习,编程","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/从继承开始的Java应用笔记/","name":"从继承开始的Java应用笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/javaNotes.1/","name":"继承、Object类（未完）"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"继承、Object类（未完）","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/javaNotes.1/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/javaNotes.1/","wordCount":0,"datePublished":"2022-07-30T07:00:16.000Z","dateModified":"2022-07-31T13:01:54.923Z","articleSection":"从继承开始的Java应用笔记","keywords":"Java,学习,编程","image":{"@type":"ImageObject","url":"/media/javaNotes.1/headimg.png","width":1024,"height":768}}]</script>
 
 
 

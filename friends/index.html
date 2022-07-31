@@ -37,13 +37,13 @@
   <meta name="keywords" content="null">
   <meta desc name="description" content="喜欢夏天的无名之辈 - 可弟WZ铃号机 - 铃的杂货铺">
   <meta property="og:type" content="website">
-<meta property="og:title" content="我的朋友�?">
+<meta property="og:title" content="大伙儿">
 <meta property="og:url" content="http://blog.kekwy.com/friends/index.html">
 <meta property="og:site_name" content="铃的杂货铺">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://blog.kekwy.com/media/images/logo.png">
 <meta property="article:published_time" content="2022-07-30T15:17:01.000Z">
-<meta property="article:modified_time" content="2022-07-31T11:25:55.062Z">
+<meta property="article:modified_time" content="2022-07-31T13:04:48.714Z">
 <meta property="article:author" content="可弟WZ铃号机">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://blog.kekwy.com/media/images/logo.png">
@@ -1798,7 +1798,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.9715bc73.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1659267785553),
+    lastupdate: new Date(1659273792118),
     sidebar: {
       for_page: ["blogger","about","webinfo","music"],
       for_post: ["toc","music","lastupdate"],
@@ -2712,7 +2712,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        我的朋友�?
+        大伙儿
       </h1>
       <div class='new-meta-box'>
         
@@ -2827,8 +2827,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div class="social-wrapper">
         
           
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
+            <a href="mailto:keekkewy@qq.com"
+              class="social fa-solid fa-envelope flat-btn"
               target="_blank"
               rel="external nofollow noopener noreferrer">
               
@@ -2896,7 +2896,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/Java-notes/"><div class="item"><time>2022-07-30</time><span>从继承开始的Java应用笔记</span></div><span>从继承开始的Java应用笔记（一）</span></a></li><li><a class="widget-last" href="/hello-world/"><div class="item"><time>2022-07-27</time></div><span>Hello World</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/javaNotes.1/"><div class="item"><time>2022-07-31</time><span>从继承开始的Java应用笔记</span></div><span>继承、Object类（未完）</span></a></li></ul>
   </div>
 </section>
 
@@ -3395,65 +3395,51 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
       <script>
-  volantis.layoutHelper("comments",`<div id="beaudar_container"></div>`)
+  volantis.layoutHelper("comments",`<div id="giscus_container"></div>`)
 
-  volantis.beaudar = {};
+  volantis.giscus = {};
 
-  function check_beaudar() {
+  function check_giscus() {
     if (volantis.dark.mode === "dark") {
-      volantis.beaudar.Theme = 'github-dark';
+      volantis.giscus.Theme = 'dark';
     } else {
-      volantis.beaudar.Theme = 'github-light';
+      volantis.giscus.Theme = 'light';
     }
 
-    return document.getElementById("beaudar_container");
+    return document.getElementById("giscus_container");
   }
 
-  function pjax_beaudar() {
-    const HEAD = check_beaudar();
+  function pjax_giscus() {
+    const HEAD = check_giscus();
     if (!HEAD) return;
-
+    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"},"repo":"Kekwy/kekwy.github.io","repo-id":"R_kgDOHuILVw","category":"General","category-id":"DIC_kwDOHuILV84CQhGf","mapping":"pathname","strict":"0","reactions-enabled":"1","emit-metadata":"0","input-position":"top","loading":"lazy","crossorigin":"anonymous","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
-    let issuenumber = "";
-    if (issuenumber) {
-      script.setAttribute('issue-number', issuenumber);
-    } else {
-      script.setAttribute('issue-term', "pathname");
-    }
-    script.setAttribute('src', 'https://beaudar.lipk.org/client.js');
-    script.setAttribute('repo', 'Kekwy/kekwy.github.io');
-    script.setAttribute('input-position', 'top');
-    script.setAttribute('branch', 'issues');
-    script.setAttribute('comment-order', 'desc');
-    script.setAttribute('label', '✨💬✨');
-    script.setAttribute('theme', volantis.beaudar.Theme);
+    script.setAttribute('src', 'https://giscus.app/client.js');
+    Object.keys(cfg).forEach(k=>{
+      if (k != "theme") {
+        script.setAttribute('data-'+k, cfg[k]);
+      }
+    })
+    script.setAttribute('data-theme', volantis.giscus.Theme);
     script.setAttribute('crossorigin', "anonymous");
     HEAD.appendChild(script);
   }
 
-  function dark_beaudar() {
-    const HEAD = check_beaudar();
+  function dark_giscus() {
+    const HEAD = check_giscus();
     if (!HEAD) return;
 
     const message = {
-      type: 'set-theme',
-      theme: volantis.beaudar.Theme
+      setConfig: {
+        theme: volantis.giscus.Theme
+      }
     };
-    const beaudarIframe = document.querySelector('iframe');
-    beaudarIframe.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
+    const giscusIframe = document.querySelector('iframe.giscus-frame');
+    giscusIframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
   }
-
-  function check_beaudar_style() {
-    // Beaudar 会往 HEAD 的首节点追加样式元素，而这个追加没有添加判断
-    // 所以 Pjax 下会多次添加样式文件，略微麻烦。
-    const checkStyle = document.querySelector('head').firstElementChild;
-    if(checkStyle.innerText.includes('beaudar')) checkStyle.remove();
-  }
-
-  pjax_beaudar();
-  volantis.pjax.push(check_beaudar_style);
-  volantis.pjax.push(pjax_beaudar);
-  volantis.dark.push(dark_beaudar);
+  pjax_giscus();
+  volantis.pjax.push(pjax_giscus);
+  volantis.dark.push(dark_giscus);
 </script>
 
     
@@ -4044,7 +4030,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"我的朋友�?","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/friends/index.html"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/friends/index.html","wordCount":0,"datePublished":"2022-07-30T15:17:01.000Z","dateModified":"2022-07-31T11:25:55.062Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"大伙儿","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/friends/index.html"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/friends/index.html","wordCount":0,"datePublished":"2022-07-30T15:17:01.000Z","dateModified":"2022-07-31T13:04:48.714Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
