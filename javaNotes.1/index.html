@@ -33,19 +33,19 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="铃的杂货铺" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>继承、Object类（未完） - 铃的杂货铺</title>
+  <title>接口、继承与多态 - 铃的杂货铺</title>
   <meta name="keywords" content="Java,学习,编程,null">
   <meta desc name="description" content="喜欢夏天的无名之辈 - 可弟WZ铃号机 - 铃的杂货铺">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="继承、Object类（未完）">
+<meta property="og:title" content="接口、继承与多态">
 <meta property="og:url" content="http://blog.kekwy.com/javaNotes.1/index.html">
 <meta property="og:site_name" content="铃的杂货铺">
-<meta property="og:description" content="1. 类的继承权限修饰关键字：    private 外部以及子类均不可访问    public 外部以及子类均不可访问   protected 外部不可，但子类可以访问    定义类时通过关键字extends + 父类类名定义继承； 子类方法中可以通过super关键字调用父类方法（受权限修饰关键字约束）； 子类中可以通过定义与父类某一方法名称相同的函数实现对父类中该方法的重写（覆盖）； 重写时如">
+<meta property="og:description" content="I. 类的继承权限修饰关键字：    private 外部以及子类均不可访问    public 外部以及子类均不可访问   protected 外部不可，但子类可以访问    定义类时通过关键字extends + 父类类名定义继承； 子类方法中可以通过super关键字调用父类方法（受权限修饰关键字约束）； 子类中可以通过定义与父类某一方法名称相同的函数实现对父类中该方法的重写（覆盖）； 重写时如">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://blog.kekwy.com/media/images/logo.png">
 <meta property="article:published_time" content="2022-07-30T07:00:16.000Z">
-<meta property="article:modified_time" content="2022-07-31T13:01:54.923Z">
+<meta property="article:modified_time" content="2022-08-01T07:01:16.121Z">
 <meta property="article:author" content="可弟WZ铃号机">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="学习">
@@ -1803,7 +1803,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.9715bc73.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1659274070959),
+    lastupdate: new Date(1659337608282),
     sidebar: {
       for_page: ["blogger","about","webinfo","music"],
       for_post: ["toc","music","lastupdate"],
@@ -2727,7 +2727,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        继承、Object类（未完）
+        接口、继承与多态
       </h1>
       <div class='new-meta-box'>
         
@@ -2776,7 +2776,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="lc-pv" data-title="继承、Object类（未完）" data-path="/javaNotes.1/">
+      <span id="lc-pv" data-title="接口、继承与多态" data-path="/javaNotes.1/">
         <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       </span>
       
@@ -2798,7 +2798,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <div class="story post-story"><h2 id="1-类的继承"><a href="#1-类的继承" class="headerlink" title="1. 类的继承"></a>1. 类的继承</h2><p>权限修饰关键字：</p>
+    <div class="story post-story"><h2 id="I-类的继承"><a href="#I-类的继承" class="headerlink" title="I. 类的继承"></a>I. 类的继承</h2><p>权限修饰关键字：</p>
 <table>
 <thead>
 <tr>
@@ -2828,7 +2828,43 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-</div><div class="story post-story"><h2 id="2-Object类"><a href="#2-Object类" class="headerlink" title="2. Object类"></a>2. Object类</h2><p>参考资料《Java从入门到精通（第5版）》</p>
+</div><div class="story post-story"><h2 id="II-Object类"><a href="#II-Object类" class="headerlink" title="II. Object类"></a>II. Object类</h2><ol>
+<li><p><code>Objcect</code> 类是所有Java类的父类。</p>
+<p>tips：<code>Object</code> 类中的 <code>getClass()</code> 、<code>notify()</code> 、<code>notifyAll()</code> 、<code>wait()</code> 等方法不能在子类中重写。（被定义为final类型）</p>
+</li>
+<li><p><code>Object</code> 类中的重要方法：</p>
+<ul>
+<li><p><code>getClass()</code>：返回对象执行时的Class实例。<em>（Unity的getObejct）</em></p>
+</li>
+<li><p><code>toString()</code>：将一个对象返回为字符串，一般需要根据需要<strong>在子类中重写</strong>.</p>
+<p>tips：将对象打印时将自动调用该方法。</p>
+</li>
+<li><p><code>equals()</code>：默认使用“&#x3D;&#x3D;”运算符根据对象的引用（地址）判断是否相等。故一般需要<strong>按需重写</strong>。</p>
+</li>
+</ul>
+</li>
+</ol>
+</div><div class="story post-story"><h2 id="III-对象类型的转换"><a href="#III-对象类型的转换" class="headerlink" title="III. 对象类型的转换"></a>III. 对象类型的转换</h2><ol>
+<li><p>向上转型：将子类对象视为父类对象。由具体到抽象，总是安全的。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Quadrangle</span> <span class="variable">obj</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Patallelogram</span>(); <span class="comment">// 平行四边形是四边形的子类</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>向下转型：将父类对象转换为子类对象，必须通过强制类型转换，且必须保证当前父类对象是目标子类对象的实例。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Quadrangle</span> <span class="variable">p</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Patallelogram</span>();</span><br><span class="line"><span class="type">Patallelogram</span> <span class="variable">q</span> <span class="operator">=</span> (Patallelogram)p;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</div><div class="story post-story"><h2 id="IV-使用instanceof操作符判断对象类型"><a href="#IV-使用instanceof操作符判断对象类型" class="headerlink" title="IV. 使用instanceof操作符判断对象类型"></a>IV. 使用instanceof操作符判断对象类型</h2><p>可用于实现向下转换时对父类对象实例类型的判断。</p>
+<p>语法格式：（返回值为布尔型）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">myobject <span class="keyword">instanceof</span> ExampleClass;</span><br><span class="line"><span class="comment">// myobject对象是否为ExampleClass类的实例</span></span><br></pre></td></tr></table></figure>
+
+
+
+</div><div class="story post-story"><h2 id="V-方法的重载"><a href="#V-方法的重载" class="headerlink" title="V. 方法的重载"></a>V. 方法的重载</h2><p>同过定义同名方法但参数不完全相同的方式实现方法的重载，但单单返回值不同不能实现重载。</p>
+<p>编译器利用方法名、方法各参数类型和参数的个数以及参数的顺序来确定类中的方法是否唯一。</p>
+<p>不定长参数也可以参与实现重载：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span>... a)</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+</div><div class="story post-story"><h2 id="VI-多态"><a href="#VI-多态" class="headerlink" title="VI. 多态"></a>VI. 多态</h2><p>参考资料《Java从入门到精通（第5版）》</p>
 
 </div>
   </div>
@@ -2854,10 +2890,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-07-31T21:01:54+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-01T15:01:16+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年7月31日</p>
+    <p>更新于：2022年8月1日</p>
   </a>
 </div>
 
@@ -2880,7 +2916,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.kekwy.com/javaNotes.1/&title=继承、Object类（未完） - 铃的杂货铺&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.kekwy.com/javaNotes.1/&title=接口、继承与多态 - 铃的杂货铺&summary="
           
           >
           
@@ -2892,7 +2928,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.kekwy.com/javaNotes.1/&title=继承、Object类（未完） - 铃的杂货铺&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.kekwy.com/javaNotes.1/&title=接口、继承与多态 - 铃的杂货铺&summary="
           
           >
           
@@ -2904,7 +2940,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.kekwy.com/javaNotes.1/&title=继承、Object类（未完） - 铃的杂货铺&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.kekwy.com/javaNotes.1/&title=接口、继承与多态 - 铃的杂货铺&summary="
           
           >
           
@@ -3021,7 +3057,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/javaNotes.1/"><div class="item"><time>2022-07-31</time><span>从继承开始的Java应用笔记</span></div><span>继承、Object类（未完）</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/javaNotes.1/"><div class="item"><time>2022-08-01</time><span>从继承开始的Java应用笔记</span></div><span>接口、继承与多态</span></a></li></ul>
   </div>
 </section>
 
@@ -3045,7 +3081,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%B1%BB%E7%9A%84%E7%BB%A7%E6%89%BF"><span class="toc-text">1. 类的继承</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Object%E7%B1%BB"><span class="toc-text">2. Object类</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#I-%E7%B1%BB%E7%9A%84%E7%BB%A7%E6%89%BF"><span class="toc-text">I. 类的继承</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#II-Object%E7%B1%BB"><span class="toc-text">II. Object类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#III-%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="toc-text">III. 对象类型的转换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IV-%E4%BD%BF%E7%94%A8instanceof%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%88%A4%E6%96%AD%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B"><span class="toc-text">IV. 使用instanceof操作符判断对象类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#V-%E6%96%B9%E6%B3%95%E7%9A%84%E9%87%8D%E8%BD%BD"><span class="toc-text">V. 方法的重载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VI-%E5%A4%9A%E6%80%81"><span class="toc-text">VI. 多态</span></a></li></ol>
     </div>
   </section>
 
@@ -4149,7 +4185,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/从继承开始的Java应用笔记/","name":"从继承开始的Java应用笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/javaNotes.1/","name":"继承、Object类（未完）"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"继承、Object类（未完）","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/javaNotes.1/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/javaNotes.1/","wordCount":0,"datePublished":"2022-07-30T07:00:16.000Z","dateModified":"2022-07-31T13:01:54.923Z","articleSection":"从继承开始的Java应用笔记","keywords":"Java,学习,编程","image":{"@type":"ImageObject","url":"/media/javaNotes.1/headimg.png","width":1024,"height":768}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/从继承开始的Java应用笔记/","name":"从继承开始的Java应用笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/javaNotes.1/","name":"接口、继承与多态"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"接口、继承与多态","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/javaNotes.1/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/javaNotes.1/","wordCount":0,"datePublished":"2022-07-30T07:00:16.000Z","dateModified":"2022-08-01T07:01:16.121Z","articleSection":"从继承开始的Java应用笔记","keywords":"Java,学习,编程","image":{"@type":"ImageObject","url":"/media/javaNotes.1/headimg.png","width":1024,"height":768}}]</script>
 
 
 
