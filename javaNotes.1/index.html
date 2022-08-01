@@ -45,7 +45,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://blog.kekwy.com/media/images/logo.png">
 <meta property="article:published_time" content="2022-07-30T07:00:16.000Z">
-<meta property="article:modified_time" content="2022-08-01T07:01:16.121Z">
+<meta property="article:modified_time" content="2022-08-01T11:49:05.990Z">
 <meta property="article:author" content="可弟WZ铃号机">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="学习">
@@ -1803,7 +1803,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.9715bc73.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1659337608282),
+    lastupdate: new Date(1659354563478),
     sidebar: {
       for_page: ["blogger","about","webinfo","music"],
       for_post: ["toc","music","lastupdate"],
@@ -2864,7 +2864,32 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-</div><div class="story post-story"><h2 id="VI-多态"><a href="#VI-多态" class="headerlink" title="VI. 多态"></a>VI. 多态</h2><p>参考资料《Java从入门到精通（第5版）》</p>
+</div><div class="story post-story"><h2 id="VI-抽象类与接口"><a href="#VI-抽象类与接口" class="headerlink" title="VI. 抽象类与接口"></a>VI. 抽象类与接口</h2><ol>
+<li><p>抽象类</p>
+<p>tips：</p>
+<ul>
+<li>抽象类不能实例化对象；</li>
+<li>只有抽象类才可以承载抽象方法；</li>
+<li>抽象方法在其子类中必须被重写。</li>
+</ul>
+<p>定义抽象类的关键字 <code>abstract</code> 。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">	<span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title function_">testAbstract</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>接口：</p>
+<p>定义接口使用关键字 <code>interface</code> ：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> interface 接口名 &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">doSomething</span><span class="params">()</span>;</span><br><span class="line">    <span class="comment">// 自动虚方法，可以省略abstract关键字</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>public：接口可以像类一样被权限修饰符修饰，但public关键字仅限于接口在与其同名的文件中被定义时；</li>
+<li>接口中的方法必须被定义为public或abstract形式。</li>
+</ul>
+<p>实现接口使用关键字 <code>implements</code> ：</p>
+<p>tips：Java中不许出现多继承但是可以通过同一个类实现许多接口来实现多继承，一个接口也可以继承另一个接口。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#<span class="number">1</span></span><br><span class="line">class 类名 implements 接口<span class="number">1</span>，接口<span class="number">2</span>, ... &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#<span class="number">2</span></span><br><span class="line"><span class="keyword">interface</span> <span class="title class_">intf1</span> &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">interface</span> <span class="title class_">intf2</span> <span class="keyword">extends</span> <span class="title class_">intf1</span> &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>参考资料《Java从入门到精通（第5版）》</p>
 
 </div>
   </div>
@@ -2890,7 +2915,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-01T15:01:16+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-01T19:49:05+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2022年8月1日</p>
@@ -3081,7 +3106,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#I-%E7%B1%BB%E7%9A%84%E7%BB%A7%E6%89%BF"><span class="toc-text">I. 类的继承</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#II-Object%E7%B1%BB"><span class="toc-text">II. Object类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#III-%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="toc-text">III. 对象类型的转换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IV-%E4%BD%BF%E7%94%A8instanceof%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%88%A4%E6%96%AD%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B"><span class="toc-text">IV. 使用instanceof操作符判断对象类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#V-%E6%96%B9%E6%B3%95%E7%9A%84%E9%87%8D%E8%BD%BD"><span class="toc-text">V. 方法的重载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VI-%E5%A4%9A%E6%80%81"><span class="toc-text">VI. 多态</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#I-%E7%B1%BB%E7%9A%84%E7%BB%A7%E6%89%BF"><span class="toc-text">I. 类的继承</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#II-Object%E7%B1%BB"><span class="toc-text">II. Object类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#III-%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="toc-text">III. 对象类型的转换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IV-%E4%BD%BF%E7%94%A8instanceof%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%88%A4%E6%96%AD%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B"><span class="toc-text">IV. 使用instanceof操作符判断对象类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#V-%E6%96%B9%E6%B3%95%E7%9A%84%E9%87%8D%E8%BD%BD"><span class="toc-text">V. 方法的重载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VI-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E4%B8%8E%E6%8E%A5%E5%8F%A3"><span class="toc-text">VI. 抽象类与接口</span></a></li></ol>
     </div>
   </section>
 
@@ -4185,7 +4210,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/从继承开始的Java应用笔记/","name":"从继承开始的Java应用笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/javaNotes.1/","name":"接口、继承与多态"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"接口、继承与多态","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/javaNotes.1/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/javaNotes.1/","wordCount":0,"datePublished":"2022-07-30T07:00:16.000Z","dateModified":"2022-08-01T07:01:16.121Z","articleSection":"从继承开始的Java应用笔记","keywords":"Java,学习,编程","image":{"@type":"ImageObject","url":"/media/javaNotes.1/headimg.png","width":1024,"height":768}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/从继承开始的Java应用笔记/","name":"从继承开始的Java应用笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/javaNotes.1/","name":"接口、继承与多态"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"接口、继承与多态","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/javaNotes.1/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/javaNotes.1/","wordCount":0,"datePublished":"2022-07-30T07:00:16.000Z","dateModified":"2022-08-01T11:49:05.990Z","articleSection":"从继承开始的Java应用笔记","keywords":"Java,学习,编程","image":{"@type":"ImageObject","url":"/media/javaNotes.1/headimg.png","width":1024,"height":768}}]</script>
 
 
 
