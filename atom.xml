@@ -6,7 +6,7 @@
   <link href="http://blog.kekwy.com/atom.xml" rel="self"/>
   
   <link href="http://blog.kekwy.com/"/>
-  <updated>2022-08-01T11:51:42.005Z</updated>
+  <updated>2022-08-01T13:40:34.403Z</updated>
   <id>http://blog.kekwy.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>类的高级特性</title>
+    <link href="http://blog.kekwy.com/javaNotes-2/"/>
+    <id>http://blog.kekwy.com/javaNotes-2/</id>
+    <published>2022-08-01T11:50:13.000Z</published>
+    <updated>2022-08-01T13:40:34.403Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="从继承开始的Java应用笔记" scheme="http://blog.kekwy.com/categories/%E4%BB%8E%E7%BB%A7%E6%89%BF%E5%BC%80%E5%A7%8B%E7%9A%84Java%E5%BA%94%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Java" scheme="http://blog.kekwy.com/tags/Java/"/>
+    
+    <category term="学习" scheme="http://blog.kekwy.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="编程" scheme="http://blog.kekwy.com/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>接口、继承与多态</title>
