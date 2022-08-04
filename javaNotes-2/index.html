@@ -33,19 +33,19 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="铃的杂货铺" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>类的高级特性 - 铃的杂货铺</title>
+  <title>类的高级特性与异常处理 - 铃的杂货铺</title>
   <meta name="keywords" content="Java,学习,编程,null">
   <meta desc name="description" content="喜欢夏天的无名之辈 - 可弟WZ铃号机 - 铃的杂货铺">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="类的高级特性">
+<meta property="og:title" content="类的高级特性与异常处理">
 <meta property="og:url" content="http://blog.kekwy.com/javaNotes-2/index.html">
 <meta property="og:site_name" content="铃的杂货铺">
 <meta property="og:description" content="I. Java类包 类名冲突： 任何类与接口都需要隶属于某一个类包。可以通过将两个同名类定义在不同的类包中解决类名冲突的问题。  类的路径：  同一个类包中的类相互访问时，可以不指定包名； 同一个包中的类不必存放在同一个位置，只要将CLASSPATH分别指向这两个位置即可。   指定包与导入包： 将 package 表达式作为文件中的第一行非注释代码，java包名必须全部使用小写字母。 1pack">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://blog.kekwy.com/media/images/logo.png">
 <meta property="article:published_time" content="2022-08-01T11:50:13.000Z">
-<meta property="article:modified_time" content="2022-08-03T15:33:12.644Z">
+<meta property="article:modified_time" content="2022-08-04T04:25:52.401Z">
 <meta property="article:author" content="可弟WZ铃号机">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="学习">
@@ -1803,7 +1803,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.9715bc73.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1659540834058),
+    lastupdate: new Date(1659587163162),
     sidebar: {
       for_page: ["blogger","about","webinfo","music"],
       for_post: ["toc","music","lastupdate"],
@@ -2727,7 +2727,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        类的高级特性
+        类的高级特性与异常处理
       </h1>
       <div class='new-meta-box'>
         
@@ -2776,7 +2776,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="lc-pv" data-title="类的高级特性" data-path="/javaNotes-2/">
+      <span id="lc-pv" data-title="类的高级特性与异常处理" data-path="/javaNotes-2/">
         <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       </span>
       
@@ -2880,13 +2880,124 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
+</div><div class="story post-story"><h2 id="IV-异常捕捉"><a href="#IV-异常捕捉" class="headerlink" title="IV. 异常捕捉"></a>IV. 异常捕捉</h2><ol>
+<li><p><code>try-catch</code> 语句：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="comment">// 可以发生异常的代码块</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">catch</span>(Exception e)&#123;</span><br><span class="line">    <span class="comment">// 异常处理</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>finally</code> 语句：</p>
+<p>无论 <code>try</code> 中的语句是否发生异常，都会执行 <code>finally</code> 中的代码块。<code>finally</code> 不被执行的情况：</p>
+<ul>
+<li><code>finally</code> 中发生异常；</li>
+<li>之前的代码中使用 <code>System.exit()</code> 退出程序；</li>
+<li>程序所在的线程死亡；</li>
+<li>关闭CPU。</li>
+</ul>
+</li>
+</ol>
+<p>tips：</p>
+<ul>
+<li><code>Exception</code> 是 <code>try</code> 代码传递给 <code>catch</code> 代码块的变量类型；</li>
+<li>异常处理常用的函数：<ul>
+<li><code>getMessage()</code> ：输出错误性质；</li>
+<li><code>toString()</code> ：给出异常的类型与性质；</li>
+<li><code>printStackTrace()</code> ：指出异常的类型、性质、栈层次及出现在程序中的位置。</li>
+</ul>
+</li>
+</ul>
+</div><div class="story post-story"><h2 id="V-Java常见异常"><a href="#V-Java常见异常" class="headerlink" title="V. Java常见异常"></a>V. Java常见异常</h2><table>
+<thead>
+<tr>
+<th>异常类</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ClassCastException</td>
+<td>类型转换异常</td>
+</tr>
+<tr>
+<td>ClassNotFoundException</td>
+<td>未找到相应类异常</td>
+</tr>
+<tr>
+<td>ArithmeticException</td>
+<td>算术异常</td>
+</tr>
+<tr>
+<td>ArrayIndexOutOfBoundsException</td>
+<td>数组下标越界异常</td>
+</tr>
+<tr>
+<td>ArrayStoreException</td>
+<td>数组中包含不兼容的值抛出的异常</td>
+</tr>
+<tr>
+<td>SQLException</td>
+<td>操作数据库异常</td>
+</tr>
+<tr>
+<td>NullPointerException</td>
+<td>空指针异常</td>
+</tr>
+<tr>
+<td>NoSuchFieldException</td>
+<td>字段未找到异常</td>
+</tr>
+<tr>
+<td>NoSuchMethodException</td>
+<td>方法未找到异常</td>
+</tr>
+<tr>
+<td>NumberFormatException</td>
+<td>字符串转换为数字抛出的异常</td>
+</tr>
+<tr>
+<td>NegativeArraySizeException</td>
+<td>数组元素个数为负数抛出的异常</td>
+</tr>
+<tr>
+<td>StringIndexOutOfBoundsException</td>
+<td>字符串索引超出范围抛出的异常</td>
+</tr>
+<tr>
+<td>IOException</td>
+<td>输入输出异常</td>
+</tr>
+<tr>
+<td>IllegalAccessException</td>
+<td>不允许访问某类异常</td>
+</tr>
+<tr>
+<td>InstantiationException</td>
+<td>当应用程序试图使用 <code>Class</code> 类中的 <code>new Instance()</code> 方法创建一个类的实例，而指定的类的对象无法被实例化时，抛出该异常</td>
+</tr>
+<tr>
+<td>EOFException</td>
+<td>文件已结束异常</td>
+</tr>
+<tr>
+<td>FileNotFoundException</td>
+<td>文件未找到异常</td>
+</tr>
+</tbody></table>
+</div><div class="story post-story"><h2 id="VI-自定义异常"><a href="#VI-自定义异常" class="headerlink" title="VI. 自定义异常"></a>VI. 自定义异常</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyException</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyException</span><span class="params">(String ErrorMessage)</span> &#123; <span class="comment">// ErrorMessage为要输出的错误信息</span></span><br><span class="line">        <span class="built_in">super</span>(ErrorMessage);				  <span class="comment">// 调用父类构造方法</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
-
-
-
-<p>考资料《Java从入门到精通（第5版）》</p>
+</div><div class="story post-story"><h2 id="VII-抛出异常"><a href="#VII-抛出异常" class="headerlink" title="VII. 抛出异常"></a>VII. 抛出异常</h2><ol>
+<li><p>throws：用于指定方法可能抛出的异常，用于将异常向上抛出。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">pop</span><span class="params">()</span> <span class="keyword">throws</span> 异常<span class="number">1</span>, 异常<span class="number">2</span>, ... &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>throw：</p>
+<ul>
+<li>程序在执行到 <code>throw</code> 语句时立即终止，其后语句都不执行；</li>
+<li><code>throw</code> 抛出的异常必须使用 <code>try-catch</code> 语句快捕捉；</li>
+<li>若想向上级抛出异常，必须在抛出异常的方法中使用 <code>throws</code>。</li>
+<li></li>
+</ul>
+</li>
+</ol>
+<p>参考资料《Java从入门到精通（第5版）》</p>
 
 </div>
   </div>
@@ -2912,10 +3023,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-03T23:33:12+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-04T12:25:52+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年8月3日</p>
+    <p>更新于：2022年8月4日</p>
   </a>
 </div>
 
@@ -2938,7 +3049,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.kekwy.com/javaNotes-2/&title=类的高级特性 - 铃的杂货铺&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.kekwy.com/javaNotes-2/&title=类的高级特性与异常处理 - 铃的杂货铺&summary="
           
           >
           
@@ -2950,7 +3061,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.kekwy.com/javaNotes-2/&title=类的高级特性 - 铃的杂货铺&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.kekwy.com/javaNotes-2/&title=类的高级特性与异常处理 - 铃的杂货铺&summary="
           
           >
           
@@ -2962,7 +3073,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.kekwy.com/javaNotes-2/&title=类的高级特性 - 铃的杂货铺&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.kekwy.com/javaNotes-2/&title=类的高级特性与异常处理 - 铃的杂货铺&summary="
           
           >
           
@@ -3107,7 +3218,7 @@ protected
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/javaNotes-2/"><div class="item"><time>2022-08-03</time><span>从继承开始的Java应用笔记</span></div><span>类的高级特性</span></a></li><li><a class="widget-last" href="/javaNotes-1/"><div class="item"><time>2022-08-01</time><span>从继承开始的Java应用笔记</span></div><span>接口、继承与多态</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/javaNotes-2/"><div class="item"><time>2022-08-04</time><span>从继承开始的Java应用笔记</span></div><span>类的高级特性与异常处理</span></a></li><li><a class="widget-last" href="/javaNotes-1/"><div class="item"><time>2022-08-01</time><span>从继承开始的Java应用笔记</span></div><span>接口、继承与多态</span></a></li></ul>
   </div>
 </section>
 
@@ -3131,7 +3242,7 @@ protected
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#I-Java%E7%B1%BB%E5%8C%85"><span class="toc-text">I. Java类包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#II-final-%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-text">II. final 关键字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#III-%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-text">III. 内部类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%90%E5%91%98%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-text">成员内部类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B1%80%E9%83%A8%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-text">局部内部类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%BF%E5%90%8D%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-text">匿名内部类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-text">静态内部类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E9%83%A8%E7%B1%BB%E7%9A%84%E7%BB%A7%E6%89%BF"><span class="toc-text">内部类的继承</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#I-Java%E7%B1%BB%E5%8C%85"><span class="toc-text">I. Java类包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#II-final-%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-text">II. final 关键字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#III-%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-text">III. 内部类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%90%E5%91%98%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-text">成员内部类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B1%80%E9%83%A8%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-text">局部内部类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%BF%E5%90%8D%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-text">匿名内部类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-text">静态内部类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E9%83%A8%E7%B1%BB%E7%9A%84%E7%BB%A7%E6%89%BF"><span class="toc-text">内部类的继承</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IV-%E5%BC%82%E5%B8%B8%E6%8D%95%E6%8D%89"><span class="toc-text">IV. 异常捕捉</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#V-Java%E5%B8%B8%E8%A7%81%E5%BC%82%E5%B8%B8"><span class="toc-text">V. Java常见异常</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VI-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8"><span class="toc-text">VI. 自定义异常</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VII-%E6%8A%9B%E5%87%BA%E5%BC%82%E5%B8%B8"><span class="toc-text">VII. 抛出异常</span></a></li></ol>
     </div>
   </section>
 
@@ -4235,7 +4346,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/从继承开始的Java应用笔记/","name":"从继承开始的Java应用笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/javaNotes-2/","name":"类的高级特性"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"类的高级特性","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/javaNotes-2/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/javaNotes-2/","wordCount":0,"datePublished":"2022-08-01T11:50:13.000Z","dateModified":"2022-08-03T15:33:12.644Z","articleSection":"从继承开始的Java应用笔记","keywords":"Java,学习,编程","image":{"@type":"ImageObject","url":"/media/javaNotes-2/headimg.png","width":1024,"height":768}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/从继承开始的Java应用笔记/","name":"从继承开始的Java应用笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/javaNotes-2/","name":"类的高级特性与异常处理"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"类的高级特性与异常处理","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/javaNotes-2/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/javaNotes-2/","wordCount":0,"datePublished":"2022-08-01T11:50:13.000Z","dateModified":"2022-08-04T04:25:52.401Z","articleSection":"从继承开始的Java应用笔记","keywords":"Java,学习,编程","image":{"@type":"ImageObject","url":"/media/javaNotes-2/headimg.png","width":1024,"height":768}}]</script>
 
 
 
