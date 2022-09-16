@@ -33,19 +33,19 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="铃的杂货铺" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>集合类与I/O - 铃的杂货铺</title>
+  <title>集合类与I/O操作 - 铃的杂货铺</title>
   <meta name="keywords" content="Java,学习,编程,null">
   <meta desc name="description" content="喜欢夏天的无名之辈 - 可弟WZ铃号机 - 铃的杂货铺">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="集合类与I&#x2F;O">
+<meta property="og:title" content="集合类与I&#x2F;O操作">
 <meta property="og:url" content="http://blog.kekwy.com/javaNotes-3/index.html">
 <meta property="og:site_name" content="铃的杂货铺">
 <meta property="og:description" content="数组的长度是固定的，集合的长度是可变的。 I. Collection接口 collection 接口时层次结构中的根接口，构成其的单位称为元素。  常用方法：    方法 功能描述    add(E e) 将指定的对象添加到该集合中   remove(Object o) 将指定的对象从该集合中移除   isEmpty() 返回boolean值，用于判断当前集合是否为空   iterator() 返">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://blog.kekwy.com/media/images/logo.png">
 <meta property="article:published_time" content="2022-08-05T00:15:26.000Z">
-<meta property="article:modified_time" content="2022-08-06T08:27:55.741Z">
+<meta property="article:modified_time" content="2022-08-06T15:39:01.691Z">
 <meta property="article:author" content="可弟WZ铃号机">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="学习">
@@ -1803,7 +1803,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.9715bc73.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1659774680508),
+    lastupdate: new Date(1663326444238),
     sidebar: {
       for_page: ["blogger","about","webinfo","music"],
       for_post: ["toc","music","lastupdate"],
@@ -2727,7 +2727,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        集合类与I/O
+        集合类与I/O操作
       </h1>
       <div class='new-meta-box'>
         
@@ -2776,7 +2776,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="lc-pv" data-title="集合类与I/O" data-path="/javaNotes-3/">
+      <span id="lc-pv" data-title="集合类与I/O操作" data-path="/javaNotes-3/">
         <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       </span>
       
@@ -2936,7 +2936,86 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>TreeMap：可排序，不允许null键。</p>
 </li>
 </ul>
+<hr>
+</div><div class="story post-story"><h2 id="V-File类"><a href="#V-File类" class="headerlink" title="V. File类"></a>V. File类</h2><h3 id="File构造方法"><a href="#File构造方法" class="headerlink" title="File构造方法"></a>File构造方法</h3><ul>
+<li><p>通过完整路径名（包含文件名）：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">File(String pathname);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>通过父路径与子路径（包含文件名）：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">File(String parent, String child);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>通过父路径对象与子路径（包含文件名）：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">File(File f, String pathname);</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="文件创建与删除"><a href="#文件创建与删除" class="headerlink" title="文件创建与删除"></a>文件创建与删除</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">File</span> <span class="variable">file</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(<span class="string">&quot;word.txt&quot;</span>);</span><br><span class="line">file.delete();						<span class="comment">//删除文件</span></span><br><span class="line">file.creatNewFile();				<span class="comment">//创建文件</span></span><br></pre></td></tr></table></figure>
 
+
+
+<h3 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>返回值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>getName()</td>
+<td>String</td>
+<td>获取文件名称</td>
+</tr>
+<tr>
+<td>canRead()</td>
+<td>boolean</td>
+<td>判断文件是否为可读的</td>
+</tr>
+<tr>
+<td>canWrite()</td>
+<td>boolean</td>
+<td>判断文件是否可被写入</td>
+</tr>
+<tr>
+<td>exits()</td>
+<td>boolean</td>
+<td>判断文件是否存在</td>
+</tr>
+<tr>
+<td>length()</td>
+<td>long</td>
+<td>获取文件的长度（以字节为单位）</td>
+</tr>
+<tr>
+<td>getAbsolutePath()</td>
+<td>String</td>
+<td>获取文件的绝对路径</td>
+</tr>
+<tr>
+<td>getParent()</td>
+<td>String</td>
+<td>获取文件的父路径</td>
+</tr>
+<tr>
+<td>isFile()</td>
+<td>boolean</td>
+<td>判断文件是否存在</td>
+</tr>
+<tr>
+<td>isDirectory</td>
+<td>boolean</td>
+<td>判断文件是否为一个目录</td>
+</tr>
+<tr>
+<td>isHidden()</td>
+<td>boolean</td>
+<td>判断文件是否为隐藏文件</td>
+</tr>
+<tr>
+<td>lastModified()</td>
+<td>long</td>
+<td>获取文件最后修改时间</td>
+</tr>
+</tbody></table>
+</div><div class="story post-story"><h2 id=""><a href="#" class="headerlink" title=""></a></h2>
 </div>
   </div>
   
@@ -2961,7 +3040,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-06T16:27:55+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-06T23:39:01+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2022年8月6日</p>
@@ -2987,7 +3066,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.kekwy.com/javaNotes-3/&title=集合类与I/O - 铃的杂货铺&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.kekwy.com/javaNotes-3/&title=集合类与I/O操作 - 铃的杂货铺&summary="
           
           >
           
@@ -2999,7 +3078,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.kekwy.com/javaNotes-3/&title=集合类与I/O - 铃的杂货铺&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.kekwy.com/javaNotes-3/&title=集合类与I/O操作 - 铃的杂货铺&summary="
           
           >
           
@@ -3011,7 +3090,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.kekwy.com/javaNotes-3/&title=集合类与I/O - 铃的杂货铺&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.kekwy.com/javaNotes-3/&title=集合类与I/O操作 - 铃的杂货铺&summary="
           
           >
           
@@ -3145,7 +3224,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/javaNotes-3/"><div class="item"><time>2022-08-06</time><span>从继承开始的Java应用笔记</span></div><span>集合类与I/O</span></a></li><li><a class="widget-last" href="/javaNotes-2/"><div class="item"><time>2022-08-04</time><span>从继承开始的Java应用笔记</span></div><span>类的高级特性与异常处理</span></a></li><li><a class="widget-last" href="/javaNotes-1/"><div class="item"><time>2022-08-01</time><span>从继承开始的Java应用笔记</span></div><span>接口、继承与多态</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/javaNotes-3/"><div class="item"><time>2022-08-06</time><span>从继承开始的Java应用笔记</span></div><span>集合类与I/O操作</span></a></li><li><a class="widget-last" href="/javaNotes-2/"><div class="item"><time>2022-08-04</time><span>从继承开始的Java应用笔记</span></div><span>类的高级特性与异常处理</span></a></li><li><a class="widget-last" href="/javaNotes-1/"><div class="item"><time>2022-08-01</time><span>从继承开始的Java应用笔记</span></div><span>接口、继承与多态</span></a></li></ul>
   </div>
 </section>
 
@@ -3169,7 +3248,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#I-Collection%E6%8E%A5%E5%8F%A3"><span class="toc-text">I. Collection接口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#II-List%E9%9B%86%E5%90%88"><span class="toc-text">II. List集合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#III-Set%E9%9B%86%E5%90%88"><span class="toc-text">III. Set集合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IV-Map%E9%9B%86%E5%90%88"><span class="toc-text">IV. Map集合</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#I-Collection%E6%8E%A5%E5%8F%A3"><span class="toc-text">I. Collection接口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#II-List%E9%9B%86%E5%90%88"><span class="toc-text">II. List集合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#III-Set%E9%9B%86%E5%90%88"><span class="toc-text">III. Set集合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IV-Map%E9%9B%86%E5%90%88"><span class="toc-text">IV. Map集合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#V-File%E7%B1%BB"><span class="toc-text">V. File类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#File%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95"><span class="toc-text">File构造方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%88%A0%E9%99%A4"><span class="toc-text">文件创建与删除</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">常用方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text"></span></a></li></ol>
     </div>
   </section>
 
@@ -4273,7 +4352,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/从继承开始的Java应用笔记/","name":"从继承开始的Java应用笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/javaNotes-3/","name":"集合类与I/O"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"集合类与I/O","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/javaNotes-3/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/javaNotes-3/","wordCount":0,"datePublished":"2022-08-05T00:15:26.000Z","dateModified":"2022-08-06T08:27:55.741Z","articleSection":"从继承开始的Java应用笔记","keywords":"Java,学习,编程","image":{"@type":"ImageObject","url":"/media/javaNotes-3/headimg.png","width":1024,"height":768}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/从继承开始的Java应用笔记/","name":"从继承开始的Java应用笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/javaNotes-3/","name":"集合类与I/O操作"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"集合类与I/O操作","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/javaNotes-3/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/javaNotes-3/","wordCount":0,"datePublished":"2022-08-05T00:15:26.000Z","dateModified":"2022-08-06T15:39:01.691Z","articleSection":"从继承开始的Java应用笔记","keywords":"Java,学习,编程","image":{"@type":"ImageObject","url":"/media/javaNotes-3/headimg.png","width":1024,"height":768}}]</script>
 
 
 
