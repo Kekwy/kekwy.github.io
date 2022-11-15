@@ -41,11 +41,11 @@
 <meta property="og:title" content="【iOS开发】iw01 科学计算器">
 <meta property="og:url" content="http://blog.kekwy.com/iw1-calculator/index.html">
 <meta property="og:site_name" content="铃的杂货铺">
-<meta property="og:description" content="iOS assignment 1: Calculator App. 姓名：可弟WZ Kekwy 邮箱：&amp;#107;&amp;#x65;&amp;#x65;&amp;#107;&amp;#107;&amp;#x65;&amp;#119;&amp;#121;&amp;#x40;&amp;#113;&amp;#x71;&amp;#x2e;&amp;#99;&amp;#111;&amp;#x6d;  用 swift &amp; storyboard 实现一个计算器APP（包括科学计算器）。 项目仓库：https:">
+<meta property="og:description" content="iOS assignment 1: Calculator App. 姓名：可弟WZ Kekwy 邮箱：&amp;#107;&amp;#x65;&amp;#101;&amp;#107;&amp;#107;&amp;#101;&amp;#x77;&amp;#x79;&amp;#x40;&amp;#113;&amp;#x71;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#x6d;  用 swift &amp; storyboard 实现一个计算器APP（包括科学计算器）。 项目仓库：https">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://blog.kekwy.com/media/images/logo.png">
 <meta property="article:published_time" content="2022-10-19T08:01:44.000Z">
-<meta property="article:modified_time" content="2022-11-10T08:26:55.080Z">
+<meta property="article:modified_time" content="2022-11-10T11:21:33.769Z">
 <meta property="article:author" content="可弟WZ铃号机">
 <meta property="article:tag" content="iOS">
 <meta property="article:tag" content="Xcode">
@@ -1803,7 +1803,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.b7612088.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1668068905736),
+    lastupdate: new Date(1668530870401),
     sidebar: {
       for_page: ["blogger","about","webinfo","music"],
       for_post: ["toc","music","lastupdate"],
@@ -2799,38 +2799,24 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <blockquote>
 <p>iOS assignment 1: Calculator App.</p>
 <p>姓名：可弟WZ Kekwy</p>
-<p>邮箱：<a href="mailto:&#107;&#x65;&#x65;&#107;&#107;&#x65;&#119;&#121;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;">&#107;&#x65;&#x65;&#107;&#107;&#x65;&#119;&#121;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;</a></p>
+<p>邮箱：<a href="mailto:&#107;&#x65;&#101;&#107;&#107;&#101;&#x77;&#x79;&#x40;&#113;&#x71;&#x2e;&#x63;&#x6f;&#x6d;">&#107;&#x65;&#101;&#107;&#107;&#101;&#x77;&#x79;&#x40;&#113;&#x71;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
 </blockquote>
 <p>用 swift &amp; storyboard 实现一个计算器APP（包括科学计算器）。</p>
 <p><strong>项目仓库：</strong><a target="_blank" rel="noopener" href="https://github.com/Kekwy/iwork1-Calculator">https://github.com/Kekwy/iwork1-Calculator</a></p>
 <div class="story post-story"><h2 id="一、界面设计"><a href="#一、界面设计" class="headerlink" title="一、界面设计"></a>一、界面设计</h2><blockquote>
 <p>静态布局</p>
 </blockquote>
-<body style="text-align:left">
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/iw1_tmp" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/iw1_tmp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=175 />
-</body>
-
-
 <h3 id="0x0-StackView"><a href="#0x0-StackView" class="headerlink" title="0x0. StackView"></a>0x0. StackView</h3><p>大体分为上下两部分，上方为计算器的显示区域，下方为按键区域。</p>
 <body style="text-align:left">
-<div>
-  <img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221021214843621.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221021214843621.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=300 />
-  <img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221021215053626.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221021215053626.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=175 />
-</div>
+
+<p><img src="https://blog.kekwy.com/media/iw1/image-20221021214843621.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/iw1/image-20221021214843621.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=300 /><img src="https://assets.kekwy.com/images/image-20221021215053626.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221021215053626.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=175 /></p>
 </body>
 
 
 <h4 id="0x00-主要约束"><a href="#0x00-主要约束" class="headerlink" title="0x00. 主要约束"></a>0x00. 主要约束</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Stack View.top = Safe Area.top</span><br><span class="line">Stack View.leading = Safe Area.leading</span><br><span class="line">Safe Area.bottom = Stack View.bottom</span><br><span class="line">Safe Area.trailing = Stack View.trailing</span><br></pre></td></tr></table></figure>
 
 <p>使当前控件大小与父控件大小一致，即填充满父控件。</p>
-<h4 id="0x01-显示区域（View1）"><a href="#0x01-显示区域（View1）" class="headerlink" title="0x01. 显示区域（View1）"></a>0x01. 显示区域（View1）</h4><body style="text-align:left">
-<div>
-  <img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221021220541500.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221021220541500.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=225 />
-  <img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022103357516.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022103357516.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=175 />
-</div>
-</body>
-
-
+<h4 id="0x01-显示区域（View1）"><a href="#0x01-显示区域（View1）" class="headerlink" title="0x01. 显示区域（View1）"></a>0x01. 显示区域（View1）</h4><p><img src="https://assets.kekwy.com/images/image-20221021220541500.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221021220541500.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=225 /><img src="https://assets.kekwy.com/images/image-20221022103357516.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221022103357516.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=175 /></p>
 <ul>
 <li><p>View：为该区域提供指定的背景色。</p>
 </li>
@@ -2842,19 +2828,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </li>
 <li><p>主要约束：纵向填充，左右边缘与 View 始终存在10的间隔。</p>
 <body style="text-align:left">
-<div>
-  <img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022104342889.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022104342889.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=225 />
-  <img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022103847478.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022103847478.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=250 />
-</div>
+
+<p><img src="https://blog.kekwy.com/media/iw1/image-20221022104342889.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/iw1/image-20221022104342889.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=225 /><img src="https://blog.kekwy.com/media/iw1/image-20221022103847478.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/iw1/image-20221022103847478.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=250 /></p>
 </body></li>
 </ul>
 </li>
 </ul>
 <h4 id="0x02-按键区域（View2）"><a href="#0x02-按键区域（View2）" class="headerlink" title="0x02. 按键区域（View2）"></a>0x02. 按键区域（View2）</h4><body style="text-align:left">
-<div>
-  <img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022105450619.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022105450619.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=300 />
-  <img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022110946864.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022110946864.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=225 />
-</div>
+
+<p><img src="https://blog.kekwy.com/media/iw1/image-20221022105450619.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/iw1/image-20221022105450619.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=300 /><img src="https://blog.kekwy.com/media/iw1/image-20221022110946864.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/iw1/image-20221022110946864.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=225 /></p>
 </body>
 
 
@@ -2867,10 +2849,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </li>
 </ul>
 <h5 id="0x020-常规按键区"><a href="#0x020-常规按键区" class="headerlink" title="0x020. 常规按键区"></a>0x020. 常规按键区</h5><body style="text-align:left">
-<div>
-  <img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022125626690.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022125626690.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=225 />
-  <img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022111946572.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022111946572.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=225 />
-</div>
+
+<p><img src="https://blog.kekwy.com/media/iw1/image-20221022125626690.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/iw1/image-20221022125626690.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=225 /><img src="https://blog.kekwy.com/media/iw1/image-20221022111946572.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/iw1/image-20221022111946572.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=225 /></p>
 </body>
 
 
@@ -2882,19 +2862,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>通过约束将其高度设置为整个按键区高度的66%。</li>
 </ol>
 <body style="text-align:left">
-<div>
-  <img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022130536389.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022130536389.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=225 />
-  <img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022130320506.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022130320506.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=175 />
-</div>
+
+<p> <img src="https://blog.kekwy.com/media/iw1/image-20221022130536389.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/iw1/image-20221022130536389.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=225 /> <img src="https://blog.kekwy.com/media/iw1/image-20221022130320506.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/iw1/image-20221022130320506.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=175 /> </p>
 </body>
+
 </li>
 <li><p><strong>后两行按钮</strong>：</p>
 <p>包含两个 <code>Stack View</code>。位于左侧的 <code>Stack View</code> 管理左侧六个按钮，排成两行，其中每行三个按钮又由一个 <code>Stack View</code> 管理；位于右侧的 <code>Stack View</code> 中只有作为等于操作键的一个按钮，可使其高度约为其他按钮的两倍。</p>
 <body style="text-align:left">
-<div>
-  <img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022130925213.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022130925213.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=225 />
-  <img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022131554415.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022131554415.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=175 />
-</div>
+<img src="https://blog.kekwy.com/media/iw1/image-20221022130925213.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/iw1/image-20221022130925213.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=225 /><img src="https://blog.kekwy.com/media/iw1/image-20221022131554415.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/iw1/image-20221022131554415.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=175 />
 </body>
 
 
@@ -2905,7 +2881,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>在切换为科学计算器（设备横屏）时自动显示</p>
 </blockquote>
 <body style="text-align:left">
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022135217250.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022135217250.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=550 />
+<img src="https://blog.kekwy.com/media/iw1/image-20221022135217250.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/iw1/image-20221022135217250.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=550 />
 </body>
 
 
@@ -2915,7 +2891,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ul>
 <h5 id="0x022-按钮细节"><a href="#0x022-按钮细节" class="headerlink" title="0x022. 按钮细节"></a>0x022. 按钮细节</h5><p>通过设置按钮属性 <code>layer.cornerRadius</code> 设置按钮圆角的弧度。竖屏状态设置为20，横屏状态设置为40.</p>
 <h3 id="0x1-D-x2F-R-Show-Label"><a href="#0x1-D-x2F-R-Show-Label" class="headerlink" title="0x1. D&#x2F;R Show Label"></a>0x1. D&#x2F;R Show Label</h3><body style="text-align:left">
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022140840244.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221022140840244.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=550 />
+<img src="https://blog.kekwy.com/media/iw1/image-20221022140840244.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/iw1/image-20221022140840244.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=550 />
 </body>
 
 
@@ -2970,18 +2946,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </blockquote>
 <p>首先将 <code>Stack View</code> 的属性 <code>Distribution</code> 更改为 <code>Fill Proportionally</code>。</p>
 <body style="text-align:left">
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108143937299.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108143937299.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221108143937299" width=300 />
+<img src="https://blog.kekwy.com/media/iw1/image-20221108143937299.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/iw1/image-20221108143937299.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221108143937299" width=300 />
 </body>
 
 <p>选中需要布局的控件，按住 <code>command</code> 键拖到该 <code>Stack View</code> 上，</p>
 <body style="text-align:left">
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108145000732.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108145000732.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221108145000732" width=450 />
+<img src="https://blog.kekwy.com/media/iw1/image-20221108145000732.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/iw1/image-20221108145000732.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221108145000732" width=450 />
 </body>
 
 <p>选择 <code>Equal Widths</code> （若需要纵向成比例布局，则选择 <code>Equal Heights</code>）添加约束。</p>
 <p><code>Additional Buttons.width = 0.4285 × width</code> 即表示控件 <code>Additional Buttons</code> 的宽为 <code>Stack View</code> 宽度的42.85%。</p>
 <body style="text-align:left">
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108153913974.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108153913974.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221108153913974" width=350 />
+<img src="https://blog.kekwy.com/media/iw1/image-20221108153913974.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/iw1/image-20221108153913974.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221108153913974" width=350 />
 </body>
 
 
@@ -3002,7 +2978,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <h3 id="0x3-设置圆形的Button"><a href="#0x3-设置圆形的Button" class="headerlink" title="0x3. 设置圆形的Button"></a>0x3. 设置圆形的Button</h3><p>在 xcode 中为 Button 添加如下属性：</p>
 <body style="text-align:left">
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108153117616.png" class="lazyload" data-srcset="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108153117616.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221108153117616" width=320 />
+<img src="https://blog.kekwy.com/media/iw1/image-20221108153117616.png" class="lazyload" data-srcset="https://blog.kekwy.com/media/iw1/image-20221108153117616.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221108153117616" width=320 />
 </body>
 
 <p>代码实现：</p>
@@ -3036,7 +3012,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-11-10T16:26:55+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-11-10T19:21:33+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2022年11月10日</p>
@@ -3123,7 +3099,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>【渗透测试】第七周 vulnhub-Fawkes</p>
           <p class='content'>
 网络攻防实战 第七次实验
-邮箱：&#107;&#x65;&#x65;&#107;&#107;&#101;&#119;&#121;&#64;&#113;&#x71;&#46;&#x63;&#11...</p>
+邮箱：&#107;&#x65;&#x65;&#x6b;&#x6b;&#x65;&#x77;&#121;&#64;&#113;&#x71;&#46;&#99;&#x6f...</p>
         </a>
       
       
@@ -3133,7 +3109,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 第一周
 可弟WZ
 主页：blog.kekwy.com
-邮箱：&#107;&#x65;&#x65;&#x6b;&#x6b;&#101;&#119;&#x79;&#64;&#x71;&#x71;&...</p>
+邮箱：&#107;&#101;&#101;&#x6b;&#107;&#x65;&#x77;&#121;&#64;&#113;&#x71;&...</p>
         </a>
       
     </div>
@@ -4352,7 +4328,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/iOS智能应用开发/","name":"iOS智能应用开发"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/iw1-calculator/","name":"【iOS开发】iw01 科学计算器"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"【iOS开发】iw01 科学计算器","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/iw1-calculator/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/iw1-calculator/","wordCount":0,"datePublished":"2022-10-19T08:01:44.000Z","dateModified":"2022-11-10T08:26:55.080Z","articleSection":"iOS智能应用开发","keywords":"iOS,Xcode,开发","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/iOS智能应用开发/","name":"iOS智能应用开发"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/iw1-calculator/","name":"【iOS开发】iw01 科学计算器"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"【iOS开发】iw01 科学计算器","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/iw1-calculator/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/iw1-calculator/","wordCount":0,"datePublished":"2022-10-19T08:01:44.000Z","dateModified":"2022-11-10T11:21:33.769Z","articleSection":"iOS智能应用开发","keywords":"iOS,Xcode,开发","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
