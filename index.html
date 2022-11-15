@@ -1798,7 +1798,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.b7612088.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1668530870401),
+    lastupdate: new Date(1668531161410),
     sidebar: {
       for_page: ["blogger","about","webinfo","music"],
       for_post: ["toc","music","lastupdate"],
@@ -2750,15 +2750,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
   
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
+    <div class='headimg-div'>
+      <a class='headimg-a' href="/vulnhub-doubletrouble/">
+        <img itemprop="image" class='headimg' alt="【渗透测试】第九周 vulnhub-DoubleTrouble:1" src='/media/渗透测试学习笔记/kali-ascii-16x9.png'/>
+      </a>
+    </div>
   
   
     
     <h2 class="article-title"  itemprop="name headline">
       <a href="/vulnhub-doubletrouble/"  itemprop="url">
-        2022年11月16日
+        【渗透测试】第九周 vulnhub-DoubleTrouble:1
       </a>
     </h2>
   
@@ -2766,7 +2768,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         
-title: 【渗透测试】第九周 vulnhub-DoubleTrouble:1date: 2022-11-16 00:46:45layout: postauthor: Ke_DiWZtags: [Kali, 学习, 网络, 安全, Linux, vulnhub]categories: [网络攻防实战]headimg: &#x2F;media&#x2F;渗透测试学习笔记&#x2F;kali...
+网络攻防实战 第九次实验
+邮箱：https://www.vulnhub.com/entry/doubletrouble-1,743/
+2022年11月15日
+
+一、实验目的本次的靶机比较特别，在获取第一个靶机的 root 权限后会在 root 主目录下发下另一个靶机的 .ova 文件，我们还需要将其下载到宿主机，继续尝试渗透。最终取得两个靶机的 root 权限以及第二个靶机上的两个 fla...
       
     
   </div>
@@ -2774,7 +2780,15 @@ title: 【渗透测试】第九周 vulnhub-DoubleTrouble:1date: 2022-11-16 00:46
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2022-11-16T00:43:02+08:00">2022-11-16</time>
+        <time itemprop="dateCreated datePublished" datetime="2022-11-16T00:46:45+08:00">2022-11-16</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/">网络攻防实战</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/" itemprop="url"><span itemprop="name">网络攻防实战</span></a>
+            </span>
+          
         
       </div>
       
@@ -2825,11 +2839,11 @@ title: 【渗透测试】第九周 vulnhub-DoubleTrouble:1date: 2022-11-16 00:46
       
         
 网络攻防实战 第八次实验
-邮箱：&#107;&#x65;&#x65;&#107;&#x6b;&#x65;&#119;&#121;&#x40;&#x71;&#x71;&#46;&#x63;&#x6f;&#109;
+邮箱：&#x6b;&#101;&#101;&#107;&#107;&#x65;&#119;&#121;&#x40;&#x71;&#x71;&#46;&#99;&#111;&#x6d;
 2022年11月8日
 靶机连接：https://vulnhub.com/entry/evilbox-one,736/
 
-一、实验目的取得目标靶机的 root 权限并获得两个 fla...
+一、实验目的取得目标靶机的 root 权限并获得两个 flag...
       
     
   </div>
@@ -2896,11 +2910,11 @@ title: 【渗透测试】第九周 vulnhub-DoubleTrouble:1date: 2022-11-16 00:46
       
         
 网络攻防实战 第七次实验
-邮箱：&#107;&#x65;&#x65;&#x6b;&#x6b;&#x65;&#x77;&#121;&#64;&#113;&#x71;&#46;&#99;&#x6f;&#109;
+邮箱：&#107;&#101;&#x65;&#x6b;&#x6b;&#101;&#x77;&#121;&#64;&#113;&#113;&#46;&#x63;&#111;&#x6d;
 2022年11月2日
 靶机连接：https://vulnhub.com/entry/harrypotter-fawkes,686/
 
-一、实验目的取得目标靶机的 root 权限并获得三...
+一、实验目的取得目标靶机的 root 权限并获得...
       
     
   </div>
@@ -2966,10 +2980,10 @@ title: 【渗透测试】第九周 vulnhub-DoubleTrouble:1date: 2022-11-16 00:46
         
 iOS assignment 1: Calculator App.
 姓名：可弟WZ Kekwy
-邮箱：&#107;&#x65;&#101;&#107;&#107;&#101;&#x77;&#x79;&#x40;&#113;&#x71;&#x2e;&#x63;&#x6f;&#x6d;
+邮箱：&#107;&#x65;&#x65;&#x6b;&#x6b;&#101;&#x77;&#121;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#109;
 
 用 swift &amp; storyboard 实现一个计算器APP（包括科学计算器）。
-项目仓库：ht...
+项目仓库：htt...
       
     
   </div>
@@ -3038,12 +3052,12 @@ iOS assignment 1: Calculator App.
 第一周
 可弟WZ
 主页：blog.kekwy.com
-邮箱：&#107;&#101;&#101;&#x6b;&#107;&#x65;&#x77;&#121;&#64;&#113;&#x71;&#46;&#99;&#111;&#109;
+邮箱：&#107;&#x65;&#101;&#x6b;&#107;&#101;&#x77;&#121;&#64;&#x71;&#x71;&#x2e;&#99;&#x6f;&#109;
 2022年9月27日
 
 一、实验准备靶机：y0usef
 下载链接：https://www.vulnhub.com/entry/y0usef-1,624/
-攻...
+...
       
     
   </div>
