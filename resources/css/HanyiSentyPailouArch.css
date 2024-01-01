@@ -1,5 +1,5 @@
-<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>@font-face {
+@font-face {
     font-family: 'HanyiSentyPailouArch';
     font-display: swap;
-    src: url('/resources/fonts/HanyiSentyPailouArch.ttf') format("truetype");
-  }
+    src: url('../fonts/HanyiSentyPailouArch.ttf') format("truetype");
+}
