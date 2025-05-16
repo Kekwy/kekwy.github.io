@@ -1,125 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>【数据库】数据库系统概念 关系语言</title>
-    <url>/database-note2/</url>
-    <content><![CDATA[<h2 id="第-2-章-关系模型介绍"><a href="#第-2-章-关系模型介绍" class="headerlink" title="第 2 章 关系模型介绍"></a>第 2 章 关系模型介绍</h2><h3 id="2-1-关系数据库的结构"><a href="#2-1-关系数据库的结构" class="headerlink" title="2.1 关系数据库的结构"></a>2.1 关系数据库的结构</h3><p>关系数据库由表的集合构成，每张表被赋予一个唯一的名称。</p>
-<p><strong>关系</strong>：表；<strong>元组</strong>：行；<strong>属性</strong>：列。</p>
-<p><strong>关系实例</strong>：一个关系的特定实例。</p>
-<p><strong>域</strong>：关系的每个属性都存在一个允许取值的集合。</p>
-<p><strong>原子域</strong>：域中元素不可再分。</p>
-<p><strong>空值</strong>：特殊的值，表示值未知或并不存在。（尽量避免使用）</p>
-<h3 id="2-2-数据库模式"><a href="#2-2-数据库模式" class="headerlink" title="2.2 数据库模式"></a>2.2 数据库模式</h3><p><strong>数据库模式</strong>：数据库的逻辑设计；</p>
-<p><strong>数据库实例</strong>：在给定时刻数据库中数据的一个快照。</p>
-<h3 id="2-3-码"><a href="#2-3-码" class="headerlink" title="2.3 码"></a>2.3 码</h3><blockquote>
-<p>一个关系中不可以有两个元组在所有属性上取值完全相同。</p>
-</blockquote>
-<p><strong>超码</strong>：若干属性的集合，这些属性组合在一起可以唯一标识出一个元组。</p>
-<p><strong>候选码</strong>：最小超码。</p>
-<p><strong>主码</strong>：被选中作为在一个关系中区分呢不同元组的主要方式的候选码。也成为主码约束。</p>
-<blockquote>
-<p>主码应该选择其值从不变化或极少变化的属性。</p>
-</blockquote>
-<p><strong>外码约束</strong>：从 r<sub>1</sub> 关系的 A 属性集到 r<sub>2</sub> 关系的主码 B 的外码约束，表明在任何数据库实例中，r<sub>1</sub> 中每个元组对 A 的取值也必须是 r<sub>2</sub> 中某个元组对 B 的取值。</p>
-<p>A 属性集被称为从 r<sub>1</sub> 引用  r<sub>2</sub> 的外码。 r<sub>1</sub> 关系为<strong>引用关系</strong>，r<sub>2</sub> 关系为<strong>被引用关系</strong>。</p>
-<p><strong>引用完整性约束</strong>：要求引用关系中的任意元组在指定属性上出现的取值也必然出现在被引用关系中至少一个元组的指定属性上。</p>
-<blockquote>
-<p>外码约束是引用完整性约束的一个特例。</p>
-</blockquote>
-<h3 id="2-4-模式图"><a href="#2-4-模式图" class="headerlink" title="2.4 模式图"></a>2.4 模式图</h3><p><img src="https://assets.kekwy.com/images/image-20240101161218636.png" alt="image-20240101161218636"></p>
-<p>每个关系显示为一个框，关系名用灰色显示在顶部，并且在框内列出各属性。</p>
-<p>主码属性用下划线标注。外码约束用从引用关系的外码属性指向被引用关系的主码属性的箭头表示。使用双箭头表示不是外码约束的引用完整性约束。</p>
-<h3 id="2-5-关系查询语言"><a href="#2-5-关系查询语言" class="headerlink" title="2.5 关系查询语言"></a>2.5 关系查询语言</h3><p><strong>查询语言</strong>：用户用来从数据库中请求获取信息的语言。</p>
-<ul>
-<li><strong>命令式查询语言</strong>：执行特定的计算序列，更新状态变量；</li>
-<li><strong>函数式查询语言</strong>：计算被表示为函数的求值，函数没有副作用，不更新程序状态；</li>
-<li><strong>声明式查询语言</strong>：只需描述信息，而不给出获取信息的具体步骤。</li>
-</ul>
-<h3 id="2-6-关系代数"><a href="#2-6-关系代数" class="headerlink" title="2.6 关系代数"></a>2.6 关系代数</h3><p>关系代数由一组运算组成，这些运算接受一个（一元）或两个（二元）关系作为输入，并生成一个新的关系作为其结果。</p>
-<ul>
-<li><strong>选择运算</strong>：选出满足给定谓词的元组；</li>
-<li><strong>投影运算</strong>：返回其参数关系但是滤掉了特定的属性；</li>
-<li><strong>关系运算复合</strong>：关系运算的结果也是关系。关系代数运算的结果与其输入具有相同的类型，因此可以将关系代数运算复合在一起成为<strong>关系代数表达式</strong>；</li>
-<li><strong>笛卡尔积运算</strong>：有关系 r<sub>1</sub>(R<sub>1</sub>) 和 r<sub>2</sub>(R<sub>2</sub>)，则  r<sub>1</sub> X r<sub>2</sub> 就是这样一个关系 r(R)：它的模式 R 是 R<sub>1</sub> 和 R<sub>2</sub> 的拼接。关系 r 包含所偶遇这样的元组 t：对于 t 存在 r<sub>1</sub> 中的一个元组 t<sub>1</sub> 和 r<sub>2</sub> 中的一个元组 t<sub>2</sub>，满足 t 和 t<sub>1</sub> 在 R<sub>1</sub> 的属性上取值相同，并且 t 和 t<sub>2</sub> 在 R<sub>2</sub> 的属性上取值相同；</li>
-<li><strong>连接运算</strong>：本质上是从两个关系的笛卡尔积中选择符合指定谓词的元组；</li>
-<li><strong>集合运算</strong>：交集、并集、差集（两个关系必须有相同的元数，且满足相容关系）；</li>
-<li><strong>赋值运算</strong>：将一个关系代数表达式中的一部分赋值给临时的关系变量，便于编写表达式；</li>
-<li><strong>更名运算</strong>：为关系代数表达式的结果命名，可以实现对同一关系的不同次引用使用不同的名称，避免表达式歧义；</li>
-<li><strong>等价查询</strong>：使用关系代数通过不同方式编写的多种查询，当其结果相同时，则称这些查询互相等价；数据库系统中查询优化器通常根据表达式所计算的结果，选择计算该结果的高效方式，而不是严格按照关系代数中的指定步骤查询。</li>
-</ul>
-<h2 id="第-3-章-SQL-介绍"><a href="#第-3-章-SQL-介绍" class="headerlink" title="第 3 章 SQL 介绍"></a>第 3 章 SQL 介绍</h2><h3 id="3-1-SQL-查询语言概览"><a href="#3-1-SQL-查询语言概览" class="headerlink" title="3.1 SQL 查询语言概览"></a>3.1 SQL 查询语言概览</h3><p>SQL 语言有几个部分：</p>
-<ul>
-<li><strong>数据定义语言</strong> (DDL)：定义关系模式、删除关系以及修改关系模式；</li>
-<li><strong>数据操纵语言</strong> (DML)：查询信息以及在数据库中插入、删除、修改元组；</li>
-<li><strong>完整性</strong>：SQL DDL 包含定义完整性的命令；</li>
-<li><strong>视图定义</strong>：SQL DDL 包含定义视图的命令；</li>
-<li><strong>事务控制</strong>：SQL 包括定义事务的开始点和结束点的命令；</li>
-<li><strong>嵌入式 SQL 和动态 SQL</strong>：定义 SQL 语句如何嵌入通用编程语言；</li>
-<li><strong>授权</strong>：SQL DDL 包括定义对关系和视图的访问权限的命令；</li>
-</ul>
-<p>待续</p>
-<h2 id="第-4-章-中级-SQL"><a href="#第-4-章-中级-SQL" class="headerlink" title="第 4 章 中级 SQL"></a>第 4 章 中级 SQL</h2><h2 id="第-5-章-高级-SQL"><a href="#第-5-章-高级-SQL" class="headerlink" title="第 5 章 高级 SQL"></a>第 5 章 高级 SQL</h2>]]></content>
-      <categories>
-        <category>数据库系统概念</category>
-      </categories>
-      <tags>
-        <tag>数据库</tag>
-        <tag>database</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Spring Boot 集成 Flowable 并自定义数据源</title>
-    <url>/flowable-datasource/</url>
-    <content><![CDATA[<h1 id="Spring-Boot-集成-Flowable-并自定义数据源"><a href="#Spring-Boot-集成-Flowable-并自定义数据源" class="headerlink" title="Spring Boot 集成 Flowable 并自定义数据源"></a>Spring Boot 集成 Flowable 并自定义数据源</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>在使用 <code>flowable-spring-boot-starter</code> 进行 spring boot 集成 flowable 时，flowable 会使用配置文件中  <code>spring.datasource</code> 前缀下设置的数据源：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">com.zaxxer.hikari.HikariDataSource</span></span><br><span class="line">    <span class="attr">driver-class-name:</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">datasource1</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">xxxx</span></span><br><span class="line">    <span class="attr">password:</span> <span class="string">xxxx</span></span><br></pre></td></tr></table></figure>
-
-<p>而项目中的其他数据库工具，如 mybatis 等，同样也会使用此数据源。由于 flowable 相关的表结构过多，该数据源我们只希望保存与项目业务相关的表结构，故尝试使 flowable 使用其他数据源（非默认，自定义）。</p>
-<p>Spring Boot 版本：3.0.5</p>
-<p>Flowable 版本：7.0.0.M1</p>
-<p>相关依赖：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- MySQL --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-j<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>8.0.32<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">scope</span>&gt;</span>runtime<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.flowable/flowable-spring-boot-starter --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.flowable<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>flowable-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>7.0.0.M1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>首先在配置文件中添加我们自定义的数据源，前缀任意，不冲突即可：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">flowable:</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">com.zaxxer.hikari.HikariDataSource</span></span><br><span class="line">    <span class="attr">driver-class-name:</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">datasource2</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">xxxx</span></span><br><span class="line">    <span class="attr">password:</span> <span class="string">xxxx</span></span><br></pre></td></tr></table></figure>
-
-<p>定义 <code>org.flowable.common.engine.impl.EngineConfigurator</code> 接口的一个实现类，读取配置文件信息并在 <code>beforeInit</code> 方法中创建数据源。使用 @Component 注解生成 bean：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DatasourceConfigurator</span> <span class="keyword">implements</span> <span class="title class_">EngineConfigurator</span> &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Value(&quot;$&#123;flowable.datasource.url&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String url;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value(&quot;$&#123;flowable.datasource.type&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> Class&lt;? <span class="keyword">extends</span> <span class="title class_">DataSource</span>&gt; type;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value(&quot;$&#123;flowable.datasource.driver-class-name&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String driverClassName;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value(&quot;$&#123;flowable.datasource.username&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String username;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value(&quot;$&#123;flowable.datasource.password&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String password;</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">beforeInit</span><span class="params">(AbstractEngineConfiguration engineConfiguration)</span> &#123;</span><br><span class="line">        <span class="type">DataSource</span> <span class="variable">dataSource</span> <span class="operator">=</span> DataSourceBuilder.create()</span><br><span class="line">                .type(type)</span><br><span class="line">                .driverClassName(driverClassName)</span><br><span class="line">                .url(url)</span><br><span class="line">                .username(username)</span><br><span class="line">                .password(password).build();</span><br><span class="line">        engineConfiguration.setDataSource(dataSource);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">configure</span><span class="params">(AbstractEngineConfiguration engineConfiguration)</span> &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getPriority</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">600000</span>; <span class="comment">// 保证该优先级最高</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>定义一个配置类，实现接口 <code>org.flowable.spring.boot.EngineConfigurationConfigurer</code>。将 <code>datasourceConfigurator</code> 注入，在 <code>configure</code> 方法中将其加入 Flowable 引擎的上下文中。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ProcessEngineConfig</span> <span class="keyword">implements</span> <span class="title class_">EngineConfigurationConfigurer</span>&lt;SpringAppEngineConfiguration&gt; &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> DatasourceConfigurator datasourceConfigurator;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setDatasourceConfigurator</span><span class="params">(DatasourceConfigurator datasourceConfigurator)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.datasourceConfigurator = datasourceConfigurator;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">configure</span><span class="params">(SpringAppEngineConfiguration engineConfiguration)</span> &#123;</span><br><span class="line">        engineConfiguration.addConfigurator(datasourceConfigurator);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>观察日志发现我们自定义的配置成功地被 Flowable 引擎调用执行了：</p>
-<p><img src="https://assets.kekwy.com/images/image-20230426115352537.png" alt="image-20230426115352537"></p>
-<ul>
-<li>在日志中还可以看到其他五个 Flowable 自动添加的 Configurator 和各自的优先级，优先级高的晚调用，相同配置高优先级会覆盖低优先级。故我们在定义自己的 Configurator 时需要设置一个比上述五个 Configurator 更高的优先级。</li>
-<li>实现接口 <code>org.flowable.spring.boot.EngineConfigurationConfigurer</code> 时，注意一定要使用 SpringAppEngineConfiguration 作为泛型参数。</li>
-</ul>
-<p>至此，问题成功解决，欢迎大家指正。</p>
-]]></content>
-      <categories>
-        <category>问题记录</category>
-      </categories>
-      <tags>
-        <tag>Flowable</tag>
-        <tag>data source</tag>
-        <tag>Java</tag>
-        <tag>Spring Boot</tag>
-        <tag>开发</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【学习】算法导论学习笔记</title>
-    <url>/introduction-to-algorithms/</url>
-    <content><![CDATA[<h2 id="第一部分-基础知识"><a href="#第一部分-基础知识" class="headerlink" title="第一部分 基础知识"></a>第一部分 基础知识</h2><h3 id="第-1-章-算法在计算中的作用"><a href="#第-1-章-算法在计算中的作用" class="headerlink" title="第 1 章 算法在计算中的作用"></a>第 1 章 算法在计算中的作用</h3>]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【数据库】数据库系统概念 引言</title>
     <url>/database-note1/</url>
     <content><![CDATA[<h2 id="第-1-章-引言"><a href="#第-1-章-引言" class="headerlink" title="第 1 章 引言"></a>第 1 章 引言</h2><p>数据库管理系统（DBMS）：由一个互相关联的数据的集合和一组用以访问这些数据的程序组成。DBMS 的主要目标是要提供一种可以方便、高效地存取数据库信息的途径。</p>
@@ -297,12 +178,119 @@
       </tags>
   </entry>
   <entry>
+    <title>【数据库】数据库系统概念 关系语言</title>
+    <url>/database-note2/</url>
+    <content><![CDATA[<h2 id="第-2-章-关系模型介绍"><a href="#第-2-章-关系模型介绍" class="headerlink" title="第 2 章 关系模型介绍"></a>第 2 章 关系模型介绍</h2><h3 id="2-1-关系数据库的结构"><a href="#2-1-关系数据库的结构" class="headerlink" title="2.1 关系数据库的结构"></a>2.1 关系数据库的结构</h3><p>关系数据库由表的集合构成，每张表被赋予一个唯一的名称。</p>
+<p><strong>关系</strong>：表；<strong>元组</strong>：行；<strong>属性</strong>：列。</p>
+<p><strong>关系实例</strong>：一个关系的特定实例。</p>
+<p><strong>域</strong>：关系的每个属性都存在一个允许取值的集合。</p>
+<p><strong>原子域</strong>：域中元素不可再分。</p>
+<p><strong>空值</strong>：特殊的值，表示值未知或并不存在。（尽量避免使用）</p>
+<h3 id="2-2-数据库模式"><a href="#2-2-数据库模式" class="headerlink" title="2.2 数据库模式"></a>2.2 数据库模式</h3><p><strong>数据库模式</strong>：数据库的逻辑设计；</p>
+<p><strong>数据库实例</strong>：在给定时刻数据库中数据的一个快照。</p>
+<h3 id="2-3-码"><a href="#2-3-码" class="headerlink" title="2.3 码"></a>2.3 码</h3><blockquote>
+<p>一个关系中不可以有两个元组在所有属性上取值完全相同。</p>
+</blockquote>
+<p><strong>超码</strong>：若干属性的集合，这些属性组合在一起可以唯一标识出一个元组。</p>
+<p><strong>候选码</strong>：最小超码。</p>
+<p><strong>主码</strong>：被选中作为在一个关系中区分呢不同元组的主要方式的候选码。也成为主码约束。</p>
+<blockquote>
+<p>主码应该选择其值从不变化或极少变化的属性。</p>
+</blockquote>
+<p><strong>外码约束</strong>：从 r<sub>1</sub> 关系的 A 属性集到 r<sub>2</sub> 关系的主码 B 的外码约束，表明在任何数据库实例中，r<sub>1</sub> 中每个元组对 A 的取值也必须是 r<sub>2</sub> 中某个元组对 B 的取值。</p>
+<p>A 属性集被称为从 r<sub>1</sub> 引用  r<sub>2</sub> 的外码。 r<sub>1</sub> 关系为<strong>引用关系</strong>，r<sub>2</sub> 关系为<strong>被引用关系</strong>。</p>
+<p><strong>引用完整性约束</strong>：要求引用关系中的任意元组在指定属性上出现的取值也必然出现在被引用关系中至少一个元组的指定属性上。</p>
+<blockquote>
+<p>外码约束是引用完整性约束的一个特例。</p>
+</blockquote>
+<h3 id="2-4-模式图"><a href="#2-4-模式图" class="headerlink" title="2.4 模式图"></a>2.4 模式图</h3><p><img src="https://assets.kekwy.com/images/image-20240101161218636.png" alt="image-20240101161218636"></p>
+<p>每个关系显示为一个框，关系名用灰色显示在顶部，并且在框内列出各属性。</p>
+<p>主码属性用下划线标注。外码约束用从引用关系的外码属性指向被引用关系的主码属性的箭头表示。使用双箭头表示不是外码约束的引用完整性约束。</p>
+<h3 id="2-5-关系查询语言"><a href="#2-5-关系查询语言" class="headerlink" title="2.5 关系查询语言"></a>2.5 关系查询语言</h3><p><strong>查询语言</strong>：用户用来从数据库中请求获取信息的语言。</p>
+<ul>
+<li><strong>命令式查询语言</strong>：执行特定的计算序列，更新状态变量；</li>
+<li><strong>函数式查询语言</strong>：计算被表示为函数的求值，函数没有副作用，不更新程序状态；</li>
+<li><strong>声明式查询语言</strong>：只需描述信息，而不给出获取信息的具体步骤。</li>
+</ul>
+<h3 id="2-6-关系代数"><a href="#2-6-关系代数" class="headerlink" title="2.6 关系代数"></a>2.6 关系代数</h3><p>关系代数由一组运算组成，这些运算接受一个（一元）或两个（二元）关系作为输入，并生成一个新的关系作为其结果。</p>
+<ul>
+<li><strong>选择运算</strong>：选出满足给定谓词的元组；</li>
+<li><strong>投影运算</strong>：返回其参数关系但是滤掉了特定的属性；</li>
+<li><strong>关系运算复合</strong>：关系运算的结果也是关系。关系代数运算的结果与其输入具有相同的类型，因此可以将关系代数运算复合在一起成为<strong>关系代数表达式</strong>；</li>
+<li><strong>笛卡尔积运算</strong>：有关系 r<sub>1</sub>(R<sub>1</sub>) 和 r<sub>2</sub>(R<sub>2</sub>)，则  r<sub>1</sub> X r<sub>2</sub> 就是这样一个关系 r(R)：它的模式 R 是 R<sub>1</sub> 和 R<sub>2</sub> 的拼接。关系 r 包含所偶遇这样的元组 t：对于 t 存在 r<sub>1</sub> 中的一个元组 t<sub>1</sub> 和 r<sub>2</sub> 中的一个元组 t<sub>2</sub>，满足 t 和 t<sub>1</sub> 在 R<sub>1</sub> 的属性上取值相同，并且 t 和 t<sub>2</sub> 在 R<sub>2</sub> 的属性上取值相同；</li>
+<li><strong>连接运算</strong>：本质上是从两个关系的笛卡尔积中选择符合指定谓词的元组；</li>
+<li><strong>集合运算</strong>：交集、并集、差集（两个关系必须有相同的元数，且满足相容关系）；</li>
+<li><strong>赋值运算</strong>：将一个关系代数表达式中的一部分赋值给临时的关系变量，便于编写表达式；</li>
+<li><strong>更名运算</strong>：为关系代数表达式的结果命名，可以实现对同一关系的不同次引用使用不同的名称，避免表达式歧义；</li>
+<li><strong>等价查询</strong>：使用关系代数通过不同方式编写的多种查询，当其结果相同时，则称这些查询互相等价；数据库系统中查询优化器通常根据表达式所计算的结果，选择计算该结果的高效方式，而不是严格按照关系代数中的指定步骤查询。</li>
+</ul>
+<h2 id="第-3-章-SQL-介绍"><a href="#第-3-章-SQL-介绍" class="headerlink" title="第 3 章 SQL 介绍"></a>第 3 章 SQL 介绍</h2><h3 id="3-1-SQL-查询语言概览"><a href="#3-1-SQL-查询语言概览" class="headerlink" title="3.1 SQL 查询语言概览"></a>3.1 SQL 查询语言概览</h3><p>SQL 语言有几个部分：</p>
+<ul>
+<li><strong>数据定义语言</strong> (DDL)：定义关系模式、删除关系以及修改关系模式；</li>
+<li><strong>数据操纵语言</strong> (DML)：查询信息以及在数据库中插入、删除、修改元组；</li>
+<li><strong>完整性</strong>：SQL DDL 包含定义完整性的命令；</li>
+<li><strong>视图定义</strong>：SQL DDL 包含定义视图的命令；</li>
+<li><strong>事务控制</strong>：SQL 包括定义事务的开始点和结束点的命令；</li>
+<li><strong>嵌入式 SQL 和动态 SQL</strong>：定义 SQL 语句如何嵌入通用编程语言；</li>
+<li><strong>授权</strong>：SQL DDL 包括定义对关系和视图的访问权限的命令；</li>
+</ul>
+<p>待续</p>
+<h2 id="第-4-章-中级-SQL"><a href="#第-4-章-中级-SQL" class="headerlink" title="第 4 章 中级 SQL"></a>第 4 章 中级 SQL</h2><h2 id="第-5-章-高级-SQL"><a href="#第-5-章-高级-SQL" class="headerlink" title="第 5 章 高级 SQL"></a>第 5 章 高级 SQL</h2>]]></content>
+      <categories>
+        <category>数据库系统概念</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+        <tag>database</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spring Boot 集成 Flowable 并自定义数据源</title>
+    <url>/flowable-datasource/</url>
+    <content><![CDATA[<h1 id="Spring-Boot-集成-Flowable-并自定义数据源"><a href="#Spring-Boot-集成-Flowable-并自定义数据源" class="headerlink" title="Spring Boot 集成 Flowable 并自定义数据源"></a>Spring Boot 集成 Flowable 并自定义数据源</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>在使用 <code>flowable-spring-boot-starter</code> 进行 spring boot 集成 flowable 时，flowable 会使用配置文件中  <code>spring.datasource</code> 前缀下设置的数据源：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">com.zaxxer.hikari.HikariDataSource</span></span><br><span class="line">    <span class="attr">driver-class-name:</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">datasource1</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">xxxx</span></span><br><span class="line">    <span class="attr">password:</span> <span class="string">xxxx</span></span><br></pre></td></tr></table></figure>
+
+<p>而项目中的其他数据库工具，如 mybatis 等，同样也会使用此数据源。由于 flowable 相关的表结构过多，该数据源我们只希望保存与项目业务相关的表结构，故尝试使 flowable 使用其他数据源（非默认，自定义）。</p>
+<p>Spring Boot 版本：3.0.5</p>
+<p>Flowable 版本：7.0.0.M1</p>
+<p>相关依赖：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- MySQL --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-j<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>8.0.32<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">scope</span>&gt;</span>runtime<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.flowable/flowable-spring-boot-starter --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.flowable<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>flowable-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>7.0.0.M1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>首先在配置文件中添加我们自定义的数据源，前缀任意，不冲突即可：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">flowable:</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">com.zaxxer.hikari.HikariDataSource</span></span><br><span class="line">    <span class="attr">driver-class-name:</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">datasource2</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">xxxx</span></span><br><span class="line">    <span class="attr">password:</span> <span class="string">xxxx</span></span><br></pre></td></tr></table></figure>
+
+<p>定义 <code>org.flowable.common.engine.impl.EngineConfigurator</code> 接口的一个实现类，读取配置文件信息并在 <code>beforeInit</code> 方法中创建数据源。使用 @Component 注解生成 bean：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DatasourceConfigurator</span> <span class="keyword">implements</span> <span class="title class_">EngineConfigurator</span> &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Value(&quot;$&#123;flowable.datasource.url&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String url;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value(&quot;$&#123;flowable.datasource.type&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> Class&lt;? <span class="keyword">extends</span> <span class="title class_">DataSource</span>&gt; type;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value(&quot;$&#123;flowable.datasource.driver-class-name&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String driverClassName;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value(&quot;$&#123;flowable.datasource.username&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String username;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value(&quot;$&#123;flowable.datasource.password&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String password;</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">beforeInit</span><span class="params">(AbstractEngineConfiguration engineConfiguration)</span> &#123;</span><br><span class="line">        <span class="type">DataSource</span> <span class="variable">dataSource</span> <span class="operator">=</span> DataSourceBuilder.create()</span><br><span class="line">                .type(type)</span><br><span class="line">                .driverClassName(driverClassName)</span><br><span class="line">                .url(url)</span><br><span class="line">                .username(username)</span><br><span class="line">                .password(password).build();</span><br><span class="line">        engineConfiguration.setDataSource(dataSource);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">configure</span><span class="params">(AbstractEngineConfiguration engineConfiguration)</span> &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getPriority</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">600000</span>; <span class="comment">// 保证该优先级最高</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>定义一个配置类，实现接口 <code>org.flowable.spring.boot.EngineConfigurationConfigurer</code>。将 <code>datasourceConfigurator</code> 注入，在 <code>configure</code> 方法中将其加入 Flowable 引擎的上下文中。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ProcessEngineConfig</span> <span class="keyword">implements</span> <span class="title class_">EngineConfigurationConfigurer</span>&lt;SpringAppEngineConfiguration&gt; &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> DatasourceConfigurator datasourceConfigurator;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setDatasourceConfigurator</span><span class="params">(DatasourceConfigurator datasourceConfigurator)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.datasourceConfigurator = datasourceConfigurator;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">configure</span><span class="params">(SpringAppEngineConfiguration engineConfiguration)</span> &#123;</span><br><span class="line">        engineConfiguration.addConfigurator(datasourceConfigurator);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>观察日志发现我们自定义的配置成功地被 Flowable 引擎调用执行了：</p>
+<p><img src="https://assets.kekwy.com/images/image-20230426115352537.png" alt="image-20230426115352537"></p>
+<ul>
+<li>在日志中还可以看到其他五个 Flowable 自动添加的 Configurator 和各自的优先级，优先级高的晚调用，相同配置高优先级会覆盖低优先级。故我们在定义自己的 Configurator 时需要设置一个比上述五个 Configurator 更高的优先级。</li>
+<li>实现接口 <code>org.flowable.spring.boot.EngineConfigurationConfigurer</code> 时，注意一定要使用 SpringAppEngineConfiguration 作为泛型参数。</li>
+</ul>
+<p>至此，问题成功解决，欢迎大家指正。</p>
+]]></content>
+      <categories>
+        <category>问题记录</category>
+      </categories>
+      <tags>
+        <tag>Flowable</tag>
+        <tag>data source</tag>
+        <tag>Java</tag>
+        <tag>Spring Boot</tag>
+        <tag>开发</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【iOS开发】iw01 科学计算器</title>
     <url>/iw1-calculator/</url>
     <content><![CDATA[<blockquote>
 <p>iOS assignment 1: Calculator App.</p>
 <p>姓名：可弟WZ Kekwy</p>
-<p>邮箱：<a href="mailto:&#x6b;&#101;&#x65;&#x6b;&#107;&#x65;&#x77;&#121;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#x6d;">&#x6b;&#101;&#x65;&#x6b;&#107;&#x65;&#x77;&#121;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#x6d;</a></p>
+<p>邮箱：<a href="mailto:&#x6b;&#101;&#x65;&#x6b;&#107;&#x65;&#x77;&#121;&#x40;&#x71;&#x71;&#x2e;&#x63;&#x6f;&#x6d;">&#x6b;&#101;&#x65;&#x6b;&#107;&#x65;&#x77;&#121;&#x40;&#x71;&#x71;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
 </blockquote>
 <p>用 swift &amp; storyboard 实现一个计算器APP（包括科学计算器）。</p>
 <p><strong>项目仓库：</strong><a href="https://github.com/Kekwy/iwork1-Calculator">https://github.com/Kekwy/iwork1-Calculator</a></p>
@@ -501,115 +489,10 @@
       </tags>
   </entry>
   <entry>
-    <title>接口、继承与多态</title>
-    <url>/javaNotes-1/</url>
-    <content><![CDATA[<h2 id="I-类的继承"><a href="#I-类的继承" class="headerlink" title="I. 类的继承"></a>I. 类的继承</h2><p>权限修饰关键字：</p>
-<table>
-<thead>
-<tr>
-<th>private</th>
-<th>外部以及子类均不可访问</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public</td>
-<td>外部以及子类均不可访问</td>
-</tr>
-<tr>
-<td>protected</td>
-<td>外部不可，但子类可以访问</td>
-</tr>
-</tbody></table>
-<ul>
-<li>定义类时通过关键字<code>extends</code> + 父类类名定义继承；</li>
-<li>子类方法中可以通过super关键字调用父类方法（受权限修饰关键字约束）；</li>
-<li>子类中可以通过定义与父类某一方法名称相同的函数实现对父类中该方法的重写（覆盖）；</li>
-<li>重写时如修改方法的权限范围，只能从小到大；</li>
-<li>重写时返回值必须与父类中同名函数返回值相同或为其子类；</li>
-<li>子类实例化时会自动调用父类的无参构造方法，但若需调用有参构造方法需要通过super关键字手动调用；</li>
-<li>子类<code>finalize()</code>方法需要保证最后一个动作是调用父类的<code>finalize()</code>方法；</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Test</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">doSomething1</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">doSomething2</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">doSomething3</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> Test <span class="title function_">doTest</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Test1</span> <span class="keyword">extends</span> <span class="title class_">Test</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Test</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(); <span class="comment">//调用父类构造方法</span></span><br><span class="line">        <span class="built_in">super</span>.doSomething1();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">doSomething3</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    private void doSomething3() &#123;</span></span><br><span class="line"><span class="comment">        //do something</span></span><br><span class="line"><span class="comment">    &#125; 写法错误</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="keyword">public</span> Test1 <span class="title function_">doTest</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="II-Object类"><a href="#II-Object类" class="headerlink" title="II. Object类"></a>II. Object类</h2><ol>
-<li><p><code>Objcect</code> 类是所有Java类的父类。</p>
-<p>tips：<code>Object</code> 类中的 <code>getClass()</code> 、<code>notify()</code> 、<code>notifyAll()</code> 、<code>wait()</code> 等方法不能在子类中重写。（被定义为final类型）</p>
-</li>
-<li><p><code>Object</code> 类中的重要方法：</p>
-<ul>
-<li><p><code>getClass()</code>：返回对象执行时的Class实例。<em>（Unity的getObejct）</em></p>
-</li>
-<li><p><code>toString()</code>：将一个对象返回为字符串，一般需要根据需要<strong>在子类中重写</strong>.</p>
-<p>tips：将对象打印时将自动调用该方法。</p>
-</li>
-<li><p><code>equals()</code>：默认使用“&#x3D;&#x3D;”运算符根据对象的引用（地址）判断是否相等。故一般需要<strong>按需重写</strong>。</p>
-</li>
-</ul>
-</li>
-</ol>
-<h2 id="III-对象类型的转换"><a href="#III-对象类型的转换" class="headerlink" title="III. 对象类型的转换"></a>III. 对象类型的转换</h2><ol>
-<li><p>向上转型：将子类对象视为父类对象。由具体到抽象，总是安全的。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">Quadrangle</span> <span class="variable">obj</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Patallelogram</span>(); <span class="comment">// 平行四边形是四边形的子类</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>向下转型：将父类对象转换为子类对象，必须通过强制类型转换，且必须保证当前父类对象是目标子类对象的实例。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">Quadrangle</span> <span class="variable">p</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Patallelogram</span>();</span><br><span class="line"><span class="type">Patallelogram</span> <span class="variable">q</span> <span class="operator">=</span> (Patallelogram)p;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="IV-使用instanceof操作符判断对象类型"><a href="#IV-使用instanceof操作符判断对象类型" class="headerlink" title="IV. 使用instanceof操作符判断对象类型"></a>IV. 使用instanceof操作符判断对象类型</h2><p>可用于实现向下转换时对父类对象实例类型的判断。</p>
-<p>语法格式：（返回值为布尔型）</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">myobject <span class="keyword">instanceof</span> ExampleClass;</span><br><span class="line"><span class="comment">// myobject对象是否为ExampleClass类的实例</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="V-方法的重载"><a href="#V-方法的重载" class="headerlink" title="V. 方法的重载"></a>V. 方法的重载</h2><p>同过定义同名方法但参数不完全相同的方式实现方法的重载，但单单返回值不同不能实现重载。</p>
-<p>编译器利用方法名、方法各参数类型和参数的个数以及参数的顺序来确定类中的方法是否唯一。</p>
-<p>不定长参数也可以参与实现重载：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span>... a)</span>;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="VI-抽象类与接口"><a href="#VI-抽象类与接口" class="headerlink" title="VI. 抽象类与接口"></a>VI. 抽象类与接口</h2><ol>
-<li><p>抽象类</p>
-<p>tips：</p>
-<ul>
-<li>抽象类不能实例化对象；</li>
-<li>只有抽象类才可以承载抽象方法；</li>
-<li>抽象方法在其子类中必须被重写。</li>
-</ul>
-<p>定义抽象类的关键字 <code>abstract</code> 。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">	<span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title function_">testAbstract</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-</li>
-<li><p>接口：</p>
-<p>定义接口使用关键字 <code>interface</code> ：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> interface 接口名 &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">doSomething</span><span class="params">()</span>;</span><br><span class="line">    <span class="comment">// 自动虚方法，可以省略abstract关键字</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>public：接口可以像类一样被权限修饰符修饰，但public关键字仅限于接口在与其同名的文件中被定义时；</li>
-<li>接口中的方法必须被定义为public或abstract形式。</li>
-</ul>
-<p>实现接口使用关键字 <code>implements</code> ：</p>
-<p>tips：Java中不许出现多继承但是可以通过同一个类实现许多接口来实现多继承，一个接口也可以继承另一个接口。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">#<span class="number">1</span></span><br><span class="line">class 类名 implements 接口<span class="number">1</span>，接口<span class="number">2</span>, ... &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#<span class="number">2</span></span><br><span class="line"><span class="keyword">interface</span> <span class="title class_">intf1</span> &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">interface</span> <span class="title class_">intf2</span> <span class="keyword">extends</span> <span class="title class_">intf1</span> &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>参考资料《Java从入门到精通（第5版）》</p>
-]]></content>
-      <categories>
-        <category>从继承开始的Java应用笔记</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>学习</tag>
-        <tag>编程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【iOS开发】IW2 新闻APP</title>
     <url>/iw2-newsapp/</url>
     <content><![CDATA[<blockquote>
-<p><a href="mailto:&#x6b;&#x65;&#101;&#x6b;&#107;&#101;&#x77;&#121;&#64;&#113;&#x71;&#x2e;&#x63;&#x6f;&#x6d;">&#x6b;&#x65;&#101;&#x6b;&#107;&#101;&#x77;&#121;&#64;&#113;&#x71;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
+<p><a href="mailto:&#107;&#101;&#101;&#x6b;&#107;&#101;&#x77;&#x79;&#x40;&#113;&#x71;&#46;&#x63;&#x6f;&#109;">&#107;&#101;&#101;&#x6b;&#107;&#101;&#x77;&#x79;&#x40;&#113;&#x71;&#46;&#x63;&#x6f;&#109;</a></p>
 </blockquote>
 <ul>
 <li><a href="#%E7%AE%80%E4%BB%8B">简介</a><ul>
@@ -734,6 +617,324 @@
         <tag>开发</tag>
         <tag>iOS</tag>
         <tag>Xcode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>接口、继承与多态</title>
+    <url>/javaNotes-1/</url>
+    <content><![CDATA[<h2 id="I-类的继承"><a href="#I-类的继承" class="headerlink" title="I. 类的继承"></a>I. 类的继承</h2><p>权限修饰关键字：</p>
+<table>
+<thead>
+<tr>
+<th>private</th>
+<th>外部以及子类均不可访问</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public</td>
+<td>外部以及子类均不可访问</td>
+</tr>
+<tr>
+<td>protected</td>
+<td>外部不可，但子类可以访问</td>
+</tr>
+</tbody></table>
+<ul>
+<li>定义类时通过关键字<code>extends</code> + 父类类名定义继承；</li>
+<li>子类方法中可以通过super关键字调用父类方法（受权限修饰关键字约束）；</li>
+<li>子类中可以通过定义与父类某一方法名称相同的函数实现对父类中该方法的重写（覆盖）；</li>
+<li>重写时如修改方法的权限范围，只能从小到大；</li>
+<li>重写时返回值必须与父类中同名函数返回值相同或为其子类；</li>
+<li>子类实例化时会自动调用父类的无参构造方法，但若需调用有参构造方法需要通过super关键字手动调用；</li>
+<li>子类<code>finalize()</code>方法需要保证最后一个动作是调用父类的<code>finalize()</code>方法；</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Test</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">doSomething1</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">doSomething2</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">doSomething3</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> Test <span class="title function_">doTest</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Test1</span> <span class="keyword">extends</span> <span class="title class_">Test</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Test</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(); <span class="comment">//调用父类构造方法</span></span><br><span class="line">        <span class="built_in">super</span>.doSomething1();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">doSomething3</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    private void doSomething3() &#123;</span></span><br><span class="line"><span class="comment">        //do something</span></span><br><span class="line"><span class="comment">    &#125; 写法错误</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="keyword">public</span> Test1 <span class="title function_">doTest</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="II-Object类"><a href="#II-Object类" class="headerlink" title="II. Object类"></a>II. Object类</h2><ol>
+<li><p><code>Objcect</code> 类是所有Java类的父类。</p>
+<p>tips：<code>Object</code> 类中的 <code>getClass()</code> 、<code>notify()</code> 、<code>notifyAll()</code> 、<code>wait()</code> 等方法不能在子类中重写。（被定义为final类型）</p>
+</li>
+<li><p><code>Object</code> 类中的重要方法：</p>
+<ul>
+<li><p><code>getClass()</code>：返回对象执行时的Class实例。<em>（Unity的getObejct）</em></p>
+</li>
+<li><p><code>toString()</code>：将一个对象返回为字符串，一般需要根据需要<strong>在子类中重写</strong>.</p>
+<p>tips：将对象打印时将自动调用该方法。</p>
+</li>
+<li><p><code>equals()</code>：默认使用“&#x3D;&#x3D;”运算符根据对象的引用（地址）判断是否相等。故一般需要<strong>按需重写</strong>。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="III-对象类型的转换"><a href="#III-对象类型的转换" class="headerlink" title="III. 对象类型的转换"></a>III. 对象类型的转换</h2><ol>
+<li><p>向上转型：将子类对象视为父类对象。由具体到抽象，总是安全的。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">Quadrangle</span> <span class="variable">obj</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Patallelogram</span>(); <span class="comment">// 平行四边形是四边形的子类</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>向下转型：将父类对象转换为子类对象，必须通过强制类型转换，且必须保证当前父类对象是目标子类对象的实例。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">Quadrangle</span> <span class="variable">p</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Patallelogram</span>();</span><br><span class="line"><span class="type">Patallelogram</span> <span class="variable">q</span> <span class="operator">=</span> (Patallelogram)p;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="IV-使用instanceof操作符判断对象类型"><a href="#IV-使用instanceof操作符判断对象类型" class="headerlink" title="IV. 使用instanceof操作符判断对象类型"></a>IV. 使用instanceof操作符判断对象类型</h2><p>可用于实现向下转换时对父类对象实例类型的判断。</p>
+<p>语法格式：（返回值为布尔型）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">myobject <span class="keyword">instanceof</span> ExampleClass;</span><br><span class="line"><span class="comment">// myobject对象是否为ExampleClass类的实例</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="V-方法的重载"><a href="#V-方法的重载" class="headerlink" title="V. 方法的重载"></a>V. 方法的重载</h2><p>同过定义同名方法但参数不完全相同的方式实现方法的重载，但单单返回值不同不能实现重载。</p>
+<p>编译器利用方法名、方法各参数类型和参数的个数以及参数的顺序来确定类中的方法是否唯一。</p>
+<p>不定长参数也可以参与实现重载：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span>... a)</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="VI-抽象类与接口"><a href="#VI-抽象类与接口" class="headerlink" title="VI. 抽象类与接口"></a>VI. 抽象类与接口</h2><ol>
+<li><p>抽象类</p>
+<p>tips：</p>
+<ul>
+<li>抽象类不能实例化对象；</li>
+<li>只有抽象类才可以承载抽象方法；</li>
+<li>抽象方法在其子类中必须被重写。</li>
+</ul>
+<p>定义抽象类的关键字 <code>abstract</code> 。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">	<span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title function_">testAbstract</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>接口：</p>
+<p>定义接口使用关键字 <code>interface</code> ：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> interface 接口名 &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">doSomething</span><span class="params">()</span>;</span><br><span class="line">    <span class="comment">// 自动虚方法，可以省略abstract关键字</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>public：接口可以像类一样被权限修饰符修饰，但public关键字仅限于接口在与其同名的文件中被定义时；</li>
+<li>接口中的方法必须被定义为public或abstract形式。</li>
+</ul>
+<p>实现接口使用关键字 <code>implements</code> ：</p>
+<p>tips：Java中不许出现多继承但是可以通过同一个类实现许多接口来实现多继承，一个接口也可以继承另一个接口。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">#<span class="number">1</span></span><br><span class="line">class 类名 implements 接口<span class="number">1</span>，接口<span class="number">2</span>, ... &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#<span class="number">2</span></span><br><span class="line"><span class="keyword">interface</span> <span class="title class_">intf1</span> &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">interface</span> <span class="title class_">intf2</span> <span class="keyword">extends</span> <span class="title class_">intf1</span> &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>参考资料《Java从入门到精通（第5版）》</p>
+]]></content>
+      <categories>
+        <category>从继承开始的Java应用笔记</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>学习</tag>
+        <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>类的高级特性与异常处理</title>
+    <url>/javaNotes-2/</url>
+    <content><![CDATA[<h2 id="I-Java类包"><a href="#I-Java类包" class="headerlink" title="I. Java类包"></a>I. Java类包</h2><ol>
+<li><p>类名冲突：</p>
+<p>任何类与接口都需要隶属于某一个类包。可以通过将两个同名类定义在不同的类包中解决类名冲突的问题。</p>
+</li>
+<li><p>类的路径：</p>
+<ul>
+<li>同一个类包中的类相互访问时，可以不指定包名；</li>
+<li>同一个包中的类不必存放在同一个位置，只要将CLASSPATH分别指向这两个位置即可。</li>
+</ul>
+</li>
+<li><p>指定包与导入包：</p>
+<p>将 <code>package</code> 表达式作为文件中的第一行非注释代码，java包名必须全部使用小写字母。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> 包名;</span><br></pre></td></tr></table></figure>
+
+<p>导入包：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> 包名.*</span><br><span class="line"><span class="keyword">import</span> 包名.类名</span><br><span class="line"><span class="keyword">import</span> 包名.静态方法名</span><br></pre></td></tr></table></figure>
+<p>tips: </p>
+<p>使用 <code>import</code> 关键字指定一个包中的所有类时，并不会指定这个包的子包中的类，如需使用需要对子包作单独引用。</p>
+</li>
+</ol>
+<h2 id="II-final-关键字"><a href="#II-final-关键字" class="headerlink" title="II. final 关键字"></a>II. final 关键字</h2><ol>
+<li>变量：<ul>
+<li>修饰常量变量；</li>
+<li>对象引用被 <code>final</code> 修饰后无法使其指向另一个对象；</li>
+<li>Java中定义全局变量，通常使用 <code>public static final</code> 修饰，是能在定义时被赋值。</li>
+</ul>
+</li>
+<li>方法：<ul>
+<li>被 <code>final</code> 修饰的方法不能被重写；</li>
+<li><code>private</code> 方法隐式被指定为 <code>final</code> 类型。</li>
+</ul>
+</li>
+<li>类：<ul>
+<li>被修饰的类不能被继承。</li>
+</ul>
+</li>
+</ol>
+<h2 id="III-内部类"><a href="#III-内部类" class="headerlink" title="III. 内部类"></a>III. 内部类</h2><h3 id="成员内部类"><a href="#成员内部类" class="headerlink" title="成员内部类"></a>成员内部类</h3><ol>
+<li><p>基础用法：</p>
+<ul>
+<li><p>成员内部类的定义：（非内部类不能被声明为private或protected访问类型）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OuterClass</span> &#123;			<span class="comment">// 外部类</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">InnerClass</span> &#123;		<span class="comment">// 内部类</span></span><br><span class="line">		<span class="comment">//...</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>内部类中可以访问外部类的所有成员变量和方法，外部类只能通过实例化内部类对象访问内部类成员（受权限修饰关键字限制）；</p>
+</li>
+<li><p>内部类中的变量与外部类变量同名时，可以使用 <code>this</code> 指针加以区分：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 若内部类与外部类中均有变量x</span></span><br><span class="line"><span class="built_in">this</span>.x; <span class="comment">// 内部类的x</span></span><br><span class="line">OuterClass.<span class="built_in">this</span>.x; <span class="comment">// 外部类的x</span></span><br><span class="line">x; <span class="comment">// 同名局部变量、形参（若有）</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在外部类和非静态方法之外实例化内部类对象，需要使用外部类：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">OuterClass</span> <span class="variable">out</span> <span class="operator">=</span> = <span class="keyword">new</span> <span class="title class_">OuterClass</span>();</span><br><span class="line">OuterClass.<span class="type">innerClass</span> <span class="variable">in</span> <span class="operator">=</span> out.<span class="keyword">new</span> <span class="title class_">innerClass</span>();</span><br></pre></td></tr></table></figure>
+
+<p>内部类对象会依赖于外部类对象。只有存在外部类对象，才能实例化内部类对象。</p>
+</li>
+</ul>
+</li>
+<li><p>内部类向上转型为接口;</p>
+<ul>
+<li>将一个权限修饰符为 <code>private</code> 的内部类向上转型为一个接口，就可以完全隐藏内部类的具体实现过程；</li>
+<li>对于一个外部接口中的方法，可以通过在一个类中定义多个内部类，每个内部类分别实现该方法的方式，实现在类中多次实现接口中的同一个方法；</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">interface</span> <span class="title class_">OutInterface</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">OuterClass</span> &#123;</span><br><span class="line">    <span class="comment">// 定义一个外部不可访问的内部类</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">InnerClass</span> <span class="keyword">implements</span> <span class="title class_">OutInterface</span> &#123;</span><br><span class="line">        <span class="comment">// 实现接口方法</span></span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">()</span> &#123;</span><br><span class="line">            <span class="comment">// do something...</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> OutInterface doit &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">InnerClass</span>(); <span class="comment">// 将内部类向上转型为外部接口</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"><span class="type">OuterClass</span> <span class="variable">out</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">OuterClass</span>();</span><br><span class="line"><span class="type">OutInterface</span> <span class="variable">outinter</span> <span class="operator">=</span> out.doit();</span><br><span class="line">outinter.f();</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>外部不可直接访问内部类中的 f() 方法但是可以访问接口中的，通过将内部类向上转型执行内部类中定义的方法，对继承外部类的子类隐藏了实现细节。（向外提供外部类和接口）</p>
+</li>
+</ol>
+<h3 id="局部内部类"><a href="#局部内部类" class="headerlink" title="局部内部类"></a>局部内部类</h3><ul>
+<li><p>内部类可以在类的局部位置定义（如方法）</p>
+</li>
+<li><p>在方法中定义的内部类只能使用方法中被 <code>final</code> 修饰的变量。因为内部类对象的生存期超出方法运行的生存期，导致方法中的一般局部变量比内部类对象的生存期短，而被final型变量被视为常量，其生存期同样比方法运行的生存期长。</p>
+</li>
+</ul>
+<h3 id="匿名内部类"><a href="#匿名内部类" class="headerlink" title="匿名内部类"></a>匿名内部类</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">A</span>() &#123;</span><br><span class="line">	...<span class="comment">//内部类体</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>匿名内部类编译以后，产生以“外部类名$序号”为名称的.class文件，序号以1~n排列。</p>
+<h3 id="静态内部类"><a href="#静态内部类" class="headerlink" title="静态内部类"></a>静态内部类</h3><ul>
+<li>创建静态内部类的对象不需要其外部类的对象；</li>
+<li>静态内部类的对象中不能访问非静态外部类的对象。</li>
+</ul>
+<h3 id="内部类的继承"><a href="#内部类的继承" class="headerlink" title="内部类的继承"></a>内部类的继承</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OutputInnerClass</span> <span class="keyword">extends</span> <span class="title class_">ClassA</span>.ClassB &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="title function_">OutputInnerClass</span><span class="params">(classA a)</span> &#123;</span><br><span class="line">		a.<span class="built_in">super</span>();		<span class="comment">// 生成B类的外部类对象</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ClassA</span> &#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title class_">ClassB</span> &#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="IV-异常捕捉"><a href="#IV-异常捕捉" class="headerlink" title="IV. 异常捕捉"></a>IV. 异常捕捉</h2><ol>
+<li><p><code>try-catch</code> 语句：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="comment">// 可以发生异常的代码块</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">catch</span>(Exception e)&#123;</span><br><span class="line">    <span class="comment">// 异常处理</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>finally</code> 语句：</p>
+<p>无论 <code>try</code> 中的语句是否发生异常，都会执行 <code>finally</code> 中的代码块。<code>finally</code> 不被执行的情况：</p>
+<ul>
+<li><code>finally</code> 中发生异常；</li>
+<li>之前的代码中使用 <code>System.exit()</code> 退出程序；</li>
+<li>程序所在的线程死亡；</li>
+<li>关闭CPU。</li>
+</ul>
+</li>
+</ol>
+<p>tips：</p>
+<ul>
+<li><code>Exception</code> 是 <code>try</code> 代码传递给 <code>catch</code> 代码块的变量类型；</li>
+<li>异常处理常用的函数：<ul>
+<li><code>getMessage()</code> ：输出错误性质；</li>
+<li><code>toString()</code> ：给出异常的类型与性质；</li>
+<li><code>printStackTrace()</code> ：指出异常的类型、性质、栈层次及出现在程序中的位置。</li>
+</ul>
+</li>
+</ul>
+<h2 id="V-Java常见异常"><a href="#V-Java常见异常" class="headerlink" title="V. Java常见异常"></a>V. Java常见异常</h2><table>
+<thead>
+<tr>
+<th>异常类</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ClassCastException</td>
+<td>类型转换异常</td>
+</tr>
+<tr>
+<td>ClassNotFoundException</td>
+<td>未找到相应类异常</td>
+</tr>
+<tr>
+<td>ArithmeticException</td>
+<td>算术异常</td>
+</tr>
+<tr>
+<td>ArrayIndexOutOfBoundsException</td>
+<td>数组下标越界异常</td>
+</tr>
+<tr>
+<td>ArrayStoreException</td>
+<td>数组中包含不兼容的值抛出的异常</td>
+</tr>
+<tr>
+<td>SQLException</td>
+<td>操作数据库异常</td>
+</tr>
+<tr>
+<td>NullPointerException</td>
+<td>空指针异常</td>
+</tr>
+<tr>
+<td>NoSuchFieldException</td>
+<td>字段未找到异常</td>
+</tr>
+<tr>
+<td>NoSuchMethodException</td>
+<td>方法未找到异常</td>
+</tr>
+<tr>
+<td>NumberFormatException</td>
+<td>字符串转换为数字抛出的异常</td>
+</tr>
+<tr>
+<td>NegativeArraySizeException</td>
+<td>数组元素个数为负数抛出的异常</td>
+</tr>
+<tr>
+<td>StringIndexOutOfBoundsException</td>
+<td>字符串索引超出范围抛出的异常</td>
+</tr>
+<tr>
+<td>IOException</td>
+<td>输入输出异常</td>
+</tr>
+<tr>
+<td>IllegalAccessException</td>
+<td>不允许访问某类异常</td>
+</tr>
+<tr>
+<td>InstantiationException</td>
+<td>当应用程序试图使用 <code>Class</code> 类中的 <code>new Instance()</code> 方法创建一个类的实例，而指定的类的对象无法被实例化时，抛出该异常</td>
+</tr>
+<tr>
+<td>EOFException</td>
+<td>文件已结束异常</td>
+</tr>
+<tr>
+<td>FileNotFoundException</td>
+<td>文件未找到异常</td>
+</tr>
+</tbody></table>
+<h2 id="VI-自定义异常"><a href="#VI-自定义异常" class="headerlink" title="VI. 自定义异常"></a>VI. 自定义异常</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyException</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyException</span><span class="params">(String ErrorMessage)</span> &#123; <span class="comment">// ErrorMessage为要输出的错误信息</span></span><br><span class="line">        <span class="built_in">super</span>(ErrorMessage);				  <span class="comment">// 调用父类构造方法</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="VII-抛出异常"><a href="#VII-抛出异常" class="headerlink" title="VII. 抛出异常"></a>VII. 抛出异常</h2><ol>
+<li><p>throws：用于指定方法可能抛出的异常，用于将异常向上抛出。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">pop</span><span class="params">()</span> <span class="keyword">throws</span> 异常<span class="number">1</span>, 异常<span class="number">2</span>, ... &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>throw：</p>
+<ul>
+<li>程序在执行到 <code>throw</code> 语句时立即终止，其后语句都不执行；</li>
+<li><code>throw</code> 抛出的异常必须使用 <code>try-catch</code> 语句快捕捉；</li>
+<li>若想向上级抛出异常，必须在抛出异常的方法中使用 <code>throws</code>。</li>
+<li></li>
+</ul>
+</li>
+</ol>
+<p>参考资料《Java从入门到精通（第5版）》</p>
+]]></content>
+      <categories>
+        <category>从继承开始的Java应用笔记</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>学习</tag>
+        <tag>编程</tag>
       </tags>
   </entry>
   <entry>
@@ -967,224 +1168,11 @@
       </tags>
   </entry>
   <entry>
-    <title>类的高级特性与异常处理</title>
-    <url>/javaNotes-2/</url>
-    <content><![CDATA[<h2 id="I-Java类包"><a href="#I-Java类包" class="headerlink" title="I. Java类包"></a>I. Java类包</h2><ol>
-<li><p>类名冲突：</p>
-<p>任何类与接口都需要隶属于某一个类包。可以通过将两个同名类定义在不同的类包中解决类名冲突的问题。</p>
-</li>
-<li><p>类的路径：</p>
-<ul>
-<li>同一个类包中的类相互访问时，可以不指定包名；</li>
-<li>同一个包中的类不必存放在同一个位置，只要将CLASSPATH分别指向这两个位置即可。</li>
-</ul>
-</li>
-<li><p>指定包与导入包：</p>
-<p>将 <code>package</code> 表达式作为文件中的第一行非注释代码，java包名必须全部使用小写字母。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> 包名;</span><br></pre></td></tr></table></figure>
-
-<p>导入包：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> 包名.*</span><br><span class="line"><span class="keyword">import</span> 包名.类名</span><br><span class="line"><span class="keyword">import</span> 包名.静态方法名</span><br></pre></td></tr></table></figure>
-<p>tips: </p>
-<p>使用 <code>import</code> 关键字指定一个包中的所有类时，并不会指定这个包的子包中的类，如需使用需要对子包作单独引用。</p>
-</li>
-</ol>
-<h2 id="II-final-关键字"><a href="#II-final-关键字" class="headerlink" title="II. final 关键字"></a>II. final 关键字</h2><ol>
-<li>变量：<ul>
-<li>修饰常量变量；</li>
-<li>对象引用被 <code>final</code> 修饰后无法使其指向另一个对象；</li>
-<li>Java中定义全局变量，通常使用 <code>public static final</code> 修饰，是能在定义时被赋值。</li>
-</ul>
-</li>
-<li>方法：<ul>
-<li>被 <code>final</code> 修饰的方法不能被重写；</li>
-<li><code>private</code> 方法隐式被指定为 <code>final</code> 类型。</li>
-</ul>
-</li>
-<li>类：<ul>
-<li>被修饰的类不能被继承。</li>
-</ul>
-</li>
-</ol>
-<h2 id="III-内部类"><a href="#III-内部类" class="headerlink" title="III. 内部类"></a>III. 内部类</h2><h3 id="成员内部类"><a href="#成员内部类" class="headerlink" title="成员内部类"></a>成员内部类</h3><ol>
-<li><p>基础用法：</p>
-<ul>
-<li><p>成员内部类的定义：（非内部类不能被声明为private或protected访问类型）</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OuterClass</span> &#123;			<span class="comment">// 外部类</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">InnerClass</span> &#123;		<span class="comment">// 内部类</span></span><br><span class="line">		<span class="comment">//...</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>内部类中可以访问外部类的所有成员变量和方法，外部类只能通过实例化内部类对象访问内部类成员（受权限修饰关键字限制）；</p>
-</li>
-<li><p>内部类中的变量与外部类变量同名时，可以使用 <code>this</code> 指针加以区分：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 若内部类与外部类中均有变量x</span></span><br><span class="line"><span class="built_in">this</span>.x; <span class="comment">// 内部类的x</span></span><br><span class="line">OuterClass.<span class="built_in">this</span>.x; <span class="comment">// 外部类的x</span></span><br><span class="line">x; <span class="comment">// 同名局部变量、形参（若有）</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在外部类和非静态方法之外实例化内部类对象，需要使用外部类：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">OuterClass</span> <span class="variable">out</span> <span class="operator">=</span> = <span class="keyword">new</span> <span class="title class_">OuterClass</span>();</span><br><span class="line">OuterClass.<span class="type">innerClass</span> <span class="variable">in</span> <span class="operator">=</span> out.<span class="keyword">new</span> <span class="title class_">innerClass</span>();</span><br></pre></td></tr></table></figure>
-
-<p>内部类对象会依赖于外部类对象。只有存在外部类对象，才能实例化内部类对象。</p>
-</li>
-</ul>
-</li>
-<li><p>内部类向上转型为接口;</p>
-<ul>
-<li>将一个权限修饰符为 <code>private</code> 的内部类向上转型为一个接口，就可以完全隐藏内部类的具体实现过程；</li>
-<li>对于一个外部接口中的方法，可以通过在一个类中定义多个内部类，每个内部类分别实现该方法的方式，实现在类中多次实现接口中的同一个方法；</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">interface</span> <span class="title class_">OutInterface</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">OuterClass</span> &#123;</span><br><span class="line">    <span class="comment">// 定义一个外部不可访问的内部类</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">InnerClass</span> <span class="keyword">implements</span> <span class="title class_">OutInterface</span> &#123;</span><br><span class="line">        <span class="comment">// 实现接口方法</span></span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">()</span> &#123;</span><br><span class="line">            <span class="comment">// do something...</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> OutInterface doit &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">InnerClass</span>(); <span class="comment">// 将内部类向上转型为外部接口</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"><span class="type">OuterClass</span> <span class="variable">out</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">OuterClass</span>();</span><br><span class="line"><span class="type">OutInterface</span> <span class="variable">outinter</span> <span class="operator">=</span> out.doit();</span><br><span class="line">outinter.f();</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-
-<p>外部不可直接访问内部类中的 f() 方法但是可以访问接口中的，通过将内部类向上转型执行内部类中定义的方法，对继承外部类的子类隐藏了实现细节。（向外提供外部类和接口）</p>
-</li>
-</ol>
-<h3 id="局部内部类"><a href="#局部内部类" class="headerlink" title="局部内部类"></a>局部内部类</h3><ul>
-<li><p>内部类可以在类的局部位置定义（如方法）</p>
-</li>
-<li><p>在方法中定义的内部类只能使用方法中被 <code>final</code> 修饰的变量。因为内部类对象的生存期超出方法运行的生存期，导致方法中的一般局部变量比内部类对象的生存期短，而被final型变量被视为常量，其生存期同样比方法运行的生存期长。</p>
-</li>
-</ul>
-<h3 id="匿名内部类"><a href="#匿名内部类" class="headerlink" title="匿名内部类"></a>匿名内部类</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">A</span>() &#123;</span><br><span class="line">	...<span class="comment">//内部类体</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>匿名内部类编译以后，产生以“外部类名$序号”为名称的.class文件，序号以1~n排列。</p>
-<h3 id="静态内部类"><a href="#静态内部类" class="headerlink" title="静态内部类"></a>静态内部类</h3><ul>
-<li>创建静态内部类的对象不需要其外部类的对象；</li>
-<li>静态内部类的对象中不能访问非静态外部类的对象。</li>
-</ul>
-<h3 id="内部类的继承"><a href="#内部类的继承" class="headerlink" title="内部类的继承"></a>内部类的继承</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OutputInnerClass</span> <span class="keyword">extends</span> <span class="title class_">ClassA</span>.ClassB &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="title function_">OutputInnerClass</span><span class="params">(classA a)</span> &#123;</span><br><span class="line">		a.<span class="built_in">super</span>();		<span class="comment">// 生成B类的外部类对象</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ClassA</span> &#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title class_">ClassB</span> &#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="IV-异常捕捉"><a href="#IV-异常捕捉" class="headerlink" title="IV. 异常捕捉"></a>IV. 异常捕捉</h2><ol>
-<li><p><code>try-catch</code> 语句：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="comment">// 可以发生异常的代码块</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">catch</span>(Exception e)&#123;</span><br><span class="line">    <span class="comment">// 异常处理</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>finally</code> 语句：</p>
-<p>无论 <code>try</code> 中的语句是否发生异常，都会执行 <code>finally</code> 中的代码块。<code>finally</code> 不被执行的情况：</p>
-<ul>
-<li><code>finally</code> 中发生异常；</li>
-<li>之前的代码中使用 <code>System.exit()</code> 退出程序；</li>
-<li>程序所在的线程死亡；</li>
-<li>关闭CPU。</li>
-</ul>
-</li>
-</ol>
-<p>tips：</p>
-<ul>
-<li><code>Exception</code> 是 <code>try</code> 代码传递给 <code>catch</code> 代码块的变量类型；</li>
-<li>异常处理常用的函数：<ul>
-<li><code>getMessage()</code> ：输出错误性质；</li>
-<li><code>toString()</code> ：给出异常的类型与性质；</li>
-<li><code>printStackTrace()</code> ：指出异常的类型、性质、栈层次及出现在程序中的位置。</li>
-</ul>
-</li>
-</ul>
-<h2 id="V-Java常见异常"><a href="#V-Java常见异常" class="headerlink" title="V. Java常见异常"></a>V. Java常见异常</h2><table>
-<thead>
-<tr>
-<th>异常类</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>ClassCastException</td>
-<td>类型转换异常</td>
-</tr>
-<tr>
-<td>ClassNotFoundException</td>
-<td>未找到相应类异常</td>
-</tr>
-<tr>
-<td>ArithmeticException</td>
-<td>算术异常</td>
-</tr>
-<tr>
-<td>ArrayIndexOutOfBoundsException</td>
-<td>数组下标越界异常</td>
-</tr>
-<tr>
-<td>ArrayStoreException</td>
-<td>数组中包含不兼容的值抛出的异常</td>
-</tr>
-<tr>
-<td>SQLException</td>
-<td>操作数据库异常</td>
-</tr>
-<tr>
-<td>NullPointerException</td>
-<td>空指针异常</td>
-</tr>
-<tr>
-<td>NoSuchFieldException</td>
-<td>字段未找到异常</td>
-</tr>
-<tr>
-<td>NoSuchMethodException</td>
-<td>方法未找到异常</td>
-</tr>
-<tr>
-<td>NumberFormatException</td>
-<td>字符串转换为数字抛出的异常</td>
-</tr>
-<tr>
-<td>NegativeArraySizeException</td>
-<td>数组元素个数为负数抛出的异常</td>
-</tr>
-<tr>
-<td>StringIndexOutOfBoundsException</td>
-<td>字符串索引超出范围抛出的异常</td>
-</tr>
-<tr>
-<td>IOException</td>
-<td>输入输出异常</td>
-</tr>
-<tr>
-<td>IllegalAccessException</td>
-<td>不允许访问某类异常</td>
-</tr>
-<tr>
-<td>InstantiationException</td>
-<td>当应用程序试图使用 <code>Class</code> 类中的 <code>new Instance()</code> 方法创建一个类的实例，而指定的类的对象无法被实例化时，抛出该异常</td>
-</tr>
-<tr>
-<td>EOFException</td>
-<td>文件已结束异常</td>
-</tr>
-<tr>
-<td>FileNotFoundException</td>
-<td>文件未找到异常</td>
-</tr>
-</tbody></table>
-<h2 id="VI-自定义异常"><a href="#VI-自定义异常" class="headerlink" title="VI. 自定义异常"></a>VI. 自定义异常</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyException</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyException</span><span class="params">(String ErrorMessage)</span> &#123; <span class="comment">// ErrorMessage为要输出的错误信息</span></span><br><span class="line">        <span class="built_in">super</span>(ErrorMessage);				  <span class="comment">// 调用父类构造方法</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="VII-抛出异常"><a href="#VII-抛出异常" class="headerlink" title="VII. 抛出异常"></a>VII. 抛出异常</h2><ol>
-<li><p>throws：用于指定方法可能抛出的异常，用于将异常向上抛出。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">pop</span><span class="params">()</span> <span class="keyword">throws</span> 异常<span class="number">1</span>, 异常<span class="number">2</span>, ... &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>throw：</p>
-<ul>
-<li>程序在执行到 <code>throw</code> 语句时立即终止，其后语句都不执行；</li>
-<li><code>throw</code> 抛出的异常必须使用 <code>try-catch</code> 语句快捕捉；</li>
-<li>若想向上级抛出异常，必须在抛出异常的方法中使用 <code>throws</code>。</li>
-<li></li>
-</ul>
-</li>
-</ol>
-<p>参考资料《Java从入门到精通（第5版）》</p>
-]]></content>
-      <categories>
-        <category>从继承开始的Java应用笔记</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>学习</tag>
-        <tag>编程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【渗透测试】第五周 vulnhub-</title>
     <url>/lab5-report/</url>
     <content><![CDATA[<h1 id="网络攻防实战-实验报告"><a href="#网络攻防实战-实验报告" class="headerlink" title="网络攻防实战 实验报告"></a>网络攻防实战 实验报告</h1><blockquote>
 <p>网络攻防实战 第七次实验</p>
-<p>邮箱：<a href="mailto:&#x6b;&#x65;&#x65;&#107;&#x6b;&#101;&#x77;&#x79;&#x40;&#x71;&#113;&#46;&#x63;&#x6f;&#109;">&#x6b;&#x65;&#x65;&#107;&#x6b;&#101;&#x77;&#x79;&#x40;&#x71;&#113;&#46;&#x63;&#x6f;&#109;</a></p>
+<p>邮箱：<a href="mailto:&#x6b;&#x65;&#x65;&#x6b;&#x6b;&#x65;&#119;&#x79;&#x40;&#113;&#x71;&#46;&#x63;&#111;&#x6d;">&#x6b;&#x65;&#x65;&#x6b;&#x6b;&#x65;&#119;&#x79;&#x40;&#113;&#x71;&#46;&#x63;&#111;&#x6d;</a></p>
 <p>2022年10月19日</p>
 <p>靶机链接：</p>
 </blockquote>
@@ -1389,6 +1377,30 @@
         <tag>安全</tag>
         <tag>Linux</tag>
         <tag>vulnhub</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在 IDEA 中将普通目录设置为模块 2024.2.3</title>
+    <url>/set-directory-as-module-in-idea/</url>
+    <content><![CDATA[<h2 id="IDEA-版本"><a href="#IDEA-版本" class="headerlink" title="IDEA 版本"></a>IDEA 版本</h2><p>IntelliJ IDEA 2024.2.3 (Ultimate Edition)</p>
+<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>我在一个目录中包含了多个相关联的项目，使用 IDEA 在一个窗口中将根目录打开进行开发。某一次打开项目之后，发现 IDEA 将我项目根目录中的其他文件都排除在项目之外，导致根目录下存放配置、数据或文档的普通目录被隐藏，使得开发不便。现需要使 IDEA 将其视为模块。</p>
+<p>尝试使用搜索得到的，在项目配置中“导入现有模块”或“导入 Maven 模块”等方法均无效。</p>
+<img src="https://assets.kekwy.com/images/image-20241117185224071.png" alt="image-20241117185224071" width="450px" style="display: inline; "/>
+
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>在根目录（需要将其视为模块的目录）下创建文件 <code>模块名.iml</code>，并将以下代码拷贝至该文件中：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">module</span> <span class="attr">type</span>=<span class="string">&quot;GENERAL_MODULE&quot;</span> <span class="attr">version</span>=<span class="string">&quot;4&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">component</span> <span class="attr">name</span>=<span class="string">&quot;NewModuleRootManager&quot;</span> <span class="attr">inherit-compiler-output</span>=<span class="string">&quot;true&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">exclude-output</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">content</span> <span class="attr">url</span>=<span class="string">&quot;file://$MODULE_DIR$&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">orderEntry</span> <span class="attr">type</span>=<span class="string">&quot;sourceFolder&quot;</span> <span class="attr">forTests</span>=<span class="string">&quot;false&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">component</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">module</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在 IDEA 中右键该文件，选择导入模块：</p>
+<img src="https://assets.kekwy.com/images/image-20241117190139530.png" alt="image-20241117190139530" style="display: inline;" />
+
+<p>即可解决上述问题。</p>
+]]></content>
+      <categories>
+        <category>问题记录</category>
+      </categories>
+      <tags>
+        <tag>IDEA</tag>
+        <tag>Intellij IDEA</tag>
       </tags>
   </entry>
   <entry>
@@ -1977,30 +1989,6 @@
       </tags>
   </entry>
   <entry>
-    <title>在 IDEA 中将普通目录设置为模块 2024.2.3</title>
-    <url>/set-directory-as-module-in-idea/</url>
-    <content><![CDATA[<h2 id="IDEA-版本"><a href="#IDEA-版本" class="headerlink" title="IDEA 版本"></a>IDEA 版本</h2><p>IntelliJ IDEA 2024.2.3 (Ultimate Edition)</p>
-<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>我在一个目录中包含了多个相关联的项目，使用 IDEA 在一个窗口中将根目录打开进行开发。某一次打开项目之后，发现 IDEA 将我项目根目录中的其他文件都排除在项目之外，导致根目录下存放配置、数据或文档的普通目录被隐藏，使得开发不便。现需要使 IDEA 将其视为模块。</p>
-<p>尝试使用搜索得到的，在项目配置中“导入现有模块”或“导入 Maven 模块”等方法均无效。</p>
-<img src="https://assets.kekwy.com/images/image-20241117185224071.png" alt="image-20241117185224071" width="450px" style="display: inline; "/>
-
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>在根目录（需要将其视为模块的目录）下创建文件 <code>模块名.iml</code>，并将以下代码拷贝至该文件中：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">module</span> <span class="attr">type</span>=<span class="string">&quot;GENERAL_MODULE&quot;</span> <span class="attr">version</span>=<span class="string">&quot;4&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">component</span> <span class="attr">name</span>=<span class="string">&quot;NewModuleRootManager&quot;</span> <span class="attr">inherit-compiler-output</span>=<span class="string">&quot;true&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">exclude-output</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">content</span> <span class="attr">url</span>=<span class="string">&quot;file://$MODULE_DIR$&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">orderEntry</span> <span class="attr">type</span>=<span class="string">&quot;sourceFolder&quot;</span> <span class="attr">forTests</span>=<span class="string">&quot;false&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">component</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">module</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>在 IDEA 中右键该文件，选择导入模块：</p>
-<img src="https://assets.kekwy.com/images/image-20241117190139530.png" alt="image-20241117190139530" style="display: inline;" />
-
-<p>即可解决上述问题。</p>
-]]></content>
-      <categories>
-        <category>问题记录</category>
-      </categories>
-      <tags>
-        <tag>IDEA</tag>
-        <tag>Intellij IDEA</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Butterfly 主题自定义字体无效</title>
     <url>/solution1/</url>
     <content><![CDATA[<p>待续</p>
@@ -2046,7 +2034,7 @@
     <url>/vulnhub-Cereal/</url>
     <content><![CDATA[<blockquote>
 <p>网络攻防实战 第十次实验</p>
-<p>邮箱：<a href="mailto:&#x6b;&#101;&#x65;&#107;&#107;&#x65;&#119;&#x79;&#x40;&#x71;&#x71;&#x2e;&#99;&#111;&#x6d;">&#x6b;&#101;&#x65;&#107;&#107;&#x65;&#119;&#x79;&#x40;&#x71;&#x71;&#x2e;&#99;&#111;&#x6d;</a></p>
+<p>邮箱：<a href="mailto:&#x6b;&#x65;&#101;&#107;&#107;&#101;&#x77;&#x79;&#64;&#x71;&#x71;&#46;&#x63;&#111;&#109;">&#x6b;&#x65;&#101;&#107;&#107;&#101;&#x77;&#x79;&#64;&#x71;&#x71;&#46;&#x63;&#111;&#109;</a></p>
 <p>2022年11月26日</p>
 <p>靶机链接：<a href="https://vulnhub.com/entry/cereal-1,703/">https://vulnhub.com/entry/cereal-1,703/</a></p>
 </blockquote>
@@ -2307,7 +2295,7 @@
     <url>/vulnhub-Fawkes/</url>
     <content><![CDATA[<blockquote>
 <p>网络攻防实战 第七次实验</p>
-<p>邮箱：<a href="mailto:&#x6b;&#101;&#101;&#107;&#x6b;&#101;&#119;&#x79;&#64;&#113;&#113;&#46;&#x63;&#111;&#109;">&#x6b;&#101;&#101;&#107;&#x6b;&#101;&#119;&#x79;&#64;&#113;&#113;&#46;&#x63;&#111;&#109;</a></p>
+<p>邮箱：<a href="mailto:&#107;&#101;&#x65;&#107;&#x6b;&#101;&#x77;&#121;&#x40;&#x71;&#x71;&#46;&#99;&#111;&#x6d;">&#107;&#101;&#x65;&#107;&#x6b;&#101;&#x77;&#121;&#x40;&#x71;&#x71;&#46;&#99;&#111;&#x6d;</a></p>
 <p>2022年11月2日</p>
 <p>靶机连接：<a href="https://vulnhub.com/entry/harrypotter-fawkes,686/">https://vulnhub.com/entry/harrypotter-fawkes,686/</a></p>
 </blockquote>
@@ -2728,7 +2716,7 @@
     <url>/vulnhub-EvilBoxOne/</url>
     <content><![CDATA[<blockquote>
 <p>网络攻防实战 第八次实验</p>
-<p>邮箱：<a href="mailto:&#107;&#x65;&#101;&#107;&#x6b;&#x65;&#x77;&#x79;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;">&#107;&#x65;&#101;&#107;&#x6b;&#x65;&#x77;&#x79;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<p>邮箱：<a href="mailto:&#107;&#x65;&#x65;&#x6b;&#x6b;&#x65;&#119;&#x79;&#x40;&#113;&#x71;&#x2e;&#x63;&#x6f;&#x6d;">&#107;&#x65;&#x65;&#x6b;&#x6b;&#x65;&#119;&#x79;&#x40;&#113;&#x71;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
 <p>2022年11月8日</p>
 <p>靶机链接：<a href="https://vulnhub.com/entry/evilbox-one,736/">https://vulnhub.com/entry/evilbox-one,736/</a></p>
 </blockquote>
@@ -2982,7 +2970,7 @@
 <p>第一周</p>
 <p>可弟WZ</p>
 <p>主页：blog.kekwy.com</p>
-<p>邮箱：<a href="mailto:&#107;&#x65;&#x65;&#x6b;&#107;&#x65;&#119;&#121;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#109;">&#107;&#x65;&#x65;&#x6b;&#107;&#x65;&#119;&#121;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#109;</a></p>
+<p>邮箱：<a href="mailto:&#107;&#101;&#x65;&#107;&#x6b;&#x65;&#x77;&#x79;&#64;&#x71;&#113;&#46;&#99;&#111;&#x6d;">&#107;&#101;&#x65;&#107;&#x6b;&#x65;&#x77;&#x79;&#64;&#x71;&#113;&#46;&#99;&#111;&#x6d;</a></p>
 <p>2022年9月27日</p>
 </blockquote>
 <h2 id="一、实验准备"><a href="#一、实验准备" class="headerlink" title="一、实验准备"></a>一、实验准备</h2><p>靶机：y0usef</p>
@@ -3186,7 +3174,7 @@
     <url>/vulnhub-doubletrouble/</url>
     <content><![CDATA[<blockquote>
 <p>网络攻防实战 第九次实验</p>
-<p>邮箱：<a href="mailto:&#x6b;&#101;&#x65;&#x6b;&#107;&#x65;&#119;&#x79;&#x40;&#113;&#113;&#x2e;&#x63;&#x6f;&#x6d;">&#x6b;&#101;&#x65;&#x6b;&#107;&#x65;&#119;&#x79;&#x40;&#113;&#113;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
+<p>邮箱：<a href="mailto:&#x6b;&#x65;&#x65;&#107;&#x6b;&#101;&#119;&#121;&#64;&#x71;&#x71;&#x2e;&#99;&#x6f;&#109;">&#x6b;&#x65;&#x65;&#107;&#x6b;&#101;&#119;&#121;&#64;&#x71;&#x71;&#x2e;&#99;&#x6f;&#109;</a></p>
 <p>靶机链接：<a href="https://www.vulnhub.com/entry/doubletrouble-1,743/">https://www.vulnhub.com/entry/doubletrouble-1,743/</a></p>
 <p>2022年11月15日</p>
 </blockquote>
